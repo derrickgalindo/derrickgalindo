@@ -19,6 +19,8 @@ FACTS = [
     ("wordle", "share_button_shipped", "2021-12-16T14:54Z", "timestamp", "2021-12-16", "wardle_tweet_share", "high", "Added a share button to Wordle that generates a spoiler-free emoji grid... Shoutout to @irihapeta for inventing"),
     ("wordle", "acquisition_price", "low seven figures", "USD", "2022-01-31", "wordle_nyt_lowseven", "high", "price in the low seven figures"),
     ("wordle", "new_users_to_nyt", "tens of millions", "users", "2022-Q1", "nyt_q1_2022_pr", "high", "Wordle brought an unprecedented tens of millions of new users to The Times"),
+    ("heardle", "daily_plays", "1000000", "plays/day (creator claim)", "2022-03", "l4lm_heardle", "medium", "more than a million per day"),
+    ("quordle", "daily_players", "500000", "players/day (creator claim)", "2022-02", "yahoo_quordle", "medium", "more than 500,000 players daily"),
     ("flappybird", "reviews_may25_oct31", "13", "reviews", "2013-10-31", "ibt_flappy_timeline", "medium", None),
     ("flappybird", "us_game_chart_entry", "1368", "rank", "2013-11", "ibt_flappy_timeline", "medium", None),
     ("flappybird", "first_tweet", "2013-11-04", "date", "2013-11-04", "rs_birdman", "high", "the first Twitter mention came on November 4th"),
@@ -56,6 +58,12 @@ FACTS = [
 ]
 
 BASE_RATES_STATIC = [
+    ("roblox_20m_ccu_2025", "Active Roblox experiences in 2025 (Roblox 10-K: 'over 14 million active experiences')", 14_000_000,
+     "set a 20M+ concurrent-player record in 2025", 2, 2 / 14_000_000, "Grow a Garden and Steal a Brainrot (Roblox letters)", "roblox_10k_2025,roblox_q3_2025"),
+    ("roblox_top1000_creators", "Active Roblox experiences in 2025", 14_000_000, "creator in the top 1,000 (avg $1.3M earned in 2025)", 1000, 1000 / 14_000_000,
+     "creators vs experiences: an order-of-magnitude bound only", "roblox_10k_2025,roblox_q4_2025"),
+    ("flappy_clones_2014", "Flappy Bird clones released on iOS (Pocket Gamer counted 300 in 4 days, Feb 28-Mar 3 2014; Guardian: 95 of 293 new iOS games on Feb 27)", 300,
+     "sustained a US top-10 position for 4+ weeks", 0, 0.0, "no clone in this dataset or in coverage sustained a top-10 run; Splashy Fish/Ironpants charted briefly", "engadget_flappy_clones,macrumors_flappy_third"),
     ("supercell_launch", "Supercell games that entered development/beta (as of Feb 2023)", 35, "launched globally and kept", 5, 5 / 35,
      "Paananen: '30+ killed, 5 hits' => k/n with n=35 (lower bound on n)", "gwo_supercell_killed"),
 ]

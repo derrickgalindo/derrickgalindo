@@ -6,7 +6,7 @@ CREATE TABLE sources (
   title       TEXT NOT NULL,
   url         TEXT,
   publisher   TEXT,
-  source_type TEXT CHECK (source_type IN ('primary_filing','primary_creator','primary_data','primary_company','secondary_press','secondary_reference','secondary_analysis')),
+  source_type TEXT CHECK (source_type IN ('primary_research','primary_filing','primary_creator','primary_data','primary_company','secondary_press','secondary_reference','secondary_analysis')),
   pub_date    TEXT,
   notes       TEXT
 );

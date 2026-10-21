@@ -28,11 +28,11 @@ CLONE_OF = {
 GAMES = """
 wordle|Josh Wardle|solo|2021-10-01|2021-12-20|daily_web|3|2.0||high|90 players 2021-11-01 -> 300k 2022-01-02 -> ~2M mid-Jan; NYT: 'tens of millions of new users'
 absurdle|Sam Hughes (qntm)|solo|2022-01-04||daily_web|1|||medium|Press coverage Jan 2022; never daily-habit scale
-quordle|Freddie Meyer|solo|2022-01-24|2022-02-01|daily_web|1|||medium|Acquired by Merriam-Webster Jan 2023 (terms undisclosed); trends-checked
+quordle|Freddie Meyer|solo|2022-01-24|2022-02-01|daily_web|1|0.5||medium|Creator: >500k daily players (Feb 2022); acquired by Merriam-Webster Jan 2023 (terms undisclosed)
 dordle|Zaratustra|solo|2022-01-20||daily_web|1|||medium|Spinoff coverage; trends-checked
 octordle|Kenneth Crawford|solo|2022-01-25||daily_web|1|||medium|Spinoff coverage; trends-checked
 worldle|Antoine Teuf|solo|2022-01-21|2022-02-01|daily_web|1|||medium|Large early-2022 spike; trends-checked
-heardle|Omakase|small_indie|2022-02-26|2022-04-01|daily_web|1|||medium|Acquired by Spotify Jul 2022, shut down May 2023; trends-checked
+heardle|Omakase|small_indie|2022-02-26|2022-04-01|daily_web|2|1.0||medium|Creator: >1M plays/day (one play per day => ~1M DAU), Mar 2022; acquired by Spotify Jul 2022, shut May 2023. Re-tiered 1->2 after Trends cross-check + creator figure
 nerdle|Richard Mann|small_indie|2022-01-20||daily_web|1|||medium|trends-checked
 globle|Trainwreck Labs|solo|2022-01-20||daily_web|1|||medium|Creator went full-time on ad revenue; trends-checked
 semantle|David Turner|solo|2022-01-30||daily_web|1|||medium|trends-checked

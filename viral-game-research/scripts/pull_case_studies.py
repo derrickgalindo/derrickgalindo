@@ -24,6 +24,13 @@ JOBS = [
     ("infinitecraft", "infinite craft", "2024-01-15 2024-05-15", [""]),
     ("drawsomething", "draw something", "2012-01-15 2012-07-15", ["", "US"]),
     ("2048", "2048 game", "2014-02-15 2014-07-15", ["", "US"]),
+    # pre-spike windows: normalised to the end of the window so early growth is not floored to zero
+    ("wordle_pre", "wordle", "2021-10-15 2022-01-02", ["", "NZ", "US", "GB", "AU"]),
+    ("wordle_preNYT2", "wordle", "2021-11-15 2021-12-31", ["", "NZ"]),
+    ("flappy_pre", FLAPPY, "2013-09-01 2014-01-16", ["", "US", "VN", "GB"]),
+    ("flappy_pre2", FLAPPY, "2013-09-01 2013-12-31", ["", "US"]),
+    ("amongus_pre", AMONG, "2020-04-01 2020-07-31", ["", "KR", "BR", "US"]),
+    ("growagarden_pre", "grow a garden", "2025-03-20 2025-05-10", [""]),
 ]
 for name, term, tf, geos in JOBS:
     for geo in geos:
@@ -39,6 +46,8 @@ for name, term, tf, geos in JOBS:
                 print("retry", a, str(e)[:60], flush=True)
                 time.sleep(25 * (a + 1))
         df = df.drop(columns=["isPartial"], errors="ignore")
+        if df.empty:  # below Google's reporting threshold for the whole window
+            open(path, "w").write("date,value\n"); print(name, geo, "empty", flush=True); continue
         df.columns = ["value"]
         df.to_csv(path)
         print(name, geo, len(df), flush=True)

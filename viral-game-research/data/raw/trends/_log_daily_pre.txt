@@ -1,0 +1,26 @@
+wordle_pre  80
+wordle_pre NZ 80
+wordle_pre US 80
+wordle_pre GB 80
+wordle_pre AU 80
+wordle_preNYT2  47
+wordle_preNYT2 NZ 47
+Traceback (most recent call last):
+  File "/home/user/derrickgalindo/viral-game-research/scripts/pull_case_studies.py", line 49, in <module>
+    df.columns = ["value"]
+    ^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/pandas/core/generic.py", line 6208, in __setattr__
+    return object.__setattr__(self, name, value)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/usr/local/lib/python3.13/dist-packages/pandas/core/generic.py", line 754, in _set_axis
+    self._mgr.set_axis(axis, labels)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/pandas/core/internals/managers.py", line 273, in set_axis
+    self._validate_set_axis(axis, new_labels)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/pandas/core/internals/managers.py", line 288, in _validate_set_axis
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 1 elements

@@ -1,0 +1,524 @@
+{
+ "wordle": {
+  "term": "/g/11smcj06ct",
+  "topic": "Wordle (Web-based game)",
+  "start": "2021-04-04",
+  "end": "2025-09-30"
+ },
+ "absurdle": {
+  "term": "absurdle",
+  "topic": null,
+  "start": "2021-07-08",
+  "end": "2026-01-03"
+ },
+ "quordle": {
+  "term": "quordle",
+  "topic": null,
+  "start": "2021-07-28",
+  "end": "2026-01-23"
+ },
+ "dordle": {
+  "term": "dordle",
+  "topic": null,
+  "start": "2021-07-24",
+  "end": "2026-01-19"
+ },
+ "octordle": {
+  "term": "octordle",
+  "topic": null,
+  "start": "2021-07-29",
+  "end": "2026-01-24"
+ },
+ "worldle": {
+  "term": "worldle",
+  "topic": null,
+  "start": "2021-07-25",
+  "end": "2026-01-20"
+ },
+ "heardle": {
+  "term": "heardle",
+  "topic": null,
+  "start": "2021-08-30",
+  "end": "2026-02-25"
+ },
+ "nerdle": {
+  "term": "nerdle",
+  "topic": null,
+  "start": "2021-07-24",
+  "end": "2026-01-19"
+ },
+ "globle": {
+  "term": "globle",
+  "topic": null,
+  "start": "2021-07-24",
+  "end": "2026-01-19"
+ },
+ "semantle": {
+  "term": "semantle",
+  "topic": null,
+  "start": "2021-08-03",
+  "end": "2026-01-29"
+ },
+ "contexto": {
+  "term": "contexto",
+  "topic": null,
+  "start": "2021-10-03",
+  "end": "2026-03-31"
+ },
+ "lewdle": {
+  "term": "lewdle",
+  "topic": null,
+  "start": "2021-07-23",
+  "end": "2026-01-18"
+ },
+ "waffle": {
+  "term": "waffle game",
+  "topic": null,
+  "start": "2021-08-19",
+  "end": "2026-02-14"
+ },
+ "redactle": {
+  "term": "redactle",
+  "topic": null,
+  "start": "2021-10-03",
+  "end": "2026-03-31"
+ },
+ "loldle": {
+  "term": "loldle",
+  "topic": null,
+  "start": "2021-10-03",
+  "end": "2026-03-31"
+ },
+ "travle": {
+  "term": "travle",
+  "topic": null,
+  "start": "2022-07-19",
+  "end": "2026-10-14"
+ },
+ "costcodle": {
+  "term": "costcodle",
+  "topic": null,
+  "start": "2023-07-19",
+  "end": "2026-10-14"
+ },
+ "connections": {
+  "term": "nyt connections",
+  "topic": null,
+  "start": "2022-12-14",
+  "end": "2026-10-14"
+ },
+ "strands": {
+  "term": "nyt strands",
+  "topic": null,
+  "start": "2023-09-06",
+  "end": "2026-10-14"
+ },
+ "spellingbee": {
+  "term": "spelling bee nyt",
+  "topic": null,
+  "start": "2017-11-10",
+  "end": "2022-05-08"
+ },
+ "immaculategrid": {
+  "term": "immaculate grid",
+  "topic": null,
+  "start": "2022-10-01",
+  "end": "2026-10-14"
+ },
+ "bandle": {
+  "term": "bandle",
+  "topic": null,
+  "start": "2022-01-02",
+  "end": "2026-06-30"
+ },
+ "queens": {
+  "term": "linkedin queens",
+  "topic": null,
+  "start": "2023-11-03",
+  "end": "2026-10-14"
+ },
+ "pips": {
+  "term": "nyt pips",
+  "topic": null,
+  "start": "2025-02-19",
+  "end": "2026-10-14"
+ },
+ "flappybird": {
+  "term": "/m/0_gzt9y",
+  "topic": "Flappy Bird (Mobile game)",
+  "start": "2012-11-25",
+  "end": "2017-05-23"
+ },
+ "splashyfish": {
+  "term": "splashy fish",
+  "topic": null,
+  "start": "2013-07-29",
+  "end": "2018-01-24"
+ },
+ "ironpants": {
+  "term": "ironpants",
+  "topic": null,
+  "start": "2013-07-24",
+  "end": "2018-01-19"
+ },
+ "swingcopters": {
+  "term": "/m/011qb47m",
+  "topic": "Swing Copters (Video game)",
+  "start": "2014-02-22",
+  "end": "2018-08-20"
+ },
+ "flappydunk": {
+  "term": "flappy dunk",
+  "topic": null,
+  "start": "2016-11-02",
+  "end": "2021-04-30"
+ },
+ "timberman": {
+  "term": "timberman",
+  "topic": null,
+  "start": "2013-09-02",
+  "end": "2018-02-28"
+ },
+ "colorswitch": {
+  "term": "/g/11gfn825t4",
+  "topic": "Color Switch: Endless Play Fun (Mobile game)",
+  "start": "2015-06-04",
+  "end": "2019-11-30"
+ },
+ "pianotiles": {
+  "term": "/m/010pf46_",
+  "topic": "Piano Tiles (Mobile game)",
+  "start": "2013-09-28",
+  "end": "2018-03-26"
+ },
+ "crossyroad": {
+  "term": "/m/012c1d59",
+  "topic": "Crossy Road (Video game)",
+  "start": "2014-05-24",
+  "end": "2018-11-19"
+ },
+ "geometrydash": {
+  "term": "/g/1q6h1_x1n",
+  "topic": "Geometry Dash (Video game)",
+  "start": "2013-02-14",
+  "end": "2017-08-12"
+ },
+ "stack": {
+  "term": "stack ketchapp",
+  "topic": null,
+  "start": "2015-08-05",
+  "end": "2020-01-31"
+ },
+ "helixjump": {
+  "term": "/g/11h8cs88cy",
+  "topic": "Helix Jump (Arcade game)",
+  "start": "2017-09-02",
+  "end": "2022-02-28"
+ },
+ "mrjump": {
+  "term": "mr jump",
+  "topic": null,
+  "start": "2014-09-02",
+  "end": "2019-02-28"
+ },
+ "templerun": {
+  "term": "/m/0hrg8ry",
+  "topic": "Temple Run (Video game)",
+  "start": "2011-02-05",
+  "end": "2015-08-03"
+ },
+ "subwaysurfers": {
+  "term": "/m/0kyvw1z",
+  "topic": "Subway Surfers (Mobile game)",
+  "start": "2011-11-26",
+  "end": "2016-05-23"
+ },
+ "fruitninja": {
+  "term": "/m/0g579gw",
+  "topic": "Fruit Ninja VR (Video game)",
+  "start": "2009-10-23",
+  "end": "2014-04-20"
+ },
+ "doodlejump": {
+  "term": "/m/07kdgg5",
+  "topic": "Doodle Jump (Video game)",
+  "start": "2008-10-08",
+  "end": "2013-04-05"
+ },
+ "2048": {
+  "term": "/m/04q1x3q",
+  "topic": "Puzzle (Game genre)",
+  "start": "2013-09-10",
+  "end": "2018-03-08"
+ },
+ "threes": {
+  "term": "/m/0_qfhk0",
+  "topic": "Threes (Video game)",
+  "start": "2013-08-10",
+  "end": "2018-02-05"
+ },
+ "suika": {
+  "term": "/g/11vf5dzvxk",
+  "topic": "Suika Game (Video game)",
+  "start": "2023-03-05",
+  "end": "2026-10-14"
+ },
+ "candycrush": {
+  "term": "/m/0rytj3p",
+  "topic": "Candy Crush Saga (Video game)",
+  "start": "2011-10-15",
+  "end": "2016-04-11"
+ },
+ "bejeweledblitz": {
+  "term": "bejeweled blitz",
+  "topic": null,
+  "start": "2008-06-04",
+  "end": "2012-11-30"
+ },
+ "farmheroes": {
+  "term": "farm heroes saga",
+  "topic": null,
+  "start": "2012-10-03",
+  "end": "2017-03-31"
+ },
+ "petrescue": {
+  "term": "pet rescue saga",
+  "topic": null,
+  "start": "2012-04-04",
+  "end": "2016-09-30"
+ },
+ "bubblewitch": {
+  "term": "bubble witch saga",
+  "topic": null,
+  "start": "2011-03-05",
+  "end": "2015-08-31"
+ },
+ "diamonddash": {
+  "term": "diamond dash",
+  "topic": null,
+  "start": "2010-11-02",
+  "end": "2015-04-30"
+ },
+ "jellysplash": {
+  "term": "jelly splash",
+  "topic": null,
+  "start": "2012-11-02",
+  "end": "2017-04-30"
+ },
+ "candycrushsoda": {
+  "term": "candy crush soda",
+  "topic": null,
+  "start": "2014-05-05",
+  "end": "2018-10-31"
+ },
+ "blockblast": {
+  "term": "block blast",
+  "topic": null,
+  "start": "2022-07-05",
+  "end": "2026-10-14"
+ },
+ "angrybirds": {
+  "term": "/m/0nb7ylv",
+  "topic": "Angry Birds (Video game)",
+  "start": "2009-06-14",
+  "end": "2013-12-10"
+ },
+ "crushthecastle": {
+  "term": "crush the castle",
+  "topic": null,
+  "start": "2008-09-02",
+  "end": "2013-02-28"
+ },
+ "cuttherope": {
+  "term": "/g/11bc57tys6",
+  "topic": "Cut the Rope (Video game)",
+  "start": "2010-04-08",
+  "end": "2014-10-04"
+ },
+ "amazingalex": {
+  "term": "amazing alex",
+  "topic": null,
+  "start": "2012-01-14",
+  "end": "2016-07-11"
+ },
+ "badpiggies": {
+  "term": "bad piggies",
+  "topic": null,
+  "start": "2012-03-31",
+  "end": "2016-09-26"
+ },
+ "wheresmywater": {
+  "term": "where's my water",
+  "topic": null,
+  "start": "2011-03-26",
+  "end": "2015-09-21"
+ },
+ "wordswithfriends": {
+  "term": "/m/0gj9hrd",
+  "topic": "Words with Friends (Computer game)",
+  "start": "2009-01-22",
+  "end": "2013-07-20"
+ },
+ "chesswithfriends": {
+  "term": "chess with friends",
+  "topic": null,
+  "start": "2009-04-04",
+  "end": "2013-09-30"
+ },
+ "hangingwithfriends": {
+  "term": "hanging with friends",
+  "topic": null,
+  "start": "2011-02-02",
+  "end": "2015-07-31"
+ },
+ "wordfeud": {
+  "term": "wordfeud",
+  "topic": null,
+  "start": "2009-12-03",
+  "end": "2014-05-31"
+ },
+ "ruzzle": {
+  "term": "ruzzle",
+  "topic": null,
+  "start": "2011-09-03",
+  "end": "2016-02-29"
+ },
+ "songpop": {
+  "term": "songpop",
+  "topic": null,
+  "start": "2011-11-03",
+  "end": "2016-04-30"
+ },
+ "drawsomething": {
+  "term": "/m/0j67c91",
+  "topic": "Draw Something (Video game)",
+  "start": "2011-08-10",
+  "end": "2016-02-05"
+ },
+ "drawsomething2": {
+  "term": "draw something 2",
+  "topic": null,
+  "start": "2012-09-06",
+  "end": "2017-03-04"
+ },
+ "triviacrack": {
+  "term": "/g/1s058r6kj",
+  "topic": "Trivia Crack (Online game)",
+  "start": "2013-04-04",
+  "end": "2017-09-30"
+ },
+ "quizup": {
+  "term": "/m/0zdlqxc",
+  "topic": "QuizUp (Mobile game)",
+  "start": "2013-05-11",
+  "end": "2017-11-06"
+ },
+ "hqtrivia": {
+  "term": "/g/11f2_v244g",
+  "topic": "HQ (Video game)",
+  "start": "2017-02-02",
+  "end": "2021-07-31"
+ },
+ "headsup": {
+  "term": "/g/11g65g94v_",
+  "topic": "Heads Up! (Mobile game)",
+  "start": "2012-11-02",
+  "end": "2017-04-30"
+ },
+ "bitlife": {
+  "term": "/g/11h3ld2b35",
+  "topic": "BitLife - Life Simulator (Online game)",
+  "start": "2018-03-05",
+  "end": "2022-08-31"
+ },
+ "dumbways": {
+  "term": "dumb ways to die game",
+  "topic": null,
+  "start": "2012-11-16",
+  "end": "2017-05-14"
+ },
+ "farmville": {
+  "term": "/m/06zqm6v",
+  "topic": "FarmVille (Video game)",
+  "start": "2008-12-21",
+  "end": "2013-06-18"
+ },
+ "farmtown": {
+  "term": "farm town",
+  "topic": null,
+  "start": "2008-08-05",
+  "end": "2013-01-31"
+ },
+ "mafiawars": {
+  "term": "/m/06w7wf6",
+  "topic": "Mafia Wars (Online game)",
+  "start": "2007-12-04",
+  "end": "2012-05-31"
+ },
+ "mobwars": {
+  "term": "mob wars",
+  "topic": null,
+  "start": "2007-07-05",
+  "end": "2011-12-31"
+ },
+ "cityville": {
+  "term": "cityville",
+  "topic": null,
+  "start": "2010-06-05",
+  "end": "2014-12-01"
+ },
+ "petsociety": {
+  "term": "pet society",
+  "topic": null,
+  "start": "2008-02-03",
+  "end": "2012-07-31"
+ },
+ "farmville2": {
+  "term": "farmville 2",
+  "topic": null,
+  "start": "2012-03-22",
+  "end": "2016-09-17"
+ },
+ "agario": {
+  "term": "/g/11bcckjdhd",
+  "topic": "Agar.io (Online game)",
+  "start": "2014-10-30",
+  "end": "2019-04-27"
+ },
+ "slitherio": {
+  "term": "/g/11c3_1w9f4",
+  "topic": "Slither.io (Online game)",
+  "start": "2015-09-27",
+  "end": "2020-03-24"
+ },
+ "diepio": {
+  "term": "diep.io",
+  "topic": null,
+  "start": "2015-12-04",
+  "end": "2020-05-31"
+ },
+ "paperio": {
+  "term": "paper.io",
+  "topic": null,
+  "start": "2016-02-03",
+  "end": "2020-07-31"
+ },
+ "holeio": {
+  "term": "hole.io",
+  "topic": null,
+  "start": "2017-11-02",
+  "end": "2022-04-30"
+ },
+ "krunker": {
+  "term": "krunker",
+  "topic": null,
+  "start": "2018-02-02",
+  "end": "2022-07-31"
+ },
+ "skribbl": {
+  "term": "skribbl",
+  "topic": null,
+  "start": "2017-06-04",
+  "end": "2021-11-30"
+ }
+}

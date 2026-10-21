@@ -1,0 +1,131 @@
+wordle scale ['/g/11smcj06ct', 'sudoku'] 2021-04-04..2025-09-30
+absurdle scale ['absurdle', 'sudoku'] 2021-07-08..2026-01-03
+quordle scale ['quordle', 'sudoku'] 2021-07-28..2026-01-23
+dordle scale ['dordle', 'sudoku'] 2021-07-24..2026-01-19
+octordle scale ['octordle', 'sudoku'] 2021-07-29..2026-01-24
+worldle scale ['worldle', 'sudoku'] 2021-07-25..2026-01-20
+heardle scale ['heardle', 'sudoku'] 2021-08-30..2026-02-25
+nerdle scale ['nerdle', 'sudoku'] 2021-07-24..2026-01-19
+globle scale ['globle', 'sudoku'] 2021-07-24..2026-01-19
+semantle scale ['semantle', 'sudoku'] 2021-08-03..2026-01-29
+contexto scale ['contexto', 'sudoku'] 2021-10-03..2026-03-31
+lewdle scale ['lewdle', 'sudoku'] 2021-07-23..2026-01-18
+waffle scale ['waffle game', 'sudoku'] 2021-08-19..2026-02-14
+redactle scale ['redactle', 'sudoku'] 2021-10-03..2026-03-31
+loldle scale ['loldle', 'sudoku'] 2021-10-03..2026-03-31
+travle scale ['travle', 'sudoku'] 2022-07-19..2026-10-14
+costcodle scale ['costcodle', 'sudoku'] 2023-07-19..2026-10-14
+connections scale ['nyt connections', 'sudoku'] 2022-12-14..2026-10-14
+strands scale ['nyt strands', 'sudoku'] 2023-09-06..2026-10-14
+spellingbee scale ['spelling bee nyt', 'sudoku'] 2017-11-10..2022-05-08
+immaculategrid scale ['immaculate grid', 'sudoku'] 2022-10-01..2026-10-14
+bandle scale ['bandle', 'sudoku'] 2022-01-02..2026-06-30
+queens scale ['linkedin queens', 'sudoku'] 2023-11-03..2026-10-14
+pips scale ['nyt pips', 'sudoku'] 2025-02-19..2026-10-14
+flappybird scale ['/m/0_gzt9y', 'sudoku'] 2012-11-25..2017-05-23
+splashyfish scale ['splashy fish', 'sudoku'] 2013-07-29..2018-01-24
+ironpants scale ['ironpants', 'sudoku'] 2013-07-24..2018-01-19
+swingcopters scale ['/m/011qb47m', 'sudoku'] 2014-02-22..2018-08-20
+flappydunk scale ['flappy dunk', 'sudoku'] 2016-11-02..2021-04-30
+timberman scale ['timberman', 'sudoku'] 2013-09-02..2018-02-28
+colorswitch scale ['/g/11gfn825t4', 'sudoku'] 2015-06-04..2019-11-30
+pianotiles scale ['/m/010pf46_', 'sudoku'] 2013-09-28..2018-03-26
+crossyroad scale ['/m/012c1d59', 'sudoku'] 2014-05-24..2018-11-19
+geometrydash scale ['/g/1q6h1_x1n', 'sudoku'] 2013-02-14..2017-08-12
+stack scale ['stack ketchapp', 'sudoku'] 2015-08-05..2020-01-31
+helixjump scale ['/g/11h8cs88cy', 'sudoku'] 2017-09-02..2022-02-28
+mrjump scale ['mr jump', 'sudoku'] 2014-09-02..2019-02-28
+templerun scale ['/m/0hrg8ry', 'sudoku'] 2011-02-05..2015-08-03
+subwaysurfers scale ['/m/0kyvw1z', 'sudoku'] 2011-11-26..2016-05-23
+fruitninja scale ['/m/0g579gw', 'sudoku'] 2009-10-23..2014-04-20
+doodlejump scale ['/m/07kdgg5', 'sudoku'] 2008-10-08..2013-04-05
+2048 scale ['/m/04q1x3q', 'sudoku'] 2013-09-10..2018-03-08
+threes scale ['/m/0_qfhk0', 'sudoku'] 2013-08-10..2018-02-05
+suika scale ['/g/11vf5dzvxk', 'sudoku'] 2023-03-05..2026-10-14
+candycrush scale ['/m/0rytj3p', 'sudoku'] 2011-10-15..2016-04-11
+bejeweledblitz solo ['bejeweled blitz'] 2008-06-04..2012-11-30
+bejeweledblitz scale ['bejeweled blitz', 'sudoku'] 2008-06-04..2012-11-30
+farmheroes solo ['farm heroes saga'] 2012-10-03..2017-03-31
+farmheroes scale ['farm heroes saga', 'sudoku'] 2012-10-03..2017-03-31
+petrescue solo ['pet rescue saga'] 2012-04-04..2016-09-30
+petrescue scale ['pet rescue saga', 'sudoku'] 2012-04-04..2016-09-30
+bubblewitch solo ['bubble witch saga'] 2011-03-05..2015-08-31
+bubblewitch scale ['bubble witch saga', 'sudoku'] 2011-03-05..2015-08-31
+diamonddash solo ['diamond dash'] 2010-11-02..2015-04-30
+diamonddash scale ['diamond dash', 'sudoku'] 2010-11-02..2015-04-30
+jellysplash solo ['jelly splash'] 2012-11-02..2017-04-30
+  retry 0 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 30s)
+jellysplash scale ['jelly splash', 'sudoku'] 2012-11-02..2017-04-30
+candycrushsoda solo ['candy crush soda'] 2014-05-05..2018-10-31
+candycrushsoda scale ['candy crush soda', 'sudoku'] 2014-05-05..2018-10-31
+blockblast solo ['block blast'] 2022-07-05..2026-10-14
+blockblast scale ['block blast', 'sudoku'] 2022-07-05..2026-10-14
+angrybirds solo ['/m/0nb7ylv'] 2009-06-14..2013-12-10
+angrybirds scale ['/m/0nb7ylv', 'sudoku'] 2009-06-14..2013-12-10
+crushthecastle solo ['crush the castle'] 2008-09-02..2013-02-28
+crushthecastle scale ['crush the castle', 'sudoku'] 2008-09-02..2013-02-28
+cuttherope solo ['/g/11bc57tys6'] 2010-04-08..2014-10-04
+cuttherope scale ['/g/11bc57tys6', 'sudoku'] 2010-04-08..2014-10-04
+amazingalex solo ['amazing alex'] 2012-01-14..2016-07-11
+amazingalex scale ['amazing alex', 'sudoku'] 2012-01-14..2016-07-11
+badpiggies solo ['bad piggies'] 2012-03-31..2016-09-26
+badpiggies scale ['bad piggies', 'sudoku'] 2012-03-31..2016-09-26
+wheresmywater solo ["where's my water"] 2011-03-26..2015-09-21
+wheresmywater scale ["where's my water", 'sudoku'] 2011-03-26..2015-09-21
+wordswithfriends solo ['/m/0gj9hrd'] 2009-01-22..2013-07-20
+wordswithfriends scale ['/m/0gj9hrd', 'sudoku'] 2009-01-22..2013-07-20
+chesswithfriends solo ['chess with friends'] 2009-04-04..2013-09-30
+chesswithfriends scale ['chess with friends', 'sudoku'] 2009-04-04..2013-09-30
+hangingwithfriends solo ['hanging with friends'] 2011-02-02..2015-07-31
+hangingwithfriends scale ['hanging with friends', 'sudoku'] 2011-02-02..2015-07-31
+wordfeud solo ['wordfeud'] 2009-12-03..2014-05-31
+wordfeud scale ['wordfeud', 'sudoku'] 2009-12-03..2014-05-31
+ruzzle solo ['ruzzle'] 2011-09-03..2016-02-29
+ruzzle scale ['ruzzle', 'sudoku'] 2011-09-03..2016-02-29
+songpop solo ['songpop'] 2011-11-03..2016-04-30
+  retry 0 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 23s)
+songpop scale ['songpop', 'sudoku'] 2011-11-03..2016-04-30
+drawsomething solo ['/m/0j67c91'] 2011-08-10..2016-02-05
+drawsomething scale ['/m/0j67c91', 'sudoku'] 2011-08-10..2016-02-05
+drawsomething2 solo ['draw something 2'] 2012-09-06..2017-03-04
+drawsomething2 scale ['draw something 2', 'sudoku'] 2012-09-06..2017-03-04
+triviacrack solo ['/g/1s058r6kj'] 2013-04-04..2017-09-30
+triviacrack scale ['/g/1s058r6kj', 'sudoku'] 2013-04-04..2017-09-30
+quizup solo ['/m/0zdlqxc'] 2013-05-11..2017-11-06
+quizup scale ['/m/0zdlqxc', 'sudoku'] 2013-05-11..2017-11-06
+hqtrivia solo ['/g/11f2_v244g'] 2017-02-02..2021-07-31
+hqtrivia scale ['/g/11f2_v244g', 'sudoku'] 2017-02-02..2021-07-31
+headsup solo ['/g/11g65g94v_'] 2012-11-02..2017-04-30
+headsup scale ['/g/11g65g94v_', 'sudoku'] 2012-11-02..2017-04-30
+bitlife solo ['/g/11h3ld2b35'] 2018-03-05..2022-08-31
+bitlife scale ['/g/11h3ld2b35', 'sudoku'] 2018-03-05..2022-08-31
+dumbways solo ['dumb ways to die game'] 2012-11-16..2017-05-14
+dumbways scale ['dumb ways to die game', 'sudoku'] 2012-11-16..2017-05-14
+farmville solo ['/m/06zqm6v'] 2008-12-21..2013-06-18
+farmville scale ['/m/06zqm6v', 'sudoku'] 2008-12-21..2013-06-18
+farmtown solo ['farm town'] 2008-08-05..2013-01-31
+farmtown scale ['farm town', 'sudoku'] 2008-08-05..2013-01-31
+mafiawars solo ['/m/06w7wf6'] 2007-12-04..2012-05-31
+mafiawars scale ['/m/06w7wf6', 'sudoku'] 2007-12-04..2012-05-31
+mobwars solo ['mob wars'] 2007-07-05..2011-12-31
+mobwars scale ['mob wars', 'sudoku'] 2007-07-05..2011-12-31
+cityville solo ['cityville'] 2010-06-05..2014-12-01
+cityville scale ['cityville', 'sudoku'] 2010-06-05..2014-12-01
+petsociety solo ['pet society'] 2008-02-03..2012-07-31
+petsociety scale ['pet society', 'sudoku'] 2008-02-03..2012-07-31
+farmville2 solo ['farmville 2'] 2012-03-22..2016-09-17
+farmville2 scale ['farmville 2', 'sudoku'] 2012-03-22..2016-09-17
+agario solo ['/g/11bcckjdhd'] 2014-10-30..2019-04-27
+agario scale ['/g/11bcckjdhd', 'sudoku'] 2014-10-30..2019-04-27
+slitherio solo ['/g/11c3_1w9f4'] 2015-09-27..2020-03-24
+slitherio scale ['/g/11c3_1w9f4', 'sudoku'] 2015-09-27..2020-03-24
+diepio solo ['diep.io'] 2015-12-04..2020-05-31
+diepio scale ['diep.io', 'sudoku'] 2015-12-04..2020-05-31
+paperio solo ['paper.io'] 2016-02-03..2020-07-31
+paperio scale ['paper.io', 'sudoku'] 2016-02-03..2020-07-31
+holeio solo ['hole.io'] 2017-11-02..2022-04-30
+holeio scale ['hole.io', 'sudoku'] 2017-11-02..2022-04-30
+krunker solo ['krunker'] 2018-02-02..2022-07-31
+krunker scale ['krunker', 'sudoku'] 2018-02-02..2022-07-31
+skribbl solo ['skribbl'] 2017-06-04..2021-11-30
+skribbl scale ['skribbl', 'sudoku'] 2017-06-04..2021-11-30

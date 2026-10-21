@@ -44,6 +44,18 @@ def load(include_census=False):
     return df.reset_index(drop=True)
 
 
+def watch_ratio(gid):
+    """Pre-registered N2b: (YouTube peak / YouTube sudoku mean) / (web peak / web sudoku mean). NaN if either side is unresolved."""
+    tr = os.path.join(ROOT, "data", "raw", "trends")
+    yp, wp = os.path.join(tr, "youtube", f"{gid}.yt.csv"), os.path.join(tr, f"{gid}.scale.csv")
+    if not (os.path.exists(yp) and os.path.exists(wp)):
+        return np.nan
+    y, w = pd.read_csv(yp), pd.read_csv(wp)
+    if y.empty or w.empty or "game" not in y or "game" not in w or y["game"].max() < 3 or w["game"].max() < 3:
+        return np.nan
+    return float((y["game"].max() / max(y["sudoku"].mean(), 0.5)) / (w["game"].max() / max(w["sudoku"].mean(), 0.5)))
+
+
 def fit(train, feats, C=0.5):
     sc = StandardScaler().fit(train[feats].astype(float))
     m = LogisticRegression(C=C, max_iter=2000, class_weight="balanced").fit(sc.transform(train[feats].astype(float)), train.hit)
@@ -151,6 +163,12 @@ def run(include_census=False):
                      "C_within_cohort": within_cohort_pairs(df[ok], sB), "coefs_trained_on_A": {k: round(v, 3) for k, v in coefs.items()},
                      "checklist_signs": {k: int(v) for k, v in signs.items()},
                      "verdict": "works" if (ci[0] > 0.5 and aucB > 0.6) else "fails pre-registered bar"}
+    # sensitivity: split A without the daily-word cohort (entirely post-2016, clone-heavy)
+    te2 = test[test.cohort != "daily_word"]
+    res["A_without_daily_word"] = {}
+    for name, feats in models.items():
+        a2, ci2 = boot_auc(te2.hit, fit(train, feats)[0](te2))
+        res["A_without_daily_word"][name] = {"auc": a2, "ci": ci2, "n": int(len(te2)), "hits": int(te2.hit.sum())}
     # failure analysis for the conventional+context model on split A
     s = pd.Series(scores_A["conventional+context"], index=test.index)
     t = test.assign(score=s.round(3))[["game_id", "name", "year", "cohort", "outcome_tier", "hit", "score"]]
@@ -187,6 +205,18 @@ def run(include_census=False):
     aall, ciall = boot_auc(em.hit, em.early_momentum) if em.hit.nunique() == 2 else (np.nan, (np.nan, np.nan))
     nov["early_momentum"] = {"n_with_trends": int(len(em)), "A_test_n": int(len(emA)), "A_univariate_auc": a, "A_ci": ci,
                              "all_games_auc": aall, "all_ci": ciall, "holds": bool(not np.isnan(a) and ci[0] > 0.5)}
+    # N2b: objective watch ratio (Addendum 1)
+    df["watch_ratio"] = [watch_ratio(g) for g in df.game_id]
+    wr = df.dropna(subset=["watch_ratio"])
+    wrA = wr[wr.year >= 2016]
+    from scipy.stats import spearmanr
+    a, ci = boot_auc(wrA.hit, np.log(wrA.watch_ratio)) if wrA.hit.nunique() == 2 else (np.nan, (np.nan, np.nan))
+    aall, ciall = boot_auc(wr.hit, np.log(wr.watch_ratio)) if wr.hit.nunique() == 2 else (np.nan, (np.nan, np.nan))
+    rho = spearmanr(wr.watch_ratio, wr.spectator).correlation if len(wr) > 5 else np.nan
+    nov["watch_ratio"] = {"n": int(len(wr)), "A_test_n": int(len(wrA)), "A_test_hits": int(wrA.hit.sum()), "A_univariate_auc": a, "A_ci": ci,
+                          "all_games_auc": aall, "all_ci": ciall, "spearman_vs_coded_spectator": rho,
+                          "holds": bool(not np.isnan(a) and ci[0] > 0.5),
+                          "games": wr[["game_id", "hit", "watch_ratio", "spectator"]].sort_values("watch_ratio", ascending=False).round(3).to_dict("records")}
     res["novel_signals"] = nov
     return res, df
 
@@ -206,6 +236,9 @@ def report(res, res_c):
         c = r["C_within_cohort"]
         L.append(f"| {name} | {fmt(r['A_auc'])} [{fmt(r['A_ci'][0])}-{fmt(r['A_ci'][1])}] | {fmt(r['A_checklist_auc'])} | "
                  f"{fmt(r['B_logo_auc'])} [{fmt(r['B_ci'][0])}-{fmt(r['B_ci'][1])}] | {c['hit_ranked_higher']}/{c['pairs']} ({fmt(c['accuracy'])}) | {r['verdict']} |")
+    L += ["", "Sensitivity: split A with the 2021-25 daily-word cohort removed from the test set:", ""]
+    for name, r in res["A_without_daily_word"].items():
+        L.append(f"- {name}: AUC {fmt(r['auc'])} [{fmt(r['ci'][0])}-{fmt(r['ci'][1])}] (n={r['n']}, {r['hits']} hits)")
     L += ["", "## Coefficients (standardized, trained on pre-2016 games), conventional+context", ""]
     for k, v in sorted(res["conventional+context"]["coefs_trained_on_A"].items(), key=lambda kv: -abs(kv[1])):
         L.append(f"- `{k}`: {v:+.2f}")
@@ -221,7 +254,7 @@ def report(res, res_c):
         L.append(f"- {c}: **{h}** (hit) = {o} (not a hit)")
     L += ["", "## Pre-registered novel signals", "", "| Signal | n with | hit rate with / without | A: univariate AUC [CI] | A: ΔAUC vs conventional [CI] | B: ΔAUC | Holds? |", "|---|---|---|---|---|---|---|"]
     for n, r in res["novel_signals"].items():
-        if n == "early_momentum":
+        if n in ("early_momentum", "watch_ratio"):
             continue
         L.append(f"| {n} | {r['n_with']} | {fmt(r['hit_rate_with'])} / {fmt(r['hit_rate_without'])} | {fmt(r['A_univariate_auc'])} [{fmt(r['A_ci'][0])}-{fmt(r['A_ci'][1])}] | "
                  f"{r['A_delta_auc_vs_conventional'][0]:+.3f} [{r['A_delta_auc_vs_conventional'][1][0]:+.3f}, {r['A_delta_auc_vs_conventional'][1][1]:+.3f}] | {r['B_delta_auc']:+.3f} | {'yes' if r['holds'] else 'no'} |")
@@ -229,6 +262,10 @@ def report(res, res_c):
     L.append(f"\nN6 early momentum (Trends, absolute threshold): {em['n_with_trends']} games with data; held-out (2016+) n={em['A_test_n']}, "
              f"AUC {fmt(em['A_univariate_auc'])} [{fmt(em['A_ci'][0])}-{fmt(em['A_ci'][1])}]; all games AUC {fmt(em['all_games_auc'])} "
              f"[{fmt(em['all_ci'][0])}-{fmt(em['all_ci'][1])}]. Holds: {'yes' if em['holds'] else 'no'}.")
+    wr = res["novel_signals"]["watch_ratio"]
+    L.append(f"\nN2b watch ratio (objective YouTube-vs-web proxy, pre-registered in Addendum 1): {wr['n']} games resolvable; held-out (2016+) n={wr['A_test_n']} "
+             f"({wr['A_test_hits']} hits), AUC {fmt(wr['A_univariate_auc'])} [{fmt(wr['A_ci'][0])}-{fmt(wr['A_ci'][1])}]; all games AUC {fmt(wr['all_games_auc'])} "
+             f"[{fmt(wr['all_ci'][0])}-{fmt(wr['all_ci'][1])}]; Spearman with hand-coded spectator {fmt(wr['spearman_vs_coded_spectator'])}. Holds: {'yes' if wr['holds'] else 'no'}.")
     if res_c:
         r = res_c["conventional+context"]
         L += ["", "## Robustness: adding the census Wordle-likes (template-coded clones)", "",

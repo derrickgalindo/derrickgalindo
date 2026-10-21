@@ -1,0 +1,13 @@
+retention_profile,D1,D7,D30,lifetime_active_days_90d,seed_installs,kappa_needed_per_active_day,k_factor_R,cumulative_installs_by_day90_M,growth_rate_per_day,doubling_days
+median_mobile_game,0.22,0.04,0.008,2.26,1000,0.681,1.8,7.6,0.085,8.1
+median_mobile_game,0.22,0.04,0.008,2.26,10000,0.6323,1.67,10.1,0.061,11.4
+median_mobile_game,0.22,0.04,0.008,2.26,100000,0.5767,1.52,14.9,0.037,18.5
+top_quartile_casual,0.32,0.12,0.04,5.41,1000,0.4687,4.29,5.1,0.088,7.9
+top_quartile_casual,0.32,0.12,0.04,5.41,10000,0.4096,3.75,6.3,0.063,11.0
+top_quartile_casual,0.32,0.12,0.04,5.41,100000,0.3409,3.12,8.3,0.04,17.4
+strong_casual_hit,0.45,0.2,0.1,10.56,1000,0.333,7.51,3.7,0.087,8.0
+strong_casual_hit,0.45,0.2,0.1,10.56,10000,0.2761,6.23,4.3,0.062,11.1
+strong_casual_hit,0.45,0.2,0.1,10.56,100000,0.2117,4.77,5.4,0.039,17.9
+daily_habit_ritual (assumption),0.55,0.4,0.28,26.64,1000,0.2064,16.62,2.3,0.086,8.1
+daily_habit_ritual (assumption),0.55,0.4,0.28,26.64,10000,0.1563,12.58,2.5,0.06,11.5
+daily_habit_ritual (assumption),0.55,0.4,0.28,26.64,100000,0.1026,8.27,2.8,0.036,19.5

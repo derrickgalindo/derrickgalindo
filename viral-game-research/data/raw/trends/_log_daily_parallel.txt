@@ -1,0 +1,30 @@
+wordle  124
+wordle NZ 124
+wordle US 124
+wordle GB 124
+wordle AU 124
+wordle CA 124
+wordle_term  124
+wordle_term NZ 124
+wordle_term US 124
+flappybird  151
+flappybird US 151
+flappybird VN 151
+flappybird GB 151
+retry 0 The request failed: Google returned a response with code 429
+amongus  184
+amongus KR 184
+amongus BR 184
+amongus US 184
+amongus MX 184
+growagarden  139
+growagarden US 139
+growagarden PH 139
+suika  184
+suika JP 184
+suika US 184
+infinitecraft  122
+drawsomething  183
+drawsomething US 183
+2048  151
+2048 US 151

@@ -1,0 +1,4176 @@
+{
+ "main": {
+  "n_games": 122,
+  "n_hits": 75,
+  "include_census": false,
+  "split_A": {
+   "n_train": 59,
+   "train_hits": 41,
+   "n_test": 63,
+   "test_hits": 34
+  },
+  "conventional": {
+   "A_auc": 0.28448275862068967,
+   "A_ci": [
+    0.1663140326695194,
+    0.4207336116264686
+   ],
+   "A_checklist_auc": 0.3230223123732251,
+   "A_checklist_ci": [
+    0.1924223098330241,
+    0.45897131825703236
+   ],
+   "B_logo_auc": 0.6655319148936172,
+   "B_ci": [
+    0.5603134888081566,
+    0.7648721050490741
+   ],
+   "C_within_cohort": {
+    "pairs": 252,
+    "hit_ranked_higher": 102,
+    "ties": 114,
+    "accuracy": 0.6309523809523809
+   },
+   "coefs_trained_on_A": {
+    "one_input": 0.158,
+    "short_session": 0.24,
+    "fast_ttff": 0.567,
+    "free_to_play": -0.245,
+    "share_in_product": 0.637,
+    "daily_or_scarcity": 0.132,
+    "friends_graph": -0.09,
+    "invite_needed": -0.249
+   },
+   "checklist_signs": {
+    "one_input": 1,
+    "short_session": 1,
+    "fast_ttff": 1,
+    "free_to_play": -1,
+    "share_in_product": 1,
+    "daily_or_scarcity": 1,
+    "friends_graph": 1,
+    "invite_needed": -1
+   },
+   "verdict": "fails pre-registered bar"
+  },
+  "conventional+context": {
+   "A_auc": 0.3093306288032454,
+   "A_ci": [
+    0.17952446734368777,
+    0.44798719958202715
+   ],
+   "A_checklist_auc": 0.4117647058823529,
+   "A_checklist_ci": [
+    0.27313675669904985,
+    0.5550631313131312
+   ],
+   "B_logo_auc": 0.6469503546099291,
+   "B_ci": [
+    0.5403653100775194,
+    0.7473793182445834
+   ],
+   "C_within_cohort": {
+    "pairs": 252,
+    "hit_ranked_higher": 187,
+    "ties": 19,
+    "accuracy": 0.7797619047619048
+   },
+   "coefs_trained_on_A": {
+    "one_input": 0.169,
+    "short_session": 0.188,
+    "fast_ttff": 0.702,
+    "free_to_play": 0.105,
+    "share_in_product": 0.603,
+    "daily_or_scarcity": 0.188,
+    "friends_graph": -0.2,
+    "invite_needed": -0.234,
+    "has_audience": 0.155,
+    "ip_licensed": 0.575,
+    "paid_ua": 0.11,
+    "new_channel": 0.408,
+    "novel": 0.592
+   },
+   "checklist_signs": {
+    "one_input": 1,
+    "short_session": 1,
+    "fast_ttff": 1,
+    "free_to_play": -1,
+    "share_in_product": 1,
+    "daily_or_scarcity": 1,
+    "friends_graph": 1,
+    "invite_needed": -1,
+    "has_audience": 1,
+    "ip_licensed": 1,
+    "paid_ua": 1,
+    "new_channel": 1,
+    "novel": 1
+   },
+   "verdict": "fails pre-registered bar"
+  },
+  "context_only": {
+   "A_auc": 0.5567951318458417,
+   "A_ci": [
+    0.414589089257268,
+    0.6916941123091704
+   ],
+   "A_checklist_auc": 0.6247464503042597,
+   "A_checklist_ci": [
+    0.4989732773987338,
+    0.7596475659229208
+   ],
+   "B_logo_auc": 0.5990070921985815,
+   "B_ci": [
+    0.48454138603332153,
+    0.6984769192644245
+   ],
+   "C_within_cohort": {
+    "pairs": 252,
+    "hit_ranked_higher": 159,
+    "ties": 45,
+    "accuracy": 0.7202380952380952
+   },
+   "coefs_trained_on_A": {
+    "has_audience": 0.189,
+    "ip_licensed": 0.559,
+    "paid_ua": 0.181,
+    "new_channel": 0.464,
+    "novel": 0.37
+   },
+   "checklist_signs": {
+    "has_audience": 1,
+    "ip_licensed": 1,
+    "paid_ua": 1,
+    "new_channel": 1,
+    "novel": 1
+   },
+   "verdict": "fails pre-registered bar"
+  },
+  "full(conv+context+novel)": {
+   "A_auc": 0.31845841784989853,
+   "A_ci": [
+    0.18294227290170495,
+    0.454653705737375
+   ],
+   "A_checklist_auc": 0.3478701825557809,
+   "A_checklist_ci": [
+    0.21259609988776657,
+    0.4933141219450743
+   ],
+   "B_logo_auc": 0.7124822695035461,
+   "B_ci": [
+    0.6176729684788895,
+    0.8075018299549549
+   ],
+   "C_within_cohort": {
+    "pairs": 252,
+    "hit_ranked_higher": 194,
+    "ties": 7,
+    "accuracy": 0.7837301587301587
+   },
+   "coefs_trained_on_A": {
+    "one_input": 0.151,
+    "short_session": 0.232,
+    "fast_ttff": 0.703,
+    "free_to_play": 0.162,
+    "share_in_product": 0.546,
+    "daily_or_scarcity": 0.168,
+    "friends_graph": -0.214,
+    "invite_needed": -0.235,
+    "has_audience": 0.143,
+    "ip_licensed": 0.581,
+    "paid_ua": 0.114,
+    "new_channel": 0.4,
+    "novel": 0.6,
+    "rules_preknown": 0.031,
+    "spectator_high": 0.323,
+    "failure_comedy": -0.232,
+    "emergent_output": 0.03,
+    "artifact_curiosity": 0.0
+   },
+   "checklist_signs": {
+    "one_input": 1,
+    "short_session": 1,
+    "fast_ttff": 1,
+    "free_to_play": -1,
+    "share_in_product": 1,
+    "daily_or_scarcity": 1,
+    "friends_graph": 1,
+    "invite_needed": -1,
+    "has_audience": 1,
+    "ip_licensed": 1,
+    "paid_ua": 1,
+    "new_channel": 1,
+    "novel": 1,
+    "rules_preknown": 1,
+    "spectator_high": 1,
+    "failure_comedy": -1,
+    "emergent_output": -1,
+    "artifact_curiosity": 0
+   },
+   "verdict": "fails pre-registered bar"
+  },
+  "A_without_daily_word": {
+   "conventional": {
+    "auc": 0.46266233766233766,
+    "ci": [
+     0.28620689655172415,
+     0.649699074074074
+    ],
+    "n": 39,
+    "hits": 28
+   },
+   "conventional+context": {
+    "auc": 0.3798701298701299,
+    "ci": [
+     0.20831018518518518,
+     0.5656580086580086
+    ],
+    "n": 39,
+    "hits": 28
+   },
+   "context_only": {
+    "auc": 0.39935064935064934,
+    "ci": [
+     0.1852627840909091,
+     0.6173611111111107
+    ],
+    "n": 39,
+    "hits": 28
+   },
+   "full(conv+context+novel)": {
+    "auc": 0.4155844155844156,
+    "ci": [
+     0.23333333333333334,
+     0.6071494708994708
+    ],
+    "n": 39,
+    "hits": 28
+   }
+  },
+  "A_false_positives": [
+   {
+    "game_id": "costcodle",
+    "name": "Costcodle",
+    "year": 2024,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.949
+   },
+   {
+    "game_id": "loldle",
+    "name": "LoLdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.949
+   },
+   {
+    "game_id": "worldle",
+    "name": "Worldle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "travle",
+    "name": "Travle",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "contexto",
+    "name": "Contexto",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "semantle",
+    "name": "Semantle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.793
+   },
+   {
+    "game_id": "pips",
+    "name": "NYT Pips",
+    "year": 2025,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.711
+   },
+   {
+    "game_id": "immaculategrid",
+    "name": "Immaculate Grid",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.68
+   },
+   {
+    "game_id": "nerdle",
+    "name": "Nerdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "dordle",
+    "name": "Dordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "bandle",
+    "name": "Bandle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "globle",
+    "name": "Globle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "lewdle",
+    "name": "Lewdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "waffle",
+    "name": "Waffle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.643
+   },
+   {
+    "game_id": "absurdle",
+    "name": "Absurdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.636
+   },
+   {
+    "game_id": "jurassicworldalive",
+    "name": "Jurassic World Alive",
+    "year": 2018,
+    "cohort": "location",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.566
+   },
+   {
+    "game_id": "quordle",
+    "name": "Quordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.52
+   },
+   {
+    "game_id": "octordle",
+    "name": "Octordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.52
+   },
+   {
+    "game_id": "universalpaperclips",
+    "name": "Universal Paperclips",
+    "year": 2017,
+    "cohort": "web_toy",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.516
+   }
+  ],
+  "A_false_negatives": [
+   {
+    "game_id": "goosegooseduck",
+    "name": "Goose Goose Duck",
+    "year": 2021,
+    "cohort": "social_deduction",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.008
+   },
+   {
+    "game_id": "deadrails",
+    "name": "Dead Rails",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "99nights",
+    "name": "99 Nights in the Forest",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "doors",
+    "name": "Doors",
+    "year": 2022,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "stumbleguys",
+    "name": "Stumble Guys",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.024
+   },
+   {
+    "game_id": "amongus",
+    "name": "Among Us",
+    "year": 2018,
+    "cohort": "social_deduction",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.027
+   },
+   {
+    "game_id": "skribbl",
+    "name": "skribbl.io",
+    "year": 2017,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.028
+   },
+   {
+    "game_id": "dresstoimpress",
+    "name": "Dress to Impress",
+    "year": 2023,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.032
+   },
+   {
+    "game_id": "fisch",
+    "name": "Fisch",
+    "year": 2024,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.048
+   },
+   {
+    "game_id": "fallguys",
+    "name": "Fall Guys",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.049
+   },
+   {
+    "game_id": "growagarden",
+    "name": "Grow a Garden",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.064
+   },
+   {
+    "game_id": "diepio",
+    "name": "Diep.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.075
+   },
+   {
+    "game_id": "garticphone",
+    "name": "Gartic Phone",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.122
+   },
+   {
+    "game_id": "stealabrainrot",
+    "name": "Steal a Brainrot",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.152
+   },
+   {
+    "game_id": "bitlife",
+    "name": "BitLife",
+    "year": 2018,
+    "cohort": "sim",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.155
+   },
+   {
+    "game_id": "suika",
+    "name": "Suika Game",
+    "year": 2021,
+    "cohort": "merge",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.226
+   },
+   {
+    "game_id": "hqtrivia",
+    "name": "HQ Trivia",
+    "year": 2017,
+    "cohort": "live_social",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.268
+   },
+   {
+    "game_id": "slitherio",
+    "name": "Slither.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.277
+   },
+   {
+    "game_id": "adoptme",
+    "name": "Adopt Me!",
+    "year": 2017,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.303
+   },
+   {
+    "game_id": "paperio",
+    "name": "Paper.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "blockblast",
+    "name": "Block Blast",
+    "year": 2023,
+    "cohort": "match3",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "flappydunk",
+    "name": "Flappy Dunk",
+    "year": 2017,
+    "cohort": "one_tap",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.402
+   }
+  ],
+  "A_ranked_test": [
+   {
+    "game_id": "loldle",
+    "name": "LoLdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.949
+   },
+   {
+    "game_id": "costcodle",
+    "name": "Costcodle",
+    "year": 2024,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.949
+   },
+   {
+    "game_id": "connections",
+    "name": "NYT Connections",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.901
+   },
+   {
+    "game_id": "strands",
+    "name": "NYT Strands",
+    "year": 2024,
+    "cohort": "daily_word",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.901
+   },
+   {
+    "game_id": "contexto",
+    "name": "Contexto",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "worldle",
+    "name": "Worldle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "wordle",
+    "name": "Wordle",
+    "year": 2021,
+    "cohort": "daily_word",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.869
+   },
+   {
+    "game_id": "travle",
+    "name": "Travle",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "heardle",
+    "name": "Heardle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.869
+   },
+   {
+    "game_id": "queens",
+    "name": "LinkedIn Queens",
+    "year": 2024,
+    "cohort": "daily_word",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.858
+   },
+   {
+    "game_id": "semantle",
+    "name": "Semantle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.793
+   },
+   {
+    "game_id": "pips",
+    "name": "NYT Pips",
+    "year": 2025,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.711
+   },
+   {
+    "game_id": "pokemongo",
+    "name": "Pokemon GO",
+    "year": 2016,
+    "cohort": "location",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.711
+   },
+   {
+    "game_id": "helixjump",
+    "name": "Helix Jump",
+    "year": 2018,
+    "cohort": "one_tap",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.704
+   },
+   {
+    "game_id": "stack",
+    "name": "Stack (Ketchapp)",
+    "year": 2016,
+    "cohort": "one_tap",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.704
+   },
+   {
+    "game_id": "holeio",
+    "name": "Hole.io",
+    "year": 2018,
+    "cohort": "io",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.704
+   },
+   {
+    "game_id": "immaculategrid",
+    "name": "Immaculate Grid",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.68
+   },
+   {
+    "game_id": "dordle",
+    "name": "Dordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "bandle",
+    "name": "Bandle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "globle",
+    "name": "Globle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "nerdle",
+    "name": "Nerdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "lewdle",
+    "name": "Lewdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "waffle",
+    "name": "Waffle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.643
+   },
+   {
+    "game_id": "absurdle",
+    "name": "Absurdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.636
+   },
+   {
+    "game_id": "jurassicworldalive",
+    "name": "Jurassic World Alive",
+    "year": 2018,
+    "cohort": "location",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.566
+   },
+   {
+    "game_id": "spellingbee",
+    "name": "NYT Spelling Bee",
+    "year": 2018,
+    "cohort": "daily_word",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.544
+   },
+   {
+    "game_id": "quordle",
+    "name": "Quordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.52
+   },
+   {
+    "game_id": "octordle",
+    "name": "Octordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.52
+   },
+   {
+    "game_id": "passwordgame",
+    "name": "The Password Game",
+    "year": 2023,
+    "cohort": "web_toy",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.516
+   },
+   {
+    "game_id": "infinitecraft",
+    "name": "Infinite Craft",
+    "year": 2024,
+    "cohort": "web_toy",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.516
+   },
+   {
+    "game_id": "universalpaperclips",
+    "name": "Universal Paperclips",
+    "year": 2017,
+    "cohort": "web_toy",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.516
+   },
+   {
+    "game_id": "redactle",
+    "name": "Redactle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.473
+   },
+   {
+    "game_id": "wizardsunite",
+    "name": "Harry Potter: Wizards Unite",
+    "year": 2019,
+    "cohort": "location",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.471
+   },
+   {
+    "game_id": "ghostbustersworld",
+    "name": "Ghostbusters World",
+    "year": 2019,
+    "cohort": "location",
+    "outcome_tier": 0,
+    "hit": 0,
+    "score": 0.409
+   },
+   {
+    "game_id": "paperio",
+    "name": "Paper.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "flappydunk",
+    "name": "Flappy Dunk",
+    "year": 2017,
+    "cohort": "one_tap",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "blockblast",
+    "name": "Block Blast",
+    "year": 2023,
+    "cohort": "match3",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "adoptme",
+    "name": "Adopt Me!",
+    "year": 2017,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.303
+   },
+   {
+    "game_id": "wingsio",
+    "name": "Wings.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 0,
+    "hit": 0,
+    "score": 0.277
+   },
+   {
+    "game_id": "slitherio",
+    "name": "Slither.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.277
+   },
+   {
+    "game_id": "mopeio",
+    "name": "Mope.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.277
+   },
+   {
+    "game_id": "survivio",
+    "name": "Surviv.io",
+    "year": 2017,
+    "cohort": "io",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.269
+   },
+   {
+    "game_id": "hqtrivia",
+    "name": "HQ Trivia",
+    "year": 2017,
+    "cohort": "live_social",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.268
+   },
+   {
+    "game_id": "suika",
+    "name": "Suika Game",
+    "year": 2021,
+    "cohort": "merge",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.226
+   },
+   {
+    "game_id": "krunker",
+    "name": "Krunker",
+    "year": 2018,
+    "cohort": "io",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.175
+   },
+   {
+    "game_id": "minecraftearth",
+    "name": "Minecraft Earth",
+    "year": 2019,
+    "cohort": "location",
+    "outcome_tier": 0,
+    "hit": 0,
+    "score": 0.158
+   },
+   {
+    "game_id": "bitlife",
+    "name": "BitLife",
+    "year": 2018,
+    "cohort": "sim",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.155
+   },
+   {
+    "game_id": "stealabrainrot",
+    "name": "Steal a Brainrot",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.152
+   },
+   {
+    "game_id": "garticphone",
+    "name": "Gartic Phone",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.122
+   },
+   {
+    "game_id": "cashshow",
+    "name": "Cash Show",
+    "year": 2017,
+    "cohort": "live_social",
+    "outcome_tier": 0,
+    "hit": 0,
+    "score": 0.094
+   },
+   {
+    "game_id": "diepio",
+    "name": "Diep.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.075
+   },
+   {
+    "game_id": "growagarden",
+    "name": "Grow a Garden",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.064
+   },
+   {
+    "game_id": "fallguys",
+    "name": "Fall Guys",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.049
+   },
+   {
+    "game_id": "fisch",
+    "name": "Fisch",
+    "year": 2024,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.048
+   },
+   {
+    "game_id": "dresstoimpress",
+    "name": "Dress to Impress",
+    "year": 2023,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.032
+   },
+   {
+    "game_id": "skribbl",
+    "name": "skribbl.io",
+    "year": 2017,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.028
+   },
+   {
+    "game_id": "projectwinter",
+    "name": "Project Winter",
+    "year": 2019,
+    "cohort": "social_deduction",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.028
+   },
+   {
+    "game_id": "amongus",
+    "name": "Among Us",
+    "year": 2018,
+    "cohort": "social_deduction",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.027
+   },
+   {
+    "game_id": "stumbleguys",
+    "name": "Stumble Guys",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.024
+   },
+   {
+    "game_id": "doors",
+    "name": "Doors",
+    "year": 2022,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "deadrails",
+    "name": "Dead Rails",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "99nights",
+    "name": "99 Nights in the Forest",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "goosegooseduck",
+    "name": "Goose Goose Duck",
+    "year": 2021,
+    "cohort": "social_deduction",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.008
+   }
+  ],
+  "B_worst_misses": {
+   "hits_scored_lowest": [
+    {
+     "game_id": "stumbleguys",
+     "name": "Stumble Guys",
+     "cohort": "party",
+     "hit": 1,
+     "score": 0.118
+    },
+    {
+     "game_id": "quizup",
+     "name": "QuizUp",
+     "cohort": "async_social",
+     "hit": 1,
+     "score": 0.137
+    },
+    {
+     "game_id": "skribbl",
+     "name": "skribbl.io",
+     "cohort": "io",
+     "hit": 1,
+     "score": 0.167
+    },
+    {
+     "game_id": "goosegooseduck",
+     "name": "Goose Goose Duck",
+     "cohort": "social_deduction",
+     "hit": 1,
+     "score": 0.179
+    },
+    {
+     "game_id": "fisch",
+     "name": "Fisch",
+     "cohort": "roblox",
+     "hit": 1,
+     "score": 0.269
+    },
+    {
+     "game_id": "fallguys",
+     "name": "Fall Guys",
+     "cohort": "party",
+     "hit": 1,
+     "score": 0.28
+    },
+    {
+     "game_id": "suika",
+     "name": "Suika Game",
+     "cohort": "merge",
+     "hit": 1,
+     "score": 0.297
+    },
+    {
+     "game_id": "2048",
+     "name": "2048",
+     "cohort": "merge",
+     "hit": 1,
+     "score": 0.347
+    }
+   ],
+   "non_hits_scored_highest": [
+    {
+     "game_id": "chesswithfriends",
+     "name": "Chess with Friends",
+     "cohort": "async_social",
+     "hit": 0,
+     "score": 0.942
+    },
+    {
+     "game_id": "hangingwithfriends",
+     "name": "Hanging with Friends",
+     "cohort": "async_social",
+     "hit": 0,
+     "score": 0.876
+    },
+    {
+     "game_id": "drawsomething2",
+     "name": "Draw Something 2",
+     "cohort": "async_social",
+     "hit": 0,
+     "score": 0.876
+    },
+    {
+     "game_id": "lexulous",
+     "name": "Lexulous",
+     "cohort": "async_social",
+     "hit": 0,
+     "score": 0.854
+    },
+    {
+     "game_id": "crushthecastle",
+     "name": "Crush the Castle",
+     "cohort": "physics",
+     "hit": 0,
+     "score": 0.813
+    },
+    {
+     "game_id": "amazingalex",
+     "name": "Amazing Alex",
+     "cohort": "physics",
+     "hit": 0,
+     "score": 0.777
+    },
+    {
+     "game_id": "wizardsunite",
+     "name": "Harry Potter: Wizards Unite",
+     "cohort": "location",
+     "hit": 0,
+     "score": 0.762
+    },
+    {
+     "game_id": "mobwars",
+     "name": "Mob Wars",
+     "cohort": "social_sim",
+     "hit": 0,
+     "score": 0.754
+    }
+   ]
+  },
+  "clone_paradox_identical_conventional_features": [
+   [
+    "async_social",
+    "wordswithfriends",
+    "chesswithfriends"
+   ],
+   [
+    "async_social",
+    "wordswithfriends",
+    "hangingwithfriends"
+   ],
+   [
+    "async_social",
+    "wordswithfriends",
+    "drawsomething2"
+   ],
+   [
+    "async_social",
+    "drawsomething",
+    "chesswithfriends"
+   ],
+   [
+    "async_social",
+    "drawsomething",
+    "hangingwithfriends"
+   ],
+   [
+    "async_social",
+    "drawsomething",
+    "drawsomething2"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "dordle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "worldle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "nerdle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "globle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "contexto"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "lewdle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "loldle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "travle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "costcodle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "bandle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "dordle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "worldle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "nerdle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "globle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "contexto"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "lewdle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "loldle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "travle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "costcodle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "bandle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "dordle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "worldle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "nerdle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "globle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "contexto"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "lewdle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "loldle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "travle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "costcodle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "bandle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "dordle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "worldle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "nerdle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "globle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "contexto"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "lewdle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "loldle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "travle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "costcodle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "bandle"
+   ],
+   [
+    "io",
+    "agario",
+    "mopeio"
+   ],
+   [
+    "io",
+    "agario",
+    "wingsio"
+   ],
+   [
+    "io",
+    "slitherio",
+    "mopeio"
+   ],
+   [
+    "io",
+    "slitherio",
+    "wingsio"
+   ],
+   [
+    "io",
+    "diepio",
+    "krunker"
+   ],
+   [
+    "io",
+    "paperio",
+    "mopeio"
+   ],
+   [
+    "io",
+    "paperio",
+    "wingsio"
+   ],
+   [
+    "io",
+    "holeio",
+    "mopeio"
+   ],
+   [
+    "io",
+    "holeio",
+    "wingsio"
+   ],
+   [
+    "live_social",
+    "hqtrivia",
+    "cashshow"
+   ],
+   [
+    "location",
+    "pokemongo",
+    "ingress"
+   ],
+   [
+    "location",
+    "pokemongo",
+    "wizardsunite"
+   ],
+   [
+    "location",
+    "pokemongo",
+    "ghostbustersworld"
+   ],
+   [
+    "match3",
+    "candycrush",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "farmheroes",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "petrescue",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "bubblewitch",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "diamonddash",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "candycrushsoda",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "cookiejam",
+    "jellysplash"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "mrjump"
+   ],
+   [
+    "physics",
+    "badpiggies",
+    "amazingalex"
+   ],
+   [
+    "social_deduction",
+    "amongus",
+    "townofsalem"
+   ],
+   [
+    "social_deduction",
+    "goosegooseduck",
+    "townofsalem"
+   ],
+   [
+    "social_sim",
+    "farmville",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "farmtown",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "mafiawars",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "cityville",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "petsociety",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "farmville2",
+    "mobwars"
+   ],
+   [
+    "web_toy",
+    "infinitecraft",
+    "universalpaperclips"
+   ],
+   [
+    "web_toy",
+    "littlealchemy",
+    "universalpaperclips"
+   ],
+   [
+    "web_toy",
+    "cookieclicker",
+    "universalpaperclips"
+   ],
+   [
+    "web_toy",
+    "passwordgame",
+    "universalpaperclips"
+   ]
+  ],
+  "novel_signals": {
+   "rules_preknown": {
+    "A_univariate_auc": 0.4548681541582151,
+    "A_ci": [
+     0.3341523857526882,
+     0.5772751196172249
+    ],
+    "A_delta_auc_vs_conventional": [
+     0.005594189567952776,
+     [
+      -0.006060606060606044,
+      0.019140085061137676
+     ]
+    ],
+    "B_delta_auc": 0.00907801418439702,
+    "hit_rate_with": 0.5957446808510638,
+    "hit_rate_without": 0.6266666666666667,
+    "n_with": 47,
+    "holds": false
+   },
+   "spectator_high": {
+    "A_univariate_auc": 0.6982758620689655,
+    "A_ci": [
+     0.5961363636363636,
+     0.7972972972972973
+    ],
+    "A_delta_auc_vs_conventional": [
+     0.043473101803875244,
+     [
+      0.010093050065876163,
+      0.08264065085493659
+     ]
+    ],
+    "B_delta_auc": 0.049645390070921946,
+    "hit_rate_with": 0.8461538461538461,
+    "hit_rate_without": 0.5520833333333334,
+    "n_with": 26,
+    "holds": true
+   },
+   "failure_comedy": {
+    "A_univariate_auc": 0.7545638945233265,
+    "A_ci": [
+     0.6499771805273834,
+     0.8534360580092287
+    ],
+    "A_delta_auc_vs_conventional": [
+     -0.016737987609975555,
+     [
+      -0.04462754884167823,
+      0.0
+     ]
+    ],
+    "B_delta_auc": 0.007092198581560183,
+    "hit_rate_with": 0.74,
+    "hit_rate_without": 0.5277777777777778,
+    "n_with": 50,
+    "holds": false
+   },
+   "emergent_output": {
+    "A_univariate_auc": 0.6125760649087222,
+    "A_ci": [
+     0.5231481481481481,
+     0.7033468559837728
+    ],
+    "A_delta_auc_vs_conventional": [
+     0.002047037474204041,
+     [
+      0.0,
+      0.007099391480730188
+     ]
+    ],
+    "B_delta_auc": 0.009219858156028105,
+    "hit_rate_with": 0.7142857142857143,
+    "hit_rate_without": 0.594059405940594,
+    "n_with": 21,
+    "holds": true
+   },
+   "artifact_curiosity": {
+    "A_univariate_auc": 0.34939148073022314,
+    "A_ci": [
+     0.23927312271062273,
+     0.4642857142857143
+    ],
+    "A_delta_auc_vs_conventional": [
+     0.0,
+     [
+      0.0,
+      0.0
+     ]
+    ],
+    "B_delta_auc": -0.003262411347517813,
+    "hit_rate_with": 0.2777777777777778,
+    "hit_rate_without": 0.6730769230769231,
+    "n_with": 18,
+    "holds": false
+   },
+   "early_momentum": {
+    "n_with_trends": 52,
+    "A_test_n": 22,
+    "A_univariate_auc": 0.5625,
+    "A_ci": [
+     0.2857142857142857,
+     0.8182034632034632
+    ],
+    "all_games_auc": 0.628125,
+    "all_ci": [
+     0.46718487394957986,
+     0.7876072992915305
+    ],
+    "holds": false
+   },
+   "watch_ratio": {
+    "n": 12,
+    "A_test_n": 10,
+    "A_test_hits": 2,
+    "A_univariate_auc": 0.0625,
+    "A_ci": [
+     0.0,
+     0.3333333333333333
+    ],
+    "all_games_auc": 0.33333333333333326,
+    "all_ci": [
+     0.0,
+     0.9090909090909091
+    ],
+    "spearman_vs_coded_spectator": 0.639692501115462,
+    "holds": false,
+    "games": [
+     {
+      "game_id": "splashyfish",
+      "hit": 0,
+      "watch_ratio": 14.294,
+      "spectator": 1
+     },
+     {
+      "game_id": "flappybird",
+      "hit": 1,
+      "watch_ratio": 8.817,
+      "spectator": 2
+     },
+     {
+      "game_id": "bandle",
+      "hit": 0,
+      "watch_ratio": 7.775,
+      "spectator": 0
+     },
+     {
+      "game_id": "contexto",
+      "hit": 0,
+      "watch_ratio": 2.319,
+      "spectator": 0
+     },
+     {
+      "game_id": "travle",
+      "hit": 0,
+      "watch_ratio": 1.357,
+      "spectator": 0
+     },
+     {
+      "game_id": "waffle",
+      "hit": 0,
+      "watch_ratio": 0.431,
+      "spectator": 0
+     },
+     {
+      "game_id": "loldle",
+      "hit": 0,
+      "watch_ratio": 0.352,
+      "spectator": 0
+     },
+     {
+      "game_id": "globle",
+      "hit": 0,
+      "watch_ratio": 0.17,
+      "spectator": 0
+     },
+     {
+      "game_id": "nerdle",
+      "hit": 0,
+      "watch_ratio": 0.105,
+      "spectator": 0
+     },
+     {
+      "game_id": "wordle",
+      "hit": 1,
+      "watch_ratio": 0.098,
+      "spectator": 0
+     },
+     {
+      "game_id": "worldle",
+      "hit": 0,
+      "watch_ratio": 0.066,
+      "spectator": 0
+     },
+     {
+      "game_id": "connections",
+      "hit": 1,
+      "watch_ratio": 0.062,
+      "spectator": 0
+     }
+    ]
+   }
+  }
+ },
+ "with_census": {
+  "n_games": 122,
+  "n_hits": 75,
+  "include_census": true,
+  "split_A": {
+   "n_train": 59,
+   "train_hits": 41,
+   "n_test": 63,
+   "test_hits": 34
+  },
+  "conventional": {
+   "A_auc": 0.28448275862068967,
+   "A_ci": [
+    0.16564821603128055,
+    0.42326108305274956
+   ],
+   "A_checklist_auc": 0.3230223123732251,
+   "A_checklist_ci": [
+    0.19401145602365114,
+    0.4600025252525253
+   ],
+   "B_logo_auc": 0.6655319148936172,
+   "B_ci": [
+    0.5666778720210909,
+    0.7657375458537806
+   ],
+   "C_within_cohort": {
+    "pairs": 252,
+    "hit_ranked_higher": 102,
+    "ties": 114,
+    "accuracy": 0.6309523809523809
+   },
+   "coefs_trained_on_A": {
+    "one_input": 0.158,
+    "short_session": 0.24,
+    "fast_ttff": 0.567,
+    "free_to_play": -0.245,
+    "share_in_product": 0.637,
+    "daily_or_scarcity": 0.132,
+    "friends_graph": -0.09,
+    "invite_needed": -0.249
+   },
+   "checklist_signs": {
+    "one_input": 1,
+    "short_session": 1,
+    "fast_ttff": 1,
+    "free_to_play": -1,
+    "share_in_product": 1,
+    "daily_or_scarcity": 1,
+    "friends_graph": 1,
+    "invite_needed": -1
+   },
+   "verdict": "fails pre-registered bar"
+  },
+  "conventional+context": {
+   "A_auc": 0.3093306288032454,
+   "A_ci": [
+    0.17901086182336182,
+    0.44829581736909313
+   ],
+   "A_checklist_auc": 0.4117647058823529,
+   "A_checklist_ci": [
+    0.27563775510204086,
+    0.5517494929006084
+   ],
+   "B_logo_auc": 0.6469503546099291,
+   "B_ci": [
+    0.5409979777796089,
+    0.7539505442942943
+   ],
+   "C_within_cohort": {
+    "pairs": 252,
+    "hit_ranked_higher": 187,
+    "ties": 19,
+    "accuracy": 0.7797619047619048
+   },
+   "coefs_trained_on_A": {
+    "one_input": 0.169,
+    "short_session": 0.188,
+    "fast_ttff": 0.702,
+    "free_to_play": 0.105,
+    "share_in_product": 0.603,
+    "daily_or_scarcity": 0.188,
+    "friends_graph": -0.2,
+    "invite_needed": -0.234,
+    "has_audience": 0.155,
+    "ip_licensed": 0.575,
+    "paid_ua": 0.11,
+    "new_channel": 0.408,
+    "novel": 0.592
+   },
+   "checklist_signs": {
+    "one_input": 1,
+    "short_session": 1,
+    "fast_ttff": 1,
+    "free_to_play": -1,
+    "share_in_product": 1,
+    "daily_or_scarcity": 1,
+    "friends_graph": 1,
+    "invite_needed": -1,
+    "has_audience": 1,
+    "ip_licensed": 1,
+    "paid_ua": 1,
+    "new_channel": 1,
+    "novel": 1
+   },
+   "verdict": "fails pre-registered bar"
+  },
+  "context_only": {
+   "A_auc": 0.5567951318458417,
+   "A_ci": [
+    0.4155982905982906,
+    0.7016435745599685
+   ],
+   "A_checklist_auc": 0.6247464503042597,
+   "A_checklist_ci": [
+    0.49334723134689257,
+    0.7505184117684116
+   ],
+   "B_logo_auc": 0.5990070921985815,
+   "B_ci": [
+    0.49635559112409966,
+    0.6995137299771167
+   ],
+   "C_within_cohort": {
+    "pairs": 252,
+    "hit_ranked_higher": 159,
+    "ties": 45,
+    "accuracy": 0.7202380952380952
+   },
+   "coefs_trained_on_A": {
+    "has_audience": 0.189,
+    "ip_licensed": 0.559,
+    "paid_ua": 0.181,
+    "new_channel": 0.464,
+    "novel": 0.37
+   },
+   "checklist_signs": {
+    "has_audience": 1,
+    "ip_licensed": 1,
+    "paid_ua": 1,
+    "new_channel": 1,
+    "novel": 1
+   },
+   "verdict": "fails pre-registered bar"
+  },
+  "full(conv+context+novel)": {
+   "A_auc": 0.31845841784989853,
+   "A_ci": [
+    0.19354335725303468,
+    0.4535353535353535
+   ],
+   "A_checklist_auc": 0.3478701825557809,
+   "A_checklist_ci": [
+    0.2137683435443143,
+    0.485797514619883
+   ],
+   "B_logo_auc": 0.7124822695035461,
+   "B_ci": [
+    0.6102960731492236,
+    0.80723325379095
+   ],
+   "C_within_cohort": {
+    "pairs": 252,
+    "hit_ranked_higher": 194,
+    "ties": 7,
+    "accuracy": 0.7837301587301587
+   },
+   "coefs_trained_on_A": {
+    "one_input": 0.151,
+    "short_session": 0.232,
+    "fast_ttff": 0.703,
+    "free_to_play": 0.162,
+    "share_in_product": 0.546,
+    "daily_or_scarcity": 0.168,
+    "friends_graph": -0.214,
+    "invite_needed": -0.235,
+    "has_audience": 0.143,
+    "ip_licensed": 0.581,
+    "paid_ua": 0.114,
+    "new_channel": 0.4,
+    "novel": 0.6,
+    "rules_preknown": 0.031,
+    "spectator_high": 0.323,
+    "failure_comedy": -0.232,
+    "emergent_output": 0.03,
+    "artifact_curiosity": 0.0
+   },
+   "checklist_signs": {
+    "one_input": 1,
+    "short_session": 1,
+    "fast_ttff": 1,
+    "free_to_play": -1,
+    "share_in_product": 1,
+    "daily_or_scarcity": 1,
+    "friends_graph": 1,
+    "invite_needed": -1,
+    "has_audience": 1,
+    "ip_licensed": 1,
+    "paid_ua": 1,
+    "new_channel": 1,
+    "novel": 1,
+    "rules_preknown": 1,
+    "spectator_high": 1,
+    "failure_comedy": -1,
+    "emergent_output": -1,
+    "artifact_curiosity": 0
+   },
+   "verdict": "fails pre-registered bar"
+  },
+  "A_without_daily_word": {
+   "conventional": {
+    "auc": 0.46266233766233766,
+    "ci": [
+     0.2808137926887927,
+     0.6590951178451178
+    ],
+    "n": 39,
+    "hits": 28
+   },
+   "conventional+context": {
+    "auc": 0.3798701298701299,
+    "ci": [
+     0.2100024975024975,
+     0.5842536878881986
+    ],
+    "n": 39,
+    "hits": 28
+   },
+   "context_only": {
+    "auc": 0.39935064935064934,
+    "ci": [
+     0.17754469987228608,
+     0.6345277274557165
+    ],
+    "n": 39,
+    "hits": 28
+   },
+   "full(conv+context+novel)": {
+    "auc": 0.4155844155844156,
+    "ci": [
+     0.23765432098765432,
+     0.5941558441558441
+    ],
+    "n": 39,
+    "hits": 28
+   }
+  },
+  "A_false_positives": [
+   {
+    "game_id": "costcodle",
+    "name": "Costcodle",
+    "year": 2024,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.949
+   },
+   {
+    "game_id": "loldle",
+    "name": "LoLdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.949
+   },
+   {
+    "game_id": "worldle",
+    "name": "Worldle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "travle",
+    "name": "Travle",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "contexto",
+    "name": "Contexto",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "semantle",
+    "name": "Semantle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.793
+   },
+   {
+    "game_id": "pips",
+    "name": "NYT Pips",
+    "year": 2025,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.711
+   },
+   {
+    "game_id": "immaculategrid",
+    "name": "Immaculate Grid",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.68
+   },
+   {
+    "game_id": "nerdle",
+    "name": "Nerdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "dordle",
+    "name": "Dordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "bandle",
+    "name": "Bandle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "globle",
+    "name": "Globle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "lewdle",
+    "name": "Lewdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "waffle",
+    "name": "Waffle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.643
+   },
+   {
+    "game_id": "absurdle",
+    "name": "Absurdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.636
+   },
+   {
+    "game_id": "jurassicworldalive",
+    "name": "Jurassic World Alive",
+    "year": 2018,
+    "cohort": "location",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.566
+   },
+   {
+    "game_id": "quordle",
+    "name": "Quordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.52
+   },
+   {
+    "game_id": "octordle",
+    "name": "Octordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.52
+   },
+   {
+    "game_id": "universalpaperclips",
+    "name": "Universal Paperclips",
+    "year": 2017,
+    "cohort": "web_toy",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.516
+   }
+  ],
+  "A_false_negatives": [
+   {
+    "game_id": "goosegooseduck",
+    "name": "Goose Goose Duck",
+    "year": 2021,
+    "cohort": "social_deduction",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.008
+   },
+   {
+    "game_id": "deadrails",
+    "name": "Dead Rails",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "99nights",
+    "name": "99 Nights in the Forest",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "doors",
+    "name": "Doors",
+    "year": 2022,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "stumbleguys",
+    "name": "Stumble Guys",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.024
+   },
+   {
+    "game_id": "amongus",
+    "name": "Among Us",
+    "year": 2018,
+    "cohort": "social_deduction",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.027
+   },
+   {
+    "game_id": "skribbl",
+    "name": "skribbl.io",
+    "year": 2017,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.028
+   },
+   {
+    "game_id": "dresstoimpress",
+    "name": "Dress to Impress",
+    "year": 2023,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.032
+   },
+   {
+    "game_id": "fisch",
+    "name": "Fisch",
+    "year": 2024,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.048
+   },
+   {
+    "game_id": "fallguys",
+    "name": "Fall Guys",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.049
+   },
+   {
+    "game_id": "growagarden",
+    "name": "Grow a Garden",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.064
+   },
+   {
+    "game_id": "diepio",
+    "name": "Diep.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.075
+   },
+   {
+    "game_id": "garticphone",
+    "name": "Gartic Phone",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.122
+   },
+   {
+    "game_id": "stealabrainrot",
+    "name": "Steal a Brainrot",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.152
+   },
+   {
+    "game_id": "bitlife",
+    "name": "BitLife",
+    "year": 2018,
+    "cohort": "sim",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.155
+   },
+   {
+    "game_id": "suika",
+    "name": "Suika Game",
+    "year": 2021,
+    "cohort": "merge",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.226
+   },
+   {
+    "game_id": "hqtrivia",
+    "name": "HQ Trivia",
+    "year": 2017,
+    "cohort": "live_social",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.268
+   },
+   {
+    "game_id": "slitherio",
+    "name": "Slither.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.277
+   },
+   {
+    "game_id": "adoptme",
+    "name": "Adopt Me!",
+    "year": 2017,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.303
+   },
+   {
+    "game_id": "paperio",
+    "name": "Paper.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "blockblast",
+    "name": "Block Blast",
+    "year": 2023,
+    "cohort": "match3",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "flappydunk",
+    "name": "Flappy Dunk",
+    "year": 2017,
+    "cohort": "one_tap",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.402
+   }
+  ],
+  "A_ranked_test": [
+   {
+    "game_id": "loldle",
+    "name": "LoLdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.949
+   },
+   {
+    "game_id": "costcodle",
+    "name": "Costcodle",
+    "year": 2024,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.949
+   },
+   {
+    "game_id": "connections",
+    "name": "NYT Connections",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.901
+   },
+   {
+    "game_id": "strands",
+    "name": "NYT Strands",
+    "year": 2024,
+    "cohort": "daily_word",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.901
+   },
+   {
+    "game_id": "contexto",
+    "name": "Contexto",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "worldle",
+    "name": "Worldle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "wordle",
+    "name": "Wordle",
+    "year": 2021,
+    "cohort": "daily_word",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.869
+   },
+   {
+    "game_id": "travle",
+    "name": "Travle",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.869
+   },
+   {
+    "game_id": "heardle",
+    "name": "Heardle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.869
+   },
+   {
+    "game_id": "queens",
+    "name": "LinkedIn Queens",
+    "year": 2024,
+    "cohort": "daily_word",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.858
+   },
+   {
+    "game_id": "semantle",
+    "name": "Semantle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.793
+   },
+   {
+    "game_id": "pips",
+    "name": "NYT Pips",
+    "year": 2025,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.711
+   },
+   {
+    "game_id": "pokemongo",
+    "name": "Pokemon GO",
+    "year": 2016,
+    "cohort": "location",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.711
+   },
+   {
+    "game_id": "helixjump",
+    "name": "Helix Jump",
+    "year": 2018,
+    "cohort": "one_tap",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.704
+   },
+   {
+    "game_id": "stack",
+    "name": "Stack (Ketchapp)",
+    "year": 2016,
+    "cohort": "one_tap",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.704
+   },
+   {
+    "game_id": "holeio",
+    "name": "Hole.io",
+    "year": 2018,
+    "cohort": "io",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.704
+   },
+   {
+    "game_id": "immaculategrid",
+    "name": "Immaculate Grid",
+    "year": 2023,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.68
+   },
+   {
+    "game_id": "dordle",
+    "name": "Dordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "bandle",
+    "name": "Bandle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "globle",
+    "name": "Globle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "nerdle",
+    "name": "Nerdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "lewdle",
+    "name": "Lewdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.653
+   },
+   {
+    "game_id": "waffle",
+    "name": "Waffle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.643
+   },
+   {
+    "game_id": "absurdle",
+    "name": "Absurdle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.636
+   },
+   {
+    "game_id": "jurassicworldalive",
+    "name": "Jurassic World Alive",
+    "year": 2018,
+    "cohort": "location",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.566
+   },
+   {
+    "game_id": "spellingbee",
+    "name": "NYT Spelling Bee",
+    "year": 2018,
+    "cohort": "daily_word",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.544
+   },
+   {
+    "game_id": "quordle",
+    "name": "Quordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.52
+   },
+   {
+    "game_id": "octordle",
+    "name": "Octordle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.52
+   },
+   {
+    "game_id": "passwordgame",
+    "name": "The Password Game",
+    "year": 2023,
+    "cohort": "web_toy",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.516
+   },
+   {
+    "game_id": "infinitecraft",
+    "name": "Infinite Craft",
+    "year": 2024,
+    "cohort": "web_toy",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.516
+   },
+   {
+    "game_id": "universalpaperclips",
+    "name": "Universal Paperclips",
+    "year": 2017,
+    "cohort": "web_toy",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.516
+   },
+   {
+    "game_id": "redactle",
+    "name": "Redactle",
+    "year": 2022,
+    "cohort": "daily_word",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.473
+   },
+   {
+    "game_id": "wizardsunite",
+    "name": "Harry Potter: Wizards Unite",
+    "year": 2019,
+    "cohort": "location",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.471
+   },
+   {
+    "game_id": "ghostbustersworld",
+    "name": "Ghostbusters World",
+    "year": 2019,
+    "cohort": "location",
+    "outcome_tier": 0,
+    "hit": 0,
+    "score": 0.409
+   },
+   {
+    "game_id": "paperio",
+    "name": "Paper.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "flappydunk",
+    "name": "Flappy Dunk",
+    "year": 2017,
+    "cohort": "one_tap",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "blockblast",
+    "name": "Block Blast",
+    "year": 2023,
+    "cohort": "match3",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.402
+   },
+   {
+    "game_id": "adoptme",
+    "name": "Adopt Me!",
+    "year": 2017,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.303
+   },
+   {
+    "game_id": "wingsio",
+    "name": "Wings.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 0,
+    "hit": 0,
+    "score": 0.277
+   },
+   {
+    "game_id": "slitherio",
+    "name": "Slither.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.277
+   },
+   {
+    "game_id": "mopeio",
+    "name": "Mope.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.277
+   },
+   {
+    "game_id": "survivio",
+    "name": "Surviv.io",
+    "year": 2017,
+    "cohort": "io",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.269
+   },
+   {
+    "game_id": "hqtrivia",
+    "name": "HQ Trivia",
+    "year": 2017,
+    "cohort": "live_social",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.268
+   },
+   {
+    "game_id": "suika",
+    "name": "Suika Game",
+    "year": 2021,
+    "cohort": "merge",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.226
+   },
+   {
+    "game_id": "krunker",
+    "name": "Krunker",
+    "year": 2018,
+    "cohort": "io",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.175
+   },
+   {
+    "game_id": "minecraftearth",
+    "name": "Minecraft Earth",
+    "year": 2019,
+    "cohort": "location",
+    "outcome_tier": 0,
+    "hit": 0,
+    "score": 0.158
+   },
+   {
+    "game_id": "bitlife",
+    "name": "BitLife",
+    "year": 2018,
+    "cohort": "sim",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.155
+   },
+   {
+    "game_id": "stealabrainrot",
+    "name": "Steal a Brainrot",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.152
+   },
+   {
+    "game_id": "garticphone",
+    "name": "Gartic Phone",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.122
+   },
+   {
+    "game_id": "cashshow",
+    "name": "Cash Show",
+    "year": 2017,
+    "cohort": "live_social",
+    "outcome_tier": 0,
+    "hit": 0,
+    "score": 0.094
+   },
+   {
+    "game_id": "diepio",
+    "name": "Diep.io",
+    "year": 2016,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.075
+   },
+   {
+    "game_id": "growagarden",
+    "name": "Grow a Garden",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.064
+   },
+   {
+    "game_id": "fallguys",
+    "name": "Fall Guys",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.049
+   },
+   {
+    "game_id": "fisch",
+    "name": "Fisch",
+    "year": 2024,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.048
+   },
+   {
+    "game_id": "dresstoimpress",
+    "name": "Dress to Impress",
+    "year": 2023,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.032
+   },
+   {
+    "game_id": "skribbl",
+    "name": "skribbl.io",
+    "year": 2017,
+    "cohort": "io",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.028
+   },
+   {
+    "game_id": "projectwinter",
+    "name": "Project Winter",
+    "year": 2019,
+    "cohort": "social_deduction",
+    "outcome_tier": 1,
+    "hit": 0,
+    "score": 0.028
+   },
+   {
+    "game_id": "amongus",
+    "name": "Among Us",
+    "year": 2018,
+    "cohort": "social_deduction",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.027
+   },
+   {
+    "game_id": "stumbleguys",
+    "name": "Stumble Guys",
+    "year": 2020,
+    "cohort": "party",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.024
+   },
+   {
+    "game_id": "doors",
+    "name": "Doors",
+    "year": 2022,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "deadrails",
+    "name": "Dead Rails",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "99nights",
+    "name": "99 Nights in the Forest",
+    "year": 2025,
+    "cohort": "roblox",
+    "outcome_tier": 3,
+    "hit": 1,
+    "score": 0.018
+   },
+   {
+    "game_id": "goosegooseduck",
+    "name": "Goose Goose Duck",
+    "year": 2021,
+    "cohort": "social_deduction",
+    "outcome_tier": 2,
+    "hit": 1,
+    "score": 0.008
+   }
+  ],
+  "B_worst_misses": {
+   "hits_scored_lowest": [
+    {
+     "game_id": "stumbleguys",
+     "name": "Stumble Guys",
+     "cohort": "party",
+     "hit": 1,
+     "score": 0.118
+    },
+    {
+     "game_id": "quizup",
+     "name": "QuizUp",
+     "cohort": "async_social",
+     "hit": 1,
+     "score": 0.137
+    },
+    {
+     "game_id": "skribbl",
+     "name": "skribbl.io",
+     "cohort": "io",
+     "hit": 1,
+     "score": 0.167
+    },
+    {
+     "game_id": "goosegooseduck",
+     "name": "Goose Goose Duck",
+     "cohort": "social_deduction",
+     "hit": 1,
+     "score": 0.179
+    },
+    {
+     "game_id": "fisch",
+     "name": "Fisch",
+     "cohort": "roblox",
+     "hit": 1,
+     "score": 0.269
+    },
+    {
+     "game_id": "fallguys",
+     "name": "Fall Guys",
+     "cohort": "party",
+     "hit": 1,
+     "score": 0.28
+    },
+    {
+     "game_id": "suika",
+     "name": "Suika Game",
+     "cohort": "merge",
+     "hit": 1,
+     "score": 0.297
+    },
+    {
+     "game_id": "2048",
+     "name": "2048",
+     "cohort": "merge",
+     "hit": 1,
+     "score": 0.347
+    }
+   ],
+   "non_hits_scored_highest": [
+    {
+     "game_id": "chesswithfriends",
+     "name": "Chess with Friends",
+     "cohort": "async_social",
+     "hit": 0,
+     "score": 0.942
+    },
+    {
+     "game_id": "hangingwithfriends",
+     "name": "Hanging with Friends",
+     "cohort": "async_social",
+     "hit": 0,
+     "score": 0.876
+    },
+    {
+     "game_id": "drawsomething2",
+     "name": "Draw Something 2",
+     "cohort": "async_social",
+     "hit": 0,
+     "score": 0.876
+    },
+    {
+     "game_id": "lexulous",
+     "name": "Lexulous",
+     "cohort": "async_social",
+     "hit": 0,
+     "score": 0.854
+    },
+    {
+     "game_id": "crushthecastle",
+     "name": "Crush the Castle",
+     "cohort": "physics",
+     "hit": 0,
+     "score": 0.813
+    },
+    {
+     "game_id": "amazingalex",
+     "name": "Amazing Alex",
+     "cohort": "physics",
+     "hit": 0,
+     "score": 0.777
+    },
+    {
+     "game_id": "wizardsunite",
+     "name": "Harry Potter: Wizards Unite",
+     "cohort": "location",
+     "hit": 0,
+     "score": 0.762
+    },
+    {
+     "game_id": "mobwars",
+     "name": "Mob Wars",
+     "cohort": "social_sim",
+     "hit": 0,
+     "score": 0.754
+    }
+   ]
+  },
+  "clone_paradox_identical_conventional_features": [
+   [
+    "async_social",
+    "wordswithfriends",
+    "chesswithfriends"
+   ],
+   [
+    "async_social",
+    "wordswithfriends",
+    "hangingwithfriends"
+   ],
+   [
+    "async_social",
+    "wordswithfriends",
+    "drawsomething2"
+   ],
+   [
+    "async_social",
+    "drawsomething",
+    "chesswithfriends"
+   ],
+   [
+    "async_social",
+    "drawsomething",
+    "hangingwithfriends"
+   ],
+   [
+    "async_social",
+    "drawsomething",
+    "drawsomething2"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "dordle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "worldle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "nerdle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "globle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "contexto"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "lewdle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "loldle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "travle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "costcodle"
+   ],
+   [
+    "daily_word",
+    "wordle",
+    "bandle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "dordle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "worldle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "nerdle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "globle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "contexto"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "lewdle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "loldle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "travle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "costcodle"
+   ],
+   [
+    "daily_word",
+    "heardle",
+    "bandle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "dordle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "worldle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "nerdle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "globle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "contexto"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "lewdle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "loldle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "travle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "costcodle"
+   ],
+   [
+    "daily_word",
+    "connections",
+    "bandle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "dordle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "worldle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "nerdle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "globle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "contexto"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "lewdle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "loldle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "travle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "costcodle"
+   ],
+   [
+    "daily_word",
+    "strands",
+    "bandle"
+   ],
+   [
+    "io",
+    "agario",
+    "mopeio"
+   ],
+   [
+    "io",
+    "agario",
+    "wingsio"
+   ],
+   [
+    "io",
+    "slitherio",
+    "mopeio"
+   ],
+   [
+    "io",
+    "slitherio",
+    "wingsio"
+   ],
+   [
+    "io",
+    "diepio",
+    "krunker"
+   ],
+   [
+    "io",
+    "paperio",
+    "mopeio"
+   ],
+   [
+    "io",
+    "paperio",
+    "wingsio"
+   ],
+   [
+    "io",
+    "holeio",
+    "mopeio"
+   ],
+   [
+    "io",
+    "holeio",
+    "wingsio"
+   ],
+   [
+    "live_social",
+    "hqtrivia",
+    "cashshow"
+   ],
+   [
+    "location",
+    "pokemongo",
+    "ingress"
+   ],
+   [
+    "location",
+    "pokemongo",
+    "wizardsunite"
+   ],
+   [
+    "location",
+    "pokemongo",
+    "ghostbustersworld"
+   ],
+   [
+    "match3",
+    "candycrush",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "farmheroes",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "petrescue",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "bubblewitch",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "diamonddash",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "candycrushsoda",
+    "jellysplash"
+   ],
+   [
+    "match3",
+    "cookiejam",
+    "jellysplash"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "flappybird",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "flappydunk",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "colorswitch",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "pianotiles",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "crossyroad",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "stack",
+    "mrjump"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "splashyfish"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "ironpants"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "swingcopters"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "timberman"
+   ],
+   [
+    "one_tap",
+    "helixjump",
+    "mrjump"
+   ],
+   [
+    "physics",
+    "badpiggies",
+    "amazingalex"
+   ],
+   [
+    "social_deduction",
+    "amongus",
+    "townofsalem"
+   ],
+   [
+    "social_deduction",
+    "goosegooseduck",
+    "townofsalem"
+   ],
+   [
+    "social_sim",
+    "farmville",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "farmtown",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "mafiawars",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "cityville",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "petsociety",
+    "mobwars"
+   ],
+   [
+    "social_sim",
+    "farmville2",
+    "mobwars"
+   ],
+   [
+    "web_toy",
+    "infinitecraft",
+    "universalpaperclips"
+   ],
+   [
+    "web_toy",
+    "littlealchemy",
+    "universalpaperclips"
+   ],
+   [
+    "web_toy",
+    "cookieclicker",
+    "universalpaperclips"
+   ],
+   [
+    "web_toy",
+    "passwordgame",
+    "universalpaperclips"
+   ]
+  ],
+  "novel_signals": {
+   "rules_preknown": {
+    "A_univariate_auc": 0.4548681541582151,
+    "A_ci": [
+     0.3274108265241986,
+     0.5750025201612903
+    ],
+    "A_delta_auc_vs_conventional": [
+     0.005464261709438482,
+     [
+      -0.005980014025245462,
+      0.018145161290322565
+     ]
+    ],
+    "B_delta_auc": 0.00907801418439702,
+    "hit_rate_with": 0.5957446808510638,
+    "hit_rate_without": 0.6266666666666667,
+    "n_with": 47,
+    "holds": false
+   },
+   "spectator_high": {
+    "A_univariate_auc": 0.6982758620689655,
+    "A_ci": [
+     0.5925585237455196,
+     0.7964285714285714
+    ],
+    "A_delta_auc_vs_conventional": [
+     0.04369252639300418,
+     [
+      0.011084360958352857,
+      0.08212113899613897
+     ]
+    ],
+    "B_delta_auc": 0.049645390070921946,
+    "hit_rate_with": 0.8461538461538461,
+    "hit_rate_without": 0.5520833333333334,
+    "n_with": 26,
+    "holds": true
+   },
+   "failure_comedy": {
+    "A_univariate_auc": 0.7545638945233265,
+    "A_ci": [
+     0.6435019841269841,
+     0.8558521199902248
+    ],
+    "A_delta_auc_vs_conventional": [
+     -0.016603389416851095,
+     [
+      -0.043883553421368515,
+      0.0
+     ]
+    ],
+    "B_delta_auc": 0.007092198581560183,
+    "hit_rate_with": 0.74,
+    "hit_rate_without": 0.5277777777777778,
+    "n_with": 50,
+    "holds": false
+   },
+   "emergent_output": {
+    "A_univariate_auc": 0.6125760649087222,
+    "A_ci": [
+     0.5185185185185185,
+     0.7033468559837728
+    ],
+    "A_delta_auc_vs_conventional": [
+     0.001988866960373951,
+     [
+      0.0,
+      0.0071428571428571175
+     ]
+    ],
+    "B_delta_auc": 0.009219858156028105,
+    "hit_rate_with": 0.7142857142857143,
+    "hit_rate_without": 0.594059405940594,
+    "n_with": 21,
+    "holds": true
+   },
+   "artifact_curiosity": {
+    "A_univariate_auc": 0.34939148073022314,
+    "A_ci": [
+     0.23779158215010143,
+     0.46286287673482795
+    ],
+    "A_delta_auc_vs_conventional": [
+     0.0,
+     [
+      0.0,
+      0.0
+     ]
+    ],
+    "B_delta_auc": -0.003262411347517813,
+    "hit_rate_with": 0.2777777777777778,
+    "hit_rate_without": 0.6730769230769231,
+    "n_with": 18,
+    "holds": false
+   },
+   "early_momentum": {
+    "n_with_trends": 52,
+    "A_test_n": 22,
+    "A_univariate_auc": 0.5625,
+    "A_ci": [
+     0.29411764705882354,
+     0.8214657738095236
+    ],
+    "all_games_auc": 0.628125,
+    "all_ci": [
+     0.45629239766081875,
+     0.7742440025252526
+    ],
+    "holds": false
+   },
+   "watch_ratio": {
+    "n": 13,
+    "A_test_n": 10,
+    "A_test_hits": 2,
+    "A_univariate_auc": 0.0625,
+    "A_ci": [
+     0.0,
+     0.30044642857142734
+    ],
+    "all_games_auc": 0.29999999999999993,
+    "all_ci": [
+     0.0,
+     0.8333333333333334
+    ],
+    "spearman_vs_coded_spectator": 0.7151842500282788,
+    "holds": false,
+    "games": [
+     {
+      "game_id": "ironpants",
+      "hit": 0,
+      "watch_ratio": 29.026,
+      "spectator": 1
+     },
+     {
+      "game_id": "splashyfish",
+      "hit": 0,
+      "watch_ratio": 14.294,
+      "spectator": 1
+     },
+     {
+      "game_id": "flappybird",
+      "hit": 1,
+      "watch_ratio": 8.817,
+      "spectator": 2
+     },
+     {
+      "game_id": "bandle",
+      "hit": 0,
+      "watch_ratio": 7.775,
+      "spectator": 0
+     },
+     {
+      "game_id": "contexto",
+      "hit": 0,
+      "watch_ratio": 2.319,
+      "spectator": 0
+     },
+     {
+      "game_id": "travle",
+      "hit": 0,
+      "watch_ratio": 1.357,
+      "spectator": 0
+     },
+     {
+      "game_id": "waffle",
+      "hit": 0,
+      "watch_ratio": 0.431,
+      "spectator": 0
+     },
+     {
+      "game_id": "loldle",
+      "hit": 0,
+      "watch_ratio": 0.352,
+      "spectator": 0
+     },
+     {
+      "game_id": "globle",
+      "hit": 0,
+      "watch_ratio": 0.17,
+      "spectator": 0
+     },
+     {
+      "game_id": "nerdle",
+      "hit": 0,
+      "watch_ratio": 0.105,
+      "spectator": 0
+     },
+     {
+      "game_id": "wordle",
+      "hit": 1,
+      "watch_ratio": 0.098,
+      "spectator": 0
+     },
+     {
+      "game_id": "worldle",
+      "hit": 0,
+      "watch_ratio": 0.066,
+      "spectator": 0
+     },
+     {
+      "game_id": "connections",
+      "hit": 1,
+      "watch_ratio": 0.062,
+      "spectator": 0
+     }
+    ]
+   }
+  }
+ }
+}

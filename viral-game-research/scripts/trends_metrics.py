@@ -64,9 +64,7 @@ def curve_metrics(s: pd.Series):
     nz = np.where(s.values >= 1)[0]
     first = int(nz[0])
     out["weeks_to_peak"] = ip - first
-    w14 = s.values[first:first + 4].mean()
-    w58 = s.values[first + 4:first + 8].mean() if first + 8 <= len(s) else np.nan
-    out["early_momentum"] = float(np.log((w58 + 1) / (w14 + 1))) if not np.isnan(w58) else np.nan
+    out["early_momentum"] = np.nan  # filled by early_momentum_abs() once the absolute scale is known
     # rise phase: weeks before the peak with 10..90% of peak, contiguous run ending at peak
     rise = []
     for i in range(ip, -1, -1):
@@ -97,6 +95,23 @@ def curve_metrics(s: pd.Series):
     return out
 
 
+ABS_THRESHOLD = 0.02  # sudoku-units; pre-registered (model/PREREGISTRATION.md)
+
+
+def early_momentum_abs(s: pd.Series, peak_units: float):
+    """log ratio of mean absolute interest in weeks 5-8 vs 1-4 after the series first crosses a FIXED
+    absolute threshold. Independent of the eventual peak except through the unit conversion."""
+    if s.max() <= 0 or not np.isfinite(peak_units) or peak_units <= 0:
+        return np.nan
+    a = s.values.astype(float) / 100.0 * peak_units
+    idx = np.where(a >= ABS_THRESHOLD)[0]
+    if len(idx) == 0 or idx[0] + 8 > len(a):
+        return np.nan
+    f = idx[0]
+    eps = ABS_THRESHOLD / 10
+    return float(np.log((a[f + 4:f + 8].mean() + eps) / (a[f:f + 4].mean() + eps)))
+
+
 def all_metrics():
     meta = json.load(open(os.path.join(TR, "_meta.json")))
     rows = []
@@ -106,6 +121,7 @@ def all_metrics():
             continue
         cm = curve_metrics(solo["game"])
         su, method = scale_units(gid)
+        cm["early_momentum"] = early_momentum_abs(solo["game"], su)
         rows.append({"game_id": gid, "term": m["term"], "topic": m.get("topic"), "peak_sudoku_units": su, "scale_method": method, **cm})
     return pd.DataFrame(rows)
 

@@ -1,0 +1,1758 @@
+                             Rovio Entertainment Corporation
+                               Financial Statement Bulletin
+                                      March 2, 2018
+
+
+
+
+F I N A N C I A L S TAT E M E N T B U L L E T I N F O R J A N U A R Y – D E C E M B E R 2 0 1 7
+Rovio’s Q4 2017: revenue growth continued,
+operating profit more than doubled
+
+October–December 2017 highlights
+• Rovio’s revenue increased by 17.0% to EUR 73.9 million (63.2)
+• Games: revenue grew 42.3 percent to 66.1 million euros (46.5)
+• Brand Licensing: revenue declined 53.3 percent 7.8 million euros (16.7)
+• The Group’s adjusted EBITDA was EUR 14.1 million (15.9)
+• EBITDA was EUR 14.0 million (15.9)
+• Operating profit was EUR 10.4 million (4.9)
+• Profit before taxes was EUR 9.9 million (5.1)
+• Earnings per share were EUR 0.10 (0.04)
+• Diluted earnings per share were EUR 0.10 (0.04)
+• Net cash flows from operating activities decreased to EUR 5.8 million (8.3)
+• Games global quarterly ARPDAU increased to EUR 8 cents (4). TOP 5 games quarterly ARPDAU increased to
+  EUR 14 cents (7).
+• User acquisition investments totaled EUR 15.9 million (7.7), or 24.0% of the Games segment’s revenue
+  (16.5%)
+
+
+
+January–December 2017 highlights
+•   Rovio’s revenue increased by 55% to EUR 297.2 million (191.7)
+•   Games: revenue grew 55.9 percent to 248.0 million euros (159.0)
+•   Brand Licensing: revenue grew 50.5 percent to 49.2 million euros (32.7)
+•   Adjusted EBITDA increased to EUR 64.5 million (35.4)
+•   EBITDA increased to EUR 60.0 million (35.4)
+•   Operating profit increased to EUR 31.4 million (16.9) and adjusted operating profit to EUR 35.9 million (16.9)
+•   Profit before taxes increased to EUR 26.6 million (15.4)
+•   Earnings per share were EUR 0.27 (0.14)
+•   Diluted earnings per share were EUR 0.27 (0.14)
+•   Net cash flows from operating activities increased to EUR 59.6 million (22.8)
+•   User acquisition investments totaled EUR 69.6 million (18.2), or 28.1% of the Games segment’s revenue
+    (11.5%)
+•   Rovio restructured the Brand Licensing unit in the first half of 2017. As a result, Rovio’s average number of
+    personnel in 2017 decreased to 416 (476)
+•   Rovio signed a production and publishing agreement with Columbia Pictures (Sony Pictures) for the sequel to
+    the Angry Birds Movie. The movie is planned for release in September 2019
+•   Rovio launched three new games in 2017: Battle Bay, Angry Birds Evolution and Angry Birds Match
+•   Rovio was listed on the Nasdaq Helsinki main list on September 29, 2017
+
+Unless otherwise stated, the comparison figures in brackets refer to the corresponding period in the previous
+year (reference period).
+
+
+
+
+                                                                                                                2
+Key figures
+                                           10–12/       10–12/      Change,         1–12/        1–12/      Change,
+EUR million                                  2017         2016          (%)          2017         2016          (%)
+Revenue                                       73.9         63.2        17.0%        297.2         191.7       55.0%
+EBITDA                                        14.0         15.9       -11.7%          60.0         35.4       69.6%
+EBITDA margin                               19.0%        25.1%                      20.2%        18.5%
+Adjusted EBITDA                               14.1         15.9       -11.3%          64.5         35.4       82.3%
+   Adjusted EBITDA margin, %                19.0%        25.1%                      21.7%        18.5%
+Operating profit                              10.4          4.9      112.0%           31.4         16.9       85.8%
+   Operating profit margin, %               14.1%         7.8%                      10.6%         8.8%
+Adjusted operating profit                     10.5          4.9      113.2%           35.9         16.9      112.5%
+   Adjusted operating profit margin, %      14.2%         7.8%                      12.1%         8.8%
+Profit before tax                              9.9          5.1        93.3%          26.6         15.4       73.2%
+Capital expenditure                            1.1          4.8       -77.6%           8.5         23.3      -63.7%
+User acquisition cost                         15.9          7.7      107.4%           69.6         18.2      281.7%
+Return on equity (ROE), %                   23.4%        19.1%             -        23.4%        19.1%             -
+Net gearing ratio, %                       -62.9%       -11.5%             -       -62.9%       -11.5%             -
+Equity ratio, %                             77.9%        64.1%             -        77.9%        64.1%             -
+Earnings per share, EUR                       0.10         0.04      152.5%           0.27         0.14       92.9%
+Earnings per share, diluted EUR               0.10         0.04      149.4%           0.27         0.14       90.4%
+Net cash flows from operating activities       5.8          8.3       -30.1%          59.6         22.8      160.8%
+Employees (average for the period)            397           472       -15.9%          416          476       -12.6%
+
+
+
+Calculations and definitions are presented in the Performance Measures section below.
+
+
+
+Outlook for 2018
+Rovio Group revenue is expected to be 260–300 million euros in 2018 (297 million euros in 2017). Rovio’s
+profitability as measured by earnings before interest and tax excluding items affecting comparability is expected
+to be 9 to 11 percent (10.6 percent in 2017).
+
+Basis for outlook
+In 2018, Rovio Games business will focus on continuing development of its live game portfolio according to the
+Games-as-a-Service strategy, profitable user acquisition and development of new games. The user acquisition
+investments are expected to be around 30 percent of Games revenues for the full year, however, the amount may
+vary depending on development of the games’ monetization and the level of competition in the market. The cost
+per acquired user has risen significantly in the market.
+   Brand Licensing segment revenues are expected to decline by 40% in 2018. The decline is due to the declining
+profile of the Angry Birds movie. The consumer products revenues are expected to be at similar level as in 2017.
+The focus of Brand Licensing in 2018 is on preparing the license portfolio for 2019 and the Angry Birds movie
+sequel.
+   During 2018, Rovio estimates to invest 10–15 million euros in its subsidiary Hatch Entertainment Oy that
+develops cloud streaming based game service (5 million euros in 2017). Approximately half of the investment
+will impact Group profit, ie. an impact of 2–3 %-points to the expected EBIT margin, and half will be capitalized
+development costs and advance payments. Hatch represents one possible way to play mobile games in the
+future. By investing in the development of Hatch’s streaming service Rovio diversifies its portfolio, aims to utilize
+the possibilities that new technologies offer for games business, and implements company’s strategy to explore
+the future of gaming alongside the continuous free-to-play games development.
+
+
+
+
+                                                                                                                   3
+Dividend proposal
+The parent company’s distributable funds amount to EUR 129,800,550.68, of which the profit for the period
+is EUR 19,577,177.06. The Board of Directors proposes to the Annual General Meeting to be held on April 16,
+2018 that a dividend of EUR 0.09 per share be paid (EUR 0.06 for 2016). No dividend will be paid on any treasury
+shares held by the Company. Based on the number of shares as of the balance sheet date, December 31, 2017,
+the total amount of the dividend is EUR 7,125,414.75.
+
+
+
+Kati Levoranta, CEO:
+“The year 2017 was the best year in Rovio’s history. The performance indicators of the Company’s top games
+improved and Games revenue grew by 56%. Group revenue increased by 55%, and both the adjusted operating
+profit and earnings per share doubled. I therefore wish to thank all our employees for this great achievement!
+   During the year the key figures of Games segment showed strong development due to the improved
+monetization of the top games. However, in the last quarter of the year our new games, Angry Birds Match,
+Angry Birds Evolution and Battle Bay landed short of our expectations. Competition in the market intensified,
+which led to a significant increase in the unit costs of user acquisition, especially in the puzzle genre. Due to this
+development, Rovio reduced its relative investments in user acquisition to 24% of Games segment revenues in
+the last quarter. Measured by EBITDA, the unit’s profitability was at a good level of 21 percent.
+   Although Rovio’s business has a healthy foundation, we are not satisfied with the current performance.
+Our intention is to return to a higher growth path. We seek to grow our Games business through continuous
+development, renewal, and improved monetization of our current top live games, and through profitable user
+acquisition. This Games-as-a-Service model was well proven by our top game Angry Birds 2 as it grew its gross
+bookings by 83% in 2017. Likewise Angry Birds Friends, launched in 2012, still goes strong. While we see a lot of
+potential in our existing live game portfolio, Rovio also continues to invest in the development of new games. In
+response to the increased competition we want to raise our game development and operations to the next level.
+   The revenue of the Brand Licensing business decreased in the fourth quarter as expected by the declining
+revenue profile of the Angry Birds Movie. In spite of the decrease in revenues, the unit’s EBITDA amounted
+to nearly 50% of revenues. Rovio will continue to strengthen the Angry Birds brand in 2018 by, e.g., bringing
+new video content to the market in cooperation with partners, licensing the brand for new activity parks, and
+preparing the launch of the Angry Birds Movie sequel, set for release in September 2019.
+   Rovio continued to finance the beta phase product testing and go-to-market of its subsidiary Hatch
+Entertainment Oy by approximately EUR 5 million in 2017. The increasing investments in Hatch during 2018
+supports Rovio’s strategy of exploring the future of mobile gaming in addition to the development of free-to-play
+games. Rovio will also continue to actively assess potential acquisition targets.”
+
+More information:
+Kati Levoranta, CEO, tel. +358 207 888 300
+René Lindell, CFO, tel. +358 207 888 300
+Rauno Heinonen, SVP, Corporate Communications and Investor Relations, tel. +358 40 861 9345
+
+
+
+
+                                                                                                                    4
+Briefing and webcast:
+Rovio will organize an English-language briefing on the result for the financial year for media, analysts, and
+institutional investors on March 2, 2018 from 14:00 to 15:00 EET at the Rovio office located at Keilaranta 7,
+Espoo. Registration for attendance should be made in advance by e-mail to comms@rovio.com. The event can be
+viewed as a real-time webcast and subsequently as a recording on the Company’s website at
+www.rovio.com/investors.
+
+ROVIO ENTERTAINMENT CORPORATION
+
+Board of Directors
+
+Distribution: Nasdaq Helsinki, principal media, www.rovio.com
+
+Rovio in brief
+Rovio is a games-first entertainment company that creates, develops, and publishes mobile games and acts as
+a brand licensor in various entertainment and consumer product categories. The Company is best known for
+the global Angry Birds brand, which started from a popular mobile game in 2009. Today, the Company offers
+multiple mobile games, has produced The Angry Birds Movie, which opened number one in theatres in 50
+countries, and licenses the Angry Birds brand to consumer products and other entertainment content. Rovio’s
+operations are divided into two business units, Games and Brand Licensing. Rovio is headquartered in Finland
+and has offices in Sweden, Great Britain, China, and the United States.
+
+
+
+
+                                                                                                            5
+Rovio Entertainment Corporation Financial
+Statement Bulletin 1–12/2017
+A description of the accounting standards applied in the preparation of this interim report is provided in the
+notes to this financial statement bulletin, in Note 1 Accounting principles.
+
+
+
+Market review
+Mobile gaming is the fastest growing form of entertainment and, according to Newzoo’s mobile gaming industry
+report published in January 2018, the total market size in end-user generated revenue was USD 40 billion in
+2016. According to the same report, the mobile gaming market size in 2017 grew to USD 50.4 billion, or 23%
+year-on-year. The rate of growth was five percentage points higher than Newzoo’s previous estimate published
+in April 2017.
+   According Newzoo’s January 2018 report, the global market is estimated to grow by 15% in 2018. The main
+driver of growth is China, where the market is expected to grow by 19% year-on-year in 2018. In 2017, China
+already accounted for 35% of the total mobile gaming market, a larger share than North America and Western
+Europe combined. Growth in China has been driven particularly by locally developed games, such as Tencent’s
+hit game Honor of Kings, which was also the global number one in 2017 in terms of revenue.
+   According to the same report, the compound annual growth rate (CAGR) in 2017–2020 is expected to be 13%.
+The estimated growth rates vary significantly by market. For example, the more mature Western markets of
+North America and Western Europe are expected to grow at a CAGR of 5–6%, whereas China is estimated to
+grow at 14% CAGR from 2017 to 2020.
+
+
+
+Revenue and result
+
+October–December 2017
+In the fourth quarter, Rovio’s revenue increased by 17% compared to the corresponding period of the previous
+year and amounted to EUR 73.9 million (63.2). The increase in revenue was mainly driven by the improved
+monetization performance of Rovio’s top games as well as new game launches in 2017 and related user
+acquisition investments.
+   The revenue of the Games segment increased by 42.3% to EUR 66.1 million (46.5). The Games segment’s
+growth during the review period was primarily due to higher revenue per paying user. The strong development of
+the KPIs was mainly attributable to the development of in-game events, new features in existing games, and the
+successful targeting of user acquisition.
+   The revenue of the Brand Licensing segment decreased by 53.3% to EUR 7.8 million (16.7). The revenue
+consisted of EUR 3.8 million (8.5) from the Content Licensing unit’s business, the majority of which was income
+from the Angry Birds Movie, and EUR 4.0 million (8.2) from the Consumer Products unit’s business. The
+decline in the revenue of Consumer Products was attributable to the sales of consumer products peaking in
+the comparison period in 2016 due to the release of the Angry Birds Movie. Revenue related to the Angry Birds
+Movie declined in line with expectations.
+   The Group’s EBITDA was EUR 14.0 million (15.9), or 19.0% (25.1%) of revenue. The year-on-year decline in
+EBITDA was due to the decrease in the Brand Licensing segment’s revenue and, in particular, lower revenue
+from the Angry Birds Movie, which had a direct impact on EBITDA.
+   The Group’s operating profit was EUR 10.4 million (4.9), or 14.1% (7.8%) of revenue.
+   The Games segment’s EBITDA was EUR 14.0 million (10.5). The Brand Licensing segment’s EBITDA was EUR
+3.7 million (8.7).
+   The Group’s total depreciation and amortization amounted to EUR 3.6 million (10.9), the majority of which was
+due to amortization of the Angry Birds Movie.
+   The Group’s result before taxes for the fourth quarter was EUR 9.9 million (5.1) and earnings per share were
+EUR 0.10 (0.04). Diluted earnings per share were EUR 0.10 (0.04)
+
+
+
+                                                                                                                 6
+January–December 2017
+Rovio’s revenue increased by 55.0% compared to the previous year and amounted to EUR 297.2 million (191.7).
+The increase in revenue was mainly driven by the continued strong monetization performance of Rovio’s top
+games and related user acquisition investments, new games published in 2017 and revenue from the Angry
+Birds Movie released in May 2016.
+   The revenue of the Games segment increased by 55.9% to EUR 248.0 million (159.0).
+   The revenue of the Brand Licensing segment increased by 50.5% to EUR 49.2 million (32.7). The revenue
+consisted of EUR 38.0 million (12.2) from the Content Licensing business, the majority of which was income
+from the first Angry Birds Movie, and EUR 11.2 million (20.5) from the Consumer Products business.
+   The Group’s adjusted EBITDA increased to EUR 64.5 million (35.4), or 21.7% (18.5%) of revenue. EBITDA
+increased to EUR 60.0 million (35.4), or 20.2% (18.5%) of revenue.
+   The adjusted EBITDA has been adjusted for the Brand Licensing segment’s restructuring expenses in the
+second quarter and expenses related to Rovio’s IPO in the third quarter. The adjustments totaled EUR 4.5 million
+(0.0).
+   Rovio’s operating profit grew by 85.8% year-on-year and amounted to EUR 31.4 million (16.9). The adjusted
+operating profit increased to EUR 35.9 million (16.9).
+   The EBITDA of the Games segment was EUR 43.2 million (39.8). The EBITDA of the Brand Licensing segment
+increased to EUR 30.1 million (5.8). The growth in the Brand Licensing segment’s EBITDA was particularly
+attributable to revenue from the first Angry Birds Movie.
+   The Group’s total depreciation and amortization amounted to EUR 28.6 million (18.5), the majority of which
+was due to amortization of the Angry Birds Movie.
+   The Group’s result before taxes for the review period was EUR 26.6 million (15.4) and earnings per share were
+EUR 0.27 (0.14). Diluted earnings per share were EUR 0.27 (0.14).
+
+
+
+Financing and investments
+Rovio’s investments decreased by 77.6% to EUR 1.1 million (4.8) in the fourth quarter of 2017. Total investments
+for January–December 2017 amounted to EUR 8.5 million (23.3), down 63.7%. Rovio refers to the user
+acquisition costs of the Games segment as investments but, pursuant to accounting regulations, they are
+recognized as expenses rather than investments due to their average payback period being less than one year.
+   The Games segment’s investments amounted to EUR 0.9 million (1.6) in the fourth quarter and were related
+to outsourced development projects. The Brand Licensing segment’s investments amounted to EUR 0.2 million
+(3.1) in the fourth quarter and were related to the production of two short form animation series.
+   In the second quarter of 2017, Rovio entered into a licensing agreement with Columbia Pictures regarding
+the production and distribution of the sequel to the Angry Birds Movie. Consequently, Rovio did not make any
+investments related to movies in the fourth quarter of 2017.
+   Rovio paid the third and final installment of a loan from the European Investment Bank during the review
+period. At the end of 2017, the total remaining borrowings amounted to EUR 2.5 million, consisting of a product
+development loan from Tekes (the Finnish Funding Agency for Innovation).
+   Rovio carried out an Initial Public Offering in the third quarter and accumulated approximately EUR 30.0
+million in gross proceeds. The IPO is discussed in more detail in this interim report under the heading “Listing
+on the Helsinki stock exchange”.
+
+
+
+Reporting segments
+In the second quarter of 2017, Rovio adopted IFRS 8 and defined its operating segments as Games, Brand
+Licensing, and Other. Rovio’s business was previously divided into three business lines: Games, Licensing, and
+Merchandise and Media.
+   The Brand Licensing reporting segment is a combination of the previous Licensing and Merchandise and
+Media business lines. The Games segment’s structure is unchanged from previous reports. The Other segment
+includes the expenses of Rovio’s subsidiary Hatch Entertainment and the Group’s other unallocated expenses.
+
+
+
+
+                                                                                                               7
+   The Games segment consists of Rovio’s mobile games business, which includes all mobile games developed
+by the business unit for distribution through mobile application stores, such as Apple and Google, and from
+which Rovio receives revenue in the form of end consumer in-app purchases and in-app advertising.
+   The Brand Licensing segment comprises two sub-units, Consumer Products and Content Licensing, which
+generate royalty revenues from licensing the Angry Birds brand to product categories other than mobile
+games. The Consumer Products unit consists of physical merchandise, such as toys and apparel, as well as
+location-based entertainment, such as activity parks. The Content Licensing unit is responsible for books
+and comics, animated series and movies as well as any digital products that are not mobile games. Rovio’s
+business model is consistent across both sub-units. This means that Rovio licenses the brand to licensees in
+each category. Rovio collects royalty payments based on varying percentages of the licensees’ revenue. The
+contracts typically include a minimum guarantee, which is paid upfront at the beginning of the contract period
+or in agreed installments over the life of the license contract. The income and cost structure is also similar from
+Rovio’s viewpoint: Rovio collects royalties, records sales agent and distribution costs as the cost of sales and the
+remaining costs as the Brand Licensing segment’s operating expenses. Although the Company has transitioned
+to a full licensing model for media content, Rovio has historically financed and produced animated series and
+the first Angry Birds Movie, and capitalized the development costs. These costs are amortized over the life of the
+asset in question.
+   The senior operating decision-maker (Rovio’s Board of Directors) assesses the Brand Licensing segment’s
+performance as a whole. The Senior Vice President in charge of the segment allocates the resources and sets
+targets for the sub-units at his discretion.
+   The Other reporting segment includes the expenses of Rovio’s subsidiary Hatch Entertainment Oy, in which
+the Group holds an 80% stake, as well as the Group’s unallocated expenses, such as Group management,
+intellectual property protection, and other expenses that are not directly allocated to the business units.
+   The reported financial figures for the segments include segment revenues, which were fully external revenues
+for the reporting period, EBITDA, adjusted EBITDA and capital expenditures. Total assets and liabilities are not
+measured and followed at the segment level. In addition, the segments contain segment specific additional key
+performance indicators that are relevant to that segment only.
+
+
+
+Games
+
+October–December 2017
+The Games segment achieved strong growth in October–December 2017. Revenue increased by 42.3%
+year-on-year and amounted to EUR 66.1 million (46.5). The strong growth was mainly driven by the improved
+monetization of Rovio’s top games and new games, such as Angry Birds Blast, Angry Birds Evolution, Angry
+Birds Match, and Battle Bay. Rovio’s top five games in the fourth quarter were Angry Birds 2, Angry Birds
+Evolution, Angry Birds Friends, Angry Birds Blast, and Angry Birds Match. Angry Birds Pop and Battle Bay were
+outside the top five.
+   User acquisition investments in the fourth quarter totaled EUR 15.9 million, or 24.0% of the Games segment’s
+revenue (EUR 7.7 million, 16.4%). The payback period of the user acquisition investments is expected to be 8–10
+months. The competitive landscape for relevant digital advertising has intensified over 2017, showing a steep
+increase especially late in the year. Average overall Cost Per Install (CPI) rates paid by top publishers of top
+mobile games increased by close to 50% over the year and Puzzle CPI rates close to doubled over the year, with
+steepest increase in Q3 and Q4.
+   The Games segment’s EBITDA increased to EUR 14.0 million (10.5), up 32.8% year-on-year. The increase
+in EBITDA was due to revenue from previous user acquisition investments and successful in-game events in
+December. A non-recurring adjustment to specify deferred revenue from in-app purchases had a positive effect
+of approximately EUR 1.9 million on the Games segment’s revenue and approximately EUR 1.2 million on the
+segment’s EBITDA.
+
+January–December 2017
+The Games segment’s revenue increased by 55.9% year-on-year in January–December 2017 and amounted to
+EUR 248.0 million (159.0). The strong growth was mainly driven by new releases and the improved monetization
+
+
+
+                                                                                                                  8
+of Rovio’s top games, particularly Angry Birds 2, Angry Birds Blast, and Angry Birds Friends. Rovio launched
+three new games in during the review period: Battle Bay in May, Angry Birds Evolution in June, and Angry Birds
+Match in August.
+   The strong KPIs of Rovio’s top games enabled a significant increase in user acquisition investments, which
+amounted to EUR 69.6 million, or 28.1% of the Games segment’s revenue (EUR 18.2 million, 11.5%).
+   The Games segment’s EBITDA increased by 8.5% year-on-year in January–December 2017 and amounted to
+EUR 43.2 million (39.8).
+   The Games segment’s investments declined to EUR 4.1 million (7.3) in January–December 2017 due to a
+decrease in investments in game projects by external game studios and the Games segment focusing more on
+internal game development.
+   The depreciation of the US dollar against the euro in 2017 reduced the euro-denominated revenue from the
+movie by approximately 3%.
+
+
+                                         10–12/       10–12/                     1–12/        1–12/
+EUR million                                2017         2016    Change, %         2017         2016   Change, %
+Revenue                                     66.1         46.5       42.3%        248.0        159.0       55.9%
+Adjusted EBITDA                             14.0         10.5       32.8%         43.2         39.8        8.7%
+EBITDA                                      14.0         10.5       32.8%         43.2         39.8        8.5%
+User acquisition cost                       15.9          7.7      107.4%         69.6         18.2      282.0%
+User acquisition share of revenue, %      24.0%        16.5%            -        28.1%       11.5%                -
+Capital expenditure                          0.9          1.6      -46.3%          4.1          7.3      -43.1%
+
+
+
+
+Key performance indicators of the Games segment
+The key performance indicators of the Games segment shown below use gross bookings in place of gross
+revenue. The reconciliation of gross bookings to gross revenue is provided in the notes to the financial
+statements. Gross bookings represent in-app purchases and in-app advertising sales in the given calendar
+month, reported on the basis of the date of purchase/sale. Gross bookings do not include revenue from
+custom contracts, revenue deferrals or accounting adjustments due to, for example, foreign exchange rate
+differences between revenue accruals and actual payments, and thus differ from the actual reported revenue.
+The reconciliation of gross bookings to revenue is presented under “Reconciliation of Certain Alternative
+Performance Measures”. Gross bookings is used as the base for calculating certain key operational metrics
+(ARPDAU and MARPPU), as it gives a more accurate view of Rovio’s operating performance than revenue at a
+specific point in time.
+   During the fourth quarter of 2017, the Games segment continued to focus on improving monetization and
+profitable customer acquisition. Daily average users (DAU) declined by 14% for the game portfolio as a whole
+and by 13% for the top games during the review period. This was due to drops in daily users following peaks
+in downloads for the three games launched in 2017 as well as lower user volumes for the old portfolio. The
+monthly average revenue per paying customer (MARPPU) for the entire game portfolio increased to EUR 35.2,
+up 5% from the previous quarter. For Rovio’s top games, MARPPU rose to EUR 35.6, up 10% from the previous
+quarter. The growth in average revenue per paying customer was evidence of successful campaigns and in-
+game events.
+
+Game-specific performance in the Games segment
+Angry Birds 2, released in July 2015, was Rovio’s top game in the fourth quarter with gross bookings of EUR
+19.9 million, and also the top game for the year with gross bookings of EUR 78.7 million. The gross bookings of
+Angry Birds 2 increased by 83% year-on-year thanks to successful updates and user acquisition. Together with
+newly launched games, it was Rovio’s most significant engine of growth in 2017. Released in December 2016,
+Angry Birds Blast was Rovio’s second-biggest game in 2017 with gross bookings of EUR 39.6 million. It was
+also Rovio’s biggest game in the puzzle game category. Angry Birds Friends, released back in 2012, was third
+with gross bookings of EUR 32.7 million after 5% growth in 2016–2017 thanks to successful updates. Released
+in June 2017, Angry Birds Evolution emerged as Rovio’s second-biggest game in the second half of 2017 and
+
+
+
+                                                                                                               9
+generated gross bookings of EUR 21.6 million for the year. It was also Rovio’s most successful game in the role
+playing category. Released in August 2017, Angry Birds Match is Rovio’s newest game. Its gross bookings for the
+year were EUR 10.1 million and it was Rovio’s fifth-biggest game in the fourth quarter. The real-time multiplayer
+game Battle Bay, launched in May, reached gross bookings of EUR 12.7 million for the year. The growth of
+Rovio’s new games, namely Angry Birds Match, Angry Birds Evolution and Battle Bay, did not, however, meet the
+expectations set for them due to the substantially intensified competition in the markets.
+  Other games, which include the less actively maintained components of Rovio’s game portfolio, generated
+combined gross bookings of EUR 31.1 million in 2017. This was 35% lower than in 2016 (EUR 48.5 million) due to
+user acquisition investments being allocated to the top games.
+
+
+EUR million                10–12/2017     7–9/2017    4–6/2017    1–3/2017 10–12/2016      7–9/2016    4–6/2016
+Gross bookings Top 5              51.8         50.6        50.6        47.9         37.2        32.3        28.0
+Gross bookings total              66.1         64.3        61.9        56.3         45.9        40.1        36.6
+
+
+Million                    10–12/2017     7–9/2017    4–6/2017    1–3/2017 10–12/2016      7–9/2016     4–6/2016
+DAU Top 5                          4.0          4.6         4.9         5.0          6.0         6.2          6.7
+DAU All                            9.2         10.7        10.6        11.2         11.1        12.6        13.5
+MAU Top 5                         20.3         24.0        25.6        25.4         40.2        41.4        46.4
+MAU All                           64.8         79.5        79.7        83.1         88.5       102.8       112.7
+
+
+Thousand                   10–12/2017     7–9/2017    4–6/2017    1–3/2017 10–12/2016      7–9/2016     4–6/2016
+MUP Top 5                          447         469          479         495         382          354         341
+MUP All                            555         571          563         550         456          435         440
+
+
+EUR                        10–12/2017     7–9/2017    4–6/2017     1–3/2017 10–12/2016     7–9/2016     4–6/2016
+ARPDAU Top 5                      0.14         0.12        0.11        0.11         0.07        0.06        0.05
+ARPDAU All                        0.08         0.07        0.06        0.06         0.04        0.03        0.03
+MARPPU Top 5                      35.6         33.7        32.6        29.8         28.2        26.7        23.7
+MARPPU All                        35.2         34.1        32.4        30.0         27.8        25.7        22.6
+
+
+Gross bookings,
+EUR million                10–12/2017     7–9/2017    4–6/2017     1–3/2017 10–12/2016     7–9/2016     4–6/2016
+Top 5 games
+AB 2                              19.9         18.3        20.6        19.9         15.5        12.3          9.2
+AB Friends                         7.9          7.9         8.6          8.3         9.5         8.0          7.7
+AB Blast                           7.9          9.3        11.3        11.0          0.8           -            -
+AB Evolution                       8.7         10.1         2.7            -           -           -            -
+AB Match                           7.4          2.7           -            -           -           -            -
+AB Pop                             4.5          5.0         5.9          6.9         8.3         8.1          6.9
+Battle Bay                         3.8          4.6         4.3            -           -           -            -
+Other                               6.0         6.7         8.6        10.0         11.8        11.7         12.8
+Total                             66.1         64.7        62.0        56.3         45.9        40.1        36.6
+
+
+
+
+                                                                                                             10
+Brand Licensing
+
+October–December 2017
+In October–December 2017, the Brand Licensing segment’s revenue decreased to EUR 7.8 million (16.7), down
+53.3% year-on-year. The year-on-year decline was due to a peak in revenue in 2016 created by the release of
+the Angry Birds Movie, particularly in the 2016 Christmas sales season. Revenue from the Angry Birds Movie
+decreased in line with expectations, which also contributed to the decrease in revenue in the fourth quarter. The
+Brand Licensing segment’s EBITDA was EUR 3.7 million (8.7). Investments totaled EUR 0.2 million (3.1). The
+decrease in investments was due to Rovio switching to the licensing model in the production of the sequel to the
+Angry Birds Movie, with Rovio no longer investing in the movie itself.
+
+January–December 2017
+The Brand Licensing segment’s revenue increased by 50.5% in January–December and amounted to EUR 49.2
+million (32.7). The growth was primarily attributable to revenue from the Angry Birds Movie in the Content
+Licensing unit. The first Angry Birds Movie, released in May 2016, was a global blockbuster: it opened in the #1
+position in 50 countries in its first weekend. The first Angry Birds Movie generated EUR 36.0 million in revenue
+during the 2017 financial year. The depreciation of the US dollar against the euro in 2017 reduced the euro-
+denominated revenue from the movie by approximately 10%.
+   The Consumer Products unit’s revenue for the review period was EUR 11.2 million (20.5), down 45.5% year-
+on-year. The year-on-year decline in revenue was due to a peak in revenue in 2016 coinciding with the release of
+the Angry Birds movie.
+   The Brand Licensing unit’s investments in the review period amounted to EUR 3.9 million (15.3), a significant
+decrease from the previous year. In January–December 2016, the Angry Birds movie’s production expenses were
+still significant, while Rovio’s decision to not finance the movie sequel itself significantly reduced investments in
+January–December 2017. The investments of EUR 3.9 million in January–December 2017 consisted of the last
+remaining own investments in the Angry Birds Movie sequel as well as investments in two short animated series
+still in production: The Blues and Piggy Tales season 4. The production for both series was finalized at the end of
+the review period. Rovio had no new short animated series under production at the end of the reporting period.
+   During the first half of 2017, the Brand Licensing segment was restructured to align with the new strategy
+that will see Rovio’s Angry Birds animated content production shift towards a licensing model. The restructuring
+measures led to a decrease in the number of personnel and lower personnel expenses as well as a decrease in
+other operating expenses. The lower cost level is not yet fully reflected in the EBITDA figure for 2017.
+
+
+EUR million                   10–12/2017     10–12/2016      Change, %      1–12/2017      1–12/2016      Change, %
+Revenue                               7.8           16.7        -53.3%            49.2           32.7         50.5%
+   Consumer products                  4.0            8.2        -51.9%            11.2           20.5        -45.5%
+   Content licensing                  3.8            8.5        -54.6%            38.0           12.2        211.7%
+Adjusted EBITDA                       3.7            8.7        -57.0%            31.9            5.8        450.5%
+EBITDA                                3.7            8.7        -57.0%            30.1            5.8        418.0%
+Capital expenditure                   0.2            3.1        -93.5%             3.9           15.3        -74.5%
+Amortization                          2.6            5.0        -47.6%            23.6            7.5        213.1%
+
+
+
+
+                                                                                                                 11
+Other segment
+
+Hatch Entertainment
+Hatch Entertainment Oy, a subsidiary in which Rovio holds an 80% stake, is developing a game streaming
+service for mobile devices. The product entered the open beta phase in the fourth quarter and is now free to
+download for Android phones on the Google Play Store in sixteen European countries. The purpose of the beta
+phase is to test the technical performance of the service, collect consumer feedback, and optimize its KPIs,
+such as user retention. The service, which already includes more than 100 games, will be monetized in the early
+stages through advertising.
+  Rovio financed the operations of Hatch Entertainment Oy by approximately EUR 5 million in 2017. Hatch did
+not generate any revenue during the review period.
+
+
+
+Consolidated statement of financial position
+Consolidated statement of financial position, EUR million                        31 Dec 2017         31 Dec 2016
+Non-current assets                                                                      57.4                76.9
+Current assets                                                                         132.8                72.8
+Current receivables                                                                     42.0                43.9
+Cash and cash equivalents                                                               90.8                28.9
+Total assets                                                                           190.2               149.7
+
+
+Equity                                                                                 140.4                86.8
+Financial liabilities                                                                    2.5                19.4
+Advances received and deferred income                                                    9.9                14.3
+Other payables                                                                          37.5                29.2
+Total equity and liabilities                                                           190.2               149.7
+
+
+
+Rovio’s consolidated statement of financial position amounted to EUR 190.2 million on December 31, 2017
+(December 31, 2016: 149.7), with total equity representing EUR 140.4 million (86.8) of this total. Total cash
+and cash equivalents amounted to EUR 90.8 million (28.9) at the end of the quarter. The significant increase
+in cash and cash equivalents during the financial year was attributable to funds raised by the IPO as well
+as business revenue. Total advances received and deferred income amounted to EUR 9.9 million (14.3). The
+decrease in advances received was mostly attributable to a higher amount of expired Consumer Products
+license agreements and associated recognized revenues in the comparison period as compared to new signed
+agreements and associated advance payments. The accrual of sales revenue was also reduced by a non-
+recurring adjustment to deferred revenue from in-app purchases.
+   On December 31, 2017, Rovio’s non-current assets totaled EUR 57.4 million (76.9). The change was primarily
+due to the amortization of intangible assets, particularly in relation to the development expenses of the first
+Angry Birds Movie. Rovio recognizes amortization on the movie in each reporting period in an amount that
+corresponds to 55% of the Angry Birds Movie’s revenue for the period in question. In addition, non-current
+deferred tax assets increased by approximately EUR 1.8 million.
+   Rovio’s net debt on December 31, 2017, stood at EUR -88.3 million. Rovio’s debt consisted of a loan from
+Tekes (the Finnish Funding Agency for Innovation) of EUR 2.5 million, with repayments starting in 2020.
+
+
+
+
+                                                                                                             12
+Consolidated statement of cash
+flows, EUR million                                10–12/2017              10–12/2016              1–12/2017              1–12/2016
+Cash flow from operating activities*                        5.8                    8.3                   59.6                    22.8
+Cash flow from investing activities*                       -1.1                   -4.8                    -8.1                 -23.3
+Cash flow from financing activities                        -4.6                   -8.0                   13.1                    -5.6
+Change in cash and cash equivalents                         0.2                   -4.5                   64.6                    -6.0
+
+
+Net foreign exchange difference                             0.0                    0.9                    -2.7                    0.5
+Cash and cash equivalents at the
+beginning of the period                                    90.7                   32.5                   28.9                    34.4
+Cash and cash equivalents at the end
+of the period                                              90.8                   28.9                   90.8                   28.9
+
+*Rovio has previously presented the disposals of advance payments for intangible assets as part of net cash flow from operating
+activities. Rovio changed the reporting of cash flows during the six-month period that ended on June 30, 2017. Disposals of advanced
+payments for intangible assets have been moved from net cash flow from operating activities to net cash flow used in investing
+activities. The change has also been applied to the comparison figures.
+
+
+Rovio’s net cash flow from operating activities amounted to EUR 5.8 million (8.3) in the final quarter and EUR
+59.6 million (22.8) in the twelve-month period that ended on December 31, 2017. The decrease in the fourth
+quarter was due to a change in EBITDA and taxes paid during the review period. The increase for the full year
+was attributable to higher EBITDA, boosted by movie-related revenue, as well as changes in working capital.
+Rovio’s total cash flow also improved due to a decrease in net cash flow from investing activities. The lower cash
+flow from investing activities was attributable to Rovio signing a production and distribution agreement with
+Columbia Pictures regarding the Angry Birds Movie sequels instead of investing in the production itself, as was
+the case for the first movie.
+   Cash flow from financing in the financial year that ended on December 31, 2017, amounted to EUR 13.1
+million (-5.6) and consisted of inflows of EUR 35.7 million in investments in the Initial Public Offering and stock
+option subscriptions, offset by EUR 1.3 million of share issue transaction costs, and outflows of EUR 16.7 million
+from the repayment of an installment of a loan from the European Investment Bank and EUR 4.5 million in
+dividend payments to the Company’s shareholders.
+
+
+
+Personnel
+From January to December 2017, Rovio’s average number of employees was 416 (476) in terms of full-time
+employees. The Games business unit employed 304 people (265), the Brand Licensing business unit 62 people
+(135), and other operations and administrative functions 50 people (77).
+   The number of employees has changed due to the restructuring of the Brand Licensing business and support
+functions. The new movie licensing model was implemented during the first quarter of 2017, which enabled
+the Company to operate with a smaller number of employees. The increase in the number of employees in the
+Games business unit is mainly due to the addition of the games technology team, which was previously separate
+from the Games business unit.
+
+
+                         10–12/ 2017        10–12/ 2016        Change, (%)         1–12/ 2017         1–12/ 2016        Change, (%)
+Employees
+(average for the
+period)                           397                472             -15.9%                416                   476         -12.6%
+
+
+
+
+                                                                                                                                 13
+Listing on the Helsinki stock exchange
+On September 5, 2017, Rovio Entertainment Corporation announced its intention to apply to have its shares
+listed on the official list of Nasdaq Helsinki. In conjunction with the listing, the Company’s existing shareholders
+offered shares for sale and the Company also issued new shares. The share subscription period began on
+September 18 and the Company submitted a listing application to the Helsinki stock exchange on September 21,
+2017. Trading in the Rovio share (trading code ROVIO, ISIN code FI4000266804) commenced on the main list of
+Nasdaq Helsinki on October 3, 2017.
+   The total expenses incurred by the Company from the listing amounted to EUR 3.9 million. Of this total, EUR
+2.6 million is recognized in other operating expenses, EUR 0.6 million is recognized in the Group’s financial
+expenses, and EUR 0.7 million (before taxes) is deducted from equity.
+
+
+
+Flagging notices
+Rovio received the following flagging notices in the fourth quarter related to the Company’s listing process:
+  On October 3, 2017, Trema International Holdings B.V. issued a flagging notice indicating that its direct
+holding of the shares in the Company had decreased to 36.64% and that its holding through financial
+instruments had increased above the threshold of 5%. The change was related to a share lending agreement by
+which Trema and Silavano Investments S.à.r.l lent 4,638,000 Rovio shares to Danske Bank. The arrangement did
+not affect Trema’s aggregate total holdings of Rovio shares.
+  On October 30, 2017, Trema International Holdings B.V. issued a flagging notice indicating that its direct
+holding of Rovio’s shares had increased to 41.45% and that its holding through financial instruments had
+decreased below the threshold of 5%.
+
+
+
+Shares and shareholders
+On December 31, 2017, Rovio’s share capital amounted to EUR 0.7 million and the number of shares was
+79,171,275. According to information provided by Euroclear, the Company’s five largest shareholders were
+Trema International Holdings B.V. with 40.79%, Varma Mutual Pension Insurance Company with 3.43%, Silavano
+Investments S.a.r.l. with 2.76%, Niklas Hed with 2.52%, and Ilmarinen Mutual Pension Insurance Company with
+2.26%. The five largest shareholders held 51.77% of the Company’s shares. The shareholdings of the 10 largest
+shareholders are presented in the table below (nominee-registered holdings excluded).
+
+
+                                                                            Number of          Percentage of shares
+     Shareholder                                                               shares                    and votes
+1.   Trema International Holdings B.V                                       32,297,528                      40.79%
+2.   Varma Mutual Pension Insurance Company                                  2,715,022                       3.43%
+3.   Silavano Investments S.Á.R.L.                                           2,183,734                       2.76%
+4.   Hed Niklas Peter                                                        1,996,746                       2.52%
+5.   Ilmarinen Mutual Pension Insurance Company                              1,792,500                       2.26%
+6.   Vesterbacka Jan-Peter Edvin                                             1,456,229                       1.84%
+7.   Elo Mutual Pension Insurance Company                                    1,200,000                       1.52%
+8.   The State Pension Fund                                                  1,000,000                       1.26%
+9.   Aktia Capital investment fund                                             875,074                       1.11%
+10. Mandatum Life Insurance Company Limited                                    720,000                       0.91%
+     Ten largest, total                                                    46,236,833                       58.40%
+
+
+     Other shareholders                                                     32,934,442                      41.60%
+     Total                                                                 79,171,275                      100.00%
+
+A monthly updated table of Rovio’s shareholders is available online at
+http://www.rovio.com/investors/shareholders.
+
+
+
+
+                                                                                                                14
+Share-based incentive program
+Rovio has a long-term incentive program that consists of an option plan for all employees, including the CEO
+and Rovio’s management, and a restricted share plan for selected key employees.
+   The option plan provides for the issuance of up to 5,000,000 options. Each option entitles its holder to
+subscribe for one share.
+   The option plan includes three lots of options that can be allocated to 2017, 2018, and 2019. The 2017
+options have a vesting period of two years. The 2018 and 2019 options have a vesting period of three years. The
+subscription price for the 2017 options is the share price in Rovio’s Initial Public Offering. The subscription
+price for the 2018 options is the trading volume-weighted average quotation of the shares on Nasdaq Helsinki
+during September 1 through September 30, 2018, and, for the 2019 options, the trading volume-weighted
+average quotation of the shares on Nasdaq Helsinki during September 1 through September 30, 2019. A total of
+1,312,650 options were allocated under the 2017 option program on December 31, 2017.
+   The option plan participants can execute their reward during a one-year subscription period following each
+vesting period through either subscribing for shares or selling options. The option plan participants generally
+lose the right to their reward if their employment terminates during the vesting period.
+   The restricted share plan is constructed as a restricted share pool from which a predetermined number
+of Rovio shares can be allocated to a limited number of selected key employees. The Company’s Board of
+Directors decides for each participant separately the length of the restricted period (1–3 years) relating to
+the shares allocated to the employee under the restricted share plan. The restricted share plan participants
+must be working at Rovio when the shares are transferred. The initial maximum number of shares that can
+be distributed through the restricted share plan is 500,000. Once the maximum number of shares has been
+allocated, the Board of Directors can decide on a new maximum number. A total of 303,800 rights entitling to
+shares had been allocated under the restricted share plan as of December 31, 2017.
+
+
+
+Corporate governance
+
+Decisions of the Annual General Meeting
+Rovio’s Annual General Meeting was held on May 30, 2017. The AGM approved the financial statements for the
+financial year ended December 31, 2016, and resolved that a total of EUR 4,496,906.76 be distributed to the
+Company’s shareholders as dividends from the profit for the financial year 2016. The dividend to be distributed
+per share amounted to EUR 0.06.
+   The AGM resolved that the number of members of the Board of Directors is six (6) ordinary members. Kaj
+Hed, Camilla Hed-Wilson, Niklas Zennström, Mika Ihamuotila, Kim Ignatius, and Jenny Wolfram were elected as
+ordinary members of the Board of Directors until further notice.
+   The AGM confirmed that authorized public accountants Ernst & Young Oy, who have been elected as the
+Company’s auditor until further notice, will remain the Company’s auditor, with APA Mikko Rytilahti as the
+responsible auditor.
+   The other resolutions of Rovio’s AGM are documented in the half-year financial report published as part of
+Rovio’s Offering Circular and in Rovio’s interim report for January–September 2017.
+   Rovio’s Extraordinary General Meeting held on September 8, 2017, resolved to amend the Articles of
+Association in their entirety, to change the Company’s corporate form to a public limited company in accordance
+with the amendment of the Articles of Association, and to register the new Articles of Association. In addition,
+the Extraordinary General Meeting authorized the Board of Directors to decide on issuing up to 10,000,000 new
+shares in one or more tranches in conjunction with Rovio’s listing on the official list of Nasdaq Helsinki Ltd as an
+Initial Public Offering, and decided that the public offering can be carried out in deviation from the shareholders’
+pre-emptive rights. It was further resolved that the Board of Directors may, based on the authorization, decide
+on all of the terms of the share issue, including the share subscription price or subscription interval. The
+authorization did not override any previously issued share issue authorizations. The General Meeting also
+authorized Rovio’s Board of Directors to decide on the approval of the organization agreement and the Offering
+Circular as well as on the submission of a listing application to Nasdaq Helsinki Ltd’s prelist and main list, along
+with other measures related to listing the Company on the stock exchange.
+
+
+
+
+                                                                                                                15
+Management
+At its meeting on May 30, 2017, Rovio’s Board of Directors elected Mika Ihamuotila as the Chairman and Kaj Hed
+as the Vice Chairman of the Board of Directors. Rovio’s Board of Directors also elected an Audit Committee from
+among its members, with Kim Ignatius as the Chairman and Mika Ihamuotila and Jenny Wolfram as members.
+The Board of Directors also elected a Remuneration Committee from among its members, with Kim Ignatius as
+the Chairman and Mika Ihamuotila and Jenny Wolfram as members.
+  Rauno Heinonen (52), M.Soc.Sc., was appointed Rovio’s SVP, Corporate Communication and Investor
+Relations, starting from the beginning of September 2017. Heinonen reports to CEO Kati Levoranta. Rauno
+Heinonen moved to Rovio from Alma Media Corporation, where he served as head of communications, investor
+relations and corporate responsibility since 2007. Prior to that, he has worked for various companies as head of
+communications since 1995.
+
+
+
+Risks
+The Company’s liquidity and cash flow is strong, and the profitability outlook remains positive, which enables the
+Company to continue to execute its business in accordance with its strategy.
+   Based on the Company’s assessment, there were no material changes in the risks and uncertainties during
+the review period.
+   The most significant risks are related to the financial performance of Rovio’s top games in the market, the
+continuous development of these games, and keeping up player activity. Risks in user acquisition relate to the
+accuracy of the profit models and the impact on the Group’s net profit. New games introduced by competitors
+and changes in the competitive landscape may also impact the success of Rovio’s games, revenues, size of user
+acquisition investments, and the Group’s profit.
+   Other significant risks relate to the demand for Angry Birds branded consumer products and other content
+that may impact the revenues of the Brand Licensing business unit.
+   The Company engages in business in several currencies, with the euro and U.S. dollar being the most
+significant. Fluctuations in exchange rates, particularly between the euro and the U.S. dollar could have a
+material impact on the Company’s result.
+   More details on the risks, uncertainties, and Rovio’s risk management can be found online at Rovio.com and
+in the most recent published financial statements.
+
+
+
+Outlook for 2018
+Rovio Group revenue is expected to be 260–300 million euros in 2018 (297 million euros in 2017). Rovio’s
+profitability as measured by earnings before interest and tax excluding items affecting comparability is expected
+to be 9 to 11 percent (10.6 percent in 2017).
+   In 2018, Rovio Games business will focus on continuing development of its live game portfolio according to the
+Games-as-a-Service strategy, profitable user acquisition and development of new games. The user acquisition
+investments are expected to be around 30 percent of Games revenues for the full year, however, the amount may
+vary depending on development of the games’ monetization and the level of competition in the market. The cost
+per acquired user has risen significantly in the market.
+   Brand Licensing segment revenues are expected to decline by 40% in 2018. The decline is due to the declining
+profile of the Angry Birds movie. The consumer products revenues are expected to be at similar level as in 2017.
+The focus of Brand Licensing in 2018 is on preparing the license portfolio for 2019 and the Angry Birds movie
+sequel.
+   During 2018, Rovio estimates to invest 10–15 million euros in its subsidiary Hatch Entertainment Oy that
+develops cloud streaming based game service (5 million euros in 2017). Approximately half of the investment
+will impact Group profit, ie. an impact of 2–3 %-points to the expected EBIT margin, and half will be capitalized
+development costs and advance payments. Hatch represents one possible way to play mobile games in the
+future. By investing in the development of Hatch’s streaming service Rovio diversifies its portfolio, aims to utilize
+the possibilities that new technologies offer for games business, and implements company’s strategy to explore
+the future of gaming alongside the continuous free-to-play games development.
+
+
+
+
+                                                                                                                 16
+Dividend proposal
+The parent company’s distributable funds amount to EUR 129,800,550.68, of which the profit for the period
+is EUR 19,577,177.06. The Board of Directors proposes to the Annual General Meeting to be held on April 16,
+2018 that a dividend of EUR 0.09 per share be paid (EUR 0.06 for 2016). No dividend will be paid on any treasury
+shares held by the Company. Based on the number of shares as of the balance sheet date, December 31, 2017,
+the total amount of the dividend is EUR 7,125,414.75.
+   There have been no significant changes in the Company’s financial position after the end of the financial year.
+In the Board of Directors’ view, the proposed distribution dividend does not compromise the Company’s solvency.
+
+
+
+Annual Review and Corporate Governance Statement
+The estimated time of publication of Rovio’s Annual Review 2017 is latest during the week 13, 2018. The Annual
+Review will be published online at www.rovio.com. The Annual Review will include the Report by the Board of
+Directors and the financial statements for 2017. Rovio’s Corporate Governance Statement and Remuneration
+Statement will be issued a separate documents from the financial statements and will become available for
+download at www.rovio.com.
+
+
+
+Annual General Meeting
+Rovio Entertainment Corporation’s Annual General Meeting will be held in Helsinki on April 16, 2018. More
+information is available online at
+https://www.rovio.com/investors/governance/corporate-governance/general-meeting-2018
+
+
+
+Events after the review period
+After the review period a total of 214,267 Rovio Entertainment Corporation’s new shares were subscribed
+for with stock options. The entire subscription price of EUR 688,744.98 was be recorded into the invested
+unrestricted equity reserve. As a result of the share subscriptions, the number of Rovio Entertainment
+Corporation’s shares increased to 79,385,542 shares. The shares subscribed for under the stock options were
+registered in the Trade Register on 22 February 2018, as of which date the new shares established shareholder
+rights.
+   On March 1st, 2018, Rovio decided on a plan that would see its game studio in London closed and the
+functions of the games business centralized in Espoo and Stockholm. Should the plan be implemented, the
+operations of the London studio will be discontinued by the end of March and the employment of the seven
+people working at the London studio will be terminated. Rovio plans to utilize the work done at the London
+studio in the MMO game genre at the Battle studio in Espoo, particularly in real-time player vs. player and team
+vs. team games (such as Battle Bay).
+   After the review period, a total of 214,267 Rovio Entertainment Corporation’s new shares have been
+subscribed for with the stock options. The entire subscription price of EUR 688,744.98 shall be recorded into the
+invested unrestricted equity reserve.
+   As a result of the share subscriptions, the number of Rovio Entertainment Corporation’s shares increased to
+79,385,542 shares.
+   The shares subscribed for under the stock options have been registered in the Trade Register on 22 February
+2018, as of which date the new shares will establish shareholder rights.
+
+
+
+
+                                                                                                              17
+Performance measures
+                                           10–12 /     10–12 /     Change,        1–12 /       1–12 /      Change,
+EUR million                                  2017        2016          (%)         2017         2016           (%)
+Revenue                                       73.9        63.2        17.0%        297.2        191.7        55.0%
+EBITDA                                        14.0        15.9       -11.7%         60.0         35.4        69.6%
+EBITDA margin                               19.0%       25.1%                      20.2%        18.5%
+Adjusted EBITDA                               14.1        15.9       -11.3%         64.5         35.4        82.3%
+   Adjusted EBITDA margin, %                19.0%       25.1%                      21.7%        18.5%
+Operating profit                              10.4         4.9      112.0%          31.4         16.9        85.8%
+   Operating profit margin, %               14.1%         7.8%                     10.6%         8.8%
+Adjusted operating profit                     10.5         4.9      113.2%          35.9         16.9       112.5%
+   Adjusted operating profit margin, %      14.2%         7.8%                     12.1%         8.8%
+Profit before tax                              9.9         5.1        93.3%         26.6         15.4        73.2%
+Capital expenditure                            1.1         4.8       -77.6%          8.5         23.3       -63.7%
+User acquisition cost                         15.9         7.7      107.4%          69.6         18.2       281.7%
+Return on equity (ROE), %                   23.4%       19.1%             -        23.4%        19.1%            -
+Net gearing ratio, %                       -62.9%       -11.5%            -       -62.9%       -11.5%            -
+Equity ratio, %                             77.9%       64.1%             -        77.9%        64.1%            -
+Earnings per share, EUR                       0.10        0.04      152.5%          0.27         0.14        92.9%
+Earnings per share, diluted EUR               0.10        0.04      149.4%          0.27         0.14        90.4%
+Net cash flows from operating activities       5.8         8.3       -30.1%         59.6         22.8       160.8%
+Employees (average for the period)            397          472       -15.9%          416          476       -12.6%
+
+
+
+Calculations and definitions are presented in the Performance Measures section below.
+
+Rovio presents alternative performance measures as additional information to financial measures presented
+in the consolidated income statements, consolidated balance sheets, and consolidated statements of cash
+flows prepared in accordance with IFRS. In Rovio’s view, the alternative performance measures provide the
+management, investors, securities analysts, and other parties with significant additional information related
+to Rovio’s results of operations, financial position or cash flows, and are often used by analysts, investors, and
+other parties.
+   Rovio presents adjusted EBITDA and adjusted operating profit, which have been adjusted for material items
+outside the ordinary course of business such as material net gains and losses from business disposals, direct
+transaction costs related to business acquisitions, restructuring costs for business operations, and costs
+relating to enlargement of the ownership base of the Company. Adjusted EBITDA and adjusted operating profit
+are presented as complementing measures to the measures included in the consolidated income statement
+presented in accordance with IFRS as, in Rovio’s view, they increase understanding of Rovio’s results of
+operations.
+   EBITDA, EBITDA margin, adjusted EBITDA, adjusted EBITDA margin, operating profit, operating profit margin,
+adjusted operating profit, and adjusted operating profit margin are shown as complementing measures to
+assess the profitability and efficiency of Rovio’s operations. User acquisition costs, user acquisition costs
+share of Games business unit’s revenue, %, and gross bookings are presented to enhance the comparability
+to other actors in the industry. Dividend per share, equity ratio, return on equity (ROE), net gearing, and capital
+expenditure are useful measures in assessing the efficiency of Rovio’s operations, and Rovio’s ability to obtain
+financing and service its debts.
+   The alternative performance measures should not be considered in isolation or as substitutes to the
+measures under IFRS. All companies do not calculate alternative performance measures in a uniform way and,
+therefore, the alternative performance measures presented here may not be comparable with similarly named
+measures presented by other companies.
+
+
+
+
+                                                                                                               18
+Reconciliation of adjusted operating profit
+                                                                                           Income statement
+                                                                                                   excluding
+                                                                  Items affecting             items affecting     10–12/2016*
+EUR million                               10–12/2017                comparability               comparability            IFRS
+Revenue                                            73.9                                                  73.9            63.2
+Other operating income                              0.0                                                   0.0             0.0
+Materials and services                            -22.1                                                 -22.1           -16.5
+Employee benefits expense                         -13.7                       0.0                       -13.7           -14.2
+Depreciation and
+amortization                                       -3.6                                                  -3.6           -10.9
+Other operating expenses                          -24.2                       0.1                       -24.1           -16.5
+Operating profit                                   10.4                       0.1                        10.5             4.9
+
+
+                                                                                           Income statement
+                                                                                                   excluding
+                                                                  Items affecting             items affecting     10–12/2016*
+EUR million                                 1–12/2017               comparability               comparability            IFRS
+Revenue                                           297.2                                                297.2            191.7
+Other operating income                              0.8                                                   0.8             0.1
+Materials and services                            -81.8                                                 -81.8           -52.9
+Employee benefits expense                         -51.9                       1.8                       -50.1           -49.5
+Depreciation and
+amortization                                      -28.6                                                 -28.6           -18.5
+Other operating expenses                        -104.2                        2.7                     -101.5            -53.9
+Operating profit                                  31.4                        4.5                       35.9             16.9
+
+*There were no items affecting comparability in the financial periods 10–12/2016 and 1–12/2016.
+
+
+
+
+Reconciliation of adjusted operating profit
+EUR million                                       10–12/2017              10–12/2016                1–12/2017      1–12/2016
+Operating profit                                          10.4                       4.9                   31.4          16.9
+Restructuring costs arising from
+employee benefits expenses                                  0.0                      0.0                    1.8           0.0
+Restructuring costs in Other
+operating expenses                                          0.0                      0.0                    0.1           0.0
+Listing-related expenses                                    0.1                      0.0                    2.5           0.0
+Adjusted operating profit                                 10.5                       4.9                   35.9          16.9
+
+
+
+Reconciliation of EBITDA and Adjusted EBITDA
+EUR million                                       10–12/2017              10–12/2016                1–12/2017      1–12/2016
+Operating profit                                          10.4                       4.9                   31.4          16.9
+Depreciation and amortization                               3.6                     10.9                   28.6          18.5
+EBITDA                                                    14.0                      15.9                   60.0          35.4
+Restructuring costs arising from
+employee benefits expenses                                  0.0                      0.0                    1.8           0.0
+Restructuring costs in Other
+operating expenses                                          0.0                      0.0                    0.1           0.0
+Listing-related expenses                                    0.1                      0.0                    2.5           0.0
+Adjusted EBITDA                                           14.1                      15.9                   64.5          35.4
+
+
+
+
+                                                                                                                          19
+Reconciliation of equity ratio, %, return on equity, %, net gearing ratio, %, and net debt
+EUR million                        10–12/2017            10–12/2016             1–12/2017            1–12/2016
+Equity ratio, %                          77.9%                64.1%                 77.9%                64.1%
+Equity                                   140.4                  86.8                 140.4                 86.8
+Advances received                           8.3                 11.5                   8.3                 11.5
+Deferred revenue                            1.6                  2.8                   1.6                  2.8
+Total assets                             190.2                 149.7                 190.2                149.7
+
+
+Return on equity, %                      23.4%                19.1%                 23.4%                19.1%
+Profit/loss before tax                     26.6                 15.4                  26.6                 15.4
+Shareholder's equity beginning
+of period                                  86.8                 74.4                  86.8                 74.4
+Shareholder's equity end of
+period                                   140.4                  86.8                 140.4                 86.8
+
+
+Net gearing ratio, %                    -62.9%               -11.5%                -62.9%               -11.5%
+Total interest bearing debt                 2.5                 19.0                   2.5                 19.0
+Cash and short-term deposits               90.8                 28.9                  90.8                 28.9
+Equity                                   140.4                  86.9                 140.4                 86.9
+
+
+Non-current interest-bearing
+loans and borrowings                        2.5                  2.5                   2.5                  2.5
+Current interest-bearing loans
+and borrowings                              0.0                 16.5                   0.0                 16.5
+Cash and short-term deposits               90.8                 28.9                  90.8                 28.9
+Net debt                                 -88.3                 -10.0                 -88.3                -10.0
+
+
+
+
+Gross bookings
+Gross bookings equals the monthly in-app purchases and advertising sales recorded at the time of sale/
+purchase. Gross bookings do not include revenue from custom contracts, change in deferred revenue nor the
+adjusted amounts to the revenue such as exchange rate differences between deferred revenue and payments
+and therefore differs from reported revenue. Gross bookings is used as the base for calculating certain key
+operational metrics (ARPDAU and MARPPU), as it gives a more accurate view of Rovio’s operating performance
+than revenue at a specific point in time.
+  The following table sets out reconciliation of gross bookings used in key operational metrics and reported
+revenue:
+
+Reconciliation of gross bookings to revenue
+EUR million                               10–12/2017         10–12/2016           1–12/2017          1–12/2016
+Gross bookings                                    66.1                 45.9            248.7              151.9
+Change in deferred revenue                         0.3                  0.5              1.0               -0.6
+Custom contracts                                   0.7                  0.0              1.4                8.5
+Other adjustments                                 -1.0                  0.1             -3.1               -0.8
+Revenue                                           66.1                 46.5           248.0               159.0
+
+
+
+Custom contracts are distribution contracts that are signed with partners who pre-download Rovio’s games onto
+their own devices or distribute Rovio’s games through their proprietary distribution platforms. Custom contracts
+usually contain a minimum guarantee and revenue share to Rovio. Rovio recognizes corresponding minimum
+guarantee revenue over the contract period. Custom contracts do not include the application stores operated by
+Apple and Google.
+
+
+
+                                                                                                            20
+Calculation principles of alternative performance measures
+EBITDA (Earnings before interest, taxes, depreciation and amortization), which is operating profit before
+depreciations and amortizations.
+EBITDA margin, %, which is defined as EBITDA as a percentage of revenue. Items affecting comparability,
+which are defined as material items outside the ordinary course of business such as material net gains and
+losses from business disposals, direct transaction costs related to business acquisitions, restructuring costs for
+business operations, and costs relating to enlargement of the ownership base of the company.
+Adjusted EBITDA, which is defined as EBITDA excluding items affecting comparability.
+Adjusted EBITDA margin, %, which is defined as comparable EBITDA as a percentage of revenue.
+Operating profit margin, %, which is operating profit as a percentage of revenue.
+Adjusted operating profit, which is defined as operating profit excluding items affecting comparability.
+Adjusted operating profit margin, %, which is defined as adjusted operating profit as a percentage of revenue.
+User acquisition costs, which relate to acquisition of new players in the Company’s games through performance
+marketing campaigns.
+User acquisition costs share of Games revenue, %, which is user acquisition costs as a percentage of Games
+revenue.
+Dividend per share, which is total dividend divided by number of shares, adjusted for share issues, at the end of
+the financial period less own shares.
+Earnings per share, which is the net result for the review period divided by the average number of shares in the
+review period, less treasury shares.
+Equity ratio, %, which is calculated by dividing (i) Total equity by (ii) Total equity and liabilities less advances
+received and deferred revenue.
+Return on equity (ROE), which is calculated by dividing net result for the period, quarterly reports adjusted to
+correspond with 12 months, by the average of total equity in the opening and closing balance sheet.
+Capital expenditure, which is cash flow of purchase of tangible and intangible assets.
+Net debt, which is calculated by subtracting cash and short-term deposits from current and non-current
+interest-bearing loans and borrowings.
+Net gearing %, which is calculated by dividing net debt by the total equity.
+Gross bookings represent in-app purchases and in-app advertising sales in the given calendar month, reported
+on the basis of the date of purchase/sale. Gross bookings do not include revenue from custom contracts,
+revenue deferrals or accounting adjustments due to e.g., foreign exchange rate differences between revenue
+accruals and actual payments, and thus differ from the actual reported revenue. The reconciliation of gross
+bookings to revenue is presented under “Reconciliation of Certain Alternative Performance Measures”. Gross
+bookings are used as the base for calculating certain key operational metrics (ARPDAU and MARPPU) as it gives
+a more accurate view of Rovio’s operating performance than revenue at a specific point in time.
+DAU, which is defined as the number of devices that played one of our games during a particular day. Under
+this metric, a device that plays two different games on the same day is counted as two DAUs. We primarily use
+information provided by Rovio’s own technology but we also use third-party tracking solutions for historical data
+and in cases when a game does not contain Rovio’s tracking tools. Average DAUs for a particular period is the
+average of the DAUs for each day during that period.
+MAU, which is defined as the number of devices that played one of our games in the during a particular calendar
+month. Under this metric, a device that plays two different games in the same month is counted as two MAUs.
+We primarily use information provided by Rovio’s own technology but we also use third party tracking solutions
+for historical data and in cases when a game does not contain Rovio’s tracking tools.
+
+
+
+
+                                                                                                                       21
+MUP, which is defined as the number of devices that made a payment at least once during the calendar month
+through a payment method for which we can quantify the number of individuals, including payers from our
+mobile games. MUPs does not include individuals who use certain payment methods for which we cannot
+quantify the number of unique payers. We only use information provided by Rovio’s own payment verification
+technology. Due to this history data is only available from September 2014 onward.
+ARPDAU (Average Revenue Per Daily Active User), which is defined as Sum of quarterly Gross Bookings divided
+by number of days in the quarter divided by average DAU for the quarter.
+MARPPU (Monthly Average Revenue Per Paying User), which is defined as Monthly Gross IAP Bookings divided
+by MUP from verified purchases. MARPPU does not include revenue from custom contracts, revenue deferrals
+or accounting adjustments such as foreign exchange rate differences between revenue accruals and actual
+payments.
+
+
+
+
+                                                                                                        22
+Financial Statement Bulletin January 1–December 31, 2017 – Tables
+The Financial Statement Bulletin is based on the audited financial statements for the year 2017
+
+
+
+Statement of consolidated profit or loss and other comprehensive income
+                                               10–12/   10–12/     Change,       1–12/        1–12/      Change,
+EUR million                                      2017     2016         (%)        2017         2016          (%)
+Revenue                                          73.9     63.2       17.0%        297.2       191.7        55.0%
+Other operating income                            0.0       0.0    -233.9%          0.8            0.1   1,430.8%
+Materials and services                           22.1     16.5       33.8%         81.8           52.9     54.5%
+Employee benefits expense                        13.7     14.2       -3.7%         51.9           49.5      4.9%
+Depreciation and amortization                     3.6     10.9      -67.4%         28.6           18.5     54.7%
+Other operating expenses                         24.2     16.5       46.2%        104.2           53.9     93.3%
+
+
+Operating profit                                 10.4      4.9      112.0%         31.4           16.9     85.7%
+Finance income and expenses                      -0.4       0.4    -223.8%         -4.7           -1.4    235.1%
+Share of profit of associates                    -0.1      -0.1     -59.0%         -0.1           -0.1    -59.0%
+Profit (loss) before tax                          9.9      5.1       93.3%         26.6           15.4     72.9%
+
+
+Income tax expense                                1.9       2.1      -8.4%          6.0            4.8     25.7%
+Profit for the period                             8.0      3.0      163.4%         20.6           10.6     94.3%
+
+
+Attributable to: Non-controlling interests        0.0       0.0                     0.0              -
+Equity holders of the parent company              8.0       3.0     163.4%         20.6           10.6     94.3%
+Other comprehensive income/expense
+Other comprehensive income to be
+reclassified to profit or loss in subsequent
+periods (net of tax):
+Translation differences                           0.0       0.1                    -0.4            0.0
+Total comprehensive income for the
+period, net of tax                                8.0      3.1      156.8%         20.2           10.6     90.3%
+
+
+Attributable to: Non-controlling interests        0.0      -0.1                     0.0            0.0
+Equity holders of the parent company              8.0      3.2      149.5%         20.2           10.6     90.3%
+
+
+Earnings per share for net result
+attributable to owners of the parent:
+Earnings per share, EUR                          0.10      0.04     152.5%         0.27           0.14     92.9%
+Earnings per share, diluted EUR                  0.10      0.04     149.4%         0.27           0.14     90.4%
+
+
+
+
+                                                                                                             23
+Consolidated statement of financial position
+EUR million                                    31 Dec 2017   31 Dec 2016
+ASSETS
+Non-current assets                                    57.4          76.9
+Property, plant and equipment                          0.5           0.7
+Intangible assets                                     53.1          73.8
+Investment in associates and joint ventures            0.0           0.1
+Non-current receivables                                0.8           1.1
+Deferred tax assets                                    3.0           1.2
+Current assets                                       132.8          72.8
+Trade receivables                                     29.1          28.0
+Prepayments and accrued income                        10.6          15.2
+Other current financial assets                         2.3           0.7
+Cash and short-term deposits                          90.8          28.9
+Total assets                                         190.2         149.7
+
+
+EQUITY AND LIABILITIES
+Equity
+Issued capital                                         0.7           0.7
+Reserves                                              35.8           0.8
+Translation differences                               -0.5          -0.1
+Retained earnings                                     83.7          74.9
+Profit for the period                                 20.6          10.6
+
+
+Equity holders of the parent company                 140.4          86.9
+Non-controlling interests                              0.0           0.0
+Total equity                                         140.4          86.8
+
+
+Liabilities
+Non-current liabilities                                2.7           2.6
+Interest-bearing loans and borrowings                  2.5           2.5
+Other non-current financial liabilities                0.1           0.0
+Deferred tax liabilities                               0.1           0.1
+Current liabilities                                   47.1          60.2
+Trade and other payables                               8.9           7.9
+Interest-bearing loans and borrowings                  0.0          16.5
+Other current financial liabilities                    1.9           0.4
+Advances received                                      8.3          11.5
+Deferred revenue                                       1.6           2.8
+Income tax payable                                     4.4           0.0
+Provisions                                             0.8           0.8
+Accrued liabilities                                   21.2          20.4
+Total liabilities                                     49.8          62.9
+Total equity and liabilities                         190.2         149.7
+
+
+
+
+                                                                    24
+Consolidated statement of changes in equity
+
+Attributable to the equity holders of the parent on December 31, 2017
+
+
+                                                                  Foreign
+                                     Unrestricted                currency                  Non-
+                             Issued        equity   Retained   translation           controlling
+EUR million                  capital     reserve    earnings      reserve    Total     interests Total equity
+January 1, 2017                 0.7           0.8       85.5          -0.1    86.9          0.0         86.8
+Profit for the period                                   20.6                  20.6                       20.6
+Issue of share capital                       30.0                             30.0                       30.0
+Share issue transaction
+costs                                        -0.6                             -0.6                       -0.6
+Option subscriptions                          5.7                              5.7                        5.7
+Other comprehensive
+income                                                                -0.4    -0.4                       -0.4
+Share-based payments                                     2.8                   2.8                        2.8
+Cash dividends                                          -4.5                  -4.5                       -4.5
+December 31, 2017               0.7         35.8       104.3          -0.5   140.4          0.0        140.4
+
+
+
+Attributable to the equity holders of the parent on December 31, 2016
+
+
+                                                                  Foreign
+                                     Unrestricted                currency                  Non-
+                             Issued        equity   Retained   translation           controlling
+EUR million                  capital     reserve    earnings      reserve    Total     interests Total equity
+January 1, 2016                 0.7           0.8       73.0          -0.1    74.4          0.0         74.4
+Profit for the period                                   10.6                  10.6                       10.6
+Other comprehensive
+income                                                                 0.0     0.0                        0.0
+Share-based payments                                     1.9                   1.9                        1.9
+Cash dividends
+December 31, 2016               0.7           0.8       85.5          -0.1    86.9          0.0         86.9
+
+
+
+
+                                                                                                         25
+Consolidated statement of cash flows
+EUR million                                                         10–12/2017       10–12/2016               2017             2016
+Operating activities
+Profit (loss) before tax                                                      9.9              5.1             26.6             15.4
+Adjustments:
+Depreciation and amortization on tangible and intangible
+assets                                                                        3.6             10.9             28.6             18.5
+Net foreign exchange differences                                              0.1             -0.8              2.7             -0.4
+Gain on disposal of property, plant and equipment                             0.0              0.0             -0.3               0.0
+Finance costs                                                                 0.7              0.5              2.0               1.8
+Share of profit of an associate and a joint venture                           0.1              0.1              0.1               0.1
+Other non-cash items                                                          1.3              0.9              3.0               1.9
+Change in working capital:
+Change in trade and other receivables and prepayments                        -5.3             -4.3              0.3            -10.2
+Change in trade and other payables                                           -3.6             -3.9             -1.1              -2.4
+Interest received                                                             0.0              0.0              0.0               0.0
+Interest paid                                                                -0.4             -0.9             -1.3              -1.8
+Income tax paid (received)                                                   -0.6              0.6             -1.0              -0.1
+Net cash flows from operating activities                                      5.8              8.3             59.6             22.8
+
+
+Investing activities
+Purchase of tangible and intangible assets*                                  -1.1             -4.8             -8.5            -23.3
+Proceeds from sales of tangible and intangible assets                         0.0              0.0              0.3               0.0
+Net cash flows used in investing activities                                  -1.1             -4.8             -8.1            -23.3
+
+
+Financing activities
+Acquisition of non-controlling interests                                      0.0              0.0              0.0               0.0
+Finance lease repayments                                                      0.0              0.0             -0.1               0.0
+Proceeds from and repayments of borrowings                                   -8.3             -8.0            -16.7              -5.6
+Share subscriptions based on option rights                                    4.5              0.0              5.7               0.0
+Proceeds of share issue                                                       0.0              0.0             30.0               0.0
+Share issue transaction costs                                                -0.7              0.0             -1.3               0.0
+Dividends paid to equity holders of the parent                                0.0              0.0             -4.5               0.0
+Net cash flows from/(used in) financing activities                           -4.6             -8.0             13.1             -5.6
+Change in cash and cash equivalents                                           0.2             -4.5             64.6             -6.0
+
+
+Net foreign exchange difference                                               0.0              0.9             -2.7               0.5
+Cash and cash equivalents at beginning of period                             90.7             32.5             28.9             34.4
+Cash and cash equivalents at the end of the period                          90.8              28.9             90.8             28.9
+
+*Rovio has previously presented the disposals of advance payments for intangible assets as part of net cash flow from operating
+activities. Rovio changed the reporting of cash flows during the six-month period that ended on June 30, 2017. Disposals of advanced
+payments for intangible assets have been moved from net cash flow from operating activities to net cash flow used in investing
+activities. The change has also been applied to comparison figures presented in these interim financial statements.
+
+
+
+
+                                                                                                                                 26
+Notes
+
+1. Key accounting principles
+Rovio’s consolidated financial statements are prepared in accordance with the International Financial Reporting
+Standards (IFRS) adopted by the EU. The Financial Statement Bulletin has been drawn up in accordance with
+IAS 34 and using the same accounting policies and calculation methods as the annual financial statements. The
+figures in the Financial Statement Bulletin are based on the audited financial statements for 2017.
+   The company adopted IFRS 8 Operating segments and IAS 33 Earnings per share during the 2017 financial
+year.
+   The figures in the consolidated interim financial statements have been rounded and consequently the sum of
+individual figures may deviate from the sum presented. Key figures have been calculated using exact figures.
+   This interim report does not include all the information or disclosures as presented in the consolidated
+financial statements of December 31, 2017.
+
+2. Notes to the statement of profit or loss
+2.1 Segment disclosures
+In the second quarter of 2017, Rovio adopted IFRS 8 and defined its operating segments as Games, Brand
+Licensing (BLU) and Other. Rovio’s business was previously divided into three business lines: Games, Licensing,
+and Merchandise and Media.
+   Rovio defines the Group’s Board of Directors as its chief operating decision maker (CODM). The CODM follows
+Rovio’s performance on the segment level, which is presented in section 2.2 Segment operating performance.
+EBITDA is the primary performance measure that CODM follows. There are no revenues between the operating
+segments of Rovio Group.
+   The segment assets and liabilities except for non-current assets are not reported and reviewed by the chief
+operating decision maker and have not been included in the table below.
+   The Games segment does not have customers that would require disclosure (i.e. 10% or more of revenues
+from transactions with a single customer). The Brand Licensing segment has one customer that accounts for
+more than 10% of the Group’s total revenue. Sony Pictures and its affiliates and subsidiaries accounted for EUR
+36.5 million of revenue in 2017.
+
+2.2 Segment operating performance
+The allocations between segments consist of shared functions employee benefits expense as well as general
+and administrative expenses that are recognized centrally and allocated to the reportable segments as a
+separate line item in management reporting.
+
+
+
+
+                                                                                                           27
+Segment profit and loss 10–12/2017
+                                                 Brand                         Total IFRS
+EUR million                          Games    Licensing   Other   Allocation   segments
+Revenue                               66.1          7.8     0.0                     73.9
+Other operating income                  0.0         0.0     0.0                       0.0
+Materials and services                 21.1         1.1     0.0                      22.1
+Employee benefits expense               9.5         1.4     2.0          0.8         13.7
+User acquisition                       15.9         0.0     0.0                      15.9
+Other operating expenses                4.4         1.2     1.3          1.4          8.3
+Allocations                             1.3         0.4     0.4         -2.2          0.0
+EBITDA                                14.0          3.7    -3.7          0.0        14.0
+Depreciation and amortization           0.9         2.6     0.1                       3.6
+Operating profit                      13.1          1.1    -3.8                     10.4
+
+
+EBITDA                                14.0          3.7    -3.7                     14.0
+Adjustments                             0.0         0.0     0.1                       0.1
+Adjusted EBITDA                       14.0          3.7    -3.7                     14.1
+
+
+Operating profit                      13.1          1.1    -3.8                     10.4
+Adjustments                             0.0         0.0     0.1                       0.1
+Adjusted operating profit             13.1          1.1    -3.8                     10.5
+
+
+
+
+Capital expenditure 10–12/2017
+                                                 Brand                         Total IFRS
+EUR million                          Games    Licensing   Other                segments
+Capital expenditure                     0.9         0.2     0.0                       1.1
+
+
+
+Segment assets Dec 31, 2017
+                                                 Brand                         Total IFRS
+EUR million                          Games    Licensing   Other                segments
+Non-current assets                      8.7        43.3     5.4                      57.4
+
+
+
+
+                                                                                     28
+Segment profit and loss 10–12/2016
+                                                 Brand                         Total IFRS
+EUR million                          Games    Licensing   Other   Allocation   segments
+Revenue                               46.5         16.7     0.0                     63.2
+Other operating income                 -0.1         0.0     0.0                       0.0
+Materials and services                 14.7         1.8     0.0                      16.5
+Employee benefits expense               7.0         3.1     1.4          2.8         14.2
+User acquisition                        7.7         0.0     0.0                       7.7
+Other operating expenses                3.4         2.4     1.6          1.5          8.9
+Allocations                             3.1         0.7     0.4         -4.3          0.0
+EBITDA                                10.5          8.7    -3.3         0.0         15.9
+Depreciation and amortization           5.9         5.0     0.1                      10.9
+Operating profit                       4.7          3.7    -3.4                       4.9
+
+
+EBITDA                                10.5          8.7    -3.3                     15.9
+Adjustments                             0.0         0.0     0.0                       0.0
+Adjusted EBITDA                       10.5          8.7    -3.3                     15.9
+
+
+Operating profit                       4.7          3.7    -3.4                       4.9
+Adjustments                             0.0         0.0     0.0                       0.0
+Adjusted operating profit              4.7          3.7    -3.4                       4.9
+
+
+
+
+Capital expenditure 10–12/2016
+                                                 Brand                         Total IFRS
+EUR million                          Games    Licensing   Other                segments
+Capital expenditure                     1.6         3.1     0.1                       4.8
+
+
+
+Segment assets Dec 31, 2016
+                                                 Brand                         Total IFRS
+EUR million                          Games    Licensing   Other                segments
+Non-Current Assets                      8.9        63.8     4.2                      76.9
+
+
+
+
+                                                                                     29
+Segment profit and loss 1–12/2017
+                                                Brand                         Total IFRS
+EUR million                         Games    Licensing   Other   Allocation   segments
+Revenue                              248.0        49.2     0.0                    297.2
+Other operating income                 0.1         0.3     0.3                       0.8
+Materials and services                78.4         3.4     0.0                      81.8
+Employee benefits expense             34.9         8.3     5.8          3.0         51.9
+User acquisition                      69.6         0.0     0.0                      69.6
+Other operating expenses              16.9         5.8     6.5          5.5         34.6
+Allocations                            5.2         2.0     1.3         -8.4          0.0
+EBITDA                                43.2        30.1   -13.2          0.0        60.0
+Depreciation and amortization          4.7        23.6     0.3                      28.6
+Operating profit                      38.4         6.4   -13.5                     31.4
+
+
+EBITDA                                43.2        30.1   -13.2                     60.0
+Adjustments                            0.1         1.9     2.6                       4.5
+Adjusted EBITDA                       43.2        31.9   -10.7                     64.5
+
+
+Operating profit                      38.4         6.4   -13.5                     31.4
+Adjustments                            0.1         1.9     2.6                       4.5
+Adjusted operating profit             38.5         8.3   -11.0                     35.9
+
+
+
+
+Capital expenditure 1–12/2017
+                                                Brand                         Total IFRS
+EUR million                         Games    Licensing   Other                segments
+Capital expenditure                    4.1         3.9     0.4                       8.5
+
+
+
+Segment assetS Dec 31, 2017
+                                                Brand                         Total IFRS
+EUR million                         Games    Licensing   Other                segments
+Non-current assets                     8.7        43.3     5.4                      57.4
+
+
+
+
+                                                                                    30
+Segment profit and loss 1–12/2016
+                                                             Brand                                      Total IFRS
+EUR million                                  Games        Licensing          Other       Allocation     segments
+Revenue                                        159.0           32.7             0.0                         191.7
+Other operating income                           0.0             0.0            0.1                            0.0
+Materials and services                          49.5             3.5            0.0                           52.9
+Employee benefits expense                       23.6           11.0             5.4             9.5           49.5
+User acquisition                                18.2             0.0            0.0                           18.2
+Other operating expenses                        16.1             8.5            3.2             7.9           35.7
+Allocations                                     11.9             3.8            1.7           -17.4            0.0
+EBITDA                                          39.8            5.8           -10.2             0.0           35.4
+Depreciation and amortization                   10.8             7.5            0.1                           18.5
+Operating profit                                28.9           -1.7           -10.3                           16.9
+
+
+EBITDA                                          39.8            5.8           -10.2                           35.4
+Adjustments                                      0.0             0.0            0.0                            0.0
+Adjusted EBITDA                                 39.8            5.8           -10.2                           35.4
+
+
+Operating profit                                28.9           -1.7           -10.3                           16.9
+Adjustments                                      0.0             0.0            0.0                            0.0
+Adjusted operating profit                       28.9           -1.7           -10.3                           16.9
+
+
+
+
+Capital Expenditure 1–12/2016
+                                                             Brand                                      Total IFRS
+EUR million                                  Games        Licensing          Other                      segments
+Capital expenditure                              7.3           15.3             0.7                           23.3
+
+
+
+Segment assetS Dec 31, 2016
+                                                             Brand                                      Total IFRS
+EUR million                                  Games        Licensing          Other                      segments
+Non-Current Assets                               8.9           63.8             4.2                           76.9
+
+
+2.3 Geographical distribution of revenue
+The Group’s business is very international. North America, and the United States in particular, is Rovio’s largest
+market. The geographical distribution of revenue per segment is presented below.
+   For in-app purchases and advertising revenue, the Games segment’s revenue has been allocated to the
+geographical markets based on gross bookings, which can be monitored on a country-specific basis. Revenue
+from custom contracts is presented based on the customer’s home country. Revenue deferrals and other
+adjustment items have been allocated to the geographical markets in proportion to gross bookings, as they are
+estimated to largely follow the same structure.
+   The licensing revenue of the Brand Licensing segment has been allocated to the geographical markets based
+on reported royalties and, for terminating contracts, according to the partner’s home country. Revenue from
+content sales (movie, short form animations) has been allocated to the geographical markets based on the
+home country of the distribution partner or contractual partner. The advertising revenue allocated to the Brand
+Licensing segment has been allocated to the geographical markets according to the same principle as in the
+Games segment.
+
+
+
+
+                                                                                                              31
+                                              10–12/2017                              10–12/2016
+                                                 Brand                                   Brand
+EUR million                       Games       Licensing          Total       Games    Licensing        Total
+NAM                                 40.5             4.0          44.5         30.2         8.5         38.7
+LATAM                                1.2             1.0           2.1          0.6         1.7          2.3
+EMEA                                18.5             1.8          20.3         12.0         4.7         16.7
+APAC                                 5.9             1.0           7.0          3.6         1.8          5.4
+Total                               66.1             7.8          73.9         46.5        16.7         63.2
+
+
+                                                   2017                                   2016
+                                                 Brand                                   Brand
+EUR million                       Games       Licensing          Total       Games    Licensing        Total
+NAM                                158.0            38.2         196.2         99.3        12.0        111.3
+LATAM                                3.7             2.1           5.8          1.9         3.6          5.5
+EMEA                                64.0             5.9          69.9         39.8        13.4         53.1
+APAC                                22.3             2.9          25.2         18.0         3.7         21.7
+Total                              248.0            49.2         297.2        159.0        32.7        191.7
+
+
+
+2.4 Disaggregation of revenue from contracts with Customers according to IFRS15
+
+
+EUR million
+                                     Timing of revenue
+Segment and revenue stream                 recognition      10–12/2017   10–12/2016   1–12/2017    1–12/2016
+Games
+                                   At a point in time and
+In-application purchases                        over time         58.0         38.9       219.7        122.7
+Subscription payments                          Over time           0.0          0.0         0.0          0.0
+Custom contracts                               Over time           0.7          0.0         1.4          8.5
+Advertising                            At a point in time          7.4          7.6        27.0         27.9
+Games total revenue                                               66.1         46.5       248.0        159.0
+
+
+Brand Licensing
+                                   At a point in time and
+IP Licensing and tangible sales                 over time          4.0          8.1        11.2         21.3
+Animation broadcasting and
+distribution                           At a point in time          3.8          7.4        37.3          8.2
+Advertising                            At a point in time          0.1          1.2         0.7          3.1
+Brand Licensing total revenue                                      7.8         16.7        49.2         32.7
+Group revenue                                                     73.9         63.2       297.2        191.7
+
+
+
+
+                                                                                                         32
+3. Notes to the statement of financial position
+3.1 Non-Current Assets – Intangible assets
+In 2017, the total impairment of intangibles amounted to EUR 2.0 million. The full amount was related to a
+write-off of an unfinished and unreleased external game production project. The game was not expected to meet
+Rovio’s financial targets and, consequently, it was canceled.
+   Reconciliation of beginning and ending balances by classes of assets:
+
+
+                                Development                               Development          Development
+EUR million                    costs - Games          Trademarks          costs - Movie        costs - Other                 Total
+Cost
+At January 1, 2016                       23.8                   2.2                 50.3                 13.2                    89.6
+Additions                                  7.3                  0.2                 13.4                  2.0                    22.8
+At December 31, 2016                     31.1                   2.5                 63.7                 15.2                112.4
+Additions                                  4.1                  0.3                  1.9                  2.0                     8.2
+Disposals*                                 0.0                  0.0                 -0.8                  0.0                    -0.8
+Reclassification                           0.0                 -1.2                 -1.8                  3.0                     0.0
+At December 31, 2017                     35.2                   1.5                 63.0                 20.2                119.8
+
+
+Amortization and
+impairment
+At January 1, 2016                       11.9                   1.1                  0.9                  6.9                    20.8
+Amortization                               4.6                  0.2                  4.2                  3.1                    12.1
+Impairment                                 5.8                  0.0                  0.0                  0.0                     5.8
+At December 31, 2016                     22.2                   1.4                  5.1                 10.0                    38.7
+
+
+Amortization                               2.3                  0.2                 20.1                  3.4                    26.1
+Impairment                                 2.0                  0.0                  0.0                  0.0                     2.0
+Reclassification                           0.0                 -1.0                 -1.4                  2.4                     0.0
+At December 31, 2017                     26.5                   0.6                 23.8                 15.8                    66.8
+
+
+Carrying amount
+At December 31, 2016                       8.9                  1.1                 58.6                  5.2                    73.8
+At December 31, 2017                       8.7                  0.9                 39.2                  4.3                    53.1
+
+*The Canadian government grants of Eur 0.6 million received for the production of the Angry Birds Movie have been presented as
+reduction of acquisition value based on IAS 20Accounting for Government Grants and Disclosure of Government Assistance
+
+
+
+Development expenses still in production at December 31, 2017, amounted to EUR 4.0 million.
+
+
+
+
+                                                                                                                                 33
+3.2 Non-Current Assets – Tangible assets
+There were no material changes in tangible assets during the 2017 financial year.
+
+
+EUR million                                                                         Machinery and equipment
+Cost or valuation
+At January 1, 2016                                                                                      4.7
+Additions                                                                                               0.5
+Disposals                                                                                              -0.1
+Translation differences                                                                                 0.0
+At December 31, 2016                                                                                    5.1
+
+
+At December 31, 2016                                                                                    5.1
+Additions                                                                                               0.4
+Disposals                                                                                              -0.3
+Translation differences                                                                                -0.1
+At December 31, 2017                                                                                    5.0
+
+
+Amortization and impairment
+At January 1, 2016                                                                                     -3.6
+Depreciation charge for the period                                                                     -0.8
+Disposals                                                                                               0.1
+Translation differences                                                                                 0.0
+At December 31, 2016                                                                                   -4.4
+
+
+At December 31, 2016                                                                                   -4.4
+Depreciation charge for the period                                                                     -0.5
+Disposals                                                                                               0.1
+Translation differences                                                                                 0.1
+At December 31, 2017                                                                                   -4.6
+
+
+Carrying amount
+At December 31, 2016                                                                                    0.7
+At December 31, 2017                                                                                    0.5
+
+
+
+
+                                                                                                        34
+4. Changes in contingent liabilities or contingent assets
+Future minimum rentals payable under non-cancelable operating leases as follows:
+
+
+EUR million                                           At December 31, 2017                  At December 31, 2016
+Equipment lease commitments
+Due within one year                                                    0.1                                   0.0
+Due in subsequent years                                                0.1                                   0.1
+Total                                                                  0.3                                   0.1
+
+
+Office rental commitments
+Due within one year                                                    2.5                                   2.7
+Due in subsequent years                                                3.7                                   5.6
+Total                                                                  6.1                                   8.2
+
+
+Other commitments
+Enterprise mortgages                                                  30.0                                  30.0
+Total                                                                 30.0                                  30.0
+
+
+
+
+5. Related party transactions
+Rovio’s related parties include its subsidiaries, associates, key persons belonging to the management and their
+close family members and entities controlled by them, and entities with significant influence on Rovio.
+   Trema is an entity with significant influence over the Rovio Group. Trema’s previous control over the Rovio
+Group ended following the sales of shares carried out in conjunction with the Initial Public Offering. Sunwoo
+Entertainment Co., Ltd and Fun Academy Oy are associates to the Rovio Group. Kaiken Entertainment Oy is
+a company controlled by Mikael Hed and, therefore, Rovio’s related party. Mikael Hed is a minority owner of
+Trema and he exercises significant influence on the company. He also directly held 0.39% of Rovio’s shares as of
+December 31, 2017.
+   In June 2017, EUR 3.1 million was paid out as dividend between the Rovio Group and Trema.
+   In February 2016, Rovio’s subsidiary Dark Matter Oy acquired all the shares in Kaiken Publishing Oy owned
+by Mikael Hed and part of the shares owned by the other shareholder in Kaiken Publishing Oy for an aggregate
+purchase price of EUR 2,000. The other shareholder was left with 20% ownership in Kaiken Publishing Oy and
+the Rovio Group became the owner of 80% of the shares. Soon thereafter, Rovio transferred its publishing
+business to Kaiken Publishing Oy in a business transfer. Kaiken Publishing Oy borrowed the purchase price of
+EUR 0.2 million from Rovio under a loan agreement. At the same time, the parties also entered into a separate
+license agreement based on which Kaiken Publishing Oy served as the master licensee of the Angry Birds brand
+in book and comics publishing.
+   In March 2017, Rovio Animation Oy and Dark Matter Oy, wholly owned subsidiaries of Rovio, sold all the shares
+they owned in Rovio’s TV animation studio entity in Vancouver, Canada (Rovio Animation Company Ltd), all the
+shares they owned in Rovio’s book publishing business entity, Kaiken Publishing Oy, as well as certain non-Angry
+Birds IP to Kaiken Entertainment Oy. Kaiken Entertainment Oy paid a purchase price of EUR 1 for the shares in
+Kaiken Publishing Oy and a purchase price of CAD 1 for the shares in Rovio Animation Company Ltd. Further, in
+connection with the transaction, Kaiken Entertainment Oy repaid Kaiken Publishing Oy’s EUR 0.2 million loan to
+Rovio relating to the transfer of the book publishing business as well as a purchase price of EUR 0.1 million for
+the purchased IPs.
+   The master license agreement between Rovio and Kaiken Publishing Oy concerning the Angry Birds brand
+in book and comics publishing, entered into in 2016, remained in force. Based on the license agreement with
+Kaiken Publishing Oy, Rovio received licensing income of EUR 18 thousand during the 2017 financial year (EUR
+44 thousand during the time period of February 1, 2016 to December 31, 2016).
+   After the aforementioned corporate acquisition, the buyer changed the name of Rovio Animation Company Ltd
+to Kaiken Animation Ltd. Kaiken Animation Ltd continued the production of animated series ordered by Rovio
+Animation Company Ltd from subcontractors and management of the production of the subcontractors. Kaiken
+
+
+
+                                                                                                             35
+Animation Ltd has invoiced Rovio for its services in the amount of CAD 1.2 million (approximately EUR 0.9
+million) in accordance with the actual costs during the 2017 financial year.
+
+6. Divestments
+In March 2017, Rovio Animation Oy and Dark Matter Oy, wholly owned subsidiaries of Rovio Entertainment Oy,
+sold all the shares they owned in Rovio Animation Company Ltd in Vancouver, Canada, and Kaiken Publishing Oy,
+Helsinki, Finland, to Kaiken Entertainment Oy.
+   The assets transferred in the divestment amounted to approximately EUR 0.9 million and the liabilities to
+approximately EUR 1.2 million. In addition, Rovio divested certain non-Angry Birds-related Intellectual Property
+Rights with a carrying value of EUR 0 to Kaiken Entertainment Oy for EUR 0.1 million. The accounting profit
+related to the divestment amounted to approximately EUR 0.4 million.
+
+7. Calculation of earnings per share
+                                          10–12/2017          10–12/2016          1–12/2017           1–12/2016
+Earnings per share, EUR                          0.10                0.04               0.27                  0.14
+Earnings per share, diluted, EUR                 0.10                0.04               0.27                  0.14
+Shares outstanding at the end of the
+period (thousands)                             79,171              74,945             79,171                74,945
+Weighted average adjusted number
+of shares during the financial period,
+basic (thousands)                              78,180              74,945             75,795                74,945
+Weighted average adjusted number
+of shares during the financial period,
+diluted (thousands)                            80,108              75,851             77,370                75,508
+
+
+
+
+Espoo, March 2, 2018
+
+ROVIO ENTERTAINMENT CORPORATION
+
+Board of Directors
+
+
+
+
+                                                                                                              36
+

@@ -1,0 +1,99 @@
+wordle solo ['/g/11smcj06ct'] 2021-04-04..2025-09-30
+wordle scale ['/g/11smcj06ct', 'sudoku', 'weather'] 2021-04-04..2025-09-30
+absurdle solo ['absurdle'] 2021-07-08..2026-01-03
+absurdle scale ['absurdle', 'sudoku', 'weather'] 2021-07-08..2026-01-03
+quordle solo ['quordle'] 2021-07-28..2026-01-23
+quordle scale ['quordle', 'sudoku', 'weather'] 2021-07-28..2026-01-23
+dordle solo ['dordle'] 2021-07-24..2026-01-19
+dordle scale ['dordle', 'sudoku', 'weather'] 2021-07-24..2026-01-19
+octordle solo ['octordle'] 2021-07-29..2026-01-24
+octordle scale ['octordle', 'sudoku', 'weather'] 2021-07-29..2026-01-24
+worldle solo ['worldle'] 2021-07-25..2026-01-20
+worldle scale ['worldle', 'sudoku', 'weather'] 2021-07-25..2026-01-20
+heardle solo ['heardle'] 2021-08-30..2026-02-25
+heardle scale ['heardle', 'sudoku', 'weather'] 2021-08-30..2026-02-25
+nerdle solo ['nerdle'] 2021-07-24..2026-01-19
+nerdle scale ['nerdle', 'sudoku', 'weather'] 2021-07-24..2026-01-19
+globle solo ['globle'] 2021-07-24..2026-01-19
+globle scale ['globle', 'sudoku', 'weather'] 2021-07-24..2026-01-19
+semantle solo ['semantle'] 2021-08-03..2026-01-29
+semantle scale ['semantle', 'sudoku', 'weather'] 2021-08-03..2026-01-29
+contexto solo ['contexto'] 2021-10-03..2026-03-31
+contexto scale ['contexto', 'sudoku', 'weather'] 2021-10-03..2026-03-31
+lewdle solo ['lewdle'] 2021-07-23..2026-01-18
+lewdle scale ['lewdle', 'sudoku', 'weather'] 2021-07-23..2026-01-18
+waffle solo ['waffle game'] 2021-08-19..2026-02-14
+waffle scale ['waffle game', 'sudoku', 'weather'] 2021-08-19..2026-02-14
+redactle solo ['redactle'] 2021-10-03..2026-03-31
+redactle scale ['redactle', 'sudoku', 'weather'] 2021-10-03..2026-03-31
+loldle solo ['loldle'] 2021-10-03..2026-03-31
+loldle scale ['loldle', 'sudoku', 'weather'] 2021-10-03..2026-03-31
+travle solo ['travle'] 2022-07-19..2026-10-14
+  retry 0 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 27s)
+  retry 1 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 44s)
+travle scale ['travle', 'sudoku', 'weather'] 2022-07-19..2026-10-14
+costcodle solo ['costcodle'] 2023-07-19..2026-10-14
+  retry 0 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 25s)
+  retry 1 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 43s)
+costcodle scale ['costcodle', 'sudoku', 'weather'] 2023-07-19..2026-10-14
+connections solo ['nyt connections'] 2022-12-14..2026-10-14
+connections scale ['nyt connections', 'sudoku', 'weather'] 2022-12-14..2026-10-14
+strands solo ['nyt strands'] 2023-09-06..2026-10-14
+strands scale ['nyt strands', 'sudoku', 'weather'] 2023-09-06..2026-10-14
+spellingbee solo ['spelling bee nyt'] 2017-11-10..2022-05-08
+spellingbee scale ['spelling bee nyt', 'sudoku', 'weather'] 2017-11-10..2022-05-08
+immaculategrid solo ['immaculate grid'] 2022-10-01..2026-10-14
+immaculategrid scale ['immaculate grid', 'sudoku', 'weather'] 2022-10-01..2026-10-14
+bandle solo ['bandle'] 2022-01-02..2026-06-30
+bandle scale ['bandle', 'sudoku', 'weather'] 2022-01-02..2026-06-30
+queens solo ['linkedin queens'] 2023-11-03..2026-10-14
+queens scale ['linkedin queens', 'sudoku', 'weather'] 2023-11-03..2026-10-14
+pips solo ['nyt pips'] 2025-02-19..2026-10-14
+  retry 0 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 28s)
+  retry 1 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 44s)
+  retry 2 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 63s)
+pips scale ['nyt pips', 'sudoku', 'weather'] 2025-02-19..2026-10-14
+flappybird solo ['/m/0_gzt9y'] 2012-11-25..2017-05-23
+flappybird scale ['/m/0_gzt9y', 'sudoku', 'weather'] 2012-11-25..2017-05-23
+splashyfish solo ['splashy fish'] 2013-07-29..2018-01-24
+splashyfish scale ['splashy fish', 'sudoku', 'weather'] 2013-07-29..2018-01-24
+ironpants solo ['ironpants'] 2013-07-24..2018-01-19
+ironpants scale ['ironpants', 'sudoku', 'weather'] 2013-07-24..2018-01-19
+swingcopters solo ['/m/011qb47m'] 2014-02-22..2018-08-20
+swingcopters scale ['/m/011qb47m', 'sudoku', 'weather'] 2014-02-22..2018-08-20
+flappydunk solo ['flappy dunk'] 2016-11-02..2021-04-30
+flappydunk scale ['flappy dunk', 'sudoku', 'weather'] 2016-11-02..2021-04-30
+timberman solo ['timberman'] 2013-09-02..2018-02-28
+timberman scale ['timberman', 'sudoku', 'weather'] 2013-09-02..2018-02-28
+colorswitch solo ['/g/11gfn825t4'] 2015-06-04..2019-11-30
+colorswitch scale ['/g/11gfn825t4', 'sudoku', 'weather'] 2015-06-04..2019-11-30
+pianotiles solo ['/m/010pf46_'] 2013-09-28..2018-03-26
+pianotiles scale ['/m/010pf46_', 'sudoku', 'weather'] 2013-09-28..2018-03-26
+crossyroad solo ['/m/012c1d59'] 2014-05-24..2018-11-19
+crossyroad scale ['/m/012c1d59', 'sudoku', 'weather'] 2014-05-24..2018-11-19
+geometrydash solo ['/g/1q6h1_x1n'] 2013-02-14..2017-08-12
+geometrydash scale ['/g/1q6h1_x1n', 'sudoku', 'weather'] 2013-02-14..2017-08-12
+stack solo ['stack ketchapp'] 2015-08-05..2020-01-31
+stack scale ['stack ketchapp', 'sudoku', 'weather'] 2015-08-05..2020-01-31
+helixjump solo ['/g/11h8cs88cy'] 2017-09-02..2022-02-28
+helixjump scale ['/g/11h8cs88cy', 'sudoku', 'weather'] 2017-09-02..2022-02-28
+mrjump solo ['mr jump'] 2014-09-02..2019-02-28
+mrjump scale ['mr jump', 'sudoku', 'weather'] 2014-09-02..2019-02-28
+templerun solo ['/m/0hrg8ry'] 2011-02-05..2015-08-03
+templerun scale ['/m/0hrg8ry', 'sudoku', 'weather'] 2011-02-05..2015-08-03
+subwaysurfers solo ['/m/0kyvw1z'] 2011-11-26..2016-05-23
+subwaysurfers scale ['/m/0kyvw1z', 'sudoku', 'weather'] 2011-11-26..2016-05-23
+fruitninja solo ['/m/0g579gw'] 2009-10-23..2014-04-20
+fruitninja scale ['/m/0g579gw', 'sudoku', 'weather'] 2009-10-23..2014-04-20
+doodlejump solo ['/m/07kdgg5'] 2008-10-08..2013-04-05
+doodlejump scale ['/m/07kdgg5', 'sudoku', 'weather'] 2008-10-08..2013-04-05
+2048 solo ['/m/04q1x3q'] 2013-09-10..2018-03-08
+2048 scale ['/m/04q1x3q', 'sudoku', 'weather'] 2013-09-10..2018-03-08
+threes solo ['/m/0_qfhk0'] 2013-08-10..2018-02-05
+  retry 0 after TooManyRequestsError: The request failed: Google returned a response with code 429 (sleep 24s)
+threes scale ['/m/0_qfhk0', 'sudoku', 'weather'] 2013-08-10..2018-02-05
+suika solo ['/g/11vf5dzvxk'] 2023-03-05..2026-10-14
+suika scale ['/g/11vf5dzvxk', 'sudoku', 'weather'] 2023-03-05..2026-10-14
+candycrush solo ['/m/0rytj3p'] 2011-10-15..2016-04-11
+candycrush scale ['/m/0rytj3p', 'sudoku', 'weather'] 2011-10-15..2016-04-11
+bejeweledblitz solo ['bejeweled blitz'] 2008-06-04..2012-11-30
