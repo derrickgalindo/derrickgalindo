@@ -33,3 +33,13 @@ Tiers are hand-coded from sourced metrics where those exist and cross-checked ag
 - A novel signal "holds" only if its held-out univariate AUC CI excludes 0.5 on split A, and adding it to the conventional
   model raises held-out AUC on both A and B.
 - Whatever the result, the failures are listed game by game.
+
+## Addendum 1 (2026-10-21, after a dry run on partial data, before any YouTube data was pulled)
+The dry run showed that coded `spectator_high` passed. That variable was hand-coded by an analyst who knew the outcomes,
+so I am adding an **objective proxy**, fixed before any data is pulled:
+- **N2b `watch_ratio`** = (peak YouTube-search interest / mean 'sudoku' YouTube-search interest) ÷
+  (peak web-search interest / mean 'sudoku' web-search interest), over the same window.
+  Data: Google Trends `gprop=youtube` vs web. The ratio cancels raw popularity and measures how much a game is *watched*
+  relative to how much it is *looked up*. Games from before 2008 are excluded, because YouTube search data is unreliable then.
+- Test: held-out (2016+) univariate AUC, with a bootstrap CI that must exclude 0.5. Also report the all-games AUC and the
+  Spearman correlation with hand-coded `spectator`.
