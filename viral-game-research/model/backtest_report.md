@@ -35,49 +35,49 @@ Sensitivity: split A with the 2021-25 daily-word cohort removed from the test se
 ## Where it fails (split A, conventional+context; threshold = median score)
 
 False positives (scored high, were not hits):
-- Costcodle (2024, daily_word): score 0.949
-- LoLdle (2022, daily_word): score 0.949
-- Worldle (2022, daily_word): score 0.869
-- Travle (2023, daily_word): score 0.869
-- Contexto (2022, daily_word): score 0.869
-- Semantle (2022, daily_word): score 0.793
-- NYT Pips (2025, daily_word): score 0.711
-- Immaculate Grid (2023, daily_word): score 0.68
-- Nerdle (2022, daily_word): score 0.653
-- Dordle (2022, daily_word): score 0.653
-- Bandle (2022, daily_word): score 0.653
-- Globle (2022, daily_word): score 0.653
-- Lewdle (2022, daily_word): score 0.653
-- Waffle (2022, daily_word): score 0.643
-- Absurdle (2022, daily_word): score 0.636
-- Jurassic World Alive (2018, location): score 0.566
-- Quordle (2022, daily_word): score 0.52
-- Octordle (2022, daily_word): score 0.52
-- Universal Paperclips (2017, web_toy): score 0.516
+- Costcodle (2024.0, daily_word): score 0.949
+- LoLdle (2022.0, daily_word): score 0.949
+- Worldle (2022.0, daily_word): score 0.869
+- Travle (2023.0, daily_word): score 0.869
+- Contexto (2022.0, daily_word): score 0.869
+- Semantle (2022.0, daily_word): score 0.793
+- NYT Pips (2025.0, daily_word): score 0.711
+- Immaculate Grid (2023.0, daily_word): score 0.68
+- Nerdle (2022.0, daily_word): score 0.653
+- Dordle (2022.0, daily_word): score 0.653
+- Bandle (2022.0, daily_word): score 0.653
+- Globle (2022.0, daily_word): score 0.653
+- Lewdle (2022.0, daily_word): score 0.653
+- Waffle (2022.0, daily_word): score 0.643
+- Absurdle (2022.0, daily_word): score 0.636
+- Jurassic World Alive (2018.0, location): score 0.566
+- Quordle (2022.0, daily_word): score 0.52
+- Octordle (2022.0, daily_word): score 0.52
+- Universal Paperclips (2017.0, web_toy): score 0.516
 
 False negatives (hits it scored low):
-- Goose Goose Duck (2021, social_deduction): score 0.008
-- Dead Rails (2025, roblox): score 0.018
-- 99 Nights in the Forest (2025, roblox): score 0.018
-- Doors (2022, roblox): score 0.018
-- Stumble Guys (2020, party): score 0.024
-- Among Us (2018, social_deduction): score 0.027
-- skribbl.io (2017, io): score 0.028
-- Dress to Impress (2023, roblox): score 0.032
-- Fisch (2024, roblox): score 0.048
-- Fall Guys (2020, party): score 0.049
-- Grow a Garden (2025, roblox): score 0.064
-- Diep.io (2016, io): score 0.075
-- Gartic Phone (2020, party): score 0.122
-- Steal a Brainrot (2025, roblox): score 0.152
-- BitLife (2018, sim): score 0.155
-- Suika Game (2021, merge): score 0.226
-- HQ Trivia (2017, live_social): score 0.268
-- Slither.io (2016, io): score 0.277
-- Adopt Me! (2017, roblox): score 0.303
-- Paper.io (2016, io): score 0.402
-- Block Blast (2023, match3): score 0.402
-- Flappy Dunk (2017, one_tap): score 0.402
+- Goose Goose Duck (2021.0, social_deduction): score 0.008
+- Dead Rails (2025.0, roblox): score 0.018
+- 99 Nights in the Forest (2025.0, roblox): score 0.018
+- Doors (2022.0, roblox): score 0.018
+- Stumble Guys (2020.0, party): score 0.024
+- Among Us (2018.0, social_deduction): score 0.027
+- skribbl.io (2017.0, io): score 0.028
+- Dress to Impress (2023.0, roblox): score 0.032
+- Fisch (2024.0, roblox): score 0.048
+- Fall Guys (2020.0, party): score 0.049
+- Grow a Garden (2025.0, roblox): score 0.064
+- Diep.io (2016.0, io): score 0.075
+- Gartic Phone (2020.0, party): score 0.122
+- Steal a Brainrot (2025.0, roblox): score 0.152
+- BitLife (2018.0, sim): score 0.155
+- Suika Game (2021.0, merge): score 0.226
+- HQ Trivia (2017.0, live_social): score 0.268
+- Slither.io (2016.0, io): score 0.277
+- Adopt Me! (2017.0, roblox): score 0.303
+- Paper.io (2016.0, io): score 0.402
+- Block Blast (2023.0, match3): score 0.402
+- Flappy Dunk (2017.0, one_tap): score 0.402
 
 ## Clone paradox
 
@@ -134,10 +134,10 @@ Hit vs non-hit pairs in the same cohort with *identical* conventional features: 
 | emergent_output | 21 | 0.71 / 0.59 | 0.61 [0.52-0.70] | +0.002 [+0.000, +0.007] | +0.009 | yes |
 | artifact_curiosity | 18 | 0.28 / 0.67 | 0.35 [0.24-0.46] | +0.000 [+0.000, +0.000] | -0.003 | no |
 
-N6 early momentum (Trends, absolute threshold): 52 games with data; held-out (2016+) n=22, AUC 0.56 [0.29-0.82]; all games AUC 0.63 [0.47-0.79]. Holds: no.
+N6 early momentum (Trends, absolute threshold): 111 games with data; held-out (2016+) n=55, AUC 0.60 [0.44-0.75]; all games AUC 0.71 [0.61-0.81]. Holds: no.
 
-N2b watch ratio (objective YouTube-vs-web proxy, pre-registered in Addendum 1): 12 games resolvable; held-out (2016+) n=10 (2 hits), AUC 0.06 [0.00-0.33]; all games AUC 0.33 [0.00-0.91]; Spearman with hand-coded spectator 0.64. Holds: no.
+N2b watch ratio (objective YouTube-vs-web proxy, pre-registered in Addendum 1): 92 games resolvable; held-out (2016+) n=42 (26 hits), AUC 0.69 [0.51-0.86]; all games AUC 0.61 [0.49-0.74]; Spearman with hand-coded spectator 0.21. Holds: yes.
 
 ## Robustness: adding the census Wordle-likes (template-coded clones)
 
-n=122 (75 hits). conventional+context: A AUC 0.31 [0.18-0.45], B AUC 0.65; within-cohort 187/252.
+n=248 (75 hits). conventional+context: A AUC 0.28 [0.15-0.42], B AUC 0.90; within-cohort 182/252.

@@ -1,0 +1,16 @@
+bench_id,model,entity,period,arpdau_usd,basis,quality,source_ids
+zynga_2010,facebook_iap,Zynga (all games),2010,0.041,ABPU as reported (avg daily bookings / avg DAU),filing_derived,zynga_s1
+zynga_9m2011,facebook_iap,Zynga (all games),9M 2011,0.053,ABPU as reported,filing_derived,zynga_s1
+king_q4_2013,mobile_iap,King (Candy Crush 78%),Q4 2013,0.0554,gross bookings $632M / (124M avg DAU x 92 days),filing_derived,king_f1
+king_q1_2013,mobile_iap,King,Q1 2013,0.0676,gross bookings $219M / (36M avg DAU x 90 days),filing_derived,king_f1
+rovio_q4_2017,mobile_iap,Rovio Games,Q4 2017,0.094,"ARPDAU EUR0.08 reported, x1.18 USD/EUR",filing_derived,rovio_ar2017
+rovio_2016,mobile_iap,Rovio Games,Q2-Q3 2016,0.035,"ARPDAU EUR0.03 reported, x1.12 USD/EUR (paid-UA era; pre-optimization)",filing_derived,rovio_ar2017
+roblox_platform_q2_2025,roblox_platform,"Roblox (all experiences, platform gross)",Q2 2025,0.1413,"bookings $1,437.6M / (111.8M DAU x 91 days)",filing_derived,roblox_q2_2025
+roblox_platform_q3_2025,roblox_platform,"Roblox (all experiences, platform gross)",Q3 2025,0.1379,"bookings $1,921.8M / (151.5M DAU x 92 days)",filing_derived,roblox_q3_2025
+roblox_creator_q3_2025,roblox_devex,Roblox creators' share (DevEx),Q3 2025,0.0308,"platform ARPDAU x 22.3% DevEx share of bookings; per platform DAU, not per experience DAU",filing_derived,roblox_q3_2025
+flappy_2014,mobile_ads,Flappy Bird (banner ads),Jan-Feb 2014,0.005,"~$50k/day (press estimate) / ~10M DAU (assumption, 50M+ downloads); order of magnitude only",assumption_range,rs_birdman
+slither_2016,web_mobile_ads,Slither.io,mid-2016,0.01,~$100k/day (WSJ estimate) / ~10M DAU (assumption); order of magnitude only,assumption_range,loop_slither_100k
+hypercasual_ads,mobile_ads,Hypercasual (industry),2024-25,0.05,blended ad ARPDAU range $0.03-0.08 (third-party benchmarks); midpoint,third_party,playio_arpdau
+hybridcasual,mobile_ads_iap,Hybrid-casual (industry),2024-25,0.25,range $0.15-0.50 (third-party); midpoint,third_party,playio_arpdau
+web_daily_puzzle_ads,web_ads,Ad-supported daily web puzzle (model),2026,0.012,assumption: 1.5 pageviews/day x 3 ad units x blended $2.5 RPM (global mix) => ~$0.011; US-heavy audience at $6 RPM => ~$0.027,assumption_range,
+nyt_single_product_sub,subscription,NYT other single-product (incl. Games) ARPU,FY2025,0.116,~$3.48/month ARPU / 30 days per SUBSCRIBER (not per DAU); multiply by subscriber conversion of DAU,filing_derived,nyt_10k_2025

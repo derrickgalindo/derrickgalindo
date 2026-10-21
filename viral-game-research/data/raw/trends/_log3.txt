@@ -1,0 +1,4 @@
+fruitninja solo ['fruit ninja'] 2009-10-23..2014-04-20
+fruitninja scale ['fruit ninja', 'sudoku'] 2009-10-23..2014-04-20
+2048 solo ['2048 game'] 2013-09-10..2018-03-08
+2048 scale ['2048 game', 'sudoku'] 2013-09-10..2018-03-08

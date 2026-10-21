@@ -1,0 +1,9 @@
+game_id,method,window,growth_rate_per_day,generation_days_low,generation_days_high,k_low,k_high,notes
+wordle,growth_rate->R=exp(r*Tg),"players 90 (2021-11-01) -> 300,000 (2022-01-02)",0.1308,1.0,3.0,1.14,1.48,share grid posted daily; generation = 1-3 days
+wordle,growth_rate->R=exp(r*Tg),"players 300,000 (2022-01-02) -> ~2,000,000 (~2022-01-14)",0.1581,1.0,3.0,1.17,1.61,"includes NYT Jan 3 profile (broadcast, not person-to-person)"
+growagarden,growth_rate->R=exp(r*Tg),"CCU ~1,000 (mid-Apr 2025) -> 5,000,000 (2025-05-18)",0.2581,1.0,4.0,1.29,2.81,includes Roblox algorithm + creator promotion
+growagarden,growth_rate->R=exp(r*Tg),CCU 5.0M (05-18) -> 21.3M (06-21),0.0426,1.0,4.0,1.04,1.19,weekly update spikes
+amongus,growth_rate->R=exp(r*Tg),"Twitch avg viewers 460 (Jun 2020) -> 53,000 (Aug 2020)",0.0778,2.0,7.0,1.17,1.72,streamer-driven: broadcast + friend lobbies
+farmville,growth_rate->R=exp(r*Tg),DAU ~0 -> 11M in 63 days (linear ~1M/week),,,,,,"linear, platform-fed (Facebook feed + Zynga cross-promo): not an epidemic curve"
+drawsomething,growth_rate->R=exp(r*Tg),DAU 14.3M (04-02) -> 10.4M (05-02),-0.0106,3.0,7.0,0.97,0.93,post-peak decline: effective R < 1
+king,growth_rate->R=exp(r*Tg),avg DAU 15M (Q4'12) -> 124M (Q4'13),0.0058,7.0,14.0,1.04,1.08,paid UA seeded (King F-1) => not pure k

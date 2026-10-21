@@ -1,0 +1,43 @@
+fact_id,game_id,field,value,unit,as_of,source_id,confidence,quote
+1,wordle,daily_players,90,players,2021-11-01,wordle_players_90_300k,high,"On Nov. 1, 90 people played"
+2,wordle,daily_players,300000,players,2022-01-02,wordle_players_90_300k,high,"more than 300,000 people played"
+3,wordle,daily_players,2000000,players,2022-01-mid,wordle_2m_jan,medium,nearly two million users
+4,wordle,share_button_shipped,2021-12-16T14:54Z,timestamp,2021-12-16,wardle_tweet_share,high,Added a share button to Wordle that generates a spoiler-free emoji grid... Shoutout to @irihapeta for inventing
+5,wordle,acquisition_price,low seven figures,USD,2022-01-31,wordle_nyt_lowseven,high,price in the low seven figures
+6,wordle,new_users_to_nyt,tens of millions,users,2022-Q1,nyt_q1_2022_pr,high,Wordle brought an unprecedented tens of millions of new users to The Times
+7,heardle,daily_plays,1000000,plays/day (creator claim),2022-03,l4lm_heardle,medium,more than a million per day
+8,quordle,daily_players,500000,players/day (creator claim),2022-02,yahoo_quordle,medium,"more than 500,000 players daily"
+9,flappybird,reviews_may25_oct31,13,reviews,2013-10-31,ibt_flappy_timeline,medium,
+10,flappybird,us_game_chart_entry,1368,rank,2013-11,ibt_flappy_timeline,medium,
+11,flappybird,first_tweet,2013-11-04,date,2013-11-04,rs_birdman,high,the first Twitter mention came on November 4th
+12,flappybird,us_top10,2014-01-10,date,2014-01-10,ibt_flappy_timeline,medium,
+13,flappybird,us_number_one,2014-01-17,date,2014-01-17,rs_birdman,high,
+14,flappybird,pewdiepie_video,2014-01-27,date,2014-01-27,kym_pewdiepie_flappy,medium,
+15,flappybird,ad_revenue_per_day,50000,USD/day,2014-02,rs_birdman,low,estimated
+16,flappybird,downloads,50000000,downloads,2014-02,rs_birdman,medium,
+17,farmville,dau,11000000,DAU,2009-08 (week 9),zynga_farmville_11m,medium,
+18,farmville,dau_peak,34500000,DAU,2010-03,zynga_farmville_11m,low,Wikipedia-reported peak
+19,drawsomething,dau,14300000,DAU (FB-connected),2012-04-02,mcv_drawsomething_decline,medium,
+20,drawsomething,dau,10400000,DAU (FB-connected),2012-05-02,mcv_drawsomething_decline,medium,
+21,drawsomething,acquisition_price,183.1,USD M,2012-03-21,zynga_10q_2012q1,high,
+22,drawsomething,impairment,95.5,USD M,2012-09-30,zynga_10q_2012q3,high,
+23,wordswithfriends,acquisition_price,53.3,USD M,2010-11,zynga_s1,high,
+24,wordswithfriends,dau_after_acq,doubled within ~120 days,,2011,zynga_s1,high,
+25,candycrush,king_avg_dau,"7,11,12,15,36,76,109,124",M DAU by quarter Q1'12-Q4'13,2013-Q4,king_f1,high,
+26,candycrush,king_gross_bookings,"29,38,43,71,219,481,648,632",USD M by quarter Q1'12-Q4'13,2013-Q4,king_f1,high,
+27,candycrush,share_of_bookings,78,%,2013-Q4,king_f1,high,
+28,amongus,ccu,1500000,concurrent,2020-09-05,ggrecon_amongus,medium,
+29,amongus,twitch_avg_viewers,460 (Jun 2020) -> 53000 (Aug 2020),viewers,2020-08,ggrecon_amongus,medium,
+30,hqtrivia,ccu,2380000,concurrent,2018-03,tc_hq_decline,high,
+31,growagarden,ccu,1000,concurrent,2025-04,wiki_grow_a_garden,medium,"Splitting Point bought a share at ~1,000 CCU (Madsen: ~500)"
+32,growagarden,ccu,5000000,concurrent,2025-05-18,wiki_grow_a_garden,medium,
+33,growagarden,ccu,21300000,concurrent,2025-06-21,wiki_grow_a_garden,medium,
+34,growagarden,ccu,22300000,concurrent,2025-08-23,gamesbeat_jandel,high,
+35,growagarden,dau_peak,60000000,DAU,2025,gamesbeat_jandel,medium,"around 60 million peak, I think"
+36,stealabrainrot,ccu,25400000,concurrent,2025-10,pgbiz_brainrot_25m,medium,
+37,stealabrainrot,ccu_decline,-99.2%,vs peak,2026,rowatcher_brainrot_decline,low,
+38,triviacrack,us_number_one_days,66,days,2014-11..2015-01,bbc_triviacrack,medium,
+39,crossyroad,downloads_90d,50000000,downloads,2015-02,cultofmac_crossy,medium,
+40,hamsterkombat,users_joined,300000000,users (company claim),2024-09,forklog_hamster,low,
+41,hamsterkombat,mau_after_airdrop,41000000,MAU,2024-10,forklog_hamster,medium,
+42,wizardsunite,first_month_spend,12000000,USD (est.),2019-07,sensortower_hpwu,medium,

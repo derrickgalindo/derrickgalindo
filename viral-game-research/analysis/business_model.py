@@ -40,12 +40,13 @@ L += L_table([(r.entity, r.period, f"${r.arpdau_usd:.3f}", r.quality) for r in b
 
 # Decay-adjusted lifetime value of a 1M-DAU hit: revenue in year t = R1 * keep^(t-1)
 L += ["", "## Keep vs sell", "",
-      "A hit's attention decays. Using the Trends result that the median hit keeps about 30% of peak interest a year later (a fad),",
-      "versus the roughly 35-50% that durable daily rituals keep (Wordle and Connections in this dataset):", ""]
+      "A hit's attention decays. The Trends results give three decay scenarios: Roblox hits keep about 8% of peak search interest a year later",
+      "(median of Grow a Garden, Steal a Brainrot, Dead Rails, 99 Nights, Doors, Fisch, Dress to Impress); the median hit of any kind keeps 22%;",
+      "durable rituals keep about 35-50% (Wordle 34%, Connections 48%):", ""]
 rows = []
 for name, lo, mid, hi, cost, basis in MODELS:
     r1 = (mid - cost) * 365  # $M at 1M avg DAU in year 1
-    for label, keep in (("fad (30%/yr)", 0.30), ("ritual (50%/yr)", 0.50)):
+    for label, keep in (("Roblox-typical (8%/yr)", 0.08), ("median hit (22%/yr)", 0.22), ("ritual (45%/yr)", 0.45)):
         npv = sum(r1 * keep ** t / 1.15 ** t for t in range(5))
         rows.append((name, label, f"${r1:.1f}M", f"${npv:.1f}M"))
 L += L_table(rows, ["Model", "Decay", "Year-1 net revenue at 1M avg DAU", "5-yr value kept (15% discount)"])

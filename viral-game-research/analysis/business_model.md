@@ -32,27 +32,33 @@ Filing-derived reference points (gross bookings per DAU-day):
 
 ## Keep vs sell
 
-A hit's attention decays. Using the Trends result that the median hit keeps about 30% of peak interest a year later (a fad),
-versus the roughly 35-50% that durable daily rituals keep (Wordle and Connections in this dataset):
+A hit's attention decays. The Trends results give three decay scenarios: Roblox hits keep about 8% of peak search interest a year later
+(median of Grow a Garden, Steal a Brainrot, Dead Rails, 99 Nights, Doors, Fisch, Dress to Impress); the median hit of any kind keeps 22%;
+durable rituals keep about 35-50% (Wordle 34%, Connections 48%):
 
 | Model | Decay | Year-1 net revenue at 1M avg DAU | 5-yr value kept (15% discount) |
 |---|---|---|---|
-| Web daily game, display + interstitial ads | fad (30%/yr) | $4.4M | $5.9M |
-| Web daily game, display + interstitial ads | ritual (50%/yr) | $4.4M | $7.6M |
-| Mobile app, ads only (hypercasual-style) | fad (30%/yr) | $18.2M | $24.6M |
-| Mobile app, ads only (hypercasual-style) | ritual (50%/yr) | $18.2M | $31.7M |
-| Mobile app, IAP (casual F2P), net of 30% store fee | fad (30%/yr) | $14.0M | $18.9M |
-| Mobile app, IAP (casual F2P), net of 30% store fee | ritual (50%/yr) | $14.0M | $24.3M |
-| Roblox experience (creator DevEx share) | fad (30%/yr) | $4.4M | $5.9M |
-| Roblox experience (creator DevEx share) | ritual (50%/yr) | $4.4M | $7.6M |
-| Subscription funnel (NYT-style), 1-5% of DAU paying $3.5-6/mo | fad (30%/yr) | $1.8M | $2.5M |
-| Subscription funnel (NYT-style), 1-5% of DAU paying $3.5-6/mo | ritual (50%/yr) | $1.8M | $3.2M |
+| Web daily game, display + interstitial ads | Roblox-typical (8%/yr) | $4.4M | $4.7M |
+| Web daily game, display + interstitial ads | median hit (22%/yr) | $4.4M | $5.4M |
+| Web daily game, display + interstitial ads | ritual (45%/yr) | $4.4M | $7.1M |
+| Mobile app, ads only (hypercasual-style) | Roblox-typical (8%/yr) | $18.2M | $19.6M |
+| Mobile app, ads only (hypercasual-style) | median hit (22%/yr) | $18.2M | $22.5M |
+| Mobile app, ads only (hypercasual-style) | ritual (45%/yr) | $18.2M | $29.6M |
+| Mobile app, IAP (casual F2P), net of 30% store fee | Roblox-typical (8%/yr) | $14.0M | $15.0M |
+| Mobile app, IAP (casual F2P), net of 30% store fee | median hit (22%/yr) | $14.0M | $17.3M |
+| Mobile app, IAP (casual F2P), net of 30% store fee | ritual (45%/yr) | $14.0M | $22.8M |
+| Roblox experience (creator DevEx share) | Roblox-typical (8%/yr) | $4.4M | $4.7M |
+| Roblox experience (creator DevEx share) | median hit (22%/yr) | $4.4M | $5.4M |
+| Roblox experience (creator DevEx share) | ritual (45%/yr) | $4.4M | $7.1M |
+| Subscription funnel (NYT-style), 1-5% of DAU paying $3.5-6/mo | Roblox-typical (8%/yr) | $1.8M | $2.0M |
+| Subscription funnel (NYT-style), 1-5% of DAU paying $3.5-6/mo | median hit (22%/yr) | $1.8M | $2.2M |
+| Subscription funnel (NYT-style), 1-5% of DAU paying $3.5-6/mo | ritual (45%/yr) | $1.8M | $3.0M |
 
 What buyers actually paid (from the acquisitions table):
 
 | Acquirer | Target | Date | Price | What they bought | What happened |
 |---|---|---|---|---|---|
-| The New York Times Co. | Wordle (Josh Wardle) | 2022-01-31 | $1.0M | audience + daily habit + subscriber funnel | Q1 2022: 'tens of millions of new users', best quarter ever for Games net subscriber adds; Wordle and Connections kept free as funnel through FY2025 10-K |
+| The New York Times Co. | Wordle (Josh Wardle) | 2022-01-31 | low 7 figures (>= $1M) | audience + daily habit + subscriber funnel | Q1 2022: 'tens of millions of new users', best quarter ever for Games net subscriber adds; Wordle and Connections kept free as funnel through FY2025 10-K |
 | Zynga | Newtoy (Words with Friends) | 2010-11 | $53.3M | audience + mobile social graph + team | Zynga doubled WWF DAU within ~120 days via cross-promotion; became a pillar mobile franchise |
 | Zynga | OMGPOP (Draw Something) | 2012-03-21 | $183.1M | audience at peak + mobile growth | Draw Something DAU fell ~33% within a month; $95.5M impairment in Q3 2012 (52% of price) six months later |
 | Activision Blizzard | King Digital Entertainment | 2015-11-02 | $5,900.0M | revenue + audience + live-ops machine | Candy Crush still a top-grossing franchise a decade later |
