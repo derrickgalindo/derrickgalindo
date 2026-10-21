@@ -1,0 +1,672 @@
+<title>Viral Game Evidence</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: research dossier. Sticky section index on the left, one reading column, figures break wider than the text. */
+:root {
+  --bg: #f3f5f7;
+  --paper: #ffffff;
+  --ink: #101a24;
+  --ink-2: #44515f;
+  --ink-3: #6b7783;
+  --rule: #d9dfe5;
+  --grid: #e7ebef;
+  --accent: #2a78d6;
+  --s1: #2a78d6;
+  --s2: #eb6834;
+  --s3: #1baf7a;
+  --dim: #b9c2cb;
+  --good: #0ca30c;
+  --bad: #d03b3b;
+  --warn: #b97a00;
+  --chip-good-bg: #e3f5e3;
+  --chip-bad-bg: #fbe6e6;
+  --chip-warn-bg: #fbf0d9;
+  --hl: #fff4c2;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --measure: 66ch;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161b; --paper: #182029; --ink: #e9eef3; --ink-2: #b4c0cc; --ink-3: #8794a1; --rule: #2a3440; --grid: #222b35;
+    --accent: #5598e7; --s1: #3987e5; --s2: #d95926; --s3: #199e70; --dim: #4a5664;
+    --good: #2fbf2f; --bad: #e66767; --warn: #e0a326; --chip-good-bg: #173018; --chip-bad-bg: #3a1c1c; --chip-warn-bg: #3a2e12; --hl: #3a3415;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161b; --paper: #182029; --ink: #e9eef3; --ink-2: #b4c0cc; --ink-3: #8794a1; --rule: #2a3440; --grid: #222b35;
+  --accent: #5598e7; --s1: #3987e5; --s2: #d95926; --s3: #199e70; --dim: #4a5664;
+  --good: #2fbf2f; --bad: #e66767; --warn: #e0a326; --chip-good-bg: #173018; --chip-bad-bg: #3a1c1c; --chip-warn-bg: #3a2e12; --hl: #3a3415;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.shell { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 48px; padding-block: 40px 80px; }
+nav.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); align-self: start; font-family: var(--font-display); font-size: 13px; }
+nav.toc .brand { font-weight: 800; font-stretch: 118%; letter-spacing: .02em; text-transform: uppercase; font-size: 12px; color: var(--ink-3); margin-bottom: 14px; }
+nav.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; counter-reset: s; }
+nav.toc a { display: grid; grid-template-columns: 22px 1fr; color: var(--ink-2); text-decoration: none; padding: 5px 8px; border-radius: 6px; }
+nav.toc a span { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); padding-top: 1px; }
+nav.toc a:hover, nav.toc a.on { background: var(--paper); color: var(--ink); }
+nav.toc a:focus-visible, a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+main { min-width: 0; }
+section { padding-block: 28px; border-top: 1px solid var(--rule); scroll-margin-top: 16px; }
+section:first-of-type { border-top: 0; padding-top: 0; }
+.eyebrow { font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+h1 { font-family: var(--font-display); font-weight: 800; font-stretch: 112%; font-size: clamp(34px, 5vw, 54px); line-height: 1.02; letter-spacing: -.02em; margin: 0 0 16px; text-wrap: balance; max-width: 20ch; }
+h2 { font-family: var(--font-display); font-weight: 750; font-stretch: 108%; font-size: clamp(24px, 3vw, 31px); line-height: 1.12; letter-spacing: -.01em; margin: 0 0 14px; text-wrap: balance; max-width: 30ch; }
+h3 { font-family: var(--font-display); font-weight: 700; font-size: 19px; line-height: 1.25; margin: 26px 0 8px; text-wrap: balance; }
+p, li { max-width: var(--measure); }
+p { margin: 0 0 14px; }
+ul, ol { padding-left: 22px; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent); text-underline-offset: 2px; }
+strong { font-weight: 650; }
+.lede { font-size: 20px; line-height: 1.5; color: var(--ink-2); max-width: 58ch; }
+.meta { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 18px 0 0; }
+.verdict { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 0; counter-reset: v; border-top: 1px solid var(--rule); }
+.verdict li { counter-increment: v; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 4px 14px; padding: 16px 0; border-bottom: 1px solid var(--rule); max-width: none; margin: 0; }
+.verdict li::before { content: counter(v); font-family: var(--font-display); font-weight: 800; font-stretch: 120%; font-size: 26px; line-height: 1; color: var(--accent); }
+.verdict b { display: block; font-family: var(--font-display); font-weight: 700; font-size: 18px; line-height: 1.3; margin-bottom: 4px; }
+.verdict span { color: var(--ink-2); max-width: var(--measure); display: block; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; margin: 22px 0 6px; }
+.stat { background: var(--paper); padding: 14px 16px; }
+.stat .n { font-family: var(--font-display); font-weight: 800; font-stretch: 115%; font-size: 30px; line-height: 1; font-variant-numeric: tabular-nums; }
+.stat .l { font-family: var(--font-display); font-size: 12.5px; color: var(--ink-3); margin-top: 6px; line-height: 1.3; }
+figure { margin: 22px 0 22px; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 18px 14px; min-width: 0; }
+figure .ft { font-family: var(--font-display); font-weight: 700; font-size: 15px; margin: 0 0 2px; }
+figure .fs { font-family: var(--font-display); font-size: 13px; color: var(--ink-3); margin: 0 0 10px; max-width: none; }
+figcaption { font-family: var(--font-display); font-size: 12.5px; color: var(--ink-3); margin-top: 8px; line-height: 1.45; max-width: none; }
+.chart { width: 100%; overflow-x: auto; position: relative; }
+.chart svg { display: block; width: 100%; height: auto; min-width: 520px; }
+.chart.narrow svg { min-width: 0; }
+svg text { font-family: var(--font-display); fill: var(--ink-3); font-size: 11.5px; }
+svg .lbl { fill: var(--ink); font-weight: 600; }
+svg .lbl2 { fill: var(--ink-2); }
+svg .num { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-2); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-family: var(--font-display); font-size: 12.5px; color: var(--ink-2); margin: 0 0 8px; }
+.legend i { display: inline-block; width: 12px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.legend i.dot { width: 9px; height: 9px; border-radius: 50%; }
+.tip { position: fixed; z-index: 30; pointer-events: none; background: var(--ink); color: var(--bg); font-family: var(--font-display); font-size: 12.5px; line-height: 1.4; padding: 7px 10px; border-radius: 6px; max-width: 260px; box-shadow: 0 6px 20px rgb(0 0 0 / .18); }
+.tip[hidden] { display: none !important; }
+.tablewrap { overflow-x: auto; margin: 16px 0 20px; border: 1px solid var(--rule); border-radius: 10px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; font-family: var(--font-display); font-size: 13.5px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { font-weight: 700; font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); background: var(--bg); border-bottom: 1px solid var(--rule); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--font-mono); font-size: 12.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-display); font-weight: 700; font-size: 11.5px; letter-spacing: .03em; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.chip.pass { color: var(--good); background: var(--chip-good-bg); }
+.chip.fail { color: var(--bad); background: var(--chip-bad-bg); }
+.chip.mid { color: var(--warn); background: var(--chip-warn-bg); }
+.callout { background: var(--paper); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 18px 0; }
+.callout p:last-child { margin-bottom: 0; }
+.callout .k { font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.two figure { margin: 0; }
+.timeline { list-style: none; padding: 0; margin: 14px 0 18px; border-left: 2px solid var(--rule); }
+.timeline li { position: relative; padding: 0 0 12px 18px; margin: 0; }
+.timeline li::before { content: ""; position: absolute; left: -6px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--paper); border: 2px solid var(--accent); }
+.timeline .d { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); display: block; }
+.concept { background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 20px; margin: 16px 0; }
+.concept header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 8px; }
+.concept .rank { font-family: var(--font-display); font-weight: 800; font-stretch: 120%; font-size: 28px; color: var(--accent); line-height: 1; }
+.concept h3 { margin: 0; font-size: 21px; }
+.concept .plat { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); }
+.concept .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 6px 26px; }
+.concept h4 { font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin: 12px 0 6px; }
+.concept ol, .concept ul { font-size: 15.5px; }
+.bar { display: inline-block; height: 8px; border-radius: 0 4px 4px 0; background: var(--s1); vertical-align: middle; }
+details { margin: 8px 0 0; font-family: var(--font-display); font-size: 13px; }
+summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+.foot { font-family: var(--font-display); font-size: 13px; color: var(--ink-3); }
+.sources li { font-size: 14.5px; }
+@media (max-width: 900px) {
+  .shell { grid-template-columns: minmax(0, 1fr); gap: 0; padding-block: 24px 60px; }
+  nav.toc { position: static; margin-bottom: 18px; }
+  nav.toc ol { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  body { font-size: 16.5px; }
+}
+@media (max-width: 560px) { .chart svg { min-width: 460px; } .chart.narrow svg { min-width: 0; } }
+</style>
+
+<div class="tip" id="tip" role="status" hidden></div>
+<div class="shell">
+<nav class="toc" aria-label="Sections">
+  <div class="brand">Viral game evidence</div>
+  <ol>
+    <li><a href="#answer"><span>00</span>The answer</a></li>
+    <li><a href="#premise"><span>01</span>Your premise, tested</a></li>
+    <li><a href="#cases"><span>02</span>Wordle, Flappy, Among Us</a></li>
+    <li><a href="#model"><span>03</span>The model's backtest</a></li>
+    <li><a href="#signal"><span>04</span>The new signal</a></li>
+    <li><a href="#math"><span>05</span>90-day math</a></li>
+    <li><a href="#base"><span>06</span>Base rates and decay</a></li>
+    <li><a href="#business"><span>07</span>Business model</a></li>
+    <li><a href="#concepts"><span>08</span>Concepts to build</a></li>
+    <li><a href="#limits"><span>09</span>Limits and sources</a></li>
+  </ol>
+</nav>
+
+<main>
+<section id="answer">
+  <p class="eyebrow">Research brief · October 2026</p>
+  <h1>What to build to reach 1M daily players in 90 days</h1>
+  <p class="lede">Evidence from 126 casual games and their clones, SEC filings, Google Trends and a census of 133 Wordle-likes. The goal is a solo-built game with no paid marketing.</p>
+  <div class="stats" id="stats"></div>
+  <ol class="verdict">
+    <li><div><b>There is no stable recipe, and simplicity doesn't separate hits from flops.</b><span>A model of the textbook viral recipe, trained on 2008–2015 hits, ranks 2016–2025 games worse than a coin flip (AUC 0.28). The recipe gets copied, the copies flop, and the next hits come from a different channel.</span></div></li>
+    <li><div><b>Watchability, a channel with spare reach, and retention do hold up.</b><span>Watchability was the one pre-registered new signal to pass the held-out test, both as I hand-coded it and as an objective YouTube-vs-web search measure. It sparks growth but doesn't sustain it.</span></div></li>
+    <li><div><b>1M daily players in 90 days is reachable. One channel produces it regularly today.</b><span>It needs a doubling every 8–9 days from a 1,000-player seed. Roblox produced several zero-ad games that did it in 2025. Grow a Garden went from about 1,000 to 21.3M concurrent players in 87 days.</span></div></li>
+    <li><div><b>Build on Roblox, keep it, and take a partner's stake rather than selling.</b><span>44% of Roblox revenue comes through the Apple and Google stores, so it is effectively mobile. Expect about $4.4M a year at 1M DAU, mostly in year one, because Roblox hits keep only ~8% of their peak a year later.</span></div></li>
+    <li><div><b>Top three concepts: Hide as a Painting, Pictionary Obby, Telephone Pictionary Chains.</b><span>Each can be demand-tested in 1–2 weeks for under $100. The pass and kill thresholds come from the 90-day math.</span></div></li>
+  </ol>
+</section>
+
+<section id="premise">
+  <p class="eyebrow">01 · Your hypothesis</p>
+  <h2>"A repeatable recipe, with simplicity at its core" doesn't survive the data</h2>
+  <p><strong>Simplicity is common to the whole category, so it can't pick winners.</strong> 64 of 126 games are simple on all three counts: one input, sessions of 5 minutes or less, first fun within 10 seconds. They hit 69% of the time, against 56% for the rest. The 20 simple non-hits are nearly all clones: Absurdle, Dordle, Worldle, Splashy Fish, Swing Copters. Many of the biggest hits aren't simple at all, including Among Us, FarmVille, Pokémon GO, Draw Something and Grow a Garden.</p>
+  <p><strong>Timing and channels did much of the work.</strong></p>
+  <ul>
+    <li><strong>A natural experiment.</strong> Facebook cut app notifications in early 2010, and Zynga's average daily players fell from 67M to 48M that year with the same games. Zynga's S-1 says so directly: the changes "limited the level of communication among users… the number of our players on Facebook declined".</li>
+    <li><strong>The same mechanic wins or loses with the channel.</strong> OMGPOP's Draw My Thing (web, 2008) went nowhere, while the same idea on iPhone, Draw Something (2012), reached about 14M DAU. Niantic's Ingress stayed niche; the same mechanic plus Pokémon became Pokémon GO.</li>
+    <li><strong>IP alone isn't enough.</strong> Harry Potter: Wizards Unite earned about $12M in its first month against Pokémon GO's ~$300M, and it closed in 2022.</li>
+    <li><strong>New channels pay.</strong> Games launched on a new or newly opened channel hit 87% of the time, against 43% on saturated ones.</li>
+    <li><strong>Followers often beat originals.</strong> 2048 over Threes, FarmVille over Farm Town, Mafia Wars over Mob Wars, Suika over Merge Big Watermelon. Stumble Guys reached 20M DAU on mobile, the platform Fall Guys skipped.</li>
+    <li><strong>Creators repeating their own recipe needed distribution.</strong> 7 of 12 follow-ups hit, and all 7 had a publisher's cross-promotion behind them. Swing Copters, launched on Flappy Bird's fame alone, faded.</li>
+  </ul>
+  <figure>
+    <p class="ft">How each documented breakout started</p>
+    <p class="fs">Days from public release to breakout, by what triggered it. Hover a mark for the game.</p>
+    <div class="legend" id="lg-latent"></div>
+    <div class="chart" id="c-latent"></div>
+    <figcaption>The 12 hits with no creator audience, no IP and no paid push waited a median of 78 days. They survived the wait because they cost almost nothing to run. Source: <code>breakouts</code> table.</figcaption>
+  </figure>
+  <div class="callout"><p class="k">On influencers</p><p>Influencers mostly amplified growth that had already started. Flappy Bird was US #1 on Jan 17, 2014, and PewDiePie's video went up Jan 27. Words with Friends' founders saw growth inflecting before John Mayer's 2009 tweet. The cases where streamers came first are recent and streamer-native: Among Us, Suika Game and Grow a Garden.</p></div>
+</section>
+
+<section id="cases">
+  <p class="eyebrow">02 · Case studies from daily search data</p>
+  <h2>What actually happened to Wordle, Flappy Bird and Among Us</h2>
+
+  <h3>Did Wordle's share grid cause the spread, or follow it?</h3>
+  <p><strong>Both, in sequence.</strong></p>
+  <ul>
+    <li><strong>Spread started without a grid.</strong> On Nov 1, 2021 there were 90 players, who came through a family group chat and a footnote in an NYT newsletter.</li>
+    <li><strong>A player invented the grid.</strong> Someone in New Zealand typed the emoji grid by hand and others copied it.</li>
+    <li><strong>Wardle then shipped the share button.</strong> His announcing tweet, which credits her, timestamps to 2021-12-16 14:54 UTC.</li>
+  </ul>
+  <figure>
+    <p class="ft">Worldwide Google searches for "wordle", Nov 1, 2021 – Jan 2, 2022</p>
+    <p class="fs">Daily index (100 = the window's peak). The window ends before the NYT profile, so December is measurable.</p>
+    <div class="chart" id="c-wordle"></div>
+    <figcaption>Search is flat until the button, then doubles every 2.9 days for 17 days (US 3.0, Australia 3.6, UK 4.7). Working back from 300,000 players on Jan 2 puts about 5,000 players on Dec 16. Going from 90 on Nov 1 to ~5,000 by Dec 16 means doubling every ~8 days without the button, so growth ran about 2.7x faster afterwards. The holidays are a confound I can't remove. The early baseline also catches searches for an older word-cloud tool called Wordle.</figcaption>
+  </figure>
+  <p><strong>Lesson:</strong> the grid made existing word of mouth cheaper and more visible. It didn't create it, and the copies never worked (see section 04).</p>
+  <p><strong>Did it sell for over $1 million?</strong> Yes. The NYT announced the price as "in the low seven figures". The NYT's 10-K says only that it acquired Wordle, because the price was immaterial next to the ~$550M paid for The Athletic. What the NYT got shows in its Q1 2022 filing: "Wordle brought an unprecedented tens of millions of new users to The Times… our best quarter ever for net subscriber additions to Games."</p>
+
+  <h3>Flappy Bird sat unnoticed for months. What changed?</h3>
+  <ul class="timeline">
+    <li><span class="d">May 24, 2013</span>Released. 13 reviews by Oct 31; a bug-fix update in September.</li>
+    <li><span class="d">Nov 4</span>First tweet. US game charts at #1,368.</li>
+    <li><span class="d">Dec 5–22</span>US search first registers on Dec 5, then rises about 11x in two weeks. Top 250 free apps on Dec 13; frustrated teen tweets; school holidays.</li>
+    <li><span class="d">Jan 10–17, 2014</span>US top 10, then #1. Search doubling every 3.1–3.7 days.</li>
+    <li><span class="d">Jan 27</span>PewDiePie's video. Growth slows to doubling every 7.9 days.</li>
+    <li><span class="d">Feb 9</span>Nguyen pulls the game.</li>
+  </ul>
+  <figure>
+    <p class="ft">US Google searches for Flappy Bird, Nov 15, 2013 – Feb 8, 2014</p>
+    <p class="fs">Daily index (100 = window peak), with the documented chart events.</p>
+    <div class="chart" id="c-flappy"></div>
+    <figcaption>Nothing in the game changed. The best-supported story is word of mouth among teenagers that crossed the point where App Store chart visibility feeds itself, during a holiday, with no influencer before the climb. The bot accusations were never substantiated.</figcaption>
+  </figure>
+
+  <h3>Among Us: two years unnoticed, then streamers country by country</h3>
+  <figure>
+    <p class="ft">Google searches for Among Us by country, May–Oct 2020</p>
+    <p class="fs">Each country's daily index, scaled to its own peak (100).</p>
+    <div class="legend" id="lg-among"></div>
+    <div class="chart" id="c-among"></div>
+    <figcaption>South Korea crossed 5% of its peak on May 31, Brazil on June 19, and the US only on Aug 15, a month after Sodapoppin's July 15 stream. Streamers drove this one, and the game sat in the "low double digits" of players for most of its first year.</figcaption>
+  </figure>
+</section>
+
+<section id="model">
+  <p class="eyebrow">03 · The scoring model, judged on games it hadn't seen</p>
+  <h2>Every model variant fails the held-out test I set in advance</h2>
+  <p>I coded all 126 games on the same 20 variables and committed the pass bar to git before running any test. To pass, a model needs a held-out AUC confidence interval above 0.5 on the time split and leave-one-cohort-out AUC above 0.6. AUC measures how often a model ranks a real hit above a non-hit: 0.5 is a coin flip and 1.0 is perfect.</p>
+  <figure>
+    <p class="ft">Held-out AUC with 95% confidence intervals</p>
+    <p class="fs">Time split: train on games before 2016, test on 2016+. Cohort split: every clone family held out together.</p>
+    <div class="legend" id="lg-bt"></div>
+    <div class="chart" id="c-bt"></div>
+    <figcaption>Within an era, the model separates hits from flops moderately (cohort split 0.60–0.71) and ranks a hit above its own clones about 3 times in 4. Across eras it ranks worse than chance, and it still scores 0.46 with the 2022 Wordle-clone cohort removed.</figcaption>
+  </figure>
+  <div class="two">
+    <div class="callout"><p class="k">Where it fails: false positives</p><p>Almost all are 2022–25 Wordle-likes, scored 0.64–0.95: Costcodle, LoLdle, Worldle, Travle, Contexto, Semantle, Nerdle, Globle.</p></div>
+    <div class="callout"><p class="k">Where it fails: false negatives</p><p>The streamer and Roblox era, scored 0.01–0.08: Goose Goose Duck, Dead Rails, 99 Nights, Doors, Stumble Guys, Among Us, Fall Guys, Grow a Garden.</p></div>
+  </div>
+  <p><strong>The clone paradox.</strong> 114 hit/non-hit pairs in the same cohort have identical recipe features, including 40 daily-word pairs and 35 one-tap pairs. Nothing built from mechanics can tell Flappy Bird from Splashy Fish, or Wordle from Lewdle.</p>
+</section>
+
+<section id="signal">
+  <p class="eyebrow">04 · Looking for a signal the listicles miss</p>
+  <h2>Watchability holds out of sample. The famous emoji grid works backwards.</h2>
+  <figure>
+    <p class="ft">Hit rate with and without each pre-registered candidate</p>
+    <p class="fs">All 122 non-Telegram games. The chip shows the held-out verdict.</p>
+    <div class="legend" id="lg-nov"></div>
+    <div class="chart" id="c-nov"></div>
+    <figcaption>Spectator value has a held-out AUC of 0.70 (0.60–0.80) and improves the model on both splits. An objective version, YouTube-search interest relative to web search across 92 games, scores 0.69 (0.51–0.86) on the 2016+ games, which passes narrowly. Failure comedy looks strong alone but adds nothing beyond simplicity. Early search momentum didn't hold (0.60, CI 0.44–0.75).</figcaption>
+  </figure>
+  <ul>
+    <li><strong>Streamer pickup is a property of the game, not luck.</strong> Most articles treat a streamer finding a game as chance. The data say streamers pick games that are fun to watch, and you can test for that before building.</li>
+    <li><strong>Roblox publishes what its recommender rewards:</strong> "qualified play-through rate, 7-day play days per user, and 7-day intentional co-play days". Watchable co-play games produce exactly those signals.</li>
+    <li><strong>The trade-off:</strong> watchable hits keep 12% of their peak interest a year later, against 29% for the rest. Design for retention too.</li>
+    <li><strong>The share grid has a reversed sign.</strong> Games with an intriguing share artifact hit 28% of the time against 67% without, because hundreds of clones copied it.</li>
+  </ul>
+</section>
+
+<section id="math">
+  <p class="eyebrow">05 · Epidemiology and DAU arithmetic</p>
+  <h2>You need a doubling every 9 days, and retention does most of the work</h2>
+  <p>The model is simple. Every active player-day brings in κ new installs, so the k-factor equals κ times the expected active days per install. For share-on-play games, retention multiplies virality. Going from 1,000 to 1M daily players in 90 days takes a doubling every <strong>9.0 days or faster</strong>, held for three months.</p>
+  <div class="two">
+    <figure>
+      <p class="ft">New installs each active player must bring per day</p>
+      <p class="fs">To reach 1M DAU on day 90 from 1,000 seed players</p>
+      <div class="chart narrow" id="c-kappa"></div>
+    </figure>
+    <figure>
+      <p class="ft">Total installs needed by day 90</p>
+      <p class="fs">Millions, same scenarios</p>
+      <div class="chart narrow" id="c-inst"></div>
+    </figure>
+  </div>
+  <p class="foot">Retention scenarios (D1 / D7 / D30): median mobile 22/4/0.8%, top-quartile casual 32/12/4%, strong casual hit 45/20/10%, daily ritual 55/40/28% (assumed). The first two come from GameAnalytics benchmarks.</p>
+  <div class="tablewrap"><table id="t-k"></table></div>
+  <p><strong>Real hits ran at k ≈ 1.1–1.6 per share generation, with very short generations.</strong> Nobody needs a k-factor of 3. What matters is a loop that turns over within a day or two, plus retention. These rates include press and algorithm pushes, so they overstate person-to-person spread.</p>
+</section>
+
+<section id="base">
+  <p class="eyebrow">06 · The short seller's view</p>
+  <h2>Most attempts never register, and most hits fade within a year</h2>
+  <figure>
+    <p class="ft">133 English Wordle-likes: peak Google search interest relative to Nerdle</p>
+    <p class="fs">Nerdle's own peak was about 3% of Wordle's. Census: Wordles of the World.</p>
+    <div class="chart narrow" id="c-census"></div>
+    <figcaption>Half never registered any measurable search interest. 5 matched Nerdle, and none came close to Wordle. Generic names like "START" pick up unrelated searches, so these counts are upper bounds.</figcaption>
+  </figure>
+  <div class="tablewrap"><table id="t-base"></table></div>
+  <figure>
+    <p class="ft">How much attention 72 hits kept one year after their peak</p>
+    <p class="fs">Google search interest 52 weeks after peak, as a share of peak. Hover a dot for the game.</p>
+    <div class="legend" id="lg-decay"></div>
+    <div class="chart" id="c-decay"></div>
+    <figcaption>Across 74 hits, interest halves a median 12 weeks after peak and is at 22% a year later. Roblox hits keep 3–12%, though search may understate play inside the Roblox app. Rituals and live-ops games last: Connections 48%, Candy Crush 48%, Wordle 34%.</figcaption>
+  </figure>
+  <p><strong>Peaks are worth less than they look:</strong></p>
+  <ul>
+    <li>Draw Something lost 33% of its daily players in 30 days.</li>
+    <li>Hamster Kombat lost 86% after its token airdrop.</li>
+    <li>Steal a Brainrot fell about 99% from 25.4M concurrent players.</li>
+    <li>HQ Trivia went from 2.38M concurrent to shutdown in two years.</li>
+    <li>Zynga paid $183.1M for OMGPOP and wrote off $95.5M six months later.</li>
+  </ul>
+  <p><strong>Why rituals last, from behavioral science.</strong></p>
+  <ul>
+    <li><strong>Habit formation:</strong> habits take a median of 66 days to form (Lally et al. 2010), and attach to stable cues like a group chat (Wood &amp; Neal 2007).</li>
+    <li><strong>Scarcity</strong> raises value (Worchel et al. 1975).</li>
+    <li><strong>Near-misses</strong> sustain play (Clark et al. 2009), which is Flappy Bird's pipe.</li>
+    <li><strong>Goal gradient:</strong> effort rises near a goal (Kivetz et al. 2006), which is Grow a Garden's growing plants.</li>
+    <li><strong>Competence, autonomy and relatedness</strong> predict continued play (Ryan et al. 2006).</li>
+  </ul>
+  <p>One warning from the data: a daily-sync hook alone didn't make hits last (23% vs 22% a year on).</p>
+</section>
+
+<section id="business">
+  <p class="eyebrow">07 · Revenue and exits</p>
+  <h2>Build on Roblox and keep it</h2>
+  <figure>
+    <p class="ft">Revenue per daily player per day, net to the developer</p>
+    <p class="fs">Low to high range, with the mid estimate as a dot. The mid estimate per year at 1M DAU is shown on the right.</p>
+    <div class="chart" id="c-rev"></div>
+    <figcaption>
+      <p>Where the ranges come from:</p>
+      <ul>
+        <li><strong>Mobile in-app purchases:</strong> King (Q4 2013, $0.055 gross), Rovio (Q4 2017, ~$0.094 gross) and Zynga (2011, $0.053), all from filings.</li>
+        <li><strong>Roblox:</strong> Roblox bookings per DAU ($0.138–0.141) times the 22% creator payout (DevEx share).</li>
+        <li><strong>Web ads:</strong> an assumption checked against Flappy Bird and Slither.io estimates.</li>
+        <li><strong>Mobile ads:</strong> third-party benchmarks.</li>
+      </ul>
+      <p>Mobile apps pay 3–4x more per player, but organic reach is the binding constraint. Rovio raised user-acquisition spend from €6.3M (2015) to €69.6M (2017) while its daily players fell.</p>
+    </figcaption>
+  </figure>
+  <h3>What buyers paid for</h3>
+  <div class="tablewrap"><table id="t-acq"></table></div>
+  <p>These buyers report and price on: DAU, MAU, unique payers, bookings per DAU, revenue concentration (Candy Crush was 78% of King's bookings), the payback period on paid user acquisition (Rovio: 8–10 months), and conversion to subscribers (NYT).</p>
+  <div class="callout">
+    <p class="k">Recommendation</p>
+    <p><strong>Platform: Roblox, which is effectively mobile.</strong></p>
+    <ul>
+      <li>It's the only channel in the data still producing zero-ad 1M+ DAU breakouts several times a year.</li>
+      <li>Its recommender rewards the co-play and retention signals that held up out of sample.</li>
+      <li>It hosts for free and handles payments.</li>
+    </ul>
+    <p><strong>Sell or keep: keep.</strong></p>
+    <ul>
+      <li>A kept Roblox hit is worth about 1.07x its first year: about $4.7M over five years from 1M average DAU, versus $7.1M for a ritual-grade game.</li>
+      <li>Selling outright beats keeping only at one year's revenue or more.</li>
+      <li>Audience-only exits pay about $0.5–1 per daily player (Wordle).</li>
+      <li>The realistic deal is a minority stake to an established Roblox studio for live-ops capacity and reach, which is what Grow a Garden did at ~1,000 concurrent players. Sequels extend the run: Roblox's Q2 2026 letter says "Grow a Garden 2" climbed quickly.</li>
+    </ul>
+    <p><strong>Risks:</strong> platform dependence, a young audience (COPPA and moderation), and fast decay.</p>
+  </div>
+</section>
+
+<section id="concepts">
+  <p class="eyebrow">08 · Concepts</p>
+  <h2>20 concepts scored against the model, and three to test first</h2>
+  <p>Each concept is coded on the same variables as the dataset and scored by three model variants, rank-averaged. Daily-grid web puzzles land at the bottom, matching the clone cohort that failed. The top two tie; Hide as a Painting ranks first because it avoids drawing moderation and stroke-physics risk.</p>
+  <div class="tablewrap"><table id="t-concepts"></table></div>
+  <div class="callout"><p class="k">Pass and kill thresholds for every test</p><p>You need about +70–80% more new players week over week. At small scale that takes one of two combinations:</p><ul><li>D7 retention of at least 20%, with each active player bringing at least <strong>0.33</strong> new players a day; or</li><li>D7 of at least 40%, with at least <strong>0.21</strong>.</li></ul><p>Below that, the game can still make money, but it won't reach 1M DAU in 90 days without ads.</p></div>
+
+  <article class="concept">
+    <header><span class="rank">1</span><h3>Hide as a Painting</h3><span class="plat">Roblox · model score 0.92 · ~6 weeks to build</span></header>
+    <p>Prop hunt in a haunted museum. Hiders pick a frame or pedestal and pose as a painting or statue. Guards with flashlights get three minutes and a limited number of accusations. A new gallery layout each day is shared by every server, with a "best hiding spot of the day" board.</p>
+    <div class="grid">
+      <div><h4>Why it scores high</h4><ul><li>High spectator value: reveals make good clips.</li><li>Failure comedy, like a "painting" caught mid-twitch.</li><li>Emergent output: absurd avatar portraits.</li><li>Borrowed rules: hide-and-seek and Statues.</li><li>Co-play with real friends.</li></ul><h4>Risk</h4><ul><li>Prop hunts exist on Roblox. The museum and posing need to read in a 10-second clip.</li></ul></div>
+      <div><h4>Cheapest demand test · ~10 days · $0–50</h4><ol><li>Days 1–3: three 15-second greybox clips on TikTok and Shorts. Kill if none beats your median post.</li><li>Days 4–10: one map, one round loop, 30–50 players from Discord. Pass at D1 ≥ 35%, sessions ≥ 10 min, ≥ a third in parties.</li><li>Optional $50 sponsored-ads cohort, purely to measure retention.</li><li>Weeks 3–6: keep going only at +70% organic visits a week, two weeks running.</li></ol></div>
+    </div>
+  </article>
+  <article class="concept">
+    <header><span class="rank">2</span><h3>Pictionary Obby</h3><span class="plat">Roblox · model score 0.92 · ~8 weeks to build</span></header>
+    <p>The artist draws a secret word. The strokes become the platforms of an obstacle course that teammates run while guessing the word.</p>
+    <div class="grid">
+      <div><h4>Why it scores high</h4><ul><li>High spectator value.</li><li>Emergent, funny courses.</li><li>Borrowed rules: Pictionary.</li><li>Co-play.</li></ul><h4>Risks</h4><ul><li>Moderating freehand drawings on a kids' platform: stroke limits, filtering, report tools.</li><li>Turning strokes into fair platforms. Prototype this first.</li></ul></div>
+      <div><h4>Cheapest demand test · ~2 weeks · $0–50</h4><ol><li>Days 1–4: stroke-to-platform prototype plus the same three-clip test.</li><li>Days 5–14: private 4–8-player lobbies from Discord. Same retention and party bars as #1, plus ≥ 3 rounds per session.</li></ol></div>
+    </div>
+  </article>
+  <article class="concept">
+    <header><span class="rank">3</span><h3>Telephone Pictionary Chains</h3><span class="plat">Web · model score 0.86 · ~4 weeks to build</span></header>
+    <p>An asynchronous telephone game for group chats. You draw a prompt in 60 seconds, a friend captions it, the next person draws the caption. After six steps the chain plays back to the group as a 6-second GIF. No accounts, and almost no cost per player.</p>
+    <div class="grid">
+      <div><h4>Why it scores high</h4><ul><li>An invite loop built into play.</li><li>Borrowed rules: the Telephone family.</li><li>High spectator value, failure comedy and emergent output.</li><li>Async removes Gartic Phone's need for everyone to be online at once.</li></ul><h4>Risk</h4><ul><li>Weak evidence that web breaks out without ads.</li></ul></div>
+      <div><h4>Cheapest demand test · ~1 week · ~$10</h4><ol><li>Build the 6-step chain and GIF playback.</li><li>Seed it in 10 of your own group chats and 3 subreddits.</li><li>Every link carries the sender's ID, so the k-factor is counted, not estimated. Pass at ≥ 0.33 new players per active player per day with D7 ≥ 20%. Kill below 0.2.</li></ol></div>
+    </div>
+  </article>
+  <div class="callout"><p class="k">Order of work</p><ol><li>Run #3's one-week test first. It gives you a real, measured share rate by day 7.</li><li>Run #1's clip test in parallel.</li><li>Build whichever Roblox concept passes.</li><li>If it breaks out, bring in a live-ops partner for a minority stake and plan the sequel before the decay sets in.</li></ol></div>
+</section>
+
+<section id="limits">
+  <p class="eyebrow">09 · Limits and sources</p>
+  <h2>What could change these conclusions</h2>
+  <ul>
+    <li><strong>Coding bias.</strong> One coder who knew the outcomes. Pre-registration and the objective watch-ratio check reduce this but don't remove it.</li>
+    <li><strong>Small sample.</strong> 126 games, so confidence intervals are wide, and the watch-ratio pass is narrow (lower bound 0.51).</li>
+    <li><strong>Outcome tiers.</strong> Some rest on press reports and creator claims. Heardle was moved up a tier after a Trends cross-check and its creator's figure of over 1M plays a day.</li>
+    <li><strong>Google Trends' blind spots.</strong> It overweights web games people search for daily, floors small values to zero, and may understate play inside the Roblox app.</li>
+    <li><strong>The Roblox random sample</strong> can't see the top of the distribution.</li>
+    <li><strong>Still unknown:</strong> per-game revenue per player on Roblox, and Wordle's exact price.</li>
+    <li><strong>Out of scope:</strong> PC/Steam co-op hits, which are outside your web/mobile brief.</li>
+  </ul>
+  <h3>Main sources</h3>
+  <ul class="sources">
+    <li><strong>SEC filings:</strong> <a href="https://www.sec.gov/Archives/edgar/data/71691/000007169122000006/nyt-20211226.htm">NYT 10-K FY2021</a>, <a href="https://www.sec.gov/Archives/edgar/data/71691/000007169122000017/pressrelease3272022.htm">NYT Q1 2022</a>, <a href="https://www.sec.gov/Archives/edgar/data/71691/000007169126000011/nyt-20251231.htm">NYT 10-K FY2025</a>, <a href="https://www.sec.gov/Archives/edgar/data/1439404/000119312511328051/d198836ds1a.htm">Zynga S-1/A</a>, <a href="https://www.sec.gov/Archives/edgar/data/1439404/000119312512218465/d310790d10q.htm">Zynga 10-Q Q1 2012</a>, <a href="https://www.sec.gov/Archives/edgar/data/1439404/000119312512437790/d429539d10q.htm">Zynga 10-Q Q3 2012</a>, <a href="https://www.sec.gov/Archives/edgar/data/1580732/000119312514113704/d564433df1a.htm">King F-1/A</a>, <a href="https://www.sec.gov/Archives/edgar/data/1315098/000131509825000261/q225shletterex992.htm">Roblox Q2 2025</a>, <a href="https://www.sec.gov/Archives/edgar/data/1315098/000131509825000326/ex991-q32025shareholderl.htm">Q3 2025</a>, <a href="https://www.sec.gov/Archives/edgar/data/1315098/000131509826000009/ex991-q42025shareholder.htm">Q4 2025</a>, <a href="https://www.sec.gov/Archives/edgar/data/1315098/000131509826000024/rblx-20251231.htm">Roblox 10-K FY2025</a>.</li>
+    <li><strong>Company report:</strong> <a href="https://www.rovio.com/wp-content/uploads/2024/12/rovio-annual-report-2017.pdf">Rovio Annual Report 2017</a>.</li>
+    <li><strong>Creators:</strong> <a href="https://x.com/powerlanguish/status/1471493886031773707">Wardle's share-button tweet</a>, <a href="https://www.gamedeveloper.com/marketing/josh-wardle-reflects-on-the-the-unconventional-road-to-wordle-s-success">Wardle at GDC</a>, <a href="https://davidkushner.com/article/the-flight-of-the-birdman/">Nguyen in Rolling Stone</a>, <a href="https://gamesbeat.com/janzen-madsen-interview/">Jandel on Grow a Garden</a>.</li>
+    <li><strong>Data:</strong> Google Trends (weekly for 126 games; daily for the case studies), the <a href="https://games.roblox.com/v1/games">Roblox games API</a>, and the <a href="https://rwmpelstilzchen.gitlab.io/wordles/">Wordles of the World census</a>.</li>
+    <li><strong>Press for gaps:</strong> <a href="https://breakingnews.ie/world/rpt-update-1-new-york-times-acquires-wordle-1251694.html">Wordle price (Reuters)</a>, <a href="https://www.boston.com/news/national-news/2022/01/04/he-made-wordle-for-his-partner-now-its-an-online-hit/">Wordle player counts</a>, <a href="https://www.ibtimes.com/flappy-bird-game-deleted-rise-fall-most-addictive-mobile-game-years-1555635">Flappy timeline</a>, <a href="https://www.ggrecon.com/articles/how-memes-revived-a-two-year-old-indie-game/">Among Us</a>, <a href="https://en.wikipedia.org/wiki/Grow_a_Garden">Grow a Garden timeline</a>, <a href="https://www.engadget.com/2014-03-06-report-app-store-averaged-a-new-flappy-bird-clone-every-24-minu.html">Flappy clones</a>, <a href="https://gameworldobserver.com/2024/03/14/all-games-killed-by-supercell-everdale-hay-day-pop-clash-mini">Supercell kills</a>.</li>
+    <li><strong>Research:</strong> Lally et al. 2010, Wood &amp; Neal 2007, Clark et al. 2009, Kivetz et al. 2006, Worchel et al. 1975, Ryan et al. 2006.</li>
+  </ul>
+  <p class="foot">All 78 sources, the dataset (SQLite plus CSVs), the model code and the pre-registration live in the <code>viral-game-research</code> folder of your repo.</p>
+</section>
+</main>
+</div>
+
+<script>
+const DATA = {"wordle": [["2021-11-01", 1.0], ["2021-11-02", 1.0], ["2021-11-03", 1.0], ["2021-11-04", 2.0], ["2021-11-05", 1.0], ["2021-11-06", 0.0], ["2021-11-07", 1.0], ["2021-11-08", 1.0], ["2021-11-09", 2.0], ["2021-11-10", 2.0], ["2021-11-11", 1.0], ["2021-11-12", 1.0], ["2021-11-13", 1.0], ["2021-11-14", 1.0], ["2021-11-15", 2.0], ["2021-11-16", 2.0], ["2021-11-17", 2.0], ["2021-11-18", 2.0], ["2021-11-19", 1.0], ["2021-11-20", 0.0], ["2021-11-21", 1.0], ["2021-11-22", 1.0], ["2021-11-23", 1.0], ["2021-11-24", 1.0], ["2021-11-25", 2.0], ["2021-11-26", 2.0], ["2021-11-27", 1.0], ["2021-11-28", 1.0], ["2021-11-29", 2.0], ["2021-11-30", 2.0], ["2021-12-01", 1.0], ["2021-12-02", 2.0], ["2021-12-03", 2.0], ["2021-12-04", 0.0], ["2021-12-05", 1.0], ["2021-12-06", 2.0], ["2021-12-07", 2.0], ["2021-12-08", 2.0], ["2021-12-09", 2.0], ["2021-12-10", 2.0], ["2021-12-11", 1.0], ["2021-12-12", 1.0], ["2021-12-13", 2.0], ["2021-12-14", 2.0], ["2021-12-15", 2.0], ["2021-12-16", 2.0], ["2021-12-17", 2.0], ["2021-12-18", 2.0], ["2021-12-19", 3.0], ["2021-12-20", 3.0], ["2021-12-21", 4.0], ["2021-12-22", 5.0], ["2021-12-23", 17.0], ["2021-12-24", 17.0], ["2021-12-25", 17.0], ["2021-12-26", 21.0], ["2021-12-27", 22.0], ["2021-12-28", 26.0], ["2021-12-29", 29.0], ["2021-12-30", 42.0], ["2021-12-31", 49.0], ["2022-01-01", 80.0], ["2022-01-02", 100.0]], "flappy": [["2013-11-15", 0.0], ["2013-11-16", 0.0], ["2013-11-17", 0.0], ["2013-11-18", 0.0], ["2013-11-19", 0.0], ["2013-11-20", 0.0], ["2013-11-21", 0.0], ["2013-11-22", 0.0], ["2013-11-23", 0.0], ["2013-11-24", 0.0], ["2013-11-25", 0.0], ["2013-11-26", 0.0], ["2013-11-27", 0.0], ["2013-11-28", 0.0], ["2013-11-29", 0.0], ["2013-11-30", 0.0], ["2013-12-01", 0.0], ["2013-12-02", 0.0], ["2013-12-03", 0.0], ["2013-12-04", 0.0], ["2013-12-05", 0.0], ["2013-12-06", 0.0], ["2013-12-07", 0.0], ["2013-12-08", 0.0], ["2013-12-09", 0.0], ["2013-12-10", 0.0], ["2013-12-11", 0.0], ["2013-12-12", 0.0], ["2013-12-13", 0.0], ["2013-12-14", 0.0], ["2013-12-15", 0.0], ["2013-12-16", 0.0], ["2013-12-17", 0.0], ["2013-12-18", 0.0], ["2013-12-19", 0.0], ["2013-12-20", 0.0], ["2013-12-21", 0.0], ["2013-12-22", 0.0], ["2013-12-23", 0.0], ["2013-12-24", 0.0], ["2013-12-25", 0.0], ["2013-12-26", 0.0], ["2013-12-27", 0.0], ["2013-12-28", 0.0], ["2013-12-29", 0.0], ["2013-12-30", 0.0], ["2013-12-31", 0.0], ["2014-01-01", 0.0], ["2014-01-02", 0.0], ["2014-01-03", 0.0], ["2014-01-04", 0.0], ["2014-01-05", 0.0], ["2014-01-06", 0.0], ["2014-01-07", 0.0], ["2014-01-08", 0.0], ["2014-01-09", 0.0], ["2014-01-10", 0.0], ["2014-01-11", 0.0], ["2014-01-12", 0.0], ["2014-01-13", 0.0], ["2014-01-14", 0.0], ["2014-01-15", 1.0], ["2014-01-16", 1.0], ["2014-01-17", 1.0], ["2014-01-18", 1.0], ["2014-01-19", 2.0], ["2014-01-20", 2.0], ["2014-01-21", 2.0], ["2014-01-22", 2.0], ["2014-01-23", 3.0], ["2014-01-24", 4.0], ["2014-01-25", 6.0], ["2014-01-26", 8.0], ["2014-01-27", 8.0], ["2014-01-28", 14.0], ["2014-01-29", 19.0], ["2014-01-30", 24.0], ["2014-01-31", 31.0], ["2014-02-01", 34.0], ["2014-02-02", 35.0], ["2014-02-03", 32.0], ["2014-02-04", 31.0], ["2014-02-05", 30.0], ["2014-02-06", 29.0], ["2014-02-07", 29.0], ["2014-02-08", 42.0]], "amongus": {"KR": [["2020-05-01", 0.0], ["2020-05-02", 0.0], ["2020-05-03", 0.0], ["2020-05-04", 0.0], ["2020-05-05", 0.0], ["2020-05-06", 0.0], ["2020-05-07", 0.0], ["2020-05-08", 0.0], ["2020-05-09", 0.0], ["2020-05-10", 0.0], ["2020-05-11", 0.0], ["2020-05-12", 0.0], ["2020-05-13", 0.0], ["2020-05-14", 0.0], ["2020-05-15", 0.0], ["2020-05-16", 0.0], ["2020-05-17", 0.0], ["2020-05-18", 0.0], ["2020-05-19", 0.0], ["2020-05-20", 0.0], ["2020-05-21", 0.0], ["2020-05-22", 0.0], ["2020-05-23", 0.0], ["2020-05-24", 0.0], ["2020-05-25", 0.0], ["2020-05-26", 0.0], ["2020-05-27", 0.0], ["2020-05-28", 0.0], ["2020-05-29", 0.0], ["2020-05-30", 0.0], ["2020-05-31", 18.0], ["2020-06-01", 0.0], ["2020-06-02", 0.0], ["2020-06-03", 0.0], ["2020-06-04", 0.0], ["2020-06-05", 0.0], ["2020-06-06", 0.0], ["2020-06-07", 0.0], ["2020-06-08", 0.0], ["2020-06-09", 0.0], ["2020-06-10", 0.0], ["2020-06-11", 0.0], ["2020-06-12", 0.0], ["2020-06-13", 0.0], ["2020-06-14", 0.0], ["2020-06-15", 0.0], ["2020-06-16", 0.0], ["2020-06-17", 0.0], ["2020-06-18", 0.0], ["2020-06-19", 0.0], ["2020-06-20", 0.0], ["2020-06-21", 0.0], ["2020-06-22", 0.0], ["2020-06-23", 0.0], ["2020-06-24", 0.0], ["2020-06-25", 0.0], ["2020-06-26", 0.0], ["2020-06-27", 0.0], ["2020-06-28", 0.0], ["2020-06-29", 0.0], ["2020-06-30", 0.0], ["2020-07-01", 0.0], ["2020-07-02", 0.0], ["2020-07-03", 0.0], ["2020-07-04", 0.0], ["2020-07-05", 0.0], ["2020-07-06", 0.0], ["2020-07-07", 0.0], ["2020-07-08", 23.0], ["2020-07-09", 17.0], ["2020-07-10", 0.0], ["2020-07-11", 0.0], ["2020-07-12", 0.0], ["2020-07-13", 0.0], ["2020-07-14", 0.0], ["2020-07-15", 0.0], ["2020-07-16", 0.0], ["2020-07-17", 0.0], ["2020-07-18", 0.0], ["2020-07-19", 21.0], ["2020-07-20", 19.0], ["2020-07-21", 0.0], ["2020-07-22", 16.0], ["2020-07-23", 0.0], ["2020-07-24", 0.0], ["2020-07-25", 0.0], ["2020-07-26", 19.0], ["2020-07-27", 19.0], ["2020-07-28", 0.0], ["2020-07-29", 21.0], ["2020-07-30", 25.0], ["2020-07-31", 0.0], ["2020-08-01", 0.0], ["2020-08-02", 35.0], ["2020-08-03", 23.0], ["2020-08-04", 38.0], ["2020-08-05", 20.0], ["2020-08-06", 23.0], ["2020-08-07", 48.0], ["2020-08-08", 41.0], ["2020-08-09", 32.0], ["2020-08-10", 33.0], ["2020-08-11", 34.0], ["2020-08-12", 40.0], ["2020-08-13", 38.0], ["2020-08-14", 39.0], ["2020-08-15", 42.0], ["2020-08-16", 35.0], ["2020-08-17", 49.0], ["2020-08-18", 49.0], ["2020-08-19", 37.0], ["2020-08-20", 36.0], ["2020-08-21", 40.0], ["2020-08-22", 41.0], ["2020-08-23", 49.0], ["2020-08-24", 47.0], ["2020-08-25", 54.0], ["2020-08-26", 46.0], ["2020-08-27", 57.0], ["2020-08-28", 45.0], ["2020-08-29", 70.0], ["2020-08-30", 69.0], ["2020-08-31", 63.0], ["2020-09-01", 87.0], ["2020-09-02", 68.0], ["2020-09-03", 66.0], ["2020-09-04", 59.0], ["2020-09-05", 77.0], ["2020-09-06", 73.0], ["2020-09-07", 81.0], ["2020-09-08", 76.0], ["2020-09-09", 53.0], ["2020-09-10", 51.0], ["2020-09-11", 69.0], ["2020-09-12", 64.0], ["2020-09-13", 80.0], ["2020-09-14", 61.0], ["2020-09-15", 77.0], ["2020-09-16", 87.0], ["2020-09-17", 81.0], ["2020-09-18", 88.0], ["2020-09-19", 73.0], ["2020-09-20", 96.0], ["2020-09-21", 71.0], ["2020-09-22", 77.0], ["2020-09-23", 85.0], ["2020-09-24", 84.0], ["2020-09-25", 96.0], ["2020-09-26", 63.0], ["2020-09-27", 80.0], ["2020-09-28", 93.0], ["2020-09-29", 70.0], ["2020-09-30", 83.0], ["2020-10-01", 96.0], ["2020-10-02", 96.0], ["2020-10-03", 98.0], ["2020-10-04", 88.0], ["2020-10-05", 68.0], ["2020-10-06", 67.0], ["2020-10-07", 67.0], ["2020-10-08", 82.0], ["2020-10-09", 100.0], ["2020-10-10", 79.0], ["2020-10-11", 52.0], ["2020-10-12", 61.0], ["2020-10-13", 49.0], ["2020-10-14", 57.0], ["2020-10-15", 65.0], ["2020-10-16", 38.0], ["2020-10-17", 78.0], ["2020-10-18", 75.0], ["2020-10-19", 39.0], ["2020-10-20", 51.0], ["2020-10-21", 55.0], ["2020-10-22", 52.0], ["2020-10-23", 68.0], ["2020-10-24", 87.0], ["2020-10-25", 66.0], ["2020-10-26", 54.0], ["2020-10-27", 69.0], ["2020-10-28", 56.0], ["2020-10-29", 40.0], ["2020-10-30", 56.0], ["2020-10-31", 53.0]], "BR": [["2020-05-01", 3.0], ["2020-05-02", 4.0], ["2020-05-03", 3.0], ["2020-05-04", 2.0], ["2020-05-05", 2.0], ["2020-05-06", 2.0], ["2020-05-07", 3.0], ["2020-05-08", 3.0], ["2020-05-09", 3.0], ["2020-05-10", 3.0], ["2020-05-11", 2.0], ["2020-05-12", 2.0], ["2020-05-13", 3.0], ["2020-05-14", 3.0], ["2020-05-15", 3.0], ["2020-05-16", 4.0], ["2020-05-17", 3.0], ["2020-05-18", 3.0], ["2020-05-19", 3.0], ["2020-05-20", 2.0], ["2020-05-21", 2.0], ["2020-05-22", 3.0], ["2020-05-23", 3.0], ["2020-05-24", 3.0], ["2020-05-25", 3.0], ["2020-05-26", 3.0], ["2020-05-27", 3.0], ["2020-05-28", 2.0], ["2020-05-29", 3.0], ["2020-05-30", 3.0], ["2020-05-31", 3.0], ["2020-06-01", 2.0], ["2020-06-02", 2.0], ["2020-06-03", 3.0], ["2020-06-04", 3.0], ["2020-06-05", 3.0], ["2020-06-06", 4.0], ["2020-06-07", 3.0], ["2020-06-08", 3.0], ["2020-06-09", 3.0], ["2020-06-10", 3.0], ["2020-06-11", 3.0], ["2020-06-12", 3.0], ["2020-06-13", 3.0], ["2020-06-14", 3.0], ["2020-06-15", 3.0], ["2020-06-16", 2.0], ["2020-06-17", 2.0], ["2020-06-18", 2.0], ["2020-06-19", 8.0], ["2020-06-20", 8.0], ["2020-06-21", 5.0], ["2020-06-22", 4.0], ["2020-06-23", 4.0], ["2020-06-24", 3.0], ["2020-06-25", 3.0], ["2020-06-26", 4.0], ["2020-06-27", 3.0], ["2020-06-28", 3.0], ["2020-06-29", 3.0], ["2020-06-30", 3.0], ["2020-07-01", 3.0], ["2020-07-02", 3.0], ["2020-07-03", 3.0], ["2020-07-04", 4.0], ["2020-07-05", 4.0], ["2020-07-06", 3.0], ["2020-07-07", 3.0], ["2020-07-08", 4.0], ["2020-07-09", 4.0], ["2020-07-10", 4.0], ["2020-07-11", 4.0], ["2020-07-12", 4.0], ["2020-07-13", 3.0], ["2020-07-14", 3.0], ["2020-07-15", 3.0], ["2020-07-16", 3.0], ["2020-07-17", 3.0], ["2020-07-18", 3.0], ["2020-07-19", 3.0], ["2020-07-20", 3.0], ["2020-07-21", 3.0], ["2020-07-22", 3.0], ["2020-07-23", 2.0], ["2020-07-24", 3.0], ["2020-07-25", 4.0], ["2020-07-26", 3.0], ["2020-07-27", 3.0], ["2020-07-28", 3.0], ["2020-07-29", 2.0], ["2020-07-30", 3.0], ["2020-07-31", 3.0], ["2020-08-01", 3.0], ["2020-08-02", 3.0], ["2020-08-03", 2.0], ["2020-08-04", 3.0], ["2020-08-05", 2.0], ["2020-08-06", 3.0], ["2020-08-07", 3.0], ["2020-08-08", 3.0], ["2020-08-09", 3.0], ["2020-08-10", 3.0], ["2020-08-11", 3.0], ["2020-08-12", 3.0], ["2020-08-13", 3.0], ["2020-08-14", 3.0], ["2020-08-15", 3.0], ["2020-08-16", 3.0], ["2020-08-17", 3.0], ["2020-08-18", 3.0], ["2020-08-19", 3.0], ["2020-08-20", 2.0], ["2020-08-21", 3.0], ["2020-08-22", 4.0], ["2020-08-23", 3.0], ["2020-08-24", 3.0], ["2020-08-25", 3.0], ["2020-08-26", 3.0], ["2020-08-27", 4.0], ["2020-08-28", 4.0], ["2020-08-29", 5.0], ["2020-08-30", 5.0], ["2020-08-31", 4.0], ["2020-09-01", 5.0], ["2020-09-02", 5.0], ["2020-09-03", 6.0], ["2020-09-04", 8.0], ["2020-09-05", 8.0], ["2020-09-06", 8.0], ["2020-09-07", 8.0], ["2020-09-08", 9.0], ["2020-09-09", 11.0], ["2020-09-10", 11.0], ["2020-09-11", 13.0], ["2020-09-12", 16.0], ["2020-09-13", 18.0], ["2020-09-14", 18.0], ["2020-09-15", 26.0], ["2020-09-16", 29.0], ["2020-09-17", 37.0], ["2020-09-18", 48.0], ["2020-09-19", 62.0], ["2020-09-20", 67.0], ["2020-09-21", 74.0], ["2020-09-22", 92.0], ["2020-09-23", 100.0], ["2020-09-24", 99.0], ["2020-09-25", 92.0], ["2020-09-26", 97.0], ["2020-09-27", 95.0], ["2020-09-28", 85.0], ["2020-09-29", 84.0], ["2020-09-30", 83.0], ["2020-10-01", 74.0], ["2020-10-02", 77.0], ["2020-10-03", 82.0], ["2020-10-04", 79.0], ["2020-10-05", 70.0], ["2020-10-06", 76.0], ["2020-10-07", 70.0], ["2020-10-08", 68.0], ["2020-10-09", 70.0], ["2020-10-10", 69.0], ["2020-10-11", 75.0], ["2020-10-12", 71.0], ["2020-10-13", 65.0], ["2020-10-14", 61.0], ["2020-10-15", 70.0], ["2020-10-16", 64.0], ["2020-10-17", 72.0], ["2020-10-18", 69.0], ["2020-10-19", 64.0], ["2020-10-20", 63.0], ["2020-10-21", 57.0], ["2020-10-22", 60.0], ["2020-10-23", 62.0], ["2020-10-24", 73.0], ["2020-10-25", 67.0], ["2020-10-26", 59.0], ["2020-10-27", 56.0], ["2020-10-28", 50.0], ["2020-10-29", 51.0], ["2020-10-30", 56.0], ["2020-10-31", 63.0]], "US": [["2020-05-01", 1.0], ["2020-05-02", 1.0], ["2020-05-03", 1.0], ["2020-05-04", 1.0], ["2020-05-05", 1.0], ["2020-05-06", 1.0], ["2020-05-07", 1.0], ["2020-05-08", 1.0], ["2020-05-09", 1.0], ["2020-05-10", 1.0], ["2020-05-11", 1.0], ["2020-05-12", 1.0], ["2020-05-13", 1.0], ["2020-05-14", 1.0], ["2020-05-15", 1.0], ["2020-05-16", 1.0], ["2020-05-17", 1.0], ["2020-05-18", 1.0], ["2020-05-19", 1.0], ["2020-05-20", 1.0], ["2020-05-21", 1.0], ["2020-05-22", 1.0], ["2020-05-23", 1.0], ["2020-05-24", 1.0], ["2020-05-25", 1.0], ["2020-05-26", 1.0], ["2020-05-27", 1.0], ["2020-05-28", 1.0], ["2020-05-29", 1.0], ["2020-05-30", 1.0], ["2020-05-31", 1.0], ["2020-06-01", 1.0], ["2020-06-02", 1.0], ["2020-06-03", 1.0], ["2020-06-04", 1.0], ["2020-06-05", 1.0], ["2020-06-06", 1.0], ["2020-06-07", 1.0], ["2020-06-08", 1.0], ["2020-06-09", 1.0], ["2020-06-10", 1.0], ["2020-06-11", 1.0], ["2020-06-12", 1.0], ["2020-06-13", 1.0], ["2020-06-14", 1.0], ["2020-06-15", 1.0], ["2020-06-16", 1.0], ["2020-06-17", 1.0], ["2020-06-18", 1.0], ["2020-06-19", 1.0], ["2020-06-20", 2.0], ["2020-06-21", 2.0], ["2020-06-22", 1.0], ["2020-06-23", 1.0], ["2020-06-24", 1.0], ["2020-06-25", 1.0], ["2020-06-26", 1.0], ["2020-06-27", 1.0], ["2020-06-28", 1.0], ["2020-06-29", 1.0], ["2020-06-30", 1.0], ["2020-07-01", 1.0], ["2020-07-02", 1.0], ["2020-07-03", 1.0], ["2020-07-04", 1.0], ["2020-07-05", 1.0], ["2020-07-06", 1.0], ["2020-07-07", 1.0], ["2020-07-08", 1.0], ["2020-07-09", 1.0], ["2020-07-10", 1.0], ["2020-07-11", 1.0], ["2020-07-12", 1.0], ["2020-07-13", 1.0], ["2020-07-14", 1.0], ["2020-07-15", 1.0], ["2020-07-16", 1.0], ["2020-07-17", 1.0], ["2020-07-18", 1.0], ["2020-07-19", 1.0], ["2020-07-20", 1.0], ["2020-07-21", 1.0], ["2020-07-22", 1.0], ["2020-07-23", 1.0], ["2020-07-24", 1.0], ["2020-07-25", 1.0], ["2020-07-26", 1.0], ["2020-07-27", 1.0], ["2020-07-28", 1.0], ["2020-07-29", 1.0], ["2020-07-30", 1.0], ["2020-07-31", 1.0], ["2020-08-01", 1.0], ["2020-08-02", 2.0], ["2020-08-03", 2.0], ["2020-08-04", 2.0], ["2020-08-05", 2.0], ["2020-08-06", 2.0], ["2020-08-07", 2.0], ["2020-08-08", 3.0], ["2020-08-09", 3.0], ["2020-08-10", 3.0], ["2020-08-11", 3.0], ["2020-08-12", 4.0], ["2020-08-13", 4.0], ["2020-08-14", 4.0], ["2020-08-15", 5.0], ["2020-08-16", 5.0], ["2020-08-17", 4.0], ["2020-08-18", 5.0], ["2020-08-19", 4.0], ["2020-08-20", 4.0], ["2020-08-21", 4.0], ["2020-08-22", 5.0], ["2020-08-23", 5.0], ["2020-08-24", 5.0], ["2020-08-25", 6.0], ["2020-08-26", 6.0], ["2020-08-27", 6.0], ["2020-08-28", 6.0], ["2020-08-29", 8.0], ["2020-08-30", 8.0], ["2020-08-31", 8.0], ["2020-09-01", 11.0], ["2020-09-02", 10.0], ["2020-09-03", 9.0], ["2020-09-04", 11.0], ["2020-09-05", 14.0], ["2020-09-06", 16.0], ["2020-09-07", 20.0], ["2020-09-08", 22.0], ["2020-09-09", 24.0], ["2020-09-10", 27.0], ["2020-09-11", 31.0], ["2020-09-12", 39.0], ["2020-09-13", 45.0], ["2020-09-14", 56.0], ["2020-09-15", 58.0], ["2020-09-16", 64.0], ["2020-09-17", 64.0], ["2020-09-18", 60.0], ["2020-09-19", 63.0], ["2020-09-20", 70.0], ["2020-09-21", 80.0], ["2020-09-22", 86.0], ["2020-09-23", 96.0], ["2020-09-24", 95.0], ["2020-09-25", 86.0], ["2020-09-26", 90.0], ["2020-09-27", 85.0], ["2020-09-28", 93.0], ["2020-09-29", 100.0], ["2020-09-30", 90.0], ["2020-10-01", 93.0], ["2020-10-02", 92.0], ["2020-10-03", 86.0], ["2020-10-04", 89.0], ["2020-10-05", 87.0], ["2020-10-06", 94.0], ["2020-10-07", 94.0], ["2020-10-08", 87.0], ["2020-10-09", 78.0], ["2020-10-10", 77.0], ["2020-10-11", 80.0], ["2020-10-12", 72.0], ["2020-10-13", 76.0], ["2020-10-14", 74.0], ["2020-10-15", 74.0], ["2020-10-16", 77.0], ["2020-10-17", 82.0], ["2020-10-18", 86.0], ["2020-10-19", 80.0], ["2020-10-20", 81.0], ["2020-10-21", 88.0], ["2020-10-22", 78.0], ["2020-10-23", 80.0], ["2020-10-24", 97.0], ["2020-10-25", 78.0], ["2020-10-26", 66.0], ["2020-10-27", 69.0], ["2020-10-28", 67.0], ["2020-10-29", 68.0], ["2020-10-30", 67.0], ["2020-10-31", 75.0]]}, "backtest": [{"model": "conventional", "A": 0.28448275862068967, "Alo": 0.1663140326695194, "Ahi": 0.4207336116264686, "B": 0.6655319148936172, "Blo": 0.5603134888081566, "Bhi": 0.7648721050490741, "C": 0.6309523809523809}, {"model": "context_only", "A": 0.5567951318458417, "Alo": 0.414589089257268, "Ahi": 0.6916941123091704, "B": 0.5990070921985815, "Blo": 0.48454138603332153, "Bhi": 0.6984769192644245, "C": 0.7202380952380952}, {"model": "conventional+context", "A": 0.3093306288032454, "Alo": 0.17952446734368777, "Ahi": 0.44798719958202715, "B": 0.6469503546099291, "Blo": 0.5403653100775194, "Bhi": 0.7473793182445834, "C": 0.7797619047619048}, {"model": "full(conv+context+novel)", "A": 0.31845841784989853, "Alo": 0.18294227290170495, "Ahi": 0.454653705737375, "B": 0.7124822695035461, "Blo": 0.6176729684788895, "Bhi": 0.8075018299549549, "C": 0.7837301587301587}], "novel": [{"k": "spectator_high", "with": 0.8461538461538461, "without": 0.5520833333333334, "auc": 0.6982758620689655, "lo": 0.5961363636363636, "hi": 0.7972972972972973, "n": 26}, {"k": "failure_comedy", "with": 0.74, "without": 0.5277777777777778, "auc": 0.7545638945233265, "lo": 0.6499771805273834, "hi": 0.8534360580092287, "n": 50}, {"k": "emergent_output", "with": 0.7142857142857143, "without": 0.594059405940594, "auc": 0.6125760649087222, "lo": 0.5231481481481481, "hi": 0.7033468559837728, "n": 21}, {"k": "rules_preknown", "with": 0.5957446808510638, "without": 0.6266666666666667, "auc": 0.4548681541582151, "lo": 0.3341523857526882, "hi": 0.5772751196172249, "n": 47}, {"k": "artifact_curiosity", "with": 0.2777777777777778, "without": 0.6730769230769231, "auc": 0.34939148073022314, "lo": 0.23927312271062273, "hi": 0.4642857142857143, "n": 18}], "watch": {"n": 92, "A_test_n": 42, "A_univariate_auc": 0.6923076923076923, "A_ci": [0.512936524609844, 0.8568981481481476]}, "decay": [{"name": "Gartic Phone", "era": "streamer", "platform": "web", "spectator": 2, "r": 0.6659999999999999}, {"name": "Candy Crush Soda Saga", "era": "app_store_mature", "platform": "mobile", "spectator": 0, "r": 0.65}, {"name": "Heads Up!", "era": "app_store_mature", "platform": "mobile", "spectator": 2, "r": 0.6459999999999999}, {"name": "Goose Goose Duck", "era": "streamer", "platform": "pc", "spectator": 2, "r": 0.642}, {"name": "FarmVille 2", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.608}, {"name": "Subway Surfers", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.606}, {"name": "Wordfeud", "era": "app_store_early", "platform": "mobile", "spectator": 0, "r": 0.606}, {"name": "Diamond Dash", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.598}, {"name": "Temple Run", "era": "app_store_early", "platform": "mobile", "spectator": 1, "r": 0.596}, {"name": "Cut the Rope", "era": "app_store_early", "platform": "mobile", "spectator": 0, "r": 0.588}, {"name": "Cookie Jam", "era": "app_store_mature", "platform": "mobile", "spectator": 0, "r": 0.574}, {"name": "Angry Birds", "era": "app_store_early", "platform": "mobile", "spectator": 1, "r": 0.532}, {"name": "NYT Connections", "era": "daily_web", "platform": "web", "spectator": 0, "r": 0.48200000000000004}, {"name": "Candy Crush Saga", "era": "app_store_mature", "platform": "facebook", "spectator": 0, "r": 0.47600000000000003}, {"name": "Pet Rescue Saga", "era": "app_store_mature", "platform": "facebook", "spectator": 0, "r": 0.47600000000000003}, {"name": "Words with Friends", "era": "app_store_early", "platform": "mobile", "spectator": 0, "r": 0.474}, {"name": "skribbl.io", "era": "streamer", "platform": "web", "spectator": 2, "r": 0.46}, {"name": "Stumble Guys", "era": "streamer", "platform": "mobile", "spectator": 2, "r": 0.46}, {"name": "Trivia Crack", "era": "app_store_mature", "platform": "mobile", "spectator": 0, "r": 0.43200000000000005}, {"name": "CityVille", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.41600000000000004}, {"name": "Farm Heroes Saga", "era": "app_store_mature", "platform": "facebook", "spectator": 0, "r": 0.402}, {"name": "Doodle Jump", "era": "app_store_early", "platform": "mobile", "spectator": 0, "r": 0.392}, {"name": "Helix Jump", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.38799999999999996}, {"name": "Dumb Ways to Die", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.36200000000000004}, {"name": "Bubble Witch Saga", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.36}, {"name": "Wordle", "era": "daily_web", "platform": "web", "spectator": 0, "r": 0.344}, {"name": "Bejeweled Blitz", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.322}, {"name": "NYT Strands", "era": "daily_web", "platform": "web", "spectator": 0, "r": 0.3}, {"name": "Piano Tiles", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.3}, {"name": "QuizUp", "era": "app_store_mature", "platform": "mobile", "spectator": 0, "r": 0.298}, {"name": "Pet Society", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.294}, {"name": "Agar.io", "era": "web_io", "platform": "web", "spectator": 2, "r": 0.294}, {"name": "Fruit Ninja", "era": "app_store_early", "platform": "mobile", "spectator": 1, "r": 0.258}, {"name": "Fisch", "era": "roblox_algo", "platform": "roblox", "spectator": 1, "r": 0.24}, {"name": "Mafia Wars", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.23399999999999999}, {"name": "Hole.io", "era": "web_io", "platform": "mobile", "spectator": 1, "r": 0.228}, {"name": "Block Blast", "era": "app_store_mature", "platform": "mobile", "spectator": 0, "r": 0.20600000000000002}, {"name": "The Password Game", "era": "daily_web", "platform": "web", "spectator": 2, "r": 0.188}, {"name": "FarmVille", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.17600000000000002}, {"name": "Heardle", "era": "daily_web", "platform": "web", "spectator": 0, "r": 0.166}, {"name": "Infinite Craft", "era": "daily_web", "platform": "web", "spectator": 2, "r": 0.162}, {"name": "Flappy Dunk", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.156}, {"name": "SongPop", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.15}, {"name": "Slither.io", "era": "web_io", "platform": "web", "spectator": 2, "r": 0.134}, {"name": "Farm Town", "era": "fb_social", "platform": "facebook", "spectator": 0, "r": 0.124}, {"name": "Dress to Impress", "era": "roblox_algo", "platform": "roblox", "spectator": 2, "r": 0.124}, {"name": "Among Us", "era": "streamer", "platform": "mobile", "spectator": 2, "r": 0.122}, {"name": "Cookie Clicker", "era": "app_store_mature", "platform": "web", "spectator": 1, "r": 0.12}, {"name": "Bad Piggies", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.11800000000000001}, {"name": "Suika Game", "era": "streamer", "platform": "web", "spectator": 2, "r": 0.114}, {"name": "HQ Trivia", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.11}, {"name": "Crossy Road", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.106}, {"name": "GeoGuessr", "era": "app_store_mature", "platform": "web", "spectator": 2, "r": 0.10400000000000001}, {"name": "Doors", "era": "roblox_algo", "platform": "roblox", "spectator": 2, "r": 0.094}, {"name": "Diep.io", "era": "web_io", "platform": "web", "spectator": 2, "r": 0.084}, {"name": "99 Nights in the Forest", "era": "roblox_algo", "platform": "roblox", "spectator": 2, "r": 0.08}, {"name": "Dead Rails", "era": "roblox_algo", "platform": "roblox", "spectator": 2, "r": 0.08}, {"name": "Steal a Brainrot", "era": "roblox_algo", "platform": "roblox", "spectator": 2, "r": 0.078}, {"name": "Draw Something", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.066}, {"name": "2048", "era": "app_store_mature", "platform": "web", "spectator": 0, "r": 0.06}, {"name": "Fall Guys", "era": "streamer", "platform": "pc", "spectator": 2, "r": 0.046}, {"name": "Pokemon GO", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.044000000000000004}, {"name": "Ruzzle", "era": "app_store_mature", "platform": "mobile", "spectator": 0, "r": 0.036000000000000004}, {"name": "Grow a Garden", "era": "roblox_algo", "platform": "roblox", "spectator": 1, "r": 0.026000000000000002}, {"name": "Flappy Bird", "era": "app_store_mature", "platform": "mobile", "spectator": 2, "r": 0.01}, {"name": "Notcoin", "era": "telegram", "platform": "telegram", "spectator": 0, "r": 0.01}, {"name": "Catizen", "era": "telegram", "platform": "telegram", "spectator": 0, "r": 0.01}, {"name": "Color Switch", "era": "app_store_mature", "platform": "mobile", "spectator": 1, "r": 0.0}, {"name": "Stack (Ketchapp)", "era": "app_store_mature", "platform": "mobile", "spectator": 0, "r": 0.0}, {"name": "BitLife", "era": "streamer", "platform": "mobile", "spectator": 2, "r": 0.0}, {"name": "Hamster Kombat", "era": "telegram", "platform": "telegram", "spectator": 0, "r": 0.0}, {"name": "TapSwap", "era": "telegram", "platform": "telegram", "spectator": 0, "r": 0.0}], "dau": [{"profile": "median_mobile_game", "d1": 0.22, "d7": 0.04, "d30": 0.008, "kappa": 0.6809806143929512, "installs": 7636463.282015992, "dau": [142.85714285714286, 273.3196035577626, 401.70619458470577, 532.7539875545779, 669.2924775492311, 813.3597758166709, 966.6328567757046, 987.7689915607531, 1033.4764887719625, 1094.8967494982458, 1168.796944680575, 1253.9249305346261, 1349.9160803137852, 1456.8828234875102, 1575.234252863634, 1705.5890842897234, 1848.7316544323999, 2005.5898129616078, 2177.224916705265, 2364.829044644962, 2569.726861586386, 2793.380719839978, 3037.3982069392937, 3303.5416940356954, 3593.739643095375, 3910.099556124222, 4254.922530360731, 4630.719438292662, 5040.228790997537, 5486.436373843177, 5972.5967687350585, 6502.256899182046, 7079.281754965529, 7707.882473137144, 8392.646972132818, 9138.57335648462, 9951.106331330604, 10836.176888989556, 11800.24555456409, 12850.349504120812, 13994.153897720014, 15240.007800678573, 16597.00510020402, 18075.050861202002, 19684.93360491621, 21438.40403741139, 23348.260802080986, 25428.44388170157, 27694.136331446047, 30161.87508511824, 32849.6716431291, 35777.14352288602, 38965.65743083897, 42438.48520099517, 46220.973637904215, 50340.72950360697, 54827.82099857791, 59714.997207076594, 65037.927108440774, 70835.45989865679, 77149.9085220762, 84027.35848254549, 91518.00418771445, 99676.51528123673, 108562.43563643709, 118240.61792339453, 128781.69692101529, 140262.60502844292, 152767.13373813475, 166386.54516837563, 181220.23811834725, 197376.47350679163, 214973.1644887048, 234138.737016534, 255013.06712647504, 277748.5017904252, 302510.97078403167, 329481.1976855356, 358856.0188435919, 390849.8199402337, 425696.10063338664, 463649.17869809916, 504986.04610375053, 550008.3905733675, 599044.7973789114, 652453.1474418056, 710623.2292406599, 773979.5835885705, 842984.6020419126, 918141.9015536141, 1000000.0000000003]}, {"profile": "top_quartile_casual", "d1": 0.32, "d7": 0.12, "d30": 0.04, "kappa": 0.46869794951030763, "installs": 5119486.619669415, "dau": [142.85714285714286, 258.31482588434085, 367.0382617790229, 476.24631945679937, 589.4456563257406, 708.8183422422308, 836.0012612680032, 829.5400104578426, 861.0044506979106, 911.0297788816465, 973.7304917436286, 1046.9970311142347, 1130.1312842624895, 1223.086380627985, 1326.1729470103892, 1439.9310175862606, 1565.0699833382064, 1702.4398738280304, 1853.01852973257, 2017.9075766545952, 2198.3337158481722, 2395.6535298615286, 2611.3608399981886, 2847.0960959135455, 3104.6575249506063, 3386.013914130931, 3693.318987883646, 4028.927403991114, 4395.412432068503, 4795.585410612548, 5232.5171045883635, 5709.561108291341, 6230.379459465827, 6798.97065145609, 7419.700251243632, 8097.334353121051, 8837.076120878311, 9644.605696072176, 10526.123776513154, 11488.399197815801, 12538.82088199029, 13685.454550881377, 14937.104639071327, 16303.381880956871, 17794.77709040863, 19422.7416990697, 21199.77567132155, 23139.523470644366, 25256.878813964824, 27568.099018095258, 30090.929816044343, 32844.741601389076, 35850.678146658734, 39131.818937469245, 42713.3563686968, 46622.789163096095, 50890.13349732796, 55548.15345631979, 60632.61258528484, 66182.5484707119, 72240.57245845007, 78853.1968100105, 86071.19180887185, 93949.97555852443, 102550.03946498642, 111937.41267050082, 122184.16900417783, 133368.98034177884, 145577.7206231543, 158904.1251647808, 173450.51032938127, 189328.55907801454, 206660.17843584536, 225578.43545493565, 246228.57886007312, 268769.1542214995, 293373.2212164703, 320229.68232538237, 349544.7331637651, 381543.44558531, 416471.4957104877, 454597.05014799186, 496212.82489080343, 541638.3326944066, 591222.3361917951, 645345.5255794832, 704423.4414329235, 768909.6650917534, 839299.3011096074, 916132.7785056117, 1000000.0000023255]}, {"profile": "strong_casual_hit", "d1": 0.45, "d7": 0.2, "d30": 0.1, "kappa": 0.33299629365123407, "installs": 3656106.1944998866, "dau": [142.85714285714286, 255.62322408882565, 362.9137334162542, 471.94043635457183, 585.9359514089147, 706.8872773558255, 836.3120924397248, 832.6864394409738, 870.2336744214188, 925.6211369283735, 992.9669075649845, 1070.4421181411017, 1157.5581580073851, 1254.408078673408, 1361.398120501963, 1479.137236264727, 1608.3876029897606, 1750.0421673484107, 1905.1156163901132, 2074.7427293409755, 2260.181209231646, 2462.8175220561143, 2684.17497131862, 2925.9236018682836, 3189.891729950675, 3478.079015704686, 3792.671068787136, 4136.055627454048, 4510.840387053897, 4919.872581538687, 5366.260444791167, 5853.396699427361, 6384.984240601376, 6965.0642020958785, 7598.046612239003, 8288.743868398666, 9042.407281324915, 9864.766964741673, 10762.075371602301, 11741.154806577413, 12809.449274893981, 13975.081060853878, 15246.91246550113, 16634.613172269805, 18148.73375233914, 19800.78586818297, 21603.32978478844, 23570.06985362581, 25715.958695103887, 28057.310871406393, 30611.926913779862, 33399.228647082105, 36440.40684030271, 39758.5823054866, 43378.98166974194, 47329.12915657251, 51639.055834490006, 56341.527923660164, 61472.295896227195, 67070.3662640457, 73178.29812003017, 79842.52668752032, 87113.71633738757, 95047.14575663334, 103703.12819665871, 113147.4699960738, 123451.9708638934, 134694.96972644245, 146961.94028768782, 160346.14083065192, 174949.3231999238, 190882.50635519967, 208266.82037667645, 227234.42733872202, 247929.5260526254, 270509.44831683324, 295145.85500874964, 322026.04111120955, 351354.35959489224, 383353.77498152945, 418267.5583986392, 456361.13701218576, 497924.1118972012, 543272.4596869284, 592750.9347381936, 646735.6900751119, 705637.1370364595, 769903.0653667534, 840022.0474710645, 916527.1527139044, 999999.999999586]}, {"profile": "daily_habit_ritual", "d1": 0.55, "d7": 0.4, "d30": 0.28, "kappa": 0.20638652973568172, "installs": 2305442.6223313054, "dau": [142.85714285714286, 252.43614444572492, 361.4741160163079, 475.61946245513025, 597.1669600960981, 727.6452895323903, 868.3482379817667, 877.6490456799853, 932.9243430530073, 1002.7293392110286, 1082.7846746562889, 1172.2606451582562, 1271.2060078589204, 1380.03189160029, 1499.3551467627362, 1629.9391173969702, 1772.669451129669, 1928.5451294158545, 2098.6771327299375, 2284.291451864524, 2486.734894410105, 2707.482916917992, 2948.1490956898, 3210.4960504431956, 3496.44774849206, 3808.1031854737853, 4147.751483070173, 4517.888475442165, 4921.234880091772, 5360.7561688829755, 5839.684272942606, 6361.5412723180425, 6930.165238363565, 7549.738414387982, 8224.817938507033, 8960.369332205297, 9761.802999075979, 10635.014000800351, 11586.425401866618, 12623.035501024793, 13752.469296247898, 14983.034561248982, 16323.782945629875, 17784.576547770284, 19376.160449883013, 21110.241748564364, 22999.575661983858, 25058.05934693909, 27300.834115734277, 29744.39680464379, 32406.721113050597, 35307.38980569932, 38467.73875041596, 41911.013850708216, 45662.54202751324, 49749.91750770186, 54203.20478953883, 59055.159777967805, 64341.47071623795, 70101.02068600077, 76376.17360665213, 83213.08583754086, 90662.04567498593, 98777.84324122091, 107620.17348593017, 117254.07526459612, 127750.40972323653, 139186.38150822368, 151646.10663487206, 165221.23119167422, 180011.60543097847, 196126.01820429138, 213682.997144244, 232811.6804788515, 253652.76689057876, 276359.5504067727, 301099.04793345596, 328053.227725909, 357420.34783188615, 389416.4143522089, 424276.7702447723, 462257.8263582023, 503638.94742754655, 548724.5069041882, 597846.1257340083, 651365.1115508263, 709675.1162262829, 773205.0313234099, 842422.1427510142, 917835.5678225058, 999999.999999999]}], "k": [{"game_id": "wordle", "window": "players 90 (2021-11-01) -> 300,000 (2022-01-02)", "growth_rate_per_day": 0.1308, "doubling_days": 5.3, "gen_days_low": 1.0, "gen_days_high": 3.0, "k_low": 1.14, "k_high": 1.48, "notes": "share grid posted daily; generation = 1-3 days"}, {"game_id": "wordle", "window": "players 300,000 (2022-01-02) -> ~2,000,000 (~2022-01-14)", "growth_rate_per_day": 0.1581, "doubling_days": 4.4, "gen_days_low": 1.0, "gen_days_high": 3.0, "k_low": 1.17, "k_high": 1.61, "notes": "includes NYT Jan 3 profile (broadcast, not person-to-person)"}, {"game_id": "growagarden", "window": "CCU ~1,000 (mid-Apr 2025) -> 5,000,000 (2025-05-18)", "growth_rate_per_day": 0.2581, "doubling_days": 2.7, "gen_days_low": 1.0, "gen_days_high": 4.0, "k_low": 1.29, "k_high": 2.81, "notes": "includes Roblox algorithm + creator promotion"}, {"game_id": "growagarden", "window": "CCU 5.0M (05-18) -> 21.3M (06-21)", "growth_rate_per_day": 0.0426, "doubling_days": 16.3, "gen_days_low": 1.0, "gen_days_high": 4.0, "k_low": 1.04, "k_high": 1.19, "notes": "weekly update spikes"}, {"game_id": "amongus", "window": "Twitch avg viewers 460 (Jun 2020) -> 53,000 (Aug 2020)", "growth_rate_per_day": 0.0778, "doubling_days": 8.9, "gen_days_low": 2.0, "gen_days_high": 7.0, "k_low": 1.17, "k_high": 1.72, "notes": "streamer-driven: broadcast + friend lobbies"}, {"game_id": "farmville", "window": "DAU ~0 -> 11M in 63 days (linear ~1M/week)", "growth_rate_per_day": null, "doubling_days": null, "gen_days_low": null, "gen_days_high": null, "k_low": null, "k_high": null, "notes": "linear, platform-fed (Facebook feed + Zynga cross-promo): not an epidemic curve"}, {"game_id": "drawsomething", "window": "DAU 14.3M (04-02) -> 10.4M (05-02)", "growth_rate_per_day": -0.0106, "doubling_days": null, "gen_days_low": 3.0, "gen_days_high": 7.0, "k_low": 0.97, "k_high": 0.93, "notes": "post-peak decline: effective R < 1"}, {"game_id": "king", "window": "avg DAU 15M (Q4'12) -> 124M (Q4'13)", "growth_rate_per_day": 0.0058, "doubling_days": 119.8, "gen_days_low": 7.0, "gen_days_high": 14.0, "k_low": 1.04, "k_high": 1.08, "notes": "paid UA seeded (King F-1) => not pure k"}], "base": [{"rate_id": "wordle_census_quarter_nerdle", "population": "English Wordle-likes in 'Wordles of the World' (domain/twist/non-linguistic)", "n": 133, "threshold": "Trends peak >= 25% of Nerdle's peak", "k": 13, "rate": 0.09774436090225563, "method": "Google Trends 2022-2024 vs anchor 'nerdle' (Nerdle peak = 0.030 x Wordle peak)", "source_ids": "wordles_census,google_trends"}, {"rate_id": "wordle_census_ge_nerdle", "population": "English Wordle-likes in census", "n": 133, "threshold": "Trends peak >= Nerdle's peak", "k": 5, "rate": 0.03759398496240601, "method": "as above", "source_ids": "wordles_census,google_trends"}, {"rate_id": "wordle_census_any_signal", "population": "English Wordle-likes in census", "n": 133, "threshold": "any measurable weekly search interest", "k": 65, "rate": 0.48872180451127817, "method": "as above", "source_ids": "wordles_census,google_trends"}, {"rate_id": "roblox_20m_ccu_2025", "population": "Active Roblox experiences in 2025 (Roblox 10-K: 'over 14 million active experiences')", "n": 14000000, "threshold": "set a 20M+ concurrent-player record in 2025", "k": 2, "rate": 1.4285714285714285e-07, "method": "Grow a Garden and Steal a Brainrot (Roblox letters)", "source_ids": "roblox_10k_2025,roblox_q3_2025"}, {"rate_id": "roblox_top1000_creators", "population": "Active Roblox experiences in 2025", "n": 14000000, "threshold": "creator in the top 1,000 (avg $1.3M earned in 2025)", "k": 1000, "rate": 7.142857142857143e-05, "method": "creators vs experiences: an order-of-magnitude bound only", "source_ids": "roblox_10k_2025,roblox_q4_2025"}, {"rate_id": "flappy_clones_2014", "population": "Flappy Bird clones released on iOS (Pocket Gamer counted 300 in 4 days, Feb 28-Mar 3 2014; Guardian: 95 of 293 new iOS games on Feb 27)", "n": 300, "threshold": "sustained a US top-10 position for 4+ weeks", "k": 0, "rate": 0.0, "method": "no clone in this dataset or in coverage sustained a top-10 run; Splashy Fish/Ironpants charted briefly", "source_ids": "engadget_flappy_clones,macrumors_flappy_third"}, {"rate_id": "supercell_launch", "population": "Supercell games that entered development/beta (as of Feb 2023)", "n": 35, "threshold": "launched globally and kept", "k": 5, "rate": 0.14285714285714285, "method": "Paananen: '30+ killed, 5 hits' => k/n with n=35 (lower bound on n)", "source_ids": "gwo_supercell_killed"}, {"rate_id": "roblox_all_1000", "population": "Roblox experiences created Dec 2023-Apr 2025: all universes", "n": 7356, "threshold": "lifetime visits >= 1,000", "k": 0, "rate": 0.0, "method": "uniform random sample of universe IDs 5.4e9-7.6e9 via games.roblox.com", "source_ids": "roblox_games_api"}, {"rate_id": "roblox_all_100000", "population": "Roblox experiences created Dec 2023-Apr 2025: all universes", "n": 7356, "threshold": "lifetime visits >= 100,000", "k": 0, "rate": 0.0, "method": "uniform random sample of universe IDs 5.4e9-7.6e9 via games.roblox.com", "source_ids": "roblox_games_api"}, {"rate_id": "roblox_all_1000000", "population": "Roblox experiences created Dec 2023-Apr 2025: all universes", "n": 7356, "threshold": "lifetime visits >= 1,000,000", "k": 0, "rate": 0.0, "method": "uniform random sample of universe IDs 5.4e9-7.6e9 via games.roblox.com", "source_ids": "roblox_games_api"}, {"rate_id": "roblox_all_100000000", "population": "Roblox experiences created Dec 2023-Apr 2025: all universes", "n": 7356, "threshold": "lifetime visits >= 100,000,000", "k": 0, "rate": 0.0, "method": "uniform random sample of universe IDs 5.4e9-7.6e9 via games.roblox.com", "source_ids": "roblox_games_api"}, {"rate_id": "roblox_real_1000", "population": "Roblox experiences created Dec 2023-Apr 2025: non-default, updated after creation ('real attempts')", "n": 104, "threshold": "lifetime visits >= 1,000", "k": 0, "rate": 0.0, "method": "uniform random sample of universe IDs 5.4e9-7.6e9 via games.roblox.com", "source_ids": "roblox_games_api"}, {"rate_id": "roblox_real_100000", "population": "Roblox experiences created Dec 2023-Apr 2025: non-default, updated after creation ('real attempts')", "n": 104, "threshold": "lifetime visits >= 100,000", "k": 0, "rate": 0.0, "method": "uniform random sample of universe IDs 5.4e9-7.6e9 via games.roblox.com", "source_ids": "roblox_games_api"}, {"rate_id": "roblox_real_1000000", "population": "Roblox experiences created Dec 2023-Apr 2025: non-default, updated after creation ('real attempts')", "n": 104, "threshold": "lifetime visits >= 1,000,000", "k": 0, "rate": 0.0, "method": "uniform random sample of universe IDs 5.4e9-7.6e9 via games.roblox.com", "source_ids": "roblox_games_api"}, {"rate_id": "roblox_real_100000000", "population": "Roblox experiences created Dec 2023-Apr 2025: non-default, updated after creation ('real attempts')", "n": 104, "threshold": "lifetime visits >= 100,000,000", "k": 0, "rate": 0.0, "method": "uniform random sample of universe IDs 5.4e9-7.6e9 via games.roblox.com", "source_ids": "roblox_games_api"}], "census": [["START", 14.285714285714286], ["La Palabra", 1.7543859649122806], ["Quordle", 1.7241379310344829], ["Heardle", 1.3157894736842106], ["Nerdle", 1.0], ["Worlde", 0.6], ["Octordle", 0.4655172413793103], ["Carle", 0.46], ["Lewdle", 0.35], ["Hurdle", 0.29], ["Randle", 0.2857142857142857], ["Canuckle", 0.28], ["Dordle", 0.28], ["Numberle", 0.15], ["Taylordle", 0.1403508771929824], ["Letterle", 0.12], ["Sedecordle", 0.1034482758620689], ["Absurdle", 0.09], ["Sweardle", 0.08], ["Byrdle", 0.07], ["Crosswordle", 0.07], ["Birdle", 0.06], ["Mathler", 0.06], ["Squirdle", 0.05], ["Star Wordle", 0.04], ["Worle", 0.03], ["Footle", 0.03], ["Murdle", 0.03], ["Eldrow", 0.03], ["Qwordle", 0.03], ["Chessle", 0.03], ["Queerdle", 0.02], ["Numble", 0.02], ["Dundle", 0.02], ["Nurdle", 0.02], ["Evil Wordle", 0.02], ["Squardle", 0.02], ["Diffle", 0.02], ["Primel", 0.02], ["Ooodle", 0.02], ["Mahjong Handle", 0.02], ["BTS Wordle", 0.0175438596491228], ["Tridle", 0.0172413793103448], ["Wheredle", 0.0131578947368421], ["Tirtle", 0.01], ["Wordawazzle", 0.01], ["WRDLE", 0.01], ["Lordle of the Rings", 0.01], ["Wizarding Wordle", 0.01], ["One Piece Wordle", 0.01], ["Pokedle", 0.01], ["Gordle", 0.01], ["Bikle", 0.01], ["Jewdle", 0.01], ["Horsle", 0.01], ["Fartsle", 0.01], ["Pfeffel", 0.01], ["Five Lives", 0.01], ["Squareword", 0.01], ["Chortle", 0.01], ["Wordle Peaks", 0.01], ["Primle", 0.01], ["Mathle", 0.01], ["Passwordle", 0.01], ["Dungleon", 0.01], ["NSFWordle", 0.0], ["Slangle", 0.0], ["Weirdle", 0.0], ["Whodle", 0.0], ["A Greener Worldle", 0.0], ["Anidal", 0.0], ["BRDL", 0.0], ["BRDL-UK", 0.0], ["Plantle", 0.0], ["Syscordle", 0.0], ["WORDLIX", 0.0], ["Errordle", 0.0], ["Jazle", 0.0], ["WordlEU", 0.0], ["Cryptle", 0.0], ["Searchdle", 0.0], ["HP Wordle", 0.0], ["Neverwherdle", 0.0], ["Movie Wordle Board", 0.0], ["Hollywordle", 0.0], ["JoJodle", 0.0], ["Trekle", 0.0], ["GUWOPle", 0.0], ["Radiole", 0.0], ["Sqwortle", 0.0], ["Sqwordle", 0.0], ["Weedel", 0.0], ["FFXIVrdle", 0.0], ["Enstarsdle", 0.0], ["Emotele", 0.0], ["Blood on the ClocktoWORDLE", 0.0], ["Footbl 5", 0.0], ["Beerdle", 0.0], ["Prayerdle", 0.0], ["Biblicle", 0.0], ["Biblidle", 0.0], ["Buildly", 0.0], ["Turdle", 0.0], ["Visionle", 0.0], ["Worcle", 0.0], ["Categorle", 0.0], ["Grootle", 0.0], ["Gootsle", 0.0], ["Weredle", 0.0], ["Reversle", 0.0], ["Obscurdle", 0.0], ["Polydle", 0.0], ["polyordle", 0.0], ["Pictle", 0.0], ["Xuming Zeng", 0.0], ["Vardle", 0.0], ["Avoidle", 0.0], ["Weird Wordle", 0.0], ["Bookli", 0.0], ["4dle", 0.0], ["Hexle", 0.0], ["Colorle", 0.0], ["Bytle", 0.0], ["Emojidle", 0.0], ["Unicodele", 0.0], ["Subwaydle", 0.0], ["Quantle", 0.0], ["Chemicle", 0.0], ["Peptirdle", 0.0], ["Genele", 0.0], ["Poker Handle", 0.0], ["DNDle", 0.0], ["Chordle", 0.0]], "concepts": [{"name": "Pictionary Obby", "platform": "roblox", "pitch": "Race an obstacle course where the course is drawn live by the previous winner.", "model_score": 0.9249999999999999, "rank": 1, "notes": "p_full=0.93; p_conv_ctx=0.79; p_conv+spec=0.89; channel=high; crowding=1; build_weeks=8"}, {"name": "Hide as a Painting", "platform": "roblox", "pitch": "Prop-hunt in a haunted museum: hiders become paintings and statues, seekers hunt them; daily new gallery layout.", "model_score": 0.9249999999999999, "rank": 2, "notes": "p_full=0.93; p_conv_ctx=0.79; p_conv+spec=0.89; channel=high; crowding=1; build_weeks=6"}, {"name": "Telephone Pictionary Chains", "platform": "web", "pitch": "Async telephone game in a group chat (draw -> describe -> draw); each chain ends as a 6-second GIF for the group.", "model_score": 0.8583333333333334, "rank": 3, "notes": "p_full=0.93; p_conv_ctx=0.68; p_conv+spec=0.93; channel=medium-low; crowding=1; build_weeks=4"}, {"name": "Imposter Bot", "platform": "roblox", "pitch": "Social deduction where one 'player' in every lobby is an AI; find the bot before it convinces you that you are the bot.", "model_score": 0.85, "rank": 4, "notes": "p_full=0.90; p_conv_ctx=0.83; p_conv+spec=0.87; channel=high; crowding=1; build_weeks=8"}, {"name": "Group-Chat Fibbage", "platform": "web", "pitch": "One prompt a day ('What's the real reason koalas sleep 20 hours?'). Friends in a group link each write a fake answer, then everyone votes for the truth; the reveal is a shareable card of the funniest lies.", "model_score": 0.8166666666666668, "rank": 5, "notes": "p_full=0.93; p_conv_ctx=0.60; p_conv+spec=0.92; channel=medium-low; crowding=1; build_weeks=3"}, {"name": "Daily Heist", "platform": "roblox", "pitch": "Everyone on Roblox gets the same co-op escape room each day; servers race; global leaderboard and 'first squad' badges.", "model_score": 0.7999999999999999, "rank": 6, "notes": "p_full=0.90; p_conv_ctx=0.78; p_conv+spec=0.85; channel=high; crowding=1; build_weeks=8"}, {"name": "Server Daily Quiz", "platform": "discord", "pitch": "Discord Activity: the whole server plays the same 5 questions daily; leaderboard posted in channel.", "model_score": 0.65, "rank": 7, "notes": "p_full=0.83; p_conv_ctx=0.72; p_conv+spec=0.65; channel=unproven; crowding=1; build_weeks=4"}, {"name": "Two Truths Live", "platform": "mobile", "pitch": "Async 'two truths and a lie' with friends using camera-roll photos; reveal reel at the end.", "model_score": 0.5750000000000001, "rank": 8, "notes": "p_full=0.61; p_conv_ctx=0.68; p_conv+spec=0.67; channel=low; crowding=1; build_weeks=5"}, {"name": "Infinite Kitchen", "platform": "web", "pitch": "Combine ingredients; an LLM invents (and caches) the dish; a daily target dish to reach in the fewest steps.", "model_score": 0.5499999999999999, "rank": 9, "notes": "p_full=0.75; p_conv_ctx=0.27; p_conv+spec=0.79; channel=medium-low; crowding=1; build_weeks=4"}, {"name": "Talk Your Way Out", "platform": "web", "pitch": "Daily AI gatekeeper with a secret password; you get 5 messages to talk your way past. The share card shows your shortest winning line and the AI's best rebuttal.", "model_score": 0.4833333333333334, "rank": 10, "notes": "p_full=0.78; p_conv_ctx=0.25; p_conv+spec=0.66; channel=medium-low; crowding=1; build_weeks=3"}, {"name": "Grow-a-[New Theme] Live-Ops", "platform": "roblox", "pitch": "Idle grow-and-steal loop with offline growth, restocks and weekly admin events, in an unclaimed theme.", "model_score": 0.4833333333333334, "rank": 11, "notes": "p_full=0.40; p_conv_ctx=0.57; p_conv+spec=0.78; channel=high; crowding=2; build_weeks=5"}, {"name": "Who's Most Likely (Group Edition)", "platform": "web", "pitch": "Friends answer 'who in this group is most likely to...' about each other; results reveal as superlatives cards.", "model_score": 0.47500000000000003, "rank": 12, "notes": "p_full=0.61; p_conv_ctx=0.60; p_conv+spec=0.62; channel=medium-low; crowding=1; build_weeks=3"}, {"name": "Rage Hop Replays", "platform": "mobile", "pitch": "One-tap rage platformer that auto-cuts your best fail into a 6-second vertical clip with the level seed.", "model_score": 0.4666666666666666, "rank": 13, "notes": "p_full=0.76; p_conv_ctx=0.25; p_conv+spec=0.66; channel=low; crowding=2; build_weeks=3"}, {"name": "Couple's Daily", "platform": "web", "pitch": "Two-player co-op daily puzzle: each partner sees half the clues; share card = joint time.", "model_score": 0.44166666666666665, "rank": 14, "notes": "p_full=0.47; p_conv_ctx=0.60; p_conv+spec=0.62; channel=medium-low; crowding=0; build_weeks=4"}, {"name": "Community Crossword (Reddit)", "platform": "reddit", "pitch": "Reddit Devvit game: a subreddit co-builds and solves a daily crossword about its own topic.", "model_score": 0.4166666666666667, "rank": 15, "notes": "p_full=0.73; p_conv_ctx=0.56; p_conv+spec=0.26; channel=unproven; crowding=0; build_weeks=4"}, {"name": "Timeline Daily", "platform": "web", "pitch": "Place 6 events in order (Timeline card-game rules); daily grid.", "model_score": 0.2333333333333333, "rank": 16, "notes": "p_full=0.32; p_conv_ctx=0.25; p_conv+spec=0.23; channel=medium-low; crowding=2; build_weeks=2"}, {"name": "Dupe Day", "platform": "web", "pitch": "5 pairs a day: real photo or AI fake? Emoji grid of your hits and misses, plus a percentile.", "model_score": 0.21666666666666667, "rank": 17, "notes": "p_full=0.26; p_conv_ctx=0.25; p_conv+spec=0.23; channel=medium-low; crowding=1; build_weeks=2"}, {"name": "Higher-Lower Daily", "platform": "web", "pitch": "Which has more (Google searches, calories, population)? Daily streak grid.", "model_score": 0.15, "rank": 18, "notes": "p_full=0.12; p_conv_ctx=0.10; p_conv+spec=0.23; channel=medium-low; crowding=2; build_weeks=1"}, {"name": "Guess the Year", "platform": "web", "pitch": "One photo a day; guess the year on a slider; grid of how close you got.", "model_score": 0.13333333333333333, "rank": 19, "notes": "p_full=0.07; p_conv_ctx=0.10; p_conv+spec=0.23; channel=medium-low; crowding=2; build_weeks=2"}, {"name": "Cricket Immaculate Grid", "platform": "web", "pitch": "Immaculate Grid for cricket fans (South Asia, UK, Australia).", "model_score": 0.05000000000000001, "rank": 20, "notes": "p_full=0.06; p_conv_ctx=0.06; p_conv+spec=0.16; channel=medium-low; crowding=1; build_weeks=2"}], "acq": [{"deal_id": "nyt_wordle", "acquirer": "The New York Times Co.", "target": "Wordle (Josh Wardle)", "game_id": "wordle", "deal_date": "2022-01-31", "price_usd_m": 1.0, "price_basis": "disclosed_press: 'low seven figures' (>= $1M; exact figure never disclosed, immaterial in 10-K)", "what_bought": "audience + daily habit + subscriber funnel", "metrics_cited": "Players (~2M daily mid-Jan 2022); free daily ritual; brand fit with Crossword/Spelling Bee", "after_outcome": "Q1 2022: 'tens of millions of new users', best quarter ever for Games net subscriber adds; Wordle and Connections kept free as funnel through FY2025 10-K", "source_ids": "nyt_10k_2021,nyt_q1_2022_pr,nyt_10k_2022,nyt_10k_2025,wordle_nyt_lowseven"}, {"deal_id": "zynga_newtoy", "acquirer": "Zynga", "target": "Newtoy (Words with Friends)", "game_id": "wordswithfriends", "deal_date": "2010-11", "price_usd_m": 53.3, "price_basis": "disclosed_filing (S-1): $44.3M cash + $8.9M stock", "what_bought": "audience + mobile social graph + team", "metrics_cited": "DAU; leading word game on iPhone", "after_outcome": "Zynga doubled WWF DAU within ~120 days via cross-promotion; became a pillar mobile franchise", "source_ids": "zynga_s1"}, {"deal_id": "zynga_omgpop", "acquirer": "Zynga", "target": "OMGPOP (Draw Something)", "game_id": "drawsomething", "deal_date": "2012-03-21", "price_usd_m": 183.1, "price_basis": "disclosed_filing (10-Q)", "what_bought": "audience at peak + mobile growth", "metrics_cited": "Downloads (50M in ~50 days) and DAU at peak", "after_outcome": "Draw Something DAU fell ~33% within a month; $95.5M impairment in Q3 2012 (52% of price) six months later", "source_ids": "zynga_10q_2012q1,zynga_10q_2012q3,mcv_drawsomething_decline"}, {"deal_id": "activision_king", "acquirer": "Activision Blizzard", "target": "King Digital Entertainment", "game_id": "candycrush", "deal_date": "2015-11-02", "price_usd_m": 5900.0, "price_basis": "disclosed_press ($18/share equity value; EV $5.0B)", "what_bought": "revenue + audience + live-ops machine", "metrics_cited": "474M MAU (Q3 2015), gross bookings, payer counts", "after_outcome": "Candy Crush still a top-grossing franchise a decade later", "source_ids": "tc_activision_king,king_f1"}, {"deal_id": "taketwo_zynga", "acquirer": "Take-Two Interactive", "target": "Zynga", "game_id": null, "deal_date": "2022-01-10", "price_usd_m": 12700.0, "price_basis": "disclosed_press", "what_bought": "mobile revenue + live-ops portfolio", "metrics_cited": "Net bookings, mobile share of bookings", "after_outcome": "Closed May 2022", "source_ids": "vgc_taketwo_zynga"}, {"deal_id": "scopely_niantic", "acquirer": "Scopely (Savvy Games)", "target": "Niantic games business (Pokemon GO)", "game_id": "pokemongo", "deal_date": "2025-03-12", "price_usd_m": 3500.0, "price_basis": "disclosed_press", "what_bought": "revenue + IP-licensed live game", "metrics_cited": ">30M MAU; >$1B 2024 revenue", "after_outcome": null, "source_ids": "gematsu_scopely_niantic"}, {"deal_id": "scopely_stumble", "acquirer": "Scopely", "target": "Stumble Guys (Kitka Games)", "game_id": "stumbleguys", "deal_date": "2022-09-08", "price_usd_m": null, "price_basis": "undisclosed", "what_bought": "audience (DAU) for a viral clone", "metrics_cited": "20M DAU; 160M downloads; $21M lifetime revenue by Jul 2022", "after_outcome": null, "source_ids": "scopely_stumble"}, {"deal_id": "spotify_heardle", "acquirer": "Spotify", "target": "Heardle", "game_id": "heardle", "deal_date": "2022-07", "price_usd_m": null, "price_basis": "undisclosed", "what_bought": "audience + funnel into music discovery", "metrics_cited": "Daily players", "after_outcome": "Spotify shut Heardle down in May 2023", "source_ids": "spotify_heardle"}, {"deal_id": "mw_quordle", "acquirer": "Merriam-Webster (Britannica)", "target": "Quordle", "game_id": "quordle", "deal_date": "2023-01-23", "price_usd_m": null, "price_basis": "undisclosed", "what_bought": "daily habit + funnel into dictionary site", "metrics_cited": "Daily players", "after_outcome": null, "source_ids": "mw_quordle"}, {"deal_id": "sp_growagarden", "acquirer": "Splitting Point Studios (Jandel)", "target": "~50% of Grow a Garden", "game_id": "growagarden", "deal_date": "2025-04", "price_usd_m": null, "price_basis": "undisclosed (equity stake at ~500-1,000 CCU)", "what_bought": "early daily habit + live-ops capacity + creator audience", "metrics_cited": "CCU and retention at tiny scale", "after_outcome": "Grew to 21-22M CCU within ~10 weeks", "source_ids": "gamesbeat_jandel,wiki_grow_a_garden"}], "breakouts": [{"name": "Wordle", "cohort": "daily_word", "role": "original_hit", "outcome_tier": 3, "platform": "web", "first_release": "2021-10-01", "latent_days": 80.0, "ignition_type": "organic_word_of_mouth", "influencer_timing": "after_growth_began"}, {"name": "Flappy Bird", "cohort": "one_tap", "role": "original_hit", "outcome_tier": 3, "platform": "mobile", "first_release": "2013-05-24", "latent_days": 231.0, "ignition_type": "organic_word_of_mouth", "influencer_timing": "after_growth_began"}, {"name": "Swing Copters", "cohort": "one_tap", "role": "same_creator", "outcome_tier": 1, "platform": "mobile", "first_release": "2014-08-21", "latent_days": 0.0, "ignition_type": "creator_audience", "influencer_timing": "none"}, {"name": "Crossy Road", "cohort": "one_tap", "role": "original_hit", "outcome_tier": 3, "platform": "mobile", "first_release": "2014-11-20", "latent_days": 5.0, "ignition_type": "platform_feature", "influencer_timing": "unclear"}, {"name": "2048", "cohort": "merge", "role": "clone", "outcome_tier": 3, "platform": "web", "first_release": "2014-03-09", "latent_days": 3.0, "ignition_type": "community_forum", "influencer_timing": "none"}, {"name": "Threes!", "cohort": "merge", "role": "original_hit", "outcome_tier": 1, "platform": "mobile", "first_release": "2014-02-06", "latent_days": 1.0, "ignition_type": "press", "influencer_timing": "none"}, {"name": "Suika Game", "cohort": "merge", "role": "contemporary", "outcome_tier": 2, "platform": "web", "first_release": "2021-12-09", "latent_days": 645.0, "ignition_type": "influencer", "influencer_timing": "before_growth"}, {"name": "Candy Crush Saga", "cohort": "match3", "role": "original_hit", "outcome_tier": 3, "platform": "facebook", "first_release": "2012-04-12", "latent_days": 275.0, "ignition_type": "paid_ua", "influencer_timing": "none"}, {"name": "Angry Birds", "cohort": "physics", "role": "original_hit", "outcome_tier": 3, "platform": "mobile", "first_release": "2009-12-11", "latent_days": 62.0, "ignition_type": "platform_feature", "influencer_timing": "none"}, {"name": "Words with Friends", "cohort": "async_social", "role": "original_hit", "outcome_tier": 2, "platform": "mobile", "first_release": "2009-07-21", "latent_days": 76.0, "ignition_type": "celebrity", "influencer_timing": "after_growth_began"}, {"name": "Draw Something", "cohort": "async_social", "role": "original_hit", "outcome_tier": 3, "platform": "mobile", "first_release": "2012-02-06", "latent_days": 19.0, "ignition_type": "organic_word_of_mouth", "influencer_timing": "none"}, {"name": "Trivia Crack", "cohort": "async_social", "role": "original_hit", "outcome_tier": 3, "platform": "mobile", "first_release": "2013-10-01", "latent_days": 396.0, "ignition_type": "diaspora_family", "influencer_timing": "none"}, {"name": "HQ Trivia", "cohort": "live_social", "role": "original_hit", "outcome_tier": 2, "platform": "mobile", "first_release": "2017-08-01", "latent_days": 75.0, "ignition_type": "press", "influencer_timing": "none"}, {"name": "FarmVille", "cohort": "social_sim", "role": "original_hit", "outcome_tier": 3, "platform": "facebook", "first_release": "2009-06-19", "latent_days": 26.0, "ignition_type": "platform_feature", "influencer_timing": "none"}, {"name": "Agar.io", "cohort": "io", "role": "original_hit", "outcome_tier": 3, "platform": "web", "first_release": "2015-04-28", "latent_days": 17.0, "ignition_type": "community_forum", "influencer_timing": "after_growth_began"}, {"name": "Slither.io", "cohort": "io", "role": "clone", "outcome_tier": 3, "platform": "web", "first_release": "2016-03-25", "latent_days": 16.0, "ignition_type": "influencer", "influencer_timing": "unclear"}, {"name": "Among Us", "cohort": "social_deduction", "role": "original_hit", "outcome_tier": 3, "platform": "mobile", "first_release": "2018-06-15", "latent_days": 778.0, "ignition_type": "influencer", "influencer_timing": "before_growth"}, {"name": "Stumble Guys", "cohort": "party", "role": "clone", "outcome_tier": 3, "platform": "mobile", "first_release": "2020-08-25", "latent_days": 300.0, "ignition_type": "unclear", "influencer_timing": "unclear"}, {"name": "Pokemon GO", "cohort": "location", "role": "original_hit", "outcome_tier": 3, "platform": "mobile", "first_release": "2016-07-06", "latent_days": 1.0, "ignition_type": "ip_fandom", "influencer_timing": "none"}, {"name": "Harry Potter: Wizards Unite", "cohort": "location", "role": "same_creator", "outcome_tier": 1, "platform": "mobile", "first_release": "2019-06-21", "latent_days": 0.0, "ignition_type": "ip_fandom", "influencer_timing": "none"}, {"name": "Infinite Craft", "cohort": "web_toy", "role": "original_hit", "outcome_tier": 3, "platform": "web", "first_release": "2024-01-31", "latent_days": 1.0, "ignition_type": "creator_audience", "influencer_timing": "before_growth"}, {"name": "Grow a Garden", "cohort": "roblox", "role": "original_hit", "outcome_tier": 3, "platform": "roblox", "first_release": "2025-03-26", "latent_days": 45.0, "ignition_type": "algorithm", "influencer_timing": "before_growth"}, {"name": "Steal a Brainrot", "cohort": "roblox", "role": "contemporary", "outcome_tier": 3, "platform": "roblox", "first_release": "2025-05-15", "latent_days": 60.0, "ignition_type": "algorithm", "influencer_timing": "unclear"}, {"name": "Hamster Kombat", "cohort": "tap_to_earn", "role": "clone", "outcome_tier": 3, "platform": "telegram", "first_release": "2024-03-26", "latent_days": 50.0, "ignition_type": "incentive", "influencer_timing": "none"}], "counts": {"games": 126, "hits": 79, "sources": 78, "census": 133, "trends_games": 124}};
+const NS = "http://www.w3.org/2000/svg";
+const tip = document.getElementById("tip");
+function showTip(e, html) { tip.innerHTML = html; tip.hidden = false; moveTip(e); }
+function moveTip(e) { const x = Math.min(e.clientX + 14, window.innerWidth - tip.offsetWidth - 8); const y = Math.max(8, e.clientY - tip.offsetHeight - 12); tip.style.left = x + "px"; tip.style.top = y + "px"; }
+function hideTip() { tip.hidden = true; }
+function el(tag, attrs = {}, parent) { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
+function svgIn(id, w, h) { const box = document.getElementById(id); const s = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img" }); box.appendChild(s); return s; }
+function txt(s, x, y, t, attrs = {}) { const n = el("text", { x, y, ...attrs }, s); n.textContent = t; return n; }
+function bindTip(node, html) { node.addEventListener("pointerenter", e => showTip(e, html)); node.addEventListener("pointermove", moveTip); node.addEventListener("pointerleave", hideTip); }
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const fmtDate = d => new Date(d + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+function legend(id, items, dot) { const L = document.getElementById(id); L.innerHTML = items.map(([c, t]) => `<span><i class="${dot ? "dot" : ""}" style="background:var(${c})"></i>${t}</span>`).join(""); }
+
+/* stats */
+document.getElementById("stats").innerHTML = [
+  [DATA.counts.games, "games hand-coded, incl. clones and flops"], [DATA.counts.hits, "of them hits"],
+  [DATA.counts.census, "census Wordle-likes in Trends"], [DATA.counts.sources, "sources, typed by kind"], ["0.28", "held-out AUC of the classic recipe"]
+].map(([n, l]) => `<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`).join("");
+
+/* generic daily line chart with event markers and crosshair */
+function lineChart(id, series, opts) {
+  const W = 900, H = opts.h || 300, m = { l: 40, r: 20, t: 34, b: 30 };
+  const s = svgIn(id, W, H);
+  const all = series.flatMap(x => x.pts);
+  const t0 = Date.parse(all[0][0]), t1 = Math.max(...all.map(p => Date.parse(p[0])));
+  const X = d => m.l + (Date.parse(d) - t0) / (t1 - t0) * (W - m.l - m.r);
+  const Y = v => H - m.b - v / 100 * (H - m.t - m.b);
+  for (const g of [0, 25, 50, 75, 100]) { el("line", { x1: m.l, x2: W - m.r, y1: Y(g), y2: Y(g), stroke: css("--grid"), "stroke-width": 1 }, s); txt(s, m.l - 8, Y(g) + 4, g, { "text-anchor": "end", class: "num" }); }
+  const ticks = opts.ticks;
+  for (const d of ticks) { txt(s, X(d), H - 10, fmtDate(d).replace(/, \d{4}/, ""), { "text-anchor": "middle" }); }
+  (opts.events || []).forEach((ev, i) => {
+    const x = X(ev[0]);
+    el("line", { x1: x, x2: x, y1: m.t - 6, y2: H - m.b, stroke: css("--ink-3"), "stroke-width": 1, "stroke-dasharray": "3 3" }, s);
+    const anchor = x > W - 120 ? "end" : "start";
+    txt(s, x + (anchor === "end" ? -5 : 5), m.t - 12 + (i % 2) * 13, ev[1], { class: "lbl2", "text-anchor": anchor });
+  });
+  series.forEach(se => {
+    const d = se.pts.map((p, i) => (i ? "L" : "M") + X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1)).join("");
+    el("path", { d, fill: "none", stroke: css(se.color), "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, s);
+    if (se.label) { const last = se.pts[se.pts.length - 1]; }
+  });
+  const cross = el("line", { y1: m.t, y2: H - m.b, stroke: css("--ink-2"), "stroke-width": 1, visibility: "hidden" }, s);
+  const dots = series.map(se => el("circle", { r: 4.5, fill: css(se.color), stroke: css("--paper"), "stroke-width": 2, visibility: "hidden" }, s));
+  const hit = el("rect", { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: "transparent" }, s);
+  hit.addEventListener("pointermove", e => {
+    const r = s.getBoundingClientRect(); const px = (e.clientX - r.left) / r.width * W;
+    const tt = t0 + (px - m.l) / (W - m.l - m.r) * (t1 - t0);
+    let html = "";
+    series.forEach((se, k) => {
+      let best = se.pts[0]; for (const p of se.pts) if (Math.abs(Date.parse(p[0]) - tt) < Math.abs(Date.parse(best[0]) - tt)) best = p;
+      dots[k].setAttribute("cx", X(best[0])); dots[k].setAttribute("cy", Y(best[1])); dots[k].setAttribute("visibility", "visible");
+      cross.setAttribute("x1", X(best[0])); cross.setAttribute("x2", X(best[0]));
+      if (!k) html += `<b>${fmtDate(best[0])}</b><br>`;
+      html += `${se.name}: ${best[1]}<br>`;
+    });
+    cross.setAttribute("visibility", "visible"); showTip(e, html);
+  });
+  hit.addEventListener("pointerleave", () => { cross.setAttribute("visibility", "hidden"); dots.forEach(d => d.setAttribute("visibility", "hidden")); hideTip(); });
+}
+lineChart("c-wordle", [{ name: "Search index", pts: DATA.wordle, color: "--s1" }], {
+  ticks: ["2021-11-01", "2021-11-15", "2021-12-01", "2021-12-15", "2022-01-01"],
+  events: [["2021-12-16", "Share button ships (Dec 16)"]]
+});
+lineChart("c-flappy", [{ name: "Search index", pts: DATA.flappy, color: "--s2" }], {
+  ticks: ["2013-12-01", "2013-12-15", "2014-01-01", "2014-01-15", "2014-02-01"],
+  events: [["2013-12-13", "Top 250 free"], ["2014-01-10", "US top 10"], ["2014-01-17", "#1 US"], ["2014-01-27", "PewDiePie video"]]
+});
+(function () {
+  const cols = { KR: "--s1", BR: "--s2", US: "--s3" }, names = { KR: "South Korea", BR: "Brazil", US: "United States" };
+  const series = Object.keys(cols).map(g => { const pts = DATA.amongus[g]; const mx = Math.max(...pts.map(p => p[1])); return { name: names[g], color: cols[g], pts: pts.map(p => [p[0], Math.round(p[1] / mx * 100)]) }; });
+  legend("lg-among", Object.keys(cols).map(g => [cols[g], names[g]]));
+  lineChart("c-among", series, { ticks: ["2020-05-01", "2020-06-01", "2020-07-01", "2020-08-01", "2020-09-01", "2020-10-01"], events: [["2020-07-15", "Sodapoppin streams it (Jul 15)"]] });
+})();
+
+/* latent days strip, log scale */
+(function () {
+  const groups = [["creator / IP / paid / platform", ["creator_audience", "ip_fandom", "paid_ua", "platform_feature", "algorithm", "incentive"], "--s1"], ["organic, forum, press, diaspora", ["organic_word_of_mouth", "community_forum", "press", "diaspora_family", "celebrity"], "--s3"], ["streamers / influencers", ["influencer"], "--s2"], ["unclear", ["unclear"], "--dim"]];
+  const W = 900, H = 230, m = { l: 20, r: 20, t: 16, b: 34 };
+  const s = svgIn("c-latent", W, H);
+  const X = d => m.l + Math.log10(Math.max(d, 1)) / Math.log10(1000) * (W - m.l - m.r);
+  for (const v of [1, 3, 10, 30, 100, 300, 1000]) { el("line", { x1: X(v), x2: X(v), y1: m.t, y2: H - m.b, stroke: css("--grid") }, s); txt(s, X(v), H - 14, v + (v === 1 ? " day" : ""), { "text-anchor": "middle", class: "num" }); }
+  legend("lg-latent", groups.map(g => [g[2], g[0]]), true);
+  const rowY = i => m.t + 22 + i * ((H - m.t - m.b - 30) / (groups.length - 1));
+  groups.forEach((g, i) => el("line", { x1: m.l, x2: W - m.r, y1: rowY(i), y2: rowY(i), stroke: css("--grid"), "stroke-dasharray": "2 4" }, s));
+  DATA.breakouts.forEach(b => {
+    const gi = groups.findIndex(g => g[1].includes(b.ignition_type)); if (gi < 0) return;
+    const c = el("circle", { cx: X(b.latent_days), cy: rowY(gi), r: 7, fill: css(groups[gi][2]), stroke: css("--paper"), "stroke-width": 2 }, s);
+    bindTip(c, `<b>${b.name}</b><br>${b.latent_days} days to breakout<br>Trigger: ${b.ignition_type.replace(/_/g, " ")}${b.influencer_timing && b.influencer_timing !== "none" ? "<br>Influencer: " + b.influencer_timing.replace(/_/g, " ") : ""}`);
+  });
+  const ann = { "Among Us": [0, 20], "Suika Game": [0, -12], "Flappy Bird": [0, -12], "Wordle": [0, -12], "2048": [0, -12], "Pokemon GO": [-4, -12] };
+  DATA.breakouts.forEach(b => { if (!ann[b.name]) return; const gi = groups.findIndex(g => g[1].includes(b.ignition_type)); if (gi < 0) return;
+    const x = X(b.latent_days), [dx, dy] = ann[b.name]; const a = x < m.l + 40 ? "start" : x > W - m.r - 40 ? "end" : "middle";
+    txt(s, x + dx, rowY(gi) + dy, b.name, { "text-anchor": a, class: "lbl2" }); });
+})();
+
+/* backtest dot-whisker */
+(function () {
+  const nice = { "conventional": "Classic recipe", "context_only": "Context only", "conventional+context": "Recipe + context", "full(conv+context+novel)": "Full model" };
+  const W = 900, H = 260, m = { l: 150, r: 30, t: 14, b: 34 };
+  const s = svgIn("c-bt", W, H);
+  const X = v => m.l + (v - 0) / 1 * (W - m.l - m.r);
+  for (const v of [0, .25, .5, .75, 1]) { el("line", { x1: X(v), x2: X(v), y1: m.t, y2: H - m.b, stroke: css("--grid") }, s); txt(s, X(v), H - 14, v.toFixed(2), { "text-anchor": "middle", class: "num" }); }
+  el("line", { x1: X(.5), x2: X(.5), y1: m.t, y2: H - m.b, stroke: css("--ink-3"), "stroke-width": 1.5 }, s);
+  txt(s, X(.5) + 5, m.t + 10, "coin flip", { class: "lbl2" });
+  legend("lg-bt", [["--s2", "Time split (train <2016, test 2016+)"], ["--s1", "Cohort split (clone families held out)"]], true);
+  const band = (H - m.t - m.b) / DATA.backtest.length;
+  DATA.backtest.forEach((r, i) => {
+    const y = m.t + band * i + band / 2;
+    txt(s, m.l - 12, y + 4, nice[r.model], { "text-anchor": "end", class: "lbl" });
+    [["A", "--s2", -9, "Time split"], ["B", "--s1", 9, "Cohort split"]].forEach(([k, c, dy, nm]) => {
+      el("line", { x1: X(r[k + "lo"]), x2: X(r[k + "hi"]), y1: y + dy, y2: y + dy, stroke: css(c), "stroke-width": 2, "stroke-linecap": "round" }, s);
+      const d = el("circle", { cx: X(r[k]), cy: y + dy, r: 6, fill: css(c), stroke: css("--paper"), "stroke-width": 2 }, s);
+      bindTip(d, `<b>${nice[r.model]}</b><br>${nm}: ${r[k].toFixed(2)} (${r[k + "lo"].toFixed(2)}–${r[k + "hi"].toFixed(2)})`);
+      txt(s, X(r[k + "hi"]) + 6, y + dy + 4, r[k].toFixed(2), { class: "num" });
+    });
+  });
+})();
+
+/* novel signals dumbbell */
+(function () {
+  const nice = { spectator_high: "Spectator value (watchable)", failure_comedy: "Failure comedy", emergent_output: "Emergent output", rules_preknown: "Borrowed rules", artifact_curiosity: "Intriguing share artifact (emoji grid)" };
+  const verdict = { spectator_high: ["pass", "Holds"], emergent_output: ["mid", "Marginal"], failure_comedy: ["fail", "Fails"], rules_preknown: ["fail", "Fails"], artifact_curiosity: ["fail", "Reversed"] };
+  const W = 900, H = 250, m = { l: 260, r: 110, t: 14, b: 34 };
+  const s = svgIn("c-nov", W, H);
+  const X = v => m.l + v * (W - m.l - m.r);
+  for (const v of [0, .25, .5, .75, 1]) { el("line", { x1: X(v), x2: X(v), y1: m.t, y2: H - m.b, stroke: css("--grid") }, s); txt(s, X(v), H - 14, Math.round(v * 100) + "%", { "text-anchor": "middle", class: "num" }); }
+  legend("lg-nov", [["--s1", "Hit rate when present"], ["--dim", "Hit rate when absent"]], true);
+  const band = (H - m.t - m.b) / DATA.novel.length;
+  DATA.novel.forEach((r, i) => {
+    const y = m.t + band * i + band / 2;
+    txt(s, m.l - 12, y + 4, nice[r.k], { "text-anchor": "end", class: "lbl" });
+    el("line", { x1: X(r.without), x2: X(r.with), y1: y, y2: y, stroke: css("--rule"), "stroke-width": 3 }, s);
+    const a = el("circle", { cx: X(r.without), cy: y, r: 6, fill: css("--dim"), stroke: css("--paper"), "stroke-width": 2 }, s);
+    const b = el("circle", { cx: X(r.with), cy: y, r: 7, fill: css("--s1"), stroke: css("--paper"), "stroke-width": 2 }, s);
+    const html = `<b>${nice[r.k]}</b><br>Hit rate with: ${Math.round(r.with * 100)}% (n=${r.n})<br>Without: ${Math.round(r.without * 100)}%<br>Held-out AUC: ${r.auc.toFixed(2)} (${r.lo.toFixed(2)}–${r.hi.toFixed(2)})`;
+    bindTip(a, html); bindTip(b, html);
+    const v = verdict[r.k]; const fo = el("foreignObject", { x: W - m.r + 14, y: y - 11, width: 96, height: 24 }, s);
+    fo.innerHTML = `<span xmlns="http://www.w3.org/1999/xhtml" class="chip ${v[0]}">${v[0] === "pass" ? "✓" : v[0] === "mid" ? "~" : "✕"} ${v[1]}</span>`;
+  });
+})();
+
+/* horizontal bars helper */
+function hbars(id, rows, fmt, color, W0) {
+  const W = W0 || 440, rowH = 38, m = { l: W0 ? 200 : 150, r: 80, t: 6, b: 6 }, H = m.t + m.b + rowH * rows.length;
+  const s = svgIn(id, W, H); const mx = Math.max(...rows.map(r => r[1]));
+  rows.forEach((r, i) => {
+    const y = m.t + i * rowH + 8, w = r[1] / mx * (W - m.l - m.r);
+    txt(s, m.l - 10, y + 15, r[0], { "text-anchor": "end", class: "lbl" });
+    const b = el("path", { d: `M${m.l} ${y}h${w - 4}a4 4 0 0 1 4 4v14a4 4 0 0 1 -4 4h${-(w - 4)}z`, fill: css(color) }, s);
+    bindTip(b, `<b>${r[0]}</b><br>${fmt(r[1])}`);
+    txt(s, m.l + w + 6, y + 15, fmt(r[1]), { class: "num" });
+  });
+}
+const prof = { "median_mobile_game": "Median mobile", "top_quartile_casual": "Top-quartile casual", "strong_casual_hit": "Strong casual hit", "daily_habit_ritual": "Daily ritual" };
+hbars("c-kappa", DATA.dau.map(d => [prof[d.profile] || d.profile, d.kappa]), v => v.toFixed(2), "--s1");
+hbars("c-inst", DATA.dau.map(d => [prof[d.profile] || d.profile, d.installs / 1e6]), v => v.toFixed(1) + "M", "--s3");
+
+/* k table */
+document.getElementById("t-k").innerHTML = `<thead><tr><th>Game</th><th>Window</th><th>Doubling</th><th>k per generation</th><th>Note</th></tr></thead><tbody>` +
+  DATA.k.map(r => `<tr><td>${{ wordle: "Wordle", growagarden: "Grow a Garden", amongus: "Among Us", farmville: "FarmVille", drawsomething: "Draw Something", king: "King (Candy Crush)" }[r.game_id]}</td><td>${r.window}</td><td class="n">${r.doubling_days ? r.doubling_days + " days" : "—"}</td><td class="n">${r.k_low ? r.k_low.toFixed(2) + "–" + r.k_high.toFixed(2) : "—"}</td><td>${r.notes}</td></tr>`).join("") + `</tbody>`;
+
+/* census histogram */
+(function () {
+  const v = DATA.census.map(c => c[1]);
+  const bins = [["No measurable interest", v.filter(x => x === 0).length], ["Under 10% of Nerdle", v.filter(x => x > 0 && x < .1).length], ["10–25% of Nerdle", v.filter(x => x >= .1 && x < .25).length], ["25–100% of Nerdle", v.filter(x => x >= .25 && x < 1).length], ["At or above Nerdle", v.filter(x => x >= 1).length]];
+  hbars("c-census", bins, n => n + " games", "--s1", 900);
+})();
+
+/* base rates table */
+document.getElementById("t-base").innerHTML = `<thead><tr><th>Population</th><th>Outcome</th></tr></thead><tbody>
+<tr><td>133 English Wordle-likes (census)</td><td>51% never measurable; 3.8% matched Nerdle; none came near Wordle</td></tr>
+<tr><td>~300 Flappy Bird clones in 4 days; 95 of 293 new iOS games on Feb 27, 2014</td><td>None held a US top-10 spot for 4+ weeks</td></tr>
+<tr><td>Roblox: over 14M active experiences in 2025</td><td>2 set 20M+ concurrent records; ~1,000 creators averaged $1.3M</td></tr>
+<tr><td>Random sample of 7,356 Roblox experiences created 2024–25</td><td>Zero reached even 1,000 lifetime visits (best: 254)</td></tr>
+<tr><td>Supercell games (CEO, 2023)</td><td>5 hits from about 35; 30+ killed</td></tr></tbody>`;
+
+/* decay strip */
+(function () {
+  const W = 900, H = 200, m = { l: 20, r: 20, t: 40, b: 34 };
+  const s = svgIn("c-decay", W, H);
+  const X = v => m.l + v / .7 * (W - m.l - m.r);
+  for (const v of [0, .1, .2, .3, .4, .5, .6, .7]) { el("line", { x1: X(v), x2: X(v), y1: m.t - 10, y2: H - m.b, stroke: css("--grid") }, s); txt(s, X(v), H - 14, Math.round(v * 100) + "%", { "text-anchor": "middle", class: "num" }); }
+  const med = .22; el("line", { x1: X(med), x2: X(med), y1: m.t - 18, y2: H - m.b, stroke: css("--ink-3"), "stroke-width": 1.5, "stroke-dasharray": "4 3" }, s); txt(s, X(med) + 5, m.t - 22, "median 22%", { class: "lbl2" });
+  legend("lg-decay", [["--s2", "Roblox"], ["--s1", "Daily web rituals"], ["--dim", "All other hits"]], true);
+  const grp = d => d.platform === "roblox" ? "--s2" : d.era === "daily_web" ? "--s1" : "--dim";
+  const pts = DATA.decay.filter(d => d.platform !== "telegram");
+  const placed = [];
+  pts.sort((a, b) => (grp(a) === "--dim") - (grp(b) === "--dim"));
+  pts.forEach(d => {
+    const x = X(Math.min(d.r, .7)); let lane = 0;
+    while (placed.some(p => p.lane === lane && Math.abs(p.x - x) < 13)) lane++;
+    placed.push({ x, lane });
+    const y = H - m.b - 12 - lane * 15;
+    const c = el("circle", { cx: x, cy: y, r: 6, fill: css(grp(d)), stroke: css("--paper"), "stroke-width": 2 }, s);
+    bindTip(c, `<b>${d.name}</b><br>${Math.round(d.r * 100)}% of peak interest a year later`);
+  });
+  const lab = { "Grow a Garden": 1, "NYT Connections": 1, "Wordle": 1 };
+  pts.forEach(d => { if (lab[d.name]) { const p = placed[pts.indexOf(d)]; txt(s, p.x, H - m.b - 12 - p.lane * 15 - 11, d.name.replace("NYT ", ""), { "text-anchor": "middle", class: "lbl2" }); } });
+})();
+
+/* revenue range bars */
+(function () {
+  const rows = [["Web daily game, ads", .005, .012, .027], ["Mobile app, ads", .03, .05, .08], ["Mobile app, in-app purchases (net)", .025, .038, .066], ["Roblox (creator share)", .004, .012, .031], ["Subscription funnel", .001, .005, .010]];
+  const W = 900, rowH = 40, m = { l: 230, r: 110, t: 8, b: 34 }, H = m.t + m.b + rowH * rows.length;
+  const s = svgIn("c-rev", W, H);
+  const X = v => m.l + v / .09 * (W - m.l - m.r);
+  for (const v of [0, .02, .04, .06, .08]) { el("line", { x1: X(v), x2: X(v), y1: m.t, y2: H - m.b, stroke: css("--grid") }, s); txt(s, X(v), H - 14, "$" + v.toFixed(2), { "text-anchor": "middle", class: "num" }); }
+  txt(s, W - 6, H - 14, "per year at 1M DAU", { "text-anchor": "end" });
+  rows.forEach((r, i) => {
+    const y = m.t + i * rowH + rowH / 2, c = r[0].startsWith("Roblox") ? "--s2" : "--s1";
+    txt(s, m.l - 12, y + 4, r[0], { "text-anchor": "end", class: "lbl" });
+    el("line", { x1: X(r[1]), x2: X(r[3]), y1: y, y2: y, stroke: css(c), "stroke-width": 6, "stroke-linecap": "round", opacity: .35 }, s);
+    const d = el("circle", { cx: X(r[2]), cy: y, r: 7, fill: css(c), stroke: css("--paper"), "stroke-width": 2 }, s);
+    bindTip(d, `<b>${r[0]}</b><br>Low $${r[1].toFixed(3)} · mid $${r[2].toFixed(3)} · high $${r[3].toFixed(3)} per player per day`);
+    txt(s, W - 6, y + 4, "$" + (r[2] * 365).toFixed(1) + "M", { "text-anchor": "end", class: "num" });
+  });
+})();
+
+/* acquisitions table */
+document.getElementById("t-acq").innerHTML = `<thead><tr><th>Buyer ← target</th><th>Date</th><th>Price</th><th>What they bought</th><th>What happened</th></tr></thead><tbody>` +
+  DATA.acq.map(a => `<tr><td><b>${a.acquirer}</b> ← ${a.target}</td><td class="n">${a.deal_date}</td><td class="n">${a.deal_id === "nyt_wordle" ? "Low 7 figures" : a.price_usd_m ? "$" + a.price_usd_m.toLocaleString("en-US") + "M" : "Undisclosed"}</td><td>${a.what_bought}</td><td>${a.after_outcome || "—"}</td></tr>`).join("") + `</tbody>`;
+
+/* concepts table */
+document.getElementById("t-concepts").innerHTML = `<thead><tr><th>#</th><th>Concept</th><th>Platform</th><th>Model score</th><th>Channel evidence</th></tr></thead><tbody>` +
+  DATA.concepts.map((c, i) => { const r = i === 0 ? 2 : i === 1 ? 1 : i + 1; return { ...c, r }; }).sort((a, b) => a.r - b.r)
+    .map(c => { const ch = (c.notes.match(/channel=([^;]+)/) || [])[1]; return `<tr><td class="n">${c.r}</td><td>${c.name}</td><td>${c.platform}</td><td class="n"><span class="bar" style="width:${Math.round(c.model_score * 90)}px"></span> ${c.model_score.toFixed(2)}</td><td>${ch}</td></tr>`; }).join("") + `</tbody>`;
+
+/* toc highlight */
+const links = [...document.querySelectorAll("nav.toc a")];
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id)); }), { rootMargin: "-30% 0px -60% 0px" });
+document.querySelectorAll("main section").forEach(sec => io.observe(sec));
+window.addEventListener("scroll", hideTip, { passive: true });
+</script>
