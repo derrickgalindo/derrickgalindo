@@ -1,0 +1,127 @@
+game_id,name,trends_query,topic_hint,launch,platform,cohort,role
+wordle,Wordle,wordle,Wordle,2021-10-01,web,daily_word,original_hit
+absurdle,Absurdle,absurdle,,2022-01-04,web,daily_word,clone
+quordle,Quordle,quordle,,2022-01-24,web,daily_word,clone
+dordle,Dordle,dordle,,2022-01-20,web,daily_word,clone
+octordle,Octordle,octordle,,2022-01-25,web,daily_word,clone
+worldle,Worldle,worldle,,2022-01-21,web,daily_word,clone
+heardle,Heardle,heardle,,2022-02-26,web,daily_word,clone
+nerdle,Nerdle,nerdle,,2022-01-20,web,daily_word,clone
+globle,Globle,globle,,2022-01-20,web,daily_word,clone
+semantle,Semantle,semantle,,2022-01-30,web,daily_word,clone
+contexto,Contexto,contexto,,2022-04-01,web,daily_word,clone
+lewdle,Lewdle,lewdle,,2022-01-19,web,daily_word,clone
+waffle,Waffle,waffle game,,2022-02-15,web,daily_word,clone
+redactle,Redactle,redactle,,2022-04-01,web,daily_word,clone
+loldle,LoLdle,loldle,,2022-04-01,web,daily_word,clone
+travle,Travle,travle,,2023-01-15,web,daily_word,clone
+costcodle,Costcodle,costcodle,,2024-01-15,web,daily_word,clone
+connections,NYT Connections,nyt connections,Connections NYT,2023-06-12,web,daily_word,contemporary
+strands,NYT Strands,nyt strands,,2024-03-04,web,daily_word,contemporary
+spellingbee,NYT Spelling Bee,spelling bee nyt,,2018-05-09,web,daily_word,contemporary
+immaculategrid,Immaculate Grid,immaculate grid,,2023-03-30,web,daily_word,contemporary
+bandle,Bandle,bandle,,2022-07-01,web,daily_word,clone
+queens,LinkedIn Queens,linkedin queens,,2024-05-01,web,daily_word,contemporary
+pips,NYT Pips,nyt pips,,2025-08-18,web,daily_word,contemporary
+flappybird,Flappy Bird,flappy bird,Flappy Bird,2013-05-24,mobile,one_tap,original_hit
+splashyfish,Splashy Fish,splashy fish,,2014-01-25,mobile,one_tap,clone
+ironpants,Ironpants,ironpants,,2014-01-20,mobile,one_tap,clone
+swingcopters,Swing Copters,swing copters,Swing Copters,2014-08-21,mobile,one_tap,same_creator
+flappydunk,Flappy Dunk,flappy dunk,,2017-05-01,mobile,one_tap,clone
+timberman,Timberman,timberman,,2014-03-01,mobile,one_tap,contemporary
+colorswitch,Color Switch,color switch,Color Switch,2015-12-01,mobile,one_tap,contemporary
+pianotiles,Piano Tiles,piano tiles,Piano Tiles,2014-03-27,mobile,one_tap,contemporary
+crossyroad,Crossy Road,crossy road,Crossy Road,2014-11-20,mobile,one_tap,original_hit
+geometrydash,Geometry Dash,geometry dash,Geometry Dash,2013-08-13,mobile,one_tap,contemporary
+stack,Stack (Ketchapp),stack ketchapp,,2016-02-01,mobile,one_tap,contemporary
+helixjump,Helix Jump,helix jump,Helix Jump,2018-03-01,mobile,one_tap,contemporary
+mrjump,Mr Jump,mr jump,,2015-03-01,mobile,one_tap,contemporary
+templerun,Temple Run,temple run,Temple Run,2011-08-04,mobile,endless_runner,original_hit
+subwaysurfers,Subway Surfers,subway surfers,Subway Surfers,2012-05-24,mobile,endless_runner,contemporary
+fruitninja,Fruit Ninja,fruit ninja,Fruit Ninja,2010-04-21,mobile,arcade,original_hit
+doodlejump,Doodle Jump,doodle jump,Doodle Jump,2009-04-06,mobile,arcade,original_hit
+2048,2048,2048 game,2048 (video game),2014-03-09,web,merge,clone
+threes,Threes!,threes game,Threes,2014-02-06,mobile,merge,original_hit
+suika,Suika Game,suika game,Suika Game,2023-09-01,web,merge,contemporary
+candycrush,Candy Crush Saga,candy crush,Candy Crush Saga,2012-04-12,facebook,match3,original_hit
+bejeweledblitz,Bejeweled Blitz,bejeweled blitz,,2008-12-01,facebook,match3,contemporary
+farmheroes,Farm Heroes Saga,farm heroes saga,,2013-04-01,facebook,match3,same_creator
+petrescue,Pet Rescue Saga,pet rescue saga,,2012-10-01,facebook,match3,same_creator
+bubblewitch,Bubble Witch Saga,bubble witch saga,,2011-09-01,facebook,match3,same_creator
+diamonddash,Diamond Dash,diamond dash,,2011-05-01,facebook,match3,contemporary
+jellysplash,Jelly Splash,jelly splash,,2013-05-01,mobile,match3,contemporary
+candycrushsoda,Candy Crush Soda Saga,candy crush soda,,2014-11-01,mobile,match3,same_creator
+blockblast,Block Blast,block blast,,2023-01-01,mobile,match3,contemporary
+angrybirds,Angry Birds,angry birds,Angry Birds,2009-12-11,mobile,physics,original_hit
+crushthecastle,Crush the Castle,crush the castle,,2009-03-01,web,physics,predecessor
+cuttherope,Cut the Rope,cut the rope,Cut the Rope,2010-10-05,mobile,physics,contemporary
+amazingalex,Amazing Alex,amazing alex,,2012-07-12,mobile,physics,same_creator
+badpiggies,Bad Piggies,bad piggies,,2012-09-27,mobile,physics,same_creator
+wheresmywater,Where's My Water?,where's my water,,2011-09-22,mobile,physics,contemporary
+wordswithfriends,Words with Friends,words with friends,Words with Friends,2009-07-21,mobile,async_social,original_hit
+chesswithfriends,Chess with Friends,chess with friends,,2009-10-01,mobile,async_social,same_creator
+hangingwithfriends,Hanging with Friends,hanging with friends,,2011-08-01,mobile,async_social,same_creator
+wordfeud,Wordfeud,wordfeud,,2010-06-01,mobile,async_social,clone
+ruzzle,Ruzzle,ruzzle,,2012-03-01,mobile,async_social,contemporary
+songpop,SongPop,songpop,,2012-05-01,facebook,async_social,contemporary
+drawsomething,Draw Something,draw something,Draw Something,2012-02-06,mobile,async_social,original_hit
+drawsomething2,Draw Something 2,draw something 2,,2013-03-05,mobile,async_social,same_creator
+triviacrack,Trivia Crack,trivia crack,Trivia Crack,2013-10-01,mobile,async_social,original_hit
+quizup,QuizUp,quizup,QuizUp,2013-11-07,mobile,async_social,contemporary
+hqtrivia,HQ Trivia,hq trivia,HQ Trivia,2017-08-01,mobile,live_social,original_hit
+headsup,Heads Up!,heads up game,Heads Up!,2013-05-01,mobile,party,original_hit
+bitlife,BitLife,bitlife,BitLife,2018-09-01,mobile,sim,contemporary
+dumbways,Dumb Ways to Die,dumb ways to die game,,2013-05-15,mobile,arcade,contemporary
+farmville,FarmVille,farmville,FarmVille,2009-06-19,facebook,social_sim,original_hit
+farmtown,Farm Town,farm town,,2009-02-01,facebook,social_sim,predecessor
+mafiawars,Mafia Wars,mafia wars,Mafia Wars,2008-06-01,facebook,social_sim,clone
+mobwars,Mob Wars,mob wars,,2008-01-01,facebook,social_sim,predecessor
+cityville,CityVille,cityville,,2010-12-02,facebook,social_sim,same_creator
+petsociety,Pet Society,pet society,,2008-08-01,facebook,social_sim,contemporary
+farmville2,FarmVille 2,farmville 2,,2012-09-18,facebook,social_sim,same_creator
+agario,Agar.io,agar.io,Agar.io,2015-04-28,web,io,original_hit
+slitherio,Slither.io,slither.io,Slither.io,2016-03-25,web,io,clone
+diepio,Diep.io,diep.io,,2016-06-01,web,io,clone
+paperio,Paper.io,paper.io,,2016-08-01,web,io,clone
+holeio,Hole.io,hole.io,,2018-05-01,mobile,io,clone
+krunker,Krunker,krunker,,2018-08-01,web,io,contemporary
+skribbl,skribbl.io,skribbl,,2017-12-01,web,io,contemporary
+garticphone,Gartic Phone,gartic phone,,2020-12-01,web,party,contemporary
+amongus,Among Us,among us,Among Us,2018-06-15,mobile,social_deduction,original_hit
+townofsalem,Town of Salem,town of salem,,2014-12-01,web,social_deduction,predecessor
+projectwinter,Project Winter,project winter,,2019-05-23,pc,social_deduction,contemporary
+fallguys,Fall Guys,fall guys,Fall Guys,2020-08-04,pc,party,original_hit
+stumbleguys,Stumble Guys,stumble guys,,2020-08-25,mobile,party,clone
+pokemongo,Pokemon GO,pokemon go,Pokemon Go,2016-07-06,mobile,location,original_hit
+ingress,Ingress,ingress,Ingress,2012-11-15,mobile,location,predecessor
+wizardsunite,Harry Potter: Wizards Unite,wizards unite,,2019-06-21,mobile,location,same_creator
+minecraftearth,Minecraft Earth,minecraft earth,,2019-10-17,mobile,location,clone
+infinitecraft,Infinite Craft,infinite craft,,2024-01-31,web,web_toy,original_hit
+littlealchemy,Little Alchemy,little alchemy,,2010-12-01,web,web_toy,predecessor
+cookieclicker,Cookie Clicker,cookie clicker,Cookie Clicker,2013-08-08,web,web_toy,original_hit
+geoguessr,GeoGuessr,geoguessr,GeoGuessr,2013-05-09,web,web_toy,original_hit
+passwordgame,The Password Game,password game,,2023-06-27,web,web_toy,contemporary
+universalpaperclips,Universal Paperclips,universal paperclips,,2017-10-09,web,web_toy,contemporary
+growagarden,Grow a Garden,grow a garden,,2025-03-26,roblox,roblox,original_hit
+stealabrainrot,Steal a Brainrot,steal a brainrot,,2025-05-01,roblox,roblox,contemporary
+dresstoimpress,Dress to Impress,dress to impress,,2023-11-01,roblox,roblox,original_hit
+99nights,99 Nights in the Forest,99 nights in the forest,,2025-04-01,roblox,roblox,contemporary
+deadrails,Dead Rails,dead rails,,2025-02-01,roblox,roblox,contemporary
+fisch,Fisch,fisch roblox,,2024-10-01,roblox,roblox,contemporary
+doors,Doors,doors roblox,,2022-08-01,roblox,roblox,contemporary
+adoptme,Adopt Me!,adopt me,,2017-07-14,roblox,roblox,contemporary
+notcoin,Notcoin,notcoin,,2024-01-01,telegram,tap_to_earn,original_hit
+hamsterkombat,Hamster Kombat,hamster kombat,,2024-03-01,telegram,tap_to_earn,clone
+catizen,Catizen,catizen,,2024-03-01,telegram,tap_to_earn,clone
+tapswap,TapSwap,tapswap,,2024-02-01,telegram,tap_to_earn,clone
+cashshow,Cash Show,cash show app,,2017-12-01,mobile,live_social,clone
+ghostbustersworld,Ghostbusters World,ghostbusters world,,2019-01-01,mobile,location,clone
+jurassicworldalive,Jurassic World Alive,jurassic world alive,,2018-05-24,mobile,location,clone
+goosegooseduck,Goose Goose Duck,goose goose duck,,2021-10-01,pc,social_deduction,clone
+mopeio,Mope.io,mope.io,,2016-07-01,web,io,clone
+survivio,Surviv.io,surviv.io,,2017-10-01,web,io,clone
+wingsio,Wings.io,wings.io,,2016-05-01,web,io,clone
+cookiejam,Cookie Jam,cookie jam,,2014-08-01,mobile,match3,clone
+doodlegod,Doodle God,doodle god,,2010-08-01,web,web_toy,predecessor
+drawmything,Draw My Thing,draw my thing,,2008-01-01,web,async_social,predecessor
+lexulous,Lexulous,lexulous,,2008-07-01,facebook,async_social,predecessor
