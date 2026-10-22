@@ -1,0 +1,458 @@
+<title>Roblox Hit Playbook</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+
+/* Layout: research dossier. Sticky section index on the left, one reading column, figures break wider than the text. */
+:root {
+  --bg: #f3f5f7;
+  --paper: #ffffff;
+  --ink: #101a24;
+  --ink-2: #44515f;
+  --ink-3: #6b7783;
+  --rule: #d9dfe5;
+  --grid: #e7ebef;
+  --accent: #2a78d6;
+  --s1: #2a78d6;
+  --s2: #eb6834;
+  --s3: #1baf7a;
+  --dim: #b9c2cb;
+  --good: #0ca30c;
+  --bad: #d03b3b;
+  --warn: #b97a00;
+  --chip-good-bg: #e3f5e3;
+  --chip-bad-bg: #fbe6e6;
+  --chip-warn-bg: #fbf0d9;
+  --hl: #fff4c2;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --measure: 66ch;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161b; --paper: #182029; --ink: #e9eef3; --ink-2: #b4c0cc; --ink-3: #8794a1; --rule: #2a3440; --grid: #222b35;
+    --accent: #5598e7; --s1: #3987e5; --s2: #d95926; --s3: #199e70; --dim: #4a5664;
+    --good: #2fbf2f; --bad: #e66767; --warn: #e0a326; --chip-good-bg: #173018; --chip-bad-bg: #3a1c1c; --chip-warn-bg: #3a2e12; --hl: #3a3415;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161b; --paper: #182029; --ink: #e9eef3; --ink-2: #b4c0cc; --ink-3: #8794a1; --rule: #2a3440; --grid: #222b35;
+  --accent: #5598e7; --s1: #3987e5; --s2: #d95926; --s3: #199e70; --dim: #4a5664;
+  --good: #2fbf2f; --bad: #e66767; --warn: #e0a326; --chip-good-bg: #173018; --chip-bad-bg: #3a1c1c; --chip-warn-bg: #3a2e12; --hl: #3a3415;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.shell { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 48px; padding-block: 40px 80px; }
+nav.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); align-self: start; font-family: var(--font-display); font-size: 13px; }
+nav.toc .brand { font-weight: 800; font-stretch: 118%; letter-spacing: .02em; text-transform: uppercase; font-size: 12px; color: var(--ink-3); margin-bottom: 14px; }
+nav.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; counter-reset: s; }
+nav.toc a { display: grid; grid-template-columns: 22px 1fr; color: var(--ink-2); text-decoration: none; padding: 5px 8px; border-radius: 6px; }
+nav.toc a span { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); padding-top: 1px; }
+nav.toc a:hover, nav.toc a.on { background: var(--paper); color: var(--ink); }
+nav.toc a:focus-visible, a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+main { min-width: 0; }
+section { padding-block: 28px; border-top: 1px solid var(--rule); scroll-margin-top: 16px; }
+section:first-of-type { border-top: 0; padding-top: 0; }
+.eyebrow { font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+h1 { font-family: var(--font-display); font-weight: 800; font-stretch: 112%; font-size: clamp(34px, 5vw, 54px); line-height: 1.02; letter-spacing: -.02em; margin: 0 0 16px; text-wrap: balance; max-width: 20ch; }
+h2 { font-family: var(--font-display); font-weight: 750; font-stretch: 108%; font-size: clamp(24px, 3vw, 31px); line-height: 1.12; letter-spacing: -.01em; margin: 0 0 14px; text-wrap: balance; max-width: 30ch; }
+h3 { font-family: var(--font-display); font-weight: 700; font-size: 19px; line-height: 1.25; margin: 26px 0 8px; text-wrap: balance; }
+p, li { max-width: var(--measure); }
+p { margin: 0 0 14px; }
+ul, ol { padding-left: 22px; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent); text-underline-offset: 2px; }
+strong { font-weight: 650; }
+.lede { font-size: 20px; line-height: 1.5; color: var(--ink-2); max-width: 58ch; }
+.meta { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 18px 0 0; }
+.verdict { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 0; counter-reset: v; border-top: 1px solid var(--rule); }
+.verdict li { counter-increment: v; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 4px 14px; padding: 16px 0; border-bottom: 1px solid var(--rule); max-width: none; margin: 0; }
+.verdict li::before { content: counter(v); font-family: var(--font-display); font-weight: 800; font-stretch: 120%; font-size: 26px; line-height: 1; color: var(--accent); }
+.verdict b { display: block; font-family: var(--font-display); font-weight: 700; font-size: 18px; line-height: 1.3; margin-bottom: 4px; }
+.verdict span { color: var(--ink-2); max-width: var(--measure); display: block; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; margin: 22px 0 6px; }
+.stat { background: var(--paper); padding: 14px 16px; }
+.stat .n { font-family: var(--font-display); font-weight: 800; font-stretch: 115%; font-size: 30px; line-height: 1; font-variant-numeric: tabular-nums; }
+.stat .l { font-family: var(--font-display); font-size: 12.5px; color: var(--ink-3); margin-top: 6px; line-height: 1.3; }
+figure { margin: 22px 0 22px; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 18px 14px; min-width: 0; }
+figure .ft { font-family: var(--font-display); font-weight: 700; font-size: 15px; margin: 0 0 2px; }
+figure .fs { font-family: var(--font-display); font-size: 13px; color: var(--ink-3); margin: 0 0 10px; max-width: none; }
+figcaption { font-family: var(--font-display); font-size: 12.5px; color: var(--ink-3); margin-top: 8px; line-height: 1.45; max-width: none; }
+.chart { width: 100%; overflow-x: auto; position: relative; }
+.chart svg { display: block; width: 100%; height: auto; min-width: 520px; }
+.chart.narrow svg { min-width: 0; }
+svg text { font-family: var(--font-display); fill: var(--ink-3); font-size: 11.5px; }
+svg .lbl { fill: var(--ink); font-weight: 600; }
+svg .lbl2 { fill: var(--ink-2); }
+svg .num { font-family: var(--font-mono); font-size: 11px; fill: var(--ink-2); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-family: var(--font-display); font-size: 12.5px; color: var(--ink-2); margin: 0 0 8px; }
+.legend i { display: inline-block; width: 12px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.legend i.dot { width: 9px; height: 9px; border-radius: 50%; }
+.tip { position: fixed; z-index: 30; pointer-events: none; background: var(--ink); color: var(--bg); font-family: var(--font-display); font-size: 12.5px; line-height: 1.4; padding: 7px 10px; border-radius: 6px; max-width: 260px; box-shadow: 0 6px 20px rgb(0 0 0 / .18); }
+.tip[hidden] { display: none !important; }
+.tablewrap { overflow-x: auto; margin: 16px 0 20px; border: 1px solid var(--rule); border-radius: 10px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; font-family: var(--font-display); font-size: 13.5px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { font-weight: 700; font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); background: var(--bg); border-bottom: 1px solid var(--rule); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--font-mono); font-size: 12.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-display); font-weight: 700; font-size: 11.5px; letter-spacing: .03em; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.chip.pass { color: var(--good); background: var(--chip-good-bg); }
+.chip.fail { color: var(--bad); background: var(--chip-bad-bg); }
+.chip.mid { color: var(--warn); background: var(--chip-warn-bg); }
+.callout { background: var(--paper); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 18px 0; }
+.callout p:last-child { margin-bottom: 0; }
+.callout .k { font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.two figure { margin: 0; }
+.timeline { list-style: none; padding: 0; margin: 14px 0 18px; border-left: 2px solid var(--rule); }
+.timeline li { position: relative; padding: 0 0 12px 18px; margin: 0; }
+.timeline li::before { content: ""; position: absolute; left: -6px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--paper); border: 2px solid var(--accent); }
+.timeline .d { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); display: block; }
+.concept { background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 20px; margin: 16px 0; }
+.concept header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 8px; }
+.concept .rank { font-family: var(--font-display); font-weight: 800; font-stretch: 120%; font-size: 28px; color: var(--accent); line-height: 1; }
+.concept h3 { margin: 0; font-size: 21px; }
+.concept .plat { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); }
+.concept .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 6px 26px; }
+.concept h4 { font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin: 12px 0 6px; }
+.concept ol, .concept ul { font-size: 15.5px; }
+.bar { display: inline-block; height: 8px; border-radius: 0 4px 4px 0; background: var(--s1); vertical-align: middle; }
+details { margin: 8px 0 0; font-family: var(--font-display); font-size: 13px; }
+summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+.foot { font-family: var(--font-display); font-size: 13px; color: var(--ink-3); }
+.sources li { font-size: 14.5px; }
+@media (max-width: 900px) {
+  .shell { grid-template-columns: minmax(0, 1fr); gap: 0; padding-block: 24px 60px; }
+  nav.toc { position: static; margin-bottom: 18px; }
+  nav.toc ol { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  body { font-size: 16.5px; }
+}
+@media (max-width: 560px) { .chart svg { min-width: 460px; } .chart.narrow svg { min-width: 0; } }
+
+.score { font-family: var(--font-mono); font-size: 12.5px; text-align: center; white-space: nowrap; }
+td.total { font-family: var(--font-display); font-weight: 800; font-size: 15px; }
+tr.pick td { background: var(--hl); }
+.two { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+</style>
+
+<div class="tip" id="tip" role="status" hidden></div>
+<div class="shell">
+<nav class="toc" aria-label="Sections">
+  <div class="brand">Roblox hit playbook</div>
+  <ol>
+    <li><a href="#answer"><span>00</span>The short version</a></li>
+    <li><a href="#make"><span>01</span>How games are made</a></li>
+    <li><a href="#algo"><span>02</span>What the algorithm rewards</a></li>
+    <li><a href="#top"><span>03</span>Who's on top now</a></li>
+    <li><a href="#launch"><span>04</span>How new hits launch</a></li>
+    <li><a href="#waves"><span>05</span>Format waves</a></li>
+    <li><a href="#keep"><span>06</span>Keeping players</a></li>
+    <li><a href="#money"><span>07</span>Money and exits</a></li>
+    <li><a href="#plan"><span>08</span>Concepts and plan</a></li>
+    <li><a href="#limits"><span>09</span>Limits and sources</a></li>
+  </ol>
+</nav>
+
+<main>
+<section id="answer">
+  <p class="eyebrow">Deep dive · Oct 22, 2026 · 625 Roblox games</p>
+  <h1>How Roblox hits happen, and what to build first</h1>
+  <p class="lede">A follow-up to the main report. It uses live data from Roblox's own APIs, Roblox's Creator Hub documentation on discovery, full player-count histories for every game launched since July, and press reports on studio acquisitions.</p>
+  <div class="stats" id="stats"></div>
+  <ol class="verdict">
+    <li><div><b>New games reach the top fast.</b><span>37 of today's top 100 were created in the last 120 days. Steal An Egg, today's #1, launched July 25, reached 1M concurrent players on day 28, and peaked around day 56.</span></div></li>
+    <li><div><b>Every launch follows the same shape: a wait, a jump, a peak, a fall.</b><span>New games take a median of 19 days to reach 1,000 players. The recommender then lifts them to 10,000 in about 2.6 days, and they peak around day 30. Three weeks after the peak, daily play is down to about 46%.</span></div></li>
+    <li><div><b>Waves beat originals.</b><span>Most hits ride a format wave ("Steal a ___", "+1 per second", "Anomaly"), and the leader is usually not the first game in it. Roblox demotes near-copies but explicitly rewards "your own spin" on a trend.</span></div></li>
+    <li><div><b>Retention is invisible from outside, so test on Roblox itself.</b><span>Likes, favorites, server size and game passes don't predict which new games keep their players. Only Roblox's analytics show the signals that decide growth.</span></div></li>
+    <li><div><b>The plan: ship a cheap "Anomaly" game to learn the funnel, then build Hide as a Painting v2.</b><span>The hide-by-blending idea has already drawn up to 60k players on Roblox, but both earlier versions lost nearly everyone. Version 2 adds the collect-and-trade economy that has kept Murder Mystery 2 alive for 12 years.</span></div></li>
+  </ol>
+</section>
+
+<section id="make">
+  <p class="eyebrow">01 · The basics</p>
+  <h2>How a Roblox game gets made and paid</h2>
+  <ul>
+    <li><strong>Tools:</strong> the free Roblox Studio editor (Windows and Mac). Code is in Luau, Roblox's typed Lua. Engineers usually add Rojo so they can work in VS Code with git.</li>
+    <li><strong>Roblox runs everything else:</strong> servers, matchmaking, payments, chat and voice, on phone, PC, console and tablet. You pay nothing to host.</li>
+    <li><strong>Money:</strong> players buy Robux and spend it on game passes (one-time unlocks) and developer products (repeat purchases). Roblox adds engagement-based Creator Rewards, and you convert Robux to dollars through its payout program (DevEx). Creators received 22% of all Roblox bookings in 2025.</li>
+    <li><strong>Adults pay more:</strong> since June 8, 2026, spending by age-checked US adults in games using R15 avatars earns a 42% higher payout rate. That group spends over 50% more than under-18 players.</li>
+    <li><strong>Who owns the hits:</strong> 94 of today's top 100 games belong to groups (studios or teams), not individual accounts.</li>
+  </ul>
+</section>
+
+<section id="algo">
+  <p class="eyebrow">02 · From Roblox's own Creator Hub docs</p>
+  <h2>What the recommendation feed rewards</h2>
+  <p>The Home "Recommended For You" feed ranks games on these signals:</p>
+  <ul>
+    <li><strong>Play-through rate:</strong> how often people who see the game play it.</li>
+    <li><strong>First-play bounce:</strong> players who leave within 60 seconds or 61–180 seconds. This counts against you.</li>
+    <li><strong>Return days:</strong> play days per user on day 1, days 2–7 and days 8–28.</li>
+    <li><strong>Playtime:</strong> capped at 60 minutes per player per day.</li>
+    <li><strong>Co-play:</strong> days players come back to play with friends.</li>
+    <li><strong>Engagement and spending:</strong> qualified sessions, spend days and Robux spent per user.</li>
+  </ul>
+  <div class="two">
+    <div class="callout"><p class="k">Only recommended players count</p><p>"Roblox doesn't count the engagement, monetization, or retention of users first acquired from ads, curation, friends, search, social media, or any other source." Outside traffic only speeds up your chance of being tested.</p></div>
+    <div class="callout"><p class="k">Explore, then expand</p><p>Roblox tests a game on one group of users and expands to similar groups if they engage. Evaluation starts from the first session, and a weak start isn't penalized.</p></div>
+    <div class="callout"><p class="k">Copies get demoted</p><p>Games whose "metadata and place files closely resemble existing games" are no longer prioritized. The docs explicitly say to "add your own spin to existing trends".</p></div>
+    <div class="callout"><p class="k">A custom thumbnail is required</p><p>Games with only a default thumbnail get no home-page impressions at all.</p></div>
+  </div>
+</section>
+
+<section id="top">
+  <p class="eyebrow">03 · Live charts, Oct 22, 2026</p>
+  <h2>Who's on top right now</h2>
+  <p>Play is concentrated: the top 10 of 7,822 tracked games hold 32% of all concurrent players, and the top 100 hold 60%. Only 10 games are at or above ~75,000 concurrent, which I use as the working equivalent of 1M daily players. The real figure is anywhere from 40k to 150k, depending on how long players stay each day.</p>
+  <div class="tablewrap"><table id="t-top"></table></div>
+  <p>Old games last when they keep updating: 53 of the top 100 are more than a year old, and 30 are more than three. Nearly every top game is running a Halloween event right now.</p>
+</section>
+
+<section id="launch">
+  <p class="eyebrow">04 · Full launch histories since July 2026</p>
+  <h2>How new hits launch: a wait, a jump, a peak, a fall</h2>
+  <figure>
+    <p class="ft">Concurrent players by day since launch: the 10 biggest launches since July</p>
+    <p class="fs">Daily maximum, log scale. Dashed lines mark 1k, 10k and ~1M-DAU scale (75k). Hover to read values.</p>
+    <div class="chart" id="c-curves"></div>
+    <figcaption>RoWatcher samples roughly every 4 hours, so peaks are understated. Steal An Egg shows 7.1M here; other trackers recorded about 14.3M on Sep 19.</figcaption>
+  </figure>
+  <div class="two">
+    <figure>
+      <p class="ft">How far launches got after reaching 1,000 players</p>
+      <p class="fs">210 games launched since late June</p>
+      <div class="chart narrow" id="c-funnel"></div>
+      <figcaption>These odds are optimistic, because games that reached 1k and then died are undercounted. Reaching 1k is the hard step: in the main report's random sample, none of 7,356 new experiences got even 1,000 lifetime visits.</figcaption>
+    </figure>
+    <div>
+      <ul class="timeline">
+        <li><span class="d">Days 0–19</span>The wait. The median game takes 19 days to reach 1,000 concurrent (middle half: 13–35 days).</li>
+        <li><span class="d">+2.6 days</span>The jump from 1k to 10k, when the recommender expands. 42% make it within 2 days.</li>
+        <li><span class="d">~Day 30</span>The peak (median).</li>
+        <li><span class="d">Peak +7 / +21 days</span>Daily play at 83%, then 46% of peak.</li>
+        <li><span class="d">Total</span>About one month of peak-level play over the whole run.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="waves">
+  <p class="eyebrow">05 · Copying, done right</p>
+  <h2>Format waves drive the charts, and the winner is rarely the first game</h2>
+  <figure>
+    <p class="ft">The "Steal / Egg / Brainrot" wave: when each game launched and how high it peaked</p>
+    <p class="fs">Peak concurrent players since June, log scale. Hover a dot for the game.</p>
+    <div class="chart" id="c-wave"></div>
+    <figcaption>For games launched before June 2026 the dot shows their peak since June. Steal a Brainrot's all-time peak was 25.4M (Oct 2025). Steal a Brainrot (May 2025) started the wave. Steal An Egg won it 14 months later by changing the object and adding hatching and mutations. Close copies like Steal Animal Egg peaked at 57k and are at 3k now.</figcaption>
+  </figure>
+  <p>Other waves running right now:</p>
+  <ul>
+    <li><strong>"+1 per second" incrementals:</strong> 18 games, 12 launched in the last 120 days.</li>
+    <li><strong>"Anomaly" shift-work horror:</strong> 9 games, 6 new. Sell Fries! [Anomaly] went from launch to 105k concurrent in 26 days.</li>
+  </ul>
+  <p>Roblox demotes near-copies, so the play is a recognizable format with a real twist.</p>
+</section>
+
+<section id="keep">
+  <p class="eyebrow">06 · What holds players</p>
+  <h2>Nothing you can see from outside predicts retention</h2>
+  <figure>
+    <p class="ft">Share of peak players kept today: 30 launches that peaked above 20k</p>
+    <p class="fs">Each dot is one game, at least two weeks past its peak. Hover for the name.</p>
+    <div class="chart" id="c-ret"></div>
+    <figcaption>The median game keeps 12% of its peak. Like ratio, favorites, server size and game-pass count all correlate weakly with retention (|ρ| ≤ 0.18). The deciding signals sit in Roblox's analytics, so you have to test on the platform itself.</figcaption>
+  </figure>
+  <p><strong>What the long-lived games share</strong> (Murder Mystery 2, Adopt Me, Blox Fruits, Fisch, Pet Simulator 99):</p>
+  <ul>
+    <li>A loop players repeat: rounds, collection or progression.</li>
+    <li>A collection or trading economy: Murder Mystery 2's knives, Adopt Me's pets, Fish It's "1,000,000+ variations".</li>
+    <li>Rare-roll mutations and earnings while offline.</li>
+    <li>Seasonal events.</li>
+    <li>Server sizes that fit the loop: about 8 per server for tycoon and steal games, about 24 for survival, about 30 for roleplay.</li>
+  </ul>
+</section>
+
+<section id="money">
+  <p class="eyebrow">07 · Revenue and exits</p>
+  <h2>A real market for Roblox games, at 1–12 months of revenue</h2>
+  <ul>
+    <li><strong>Revenue per player:</strong> RoWatcher's revenue model puts top games at about $0.3–0.5 a day per concurrent player. At 60 minutes of play a day, that's roughly $0.01–0.02 per daily player, in line with the main report's $0.012 mid estimate. These are estimates; Roblox doesn't publish per-game revenue.</li>
+    <li><strong>An active buyers' market:</strong> Bloomberg (Jul 2025) reported a game-buying frenzy after Roblox made ownership transfers easier in December 2024. Reports disagree on whether 7 or 15 of June 2025's top earners had changed owners. Buyers include Do Big Studios, Voldex, Splitting Point and Embracer.</li>
+    <li><strong>Prices:</strong> reportedly 1–12 months of in-game revenue, brokered on Discord. Blue Lock: Rivals sold for more than $3M while earning about $5M a month, after roughly three months of work by a 19-year-old.</li>
+    <li><strong>Studio hits:</strong> Steal An Egg came from Misfits Gaming's portfolio of Roblox games.</li>
+  </ul>
+  <div class="callout"><p class="k">Sell or keep, updated</p><p>A fad-shaped hit delivers about one month of peak-level play over its whole run, so a sale or partner stake near the peak usually beats holding it. Keep it and invest in live updates only if it holds: above about 40% of peak three weeks after peaking.</p></div>
+</section>
+
+<section id="plan">
+  <p class="eyebrow">08 · Concepts, re-scored on Roblox's terms</p>
+  <h2>Hide as a Painting v2 leads, with a cheap Anomaly game to learn the ropes first</h2>
+  <p>This is an evidence rubric, not a fitted model, because public data didn't predict retention. Each criterion scores 0–2:</p>
+  <ul>
+    <li><strong>Pull:</strong> how far the closest recent copy got.</li>
+    <li><strong>Crowding:</strong> how many same-format games launched in the last 120 days (fewer scores higher).</li>
+    <li><strong>Retention engine:</strong> collection, trading or progression.</li>
+    <li><strong>Co-play</strong>, <strong>watchability</strong>, <strong>solo build risk</strong> and <strong>moderation risk</strong>.</li>
+  </ul>
+  <div class="tablewrap"><table id="t-rubric"></table></div>
+  <h3>The closest existing games to our concepts</h3>
+  <div class="tablewrap"><table id="t-analogs"></table></div>
+  <p>The blend-in-and-hide mechanic draws players: Paint Or Seek peaked at 60k, close to 1M-DAU scale. Both earlier versions then lost almost everyone, and their like ratios are weak. Version 2 copies what has kept Murder Mystery 2 alive for 12 years: short social rounds plus collecting and trading cosmetics (frames, paints, poses), with the museum changing for each event.</p>
+
+  <h3>Revised plan</h3>
+  <ol>
+    <li><strong>Drop the web test.</strong> On Roblox, growth depends on play-through rate, bounce, D1/D7 and co-play, all of which Creator Analytics measures. Group-chat sharing doesn't move Roblox discovery.</li>
+    <li><strong>Weeks 1–3: Night-Shift Museum [Anomaly].</strong> A spot-the-anomaly co-op shift as a museum guard. It's cheap, rides a rising wave and is very watchable. Treat it as disposable: its job is to teach you thumbnails, play-through rate and D1, and to produce museum assets you'll reuse.</li>
+    <li><strong>Weeks 3–10: Hide as a Painting v2,</strong> on the same assets, with the collect-and-trade economy built in from day one.</li>
+    <li><strong>Kill rule:</strong> give each launch 4–5 weeks and at least two updates, since the median wait to 1k is 19 days. Kill it if it never passes about 1k concurrent and Creator Analytics shows it in the bottom half of similar games. Scale it if it clears 10k.</li>
+    <li><strong>If it breaks out:</strong> sell or take a partner near the peak if the curve looks like a fad. Keep it and run live updates if it holds.</li>
+  </ol>
+</section>
+
+<section id="limits">
+  <p class="eyebrow">09 · Limits and sources</p>
+  <h2>What to keep in mind</h2>
+  <ul>
+    <li>The sample is games visible today, so the climb odds are optimistic.</li>
+    <li>RoWatcher's histories start June 30, 2026 and sample about every 4 hours, which understates peaks. Its revenue figures are model estimates.</li>
+    <li>The 75k-concurrent ≈ 1M DAU equivalence depends on how long players stay each day.</li>
+    <li>The 3-hourly chart snapshots only run while this cloud session is alive.</li>
+  </ul>
+  <h3>Sources</h3>
+  <ul class="sources">
+    <li><strong>Roblox (official):</strong> <a href="https://create.roblox.com/docs/discovery">Discovery docs</a>, <a href="https://create.roblox.com/docs/discovery-faq">Discovery FAQ</a>, the games, votes, favorites, game-pass and explore APIs, the <a href="https://about.roblox.com/newsroom/2026/04/roblox-fuels-high-fidelity-games-over-18-players-increases-qualifying-devex-rate-42">DevEx +42% announcement</a>, and the <a href="https://www.sec.gov/Archives/edgar/data/1315098/000131509826000024/rblx-20251231.htm">10-K FY2025</a>.</li>
+    <li><strong>Trackers:</strong> <a href="https://rowatcher.com/games/10563114921/steal-an-egg">RoWatcher</a> (histories, change logs, revenue model estimates) and Rolimons (7,822 tracked games).</li>
+    <li><strong>Press:</strong> <a href="https://x.com/MisfitsGG/status/2090785862632038706">Misfits Gaming on Steal An Egg</a>, <a href="https://musically.com/2025/07/14/popular-roblox-games-are-being-acquired-for-millions-of-dollars/">Music Ally on Bloomberg's report of game sales</a>, <a href="https://www.tubefilter.com/2025/07/14/indie-game-creators-are-making-millions-selling-their-roblox-worlds/">Tubefilter on sale prices</a>.</li>
+  </ul>
+  <p class="foot">Data and code: <code>viral-game-research/roblox/</code> (playbook, tables, raw API pulls, scripts).</p>
+</section>
+</main>
+</div>
+
+<script>
+const D = {"curves": [{"name": "Steal An Egg", "created": "2026-07-25", "pts": [[12, 12833], [13, 20820], [14, 0], [15, 0], [16, 60275], [17, 53000], [18, 72792], [19, 102406], [20, 152900], [21, 179425], [22, 184160], [23, 209541], [24, 265993], [25, 315341], [26, 379090], [27, 480181], [28, 1170741], [29, 831530], [30, 833688], [31, 923927], [32, 1108113], [33, 1194419], [34, 1440597], [35, 3220781], [36, 1745856], [37, 1564417], [38, 1572132], [39, 1679408], [40, 1640600], [41, 1894998], [42, 4162726], [43, 2411741], [44, 2035466], [45, 1872150], [46, 1821380], [47, 1873386], [48, 2156023], [49, 6552804], [50, 2825861], [51, 2292910], [52, 2089067], [53, 2203411], [54, 2257749], [55, 2309371], [56, 7149306], [57, 2761920], [58, 2101787], [59, 2096051], [60, 2045469], [61, 1925850], [62, 2123618], [63, 5369767], [64, 2240676], [65, 1736836], [66, 1614532], [67, 1577840], [68, 1564794], [69, 1758557], [70, 6107967], [71, 2140072], [72, 1717384], [73, 1590281], [74, 1604269], [75, 1586602], [76, 1731011], [77, 2544812], [78, 1926319], [79, 1564033], [80, 1497588], [81, 1467575], [82, 1399381], [83, 1605771], [84, 2480294], [85, 1828781], [86, 1464668], [87, 1386265], [88, 1317525], [89, 761332]]}, {"name": "Break and Steal an Egg", "created": "2026-09-05", "pts": [[23, 16386], [24, 18565], [25, 20240], [26, 34222], [27, 61306], [28, 72116], [29, 179205], [30, 95296], [31, 92142], [32, 117959], [33, 119108], [34, 153567], [35, 163379], [36, 328941], [37, 183697], [38, 194124], [39, 188152], [40, 204909], [41, 221438], [42, 206599], [43, 536611], [44, 187457], [45, 154302], [46, 143422]]}, {"name": "[\ud83c\udf72] Karinderya!", "created": "2026-08-07", "pts": [[17, 11150], [18, 11161], [19, 12677], [20, 21070], [21, 18737], [22, 36348], [23, 33536], [24, 28263], [25, 23604], [26, 20426], [27, 21733], [28, 28374], [29, 82250], [30, 41964], [31, 38273], [32, 40719], [33, 40390], [34, 47921], [35, 47841], [36, 94901], [37, 61818], [38, 50393], [39, 42733], [40, 31358], [41, 49320], [42, 32124], [43, 150093], [44, 42788], [45, 25804], [46, 26718], [47, 21527], [48, 21756], [49, 26309], [50, 125235], [51, 36764], [52, 23711], [53, 18004], [54, 16420], [55, 16152], [56, 16781], [57, 25556], [58, 18119], [59, 12266], [60, 11070], [61, 10458], [62, 8814], [63, 12158], [64, 72759], [65, 27701], [66, 24980], [67, 16370], [68, 13773], [69, 15176], [70, 15891], [71, 39774], [72, 14541], [73, 10406], [74, 8695], [75, 17216]]}, {"name": "\ud83c\udf42\ud83c\udf83 Clean all the Leaves", "created": "2026-07-21", "pts": [[23, 16245], [24, 25370], [25, 80403], [26, 110180], [27, 117799], [28, 99614], [29, 81202], [30, 83428], [31, 116785], [32, 112791], [33, 113376], [34, 110817], [35, 103149], [36, 111915], [37, 105561], [38, 106531], [39, 136319], [40, 136243], [41, 119022], [42, 89946], [43, 79553], [44, 67342], [45, 69928], [46, 98481], [47, 92118], [48, 76554], [49, 74276], [50, 58516], [51, 70376], [52, 89412], [53, 102791], [54, 104202], [55, 113454], [56, 55175], [57, 42014], [58, 43406], [59, 51139], [60, 43061], [61, 55516], [62, 59271], [63, 28838], [64, 26232], [67, 40602], [68, 33773], [69, 30172], [70, 21164], [71, 16152], [72, 13596], [73, 14907], [74, 20486], [75, 19905], [76, 21727], [77, 12843], [78, 11410], [79, 8602], [81, 8290], [86, 4837], [91, 2619]]}, {"name": "[\ud83c\udf83] Huss Valley", "created": "2026-08-31", "pts": [[30, 7372], [31, 23741], [32, 41754], [33, 67871], [34, 112790], [35, 101192], [36, 96120], [37, 94238], [38, 99475], [39, 126938], [40, 135136], [41, 136041], [42, 121466], [43, 101283], [44, 89955], [45, 81563], [46, 93964], [47, 107083], [48, 91009], [49, 60113], [50, 56949], [51, 51869]]}, {"name": "\ud83c\udf83 Sell Fries! [Anomaly] \ud83c\udf5f", "created": "2026-09-21", "pts": [[5, 105], [6, 390], [7, 284], [8, 270], [9, 269], [10, 296], [11, 276], [12, 877], [13, 476], [14, 1885], [15, 4369], [16, 4792], [17, 7601], [18, 16087], [19, 27843], [20, 28378], [21, 53958], [22, 44874], [23, 63153], [24, 67197], [25, 72102], [26, 104668], [27, 101145], [28, 54640], [29, 50404], [30, 52153], [31, 26120]]}, {"name": "[\ud83c\udf83]+1 Loot To Forge", "created": "2026-08-12", "pts": [[35, 14794], [36, 20318], [37, 22970], [38, 30330], [39, 31138], [40, 25536], [41, 35493], [42, 55468], [43, 48182], [44, 71837], [45, 88699], [46, 95161], [47, 94526], [48, 67684], [49, 61341], [50, 63028], [51, 68289], [52, 86963], [53, 87548], [54, 76476], [55, 47551], [56, 47720], [57, 38979], [58, 41448], [59, 47197], [60, 47072], [61, 39241], [62, 35587], [63, 33941], [64, 30208], [65, 32166], [66, 31935], [67, 30011], [68, 26958], [69, 19299], [70, 16525], [71, 17748]]}, {"name": "Climb For Animals Eggs\ud83e\udd5a", "created": "2026-09-06", "pts": [[30, 11461], [31, 7614], [32, 16604], [33, 20121], [34, 20840], [35, 23765], [36, 22645], [37, 30629], [38, 35984], [39, 51880], [40, 62904], [41, 95070], [42, 59125], [43, 47358], [44, 53832], [45, 45536]]}, {"name": "[\ud83c\udf83] +1 Stone Skipping", "created": "2026-09-05", "pts": [[21, 4876], [22, 9228], [23, 10325], [24, 12334], [25, 14175], [26, 20981], [27, 24753], [28, 37173], [29, 40139], [30, 31942], [31, 36908], [32, 44409], [33, 34974], [34, 55278], [35, 88512], [36, 59511], [37, 49193], [38, 45294], [39, 50662], [40, 44327], [41, 45081], [42, 81287], [43, 47972], [44, 32139], [45, 31266], [46, 21806]]}, {"name": "Sarab", "created": "2026-09-24", "pts": [[9, 45117], [10, 42467], [11, 37490], [12, 43316], [13, 45470], [14, 67937], [15, 86688], [16, 72630], [17, 53515], [18, 49770], [19, 45860], [20, 47450], [21, 76377], [22, 75801], [23, 61874], [24, 36042], [25, 30490], [26, 26941], [27, 22511], [28, 12650]]}], "concentration": {"n": 7822, "total": 7705108, "shares": {"1": 0.0984383346735698, "10": 0.31995982405438056, "50": 0.5074011941169416, "100": 0.5990156140575836, "500": 0.8280477054961461, "1000": 0.9128323704223225}, "ge": {"1000": 881, "10000": 105, "75000": 10, "100000": 9}}, "wave": [{"name": "[\ud83d\udc80] Steal a Brainrot", "created": "2025-05-16", "peak": 903030, "now": 107095}, {"name": "Don\u2019t Steal the Bobo \ud83d\udc3b", "created": "2025-09-24", "peak": 17524, "now": 2463}, {"name": "[\ud83c\udf0a] Escape Tsunami For Brainrots!", "created": "2025-12-15", "peak": 33707, "now": 3089}, {"name": "[\ud83e\udddfEVENT] Break a Brainrot Egg!", "created": "2026-01-02", "peak": 26581, "now": 4826}, {"name": "[4X] Steal A Verity!", "created": "2026-07-23", "peak": 29292, "now": 7604}, {"name": "Steal An Egg", "created": "2026-07-25", "peak": 7149306, "now": 761288}, {"name": "Steal an Egg for Squishy Dumplings!", "created": "2026-08-24", "peak": 9970, "now": 3224}, {"name": "Plant & Steal \ud83c\udf31 [CO-OP]", "created": "2026-08-25", "peak": 10237, "now": 3430}, {"name": "Swing For Eggs", "created": "2026-08-27", "peak": 23450, "now": 2823}, {"name": "\ud83c\udf83 Dig For Eggs", "created": "2026-09-03", "peak": 15644, "now": 5303}, {"name": "Break and Steal an Egg", "created": "2026-09-05", "peak": 536611, "now": 78413}, {"name": "[\u2728] Swim For Eggs!", "created": "2026-09-05", "peak": 14268, "now": 3917}, {"name": "Climb For Animals Eggs\ud83e\udd5a", "created": "2026-09-06", "peak": 95070, "now": 27925}, {"name": "Steal ASMR!", "created": "2026-09-08", "peak": 30455, "now": 5364}, {"name": "Steal Or Die [MASSIVE HALLOWEEN UPD!]", "created": "2026-09-09", "peak": 12870, "now": 8072}, {"name": "Steal Animal Egg", "created": "2026-09-11", "peak": 57427, "now": 3296}, {"name": "[\ud83c\udf83] Bike For Egg!", "created": "2026-09-15", "peak": 34951, "now": 15719}, {"name": "(\ud83e\udd91) Drill for Eggs", "created": "2026-09-16", "peak": 26617, "now": 2492}, {"name": "Don't Steal My Eggs!", "created": "2026-09-22", "peak": 18217, "now": 7811}, {"name": "[\ud83c\udf83] Steal an Clown Egg", "created": "2026-09-23", "peak": 27232, "now": 11542}, {"name": "Lift Rock For Eggs", "created": "2026-09-27", "peak": 25698, "now": 5575}, {"name": "Save The Egg", "created": "2026-09-27", "peak": 20428, "now": 1370}, {"name": "+1 Pickaxe Swing for Eggs", "created": "2026-09-27", "peak": 11661, "now": 5155}, {"name": "Steal A DNA", "created": "2026-10-02", "peak": 4576, "now": 2794}, {"name": "Fake an Egg", "created": "2026-10-04", "peak": 19726, "now": 13332}], "funnel": [{"t": 1000, "n": 210}, {"t": 10000, "n": 137}, {"t": 50000, "n": 25}, {"t": 75000, "n": 13}, {"t": 100000, "n": 6}, {"t": 1000000, "n": 1}], "launch_stats": {"n": 210, "days_to_1k_median": 19.15, "jump_median": 2.5999999999999996, "days_to_peak_median": 29.65}, "retained": [{"name": "\ud83c\udf42\ud83c\udf83 Clean all the Leaves", "peak": 136319, "ratio": 0.0204520279638201}, {"name": "[\ud83c\udf72] Karinderya!", "peak": 150093, "ratio": 0.0282158395128353}, {"name": "[\ud83c\udf83] +1 Cut Grass Adventure", "peak": 57257, "ratio": 0.0380739472902876}, {"name": "Scream And Run [VERITY]", "peak": 55427, "ratio": 0.042722860699659}, {"name": "\ud83e\uddb8 +1 Superhero Evolution", "peak": 42220, "ratio": 0.0513500710563713}, {"name": "[\u2697\ufe0f\ud83c\udf3b] Search For The Needle", "peak": 82068, "ratio": 0.0551615733294341}, {"name": "Build and Kill Zombies", "peak": 80704, "ratio": 0.0559204004758128}, {"name": "Guess the character color", "peak": 36739, "ratio": 0.068973025939737}, {"name": "[\u2601\ufe0fWORLD 2] +1 Tongue Escape\ud83d\ude1b", "peak": 55358, "ratio": 0.076628490913689}, {"name": "(\ud83e\udd91) Drill for Eggs", "peak": 26617, "ratio": 0.0936243753991809}, {"name": "Animal Daycare (Anomaly)", "peak": 23238, "ratio": 0.0969962991651605}, {"name": "Steal An Egg", "peak": 7149306, "ratio": 0.1064841818212844}, {"name": "[UPD\ud83c\udf83] Merge a Mini  Army", "peak": 22450, "ratio": 0.1108685968819599}, {"name": "[\ud83c\udf83]+1 Loot To Forge", "peak": 95161, "ratio": 0.1168545937936759}, {"name": "Swing For Eggs", "peak": 23450, "ratio": 0.1203837953091684}, {"name": "[1 & 2 PLAYER] Grapple Cart Obby", "peak": 21372, "ratio": 0.1273629047351675}, {"name": "Roll a Fisherman \ud83c\udfa3", "peak": 21353, "ratio": 0.1326277338078958}, {"name": "[\ud83c\udf83] 50 Player BINGO!", "peak": 23155, "ratio": 0.140056143381559}, {"name": "[\ud83c\udf83] Build the Pyramid!", "peak": 30927, "ratio": 0.1402981213826106}, {"name": "[NOW] Paint to Get Rich \ud83c\udfa8", "peak": 42364, "ratio": 0.1582711736379945}, {"name": "[UPD] Aura Dance Battles \ud83d\udd25", "peak": 21106, "ratio": 0.1700464322941343}, {"name": "[\ud83c\udf83] Peel THE Potato", "peak": 31220, "ratio": 0.18888532991672}, {"name": "TROLL Hug Tower", "peak": 48035, "ratio": 0.2116581659206828}, {"name": "MONOCHROME\ud83c\udf83", "peak": 22700, "ratio": 0.2129515418502202}, {"name": "[\ud83c\udf83] Blue Lock Farm", "peak": 30327, "ratio": 0.2384673723085039}, {"name": "Anime Ability Arena", "peak": 31119, "ratio": 0.2511006137729361}, {"name": "Build An Ant Empire", "peak": 30354, "ratio": 0.257264281478553}, {"name": "[4X] Steal A Verity!", "peak": 29292, "ratio": 0.2595930629523419}, {"name": "[MAFUBA] Anime Astral Simulator", "peak": 35516, "ratio": 0.2682734542178173}, {"name": "[ Heisei Mothra ] Kaiju Alpha", "peak": 23098, "ratio": 0.5491384535457615}], "top": [{"name": "Steal An Egg", "playing": 761288, "created": "2026-07-25", "genre": "Simulation", "max_players": 7, "like": 0.9181245557027472}, {"name": "Murder Mystery 2", "playing": 625476, "created": "2014-01-18", "genre": "Survival", "max_players": 12, "like": 0.9082220160633272}, {"name": "Brookhaven \ud83c\udfe1RP", "playing": 264940, "created": "2020-04-21", "genre": "Roleplay & Avatar Sim", "max_players": 30, "like": 0.858854583403051}, {"name": "[\ud83c\udf83] Adopt Me!", "playing": 121086, "created": "2017-07-14", "genre": "Roleplay & Avatar Sim", "max_players": 35, "like": 0.863492314684249}, {"name": "[\ud83c\udf83] RIVALS", "playing": 116272, "created": "2024-05-26", "genre": "Shooter", "max_players": 40, "like": 0.9365666608559948}, {"name": "[SKY ASSASSIN] Jujutsu Shenanigans", "playing": 109689, "created": "2022-04-17", "genre": "Action", "max_players": 20, "like": 0.8617235531229183}, {"name": "Blox Fruits", "playing": 109091, "created": "2019-01-16", "genre": "RPG", "max_players": 12, "like": 0.922863974726211}, {"name": "[\ud83d\udc80] Steal a Brainrot", "playing": 107095, "created": "2025-05-16", "genre": "Simulation", "max_players": 8, "like": 0.8513392918071645}, {"name": "99 Nights in the Forest \ud83d\udd26", "playing": 103512, "created": "2025-03-04", "genre": "Survival", "max_players": 25, "like": 0.9048959262626886}, {"name": "Break and Steal an Egg", "playing": 78413, "created": "2026-09-05", "genre": "Simulation", "max_players": 7, "like": 0.975059797582774}, {"name": "\ud83c\udf83 Dandy's World [ALPHA]", "playing": 71842, "created": "2024-01-26", "genre": "Survival", "max_players": 35, "like": 0.8790475504668634}, {"name": "[\ud83c\udf83DUELS] Murderers VS Sheriffs", "playing": 70974, "created": "2025-02-09", "genre": "Action", "max_players": 30, "like": 0.8712136900167549}, {"name": "[\ud83c\udf83UPD] Fish It! \ud83d\udc1f", "playing": 70681, "created": "2024-10-21", "genre": "Simulation", "max_players": 20, "like": 0.8282607666373363}, {"name": "[\ud83c\udf83] Anime Dice", "playing": 67068, "created": "2026-08-15", "genre": "Simulation", "max_players": 9, "like": 0.9915607164732754}, {"name": "[\ud83c\udf83] Dress To Impress", "playing": 62359, "created": "2023-10-18", "genre": "Roleplay & Avatar Sim", "max_players": 13, "like": 0.9057060318503474}, {"name": "Catalog Avatar Creator", "playing": 58911, "created": "2021-07-03", "genre": "Shopping", "max_players": 24, "like": 0.9369495705829526}, {"name": "Fisch \ud83c\udf83 [FISCHFRIGHT]", "playing": 56841, "created": "2024-03-13", "genre": "Simulation", "max_players": 20, "like": 0.9081362714050024}, {"name": "[\ud83c\udf83HLWN] Evade ", "playing": 45659, "created": "2022-06-10", "genre": "Survival", "max_players": 15, "like": 0.9389722621309528}, {"name": "[\ud83c\udf83] Huss Valley", "playing": 44929, "created": "2026-08-31", "genre": "Action", "max_players": 30, "like": 0.877414905532876}, {"name": "[UPD] Volleyball Legends", "playing": 44793, "created": "2024-12-17", "genre": "Sports & Racing", "max_players": 12, "like": 0.9515855707305124}], "analogs": [{"name": "[NOW] Paint to Get Rich \ud83c\udfa8", "created": "2026-08-20", "peak": 42364, "now": 6705, "like": 0.7514912449490091}, {"name": "Draw Me! \ud83c\udfa8", "created": "2025-05-01", "peak": 6645, "now": 2140, "like": 0.8725602521948409}, {"name": "[\ud83c\udfa8] Hide In Pixels", "created": "2026-09-25", "peak": 23304, "now": 6317, "like": 0.6039806347498655}, {"name": "[\ud83c\udf83UPD\ud83c\udf83] Paint Or Seek [Chameleon]", "created": "2026-06-06", "peak": 60186, "now": 3044, "like": 0.7845155541338695}]};
+const NS = "http://www.w3.org/2000/svg";
+const tip = document.getElementById("tip");
+function showTip(e, html) { tip.innerHTML = html; tip.hidden = false; moveTip(e); }
+function moveTip(e) { const x = Math.min(e.clientX + 14, window.innerWidth - tip.offsetWidth - 8); const y = Math.max(8, e.clientY - tip.offsetHeight - 12); tip.style.left = x + "px"; tip.style.top = y + "px"; }
+function hideTip() { tip.hidden = true; }
+function el(tag, attrs = {}, parent) { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
+function svgIn(id, w, h) { const s = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img" }); document.getElementById(id).appendChild(s); return s; }
+function txt(s, x, y, t, a = {}) { const n = el("text", { x, y, ...a }, s); n.textContent = t; return n; }
+function bindTip(n, html) { n.addEventListener("pointerenter", e => showTip(e, html)); n.addEventListener("pointermove", moveTip); n.addEventListener("pointerleave", hideTip); }
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const fmt = n => n >= 1e6 ? (n / 1e6).toFixed(1) + "M" : n >= 1e3 ? Math.round(n / 1e3) + "k" : String(n);
+const strip = s => s.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\u{FE0F}\u{200D}]/gu, "").replace(/\[\s*\]|\(\s*\)/g, "").replace(/\s+/g, " ").trim();
+
+document.getElementById("stats").innerHTML = [
+  ["32%", "of all concurrent play in the top 10 games"], [String(D.concentration.ge["75000"]), "games at ~1M-DAU scale now"],
+  ["37", "of the top 100 created in the last 120 days"], [Math.round(D.launch_stats.days_to_1k_median) + " days", "median wait to 1,000 players"], ["~1 month", "of peak-level play in a typical hit's whole run"]
+].map(([n, l]) => `<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`).join("");
+
+document.getElementById("t-top").innerHTML = `<thead><tr><th>#</th><th>Game</th><th>Playing now</th><th>Created</th><th>Genre</th><th>Per server</th><th>Like ratio</th></tr></thead><tbody>` +
+  D.top.map((g, i) => `<tr><td class="n">${i + 1}</td><td>${strip(g.name)}</td><td class="n">${g.playing.toLocaleString("en-US")}</td><td class="n">${g.created}</td><td>${g.genre}</td><td class="n">${g.max_players}</td><td class="n">${(g.like * 100).toFixed(0)}%</td></tr>`).join("") + `</tbody>`;
+
+/* launch curves, log y */
+(function () {
+  const W = 900, H = 380, m = { l: 52, r: 150, t: 14, b: 32 };
+  const s = svgIn("c-curves", W, H);
+  const maxD = 90, X = d => m.l + d / maxD * (W - m.l - m.r);
+  const lo = Math.log10(100), hi = Math.log10(1e7), Y = v => H - m.b - (Math.log10(Math.max(v, 100)) - lo) / (hi - lo) * (H - m.t - m.b);
+  for (const v of [100, 1e3, 1e4, 1e5, 1e6, 1e7]) { el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: css("--grid") }, s); txt(s, m.l - 8, Y(v) + 4, fmt(v), { "text-anchor": "end", class: "num" }); }
+  for (const d of [0, 15, 30, 45, 60, 75, 90]) txt(s, X(d), H - 10, d === 0 ? "launch" : "day " + d, { "text-anchor": "middle", class: "num" });
+  for (const [v, l] of [[1e3, "1k"], [1e4, "10k"], [75e3, "~1M DAU"]]) { el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: css("--ink-3"), "stroke-dasharray": "4 4" }, s); txt(s, W - m.r + 6, Y(v) + 4, l, { class: "lbl2" }); }
+  D.curves.forEach((c, i) => {
+    const hl = i === 0, col = hl ? css("--s2") : css("--dim");
+    const pts = c.pts.filter(p => p[0] <= maxD && p[1] > 0);
+    const p = el("path", { d: pts.map((q, k) => (k ? "L" : "M") + X(q[0]).toFixed(1) + " " + Y(q[1]).toFixed(1)).join(""), fill: "none", stroke: col, "stroke-width": hl ? 2.5 : 1.5, "stroke-linejoin": "round", opacity: hl ? 1 : .9 }, s);
+    const peak = pts.reduce((a, b) => b[1] > a[1] ? b : a, pts[0]);
+    const hit = el("path", { d: p.getAttribute("d"), fill: "none", stroke: "transparent", "stroke-width": 12 }, s);
+    bindTip(hit, `<b>${strip(c.name)}</b><br>Launched ${c.created}<br>Peak ${peak[1].toLocaleString("en-US")} on day ${peak[0]}`);
+    if (hl) txt(s, X(peak[0]) + 6, Y(peak[1]) - 4, "Steal An Egg", { class: "lbl" });
+  });
+  txt(s, W - m.r + 6, Y(3e5), "grey: next 9", { class: "lbl2" });
+  txt(s, W - m.r + 6, Y(3e5) + 14, "biggest launches", { class: "lbl2" });
+})();
+
+/* funnel */
+(function () {
+  const rows = D.funnel.map(f => [fmt(f.t) + "+", f.n]);
+  const W = 440, rowH = 36, m = { l: 70, r: 110, t: 6 }, H = m.t + rowH * rows.length + 6;
+  const s = svgIn("c-funnel", W, H); const mx = rows[0][1];
+  rows.forEach((r, i) => {
+    const y = m.t + i * rowH + 8, w = Math.max(3, r[1] / mx * (W - m.l - m.r));
+    txt(s, m.l - 10, y + 14, r[0], { "text-anchor": "end", class: "lbl" });
+    const b = el("path", { d: `M${m.l} ${y}h${Math.max(w - 4, 0)}a4 4 0 0 1 4 4v12a4 4 0 0 1 -4 4h${-Math.max(w - 4, 0)}z`, fill: css(i === 3 ? "--s2" : "--s1") }, s);
+    bindTip(b, `${r[1]} of ${mx} launches reached ${r[0]} concurrent`);
+    txt(s, m.l + w + 6, y + 14, `${r[1]} (${Math.round(r[1] / mx * 100)}%)`, { class: "num" });
+  });
+})();
+
+/* wave scatter */
+(function () {
+  const pts = D.wave.filter(w => w.peak && w.peak > 0);
+  const W = 900, H = 320, m = { l: 52, r: 24, t: 20, b: 32 };
+  const s = svgIn("c-wave", W, H);
+  const t0 = Date.parse("2025-04-01"), t1 = Date.parse("2026-11-01");
+  const X = d => m.l + (Date.parse(d) - t0) / (t1 - t0) * (W - m.l - m.r);
+  const lo = Math.log10(500), hi = Math.log10(2e7), Y = v => H - m.b - (Math.log10(Math.max(v, 500)) - lo) / (hi - lo) * (H - m.t - m.b);
+  for (const v of [1e3, 1e4, 1e5, 1e6, 1e7]) { el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: css("--grid") }, s); txt(s, m.l - 8, Y(v) + 4, fmt(v), { "text-anchor": "end", class: "num" }); }
+  for (const d of ["2025-05-01", "2025-09-01", "2026-01-01", "2026-05-01", "2026-09-01"]) txt(s, X(d), H - 10, new Date(d).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" }), { "text-anchor": "middle", class: "num" });
+  const label = { "Steal An Egg": 1, "Break and Steal an Egg": 1, "Steal Animal Egg": 1 };
+  pts.forEach(w => {
+    const nm = strip(w.name), isB = /brainrot/i.test(nm);
+    const c = el("circle", { cx: X(w.created), cy: Y(w.peak), r: 7, fill: css(isB ? "--s1" : "--s2"), stroke: css("--paper"), "stroke-width": 2 }, s);
+    bindTip(c, `<b>${nm}</b><br>Launched ${w.created}<br>Peak since June: ${w.peak.toLocaleString("en-US")}<br>Now: ${w.now.toLocaleString("en-US")}`);
+    if (label[nm] || /^Steal a Brainrot/i.test(nm)) txt(s, X(w.created) - 10, Y(w.peak) + 4, nm, { "text-anchor": "end", class: "lbl2" });
+  });
+  txt(s, m.l + 6, m.t + 4, "blue: brainrot games · orange: egg / steal games", { class: "lbl2" });
+})();
+
+/* retained strip */
+(function () {
+  const W = 900, H = 170, m = { l: 20, r: 20, t: 26, b: 32 };
+  const s = svgIn("c-ret", W, H);
+  const X = v => m.l + v / .6 * (W - m.l - m.r);
+  for (const v of [0, .1, .2, .3, .4, .5, .6]) { el("line", { x1: X(v), x2: X(v), y1: m.t, y2: H - m.b, stroke: css("--grid") }, s); txt(s, X(v), H - 12, Math.round(v * 100) + "%", { "text-anchor": "middle", class: "num" }); }
+  const med = .12; el("line", { x1: X(med), x2: X(med), y1: m.t - 10, y2: H - m.b, stroke: css("--ink-3"), "stroke-dasharray": "4 3" }, s); txt(s, X(med) + 5, m.t - 12, "median 12%", { class: "lbl2" });
+  const placed = [];
+  D.retained.forEach(r => {
+    const x = X(Math.min(r.ratio, .6)); let lane = 0;
+    while (placed.some(p => p.lane === lane && Math.abs(p.x - x) < 14)) lane++;
+    placed.push({ x, lane });
+    const c = el("circle", { cx: x, cy: H - m.b - 12 - lane * 16, r: 6.5, fill: css("--s1"), stroke: css("--paper"), "stroke-width": 2 }, s);
+    bindTip(c, `<b>${strip(r.name)}</b><br>Peak ${r.peak.toLocaleString("en-US")}<br>Now ${Math.round(r.ratio * 100)}% of peak`);
+  });
+})();
+
+/* rubric */
+const R = [
+  ["Hide as a Painting v2", "Round-based hide-by-posing, plus a Murder Mystery 2-style economy for collecting and trading frames, paints and poses", 2, 1, 2, 2, 2, 1, 2, true],
+  ["Night-Shift Museum [Anomaly]", "Spot-the-anomaly co-op shifts as a museum guard (learning launch)", 2, 1, 0, 1, 2, 2, 2, true],
+  ["Daily Heist", "One shared co-op escape room per day", 1, 2, 1, 2, 2, 0, 2, false],
+  ["Steal-a-[new object]", "Join the steal wave with a real twist", 2, 0, 1, 1, 1, 2, 2, false],
+  ["Grow-a-[theme] live-ops", "Offline growth, restocks, weekly events", 1, 1, 2, 1, 1, 1, 2, false],
+  ["Pictionary Obby", "The drawing becomes the obstacle course", 1, 2, 1, 2, 2, 0, 0, false],
+  ["Imposter Bot", "Social deduction with an AI player", 1, 2, 1, 2, 2, 0, 0, false],
+  ["\"+1 per second\" incremental", "Join the incremental wave", 2, 0, 0, 0, 1, 2, 2, false]];
+document.getElementById("t-rubric").innerHTML = `<thead><tr><th>Concept</th><th>Pull</th><th>Crowding</th><th>Retention</th><th>Co-play</th><th>Watchable</th><th>Build</th><th>Moderation</th><th>Total</th></tr></thead><tbody>` +
+  R.map(r => `<tr class="${r[9] ? "pick" : ""}"><td><b>${r[0]}</b><br><span class="foot">${r[1]}</span></td>${r.slice(2, 9).map(v => `<td class="score">${v}</td>`).join("")}<td class="total">${r.slice(2, 9).reduce((a, b) => a + b, 0)}/14</td></tr>`).join("") + `</tbody>`;
+document.getElementById("t-analogs").innerHTML = `<thead><tr><th>Existing game</th><th>Launched</th><th>Peak since June</th><th>Now</th><th>Kept</th><th>Like ratio</th></tr></thead><tbody>` +
+  D.analogs.map(a => `<tr><td>${strip(a.name)}</td><td class="n">${a.created}</td><td class="n">${a.peak.toLocaleString("en-US")}</td><td class="n">${a.now.toLocaleString("en-US")}</td><td class="n">${Math.round(a.now / a.peak * 100)}%</td><td class="n">${Math.round(a.like * 100)}%</td></tr>`).join("") + `</tbody>`;
+
+const links = [...document.querySelectorAll("nav.toc a")];
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id)); }), { rootMargin: "-30% 0px -60% 0px" });
+document.querySelectorAll("main section").forEach(sec => io.observe(sec));
+window.addEventListener("scroll", hideTip, { passive: true });
+</script>
