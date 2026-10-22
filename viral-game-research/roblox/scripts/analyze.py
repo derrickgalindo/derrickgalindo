@@ -9,7 +9,7 @@ import pandas as pd
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, "data", "raw")
 OUT = os.path.join(ROOT, "analysis"); os.makedirs(OUT, exist_ok=True)
-NOW = pd.Timestamp("2026-10-22", tz="UTC")
+NOW = pd.Timestamp.now(tz="UTC").normalize()  # analysis date = run date
 # 1M DAU expressed as peak concurrent players: DAU x minutes-per-DAU / 1440 x peak-to-average (1.8).
 # 30 min -> 37.5k, 60 min -> 75k, 120 min -> 150k. Working threshold: 75k peak CCU.
 CCU_1M_DAU = 75_000

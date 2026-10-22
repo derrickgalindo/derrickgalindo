@@ -34,7 +34,7 @@ out["launch_stats"] = {"n": int(len(lm)), "days_to_1k_median": float(lm.days_to_
                        "days_to_peak_median": float(lm.days_to_peak.median())}
 # retained after peak (launches peak>=20k, >=14d past peak)
 x = lm[lm.peak_ccu >= 20000].copy()
-x["past"] = (pd.Timestamp("2026-10-22") - pd.to_datetime(x.created)).dt.days - x.days_to_peak
+x["past"] = (pd.Timestamp.now().normalize() - pd.to_datetime(x.created)).dt.days - x.days_to_peak
 x = x[x.past >= 14]
 out["retained"] = [{"name": r["name"], "peak": int(r.peak_ccu), "ratio": float(r.now_over_peak)} for _, r in x.sort_values("now_over_peak").iterrows()]
 # top 20 now
