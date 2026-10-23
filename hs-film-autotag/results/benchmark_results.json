@@ -1,0 +1,146 @@
+{
+ "footage": {
+  "file": "WHS Football vs Wakefield October 2, 2014 (segment 1500-2107 s)",
+  "source": "https://archive.org/details/whs-football-vs-wakefield-october-2-2014",
+  "license": "CC BY-NC-SA 4.0",
+  "resolution": "1920x1080",
+  "fps": 29.97,
+  "bitrate_mbps": 4.01,
+  "segment_s": 606.8252
+ },
+ "hardware": {
+  "cpu": "Intel Xeon @ 2.80GHz (AVX-512 VNNI)",
+  "vcpus": 4,
+  "gpu": null
+ },
+ "decode_full_1thread": {
+  "threads": 1,
+  "user_s": 109.077,
+  "sys_s": 1.995,
+  "wall_s": 112.078,
+  "frames": 18186
+ },
+ "decode_full_allthreads": {
+  "threads": 0,
+  "user_s": 118.269,
+  "sys_s": 4.351,
+  "wall_s": 40.153,
+  "frames": 18186
+ },
+ "segmentation_lowres_5fps": {
+  "proc_s": 11.524,
+  "frames": 3034,
+  "note": "after phaseCorrelate in-place fix; excludes decode"
+ },
+ "snap_heuristic": {
+  "true_snaps_in_segment_manual": 10,
+  "candidates": 8,
+  "true_positives": 6
+ },
+ "field_lines_ms_per_1080p_frame": 23.585087650013747,
+ "detector_ms_per_frame": {
+  "yolo11n_640_t1": {
+   "ms_mean": 107.95114940002009,
+   "ms_p50": 103.36397950004539
+  },
+  "yolo11s_640_t1": {
+   "ms_mean": 235.53777317501954,
+   "ms_p50": 234.59246150002855
+  },
+  "yolo11s_640_tiled3_t1": {
+   "ms_mean": 710.753132900004,
+   "ms_p50": 695.3915814999618
+  },
+  "yolo11m_640_t1": {
+   "ms_mean": 635.6100868249769,
+   "ms_p50": 634.0484490000335
+  },
+  "rfdetr_nano_384_t1": {
+   "ms_mean": 412.5990068249905,
+   "ms_p50": 409.1192084998738
+  },
+  "rfdetr_medium_576_t1": {
+   "ms_mean": 1074.6403690749958,
+   "ms_p50": 1072.750563999989
+  },
+  "rfdetr_medium_576_tiled3_t1": {
+   "ms_mean": 3143.0271708749956,
+   "ms_p50": 3150.0568335000025
+  },
+  "yolo11n_640_t4": {
+   "ms_mean": 51.785712100007686,
+   "ms_p50": 49.569563999966704
+  },
+  "yolo11s_640_t4": {
+   "ms_mean": 96.20017227499602,
+   "ms_p50": 94.23691400002099
+  },
+  "yolo11s_640_tiled3_t4": {
+   "ms_mean": 281.41114257500135,
+   "ms_p50": 277.08808449995104
+  },
+  "yolo11m_640_t4": {
+   "ms_mean": 238.62417142501613,
+   "ms_p50": 231.379069999889
+  },
+  "rfdetr_nano_384_t4": {
+   "ms_mean": 197.62034277498515,
+   "ms_p50": 187.23890249987107
+  },
+  "rfdetr_medium_576_t4": {
+   "ms_mean": 387.5564628500001,
+   "ms_p50": 374.3724185000019
+  },
+  "rfdetr_medium_576_tiled3_t4": {
+   "ms_mean": 1123.2857602499905,
+   "ms_p50": 1122.0555830000194
+  }
+ },
+ "person_counts_on_8_presnap_frames": {
+  "yolo11s_full": [
+   13,
+   11,
+   20,
+   28,
+   15,
+   18,
+   21,
+   18
+  ],
+  "yolo11s_tiled3": [
+   18,
+   20,
+   24,
+   41,
+   36,
+   27,
+   32,
+   25
+  ],
+  "rfdetr_m_full": [
+   23,
+   21,
+   22,
+   26,
+   39,
+   27,
+   30,
+   24
+  ],
+  "rfdetr_m_tiled3": [
+   35,
+   27,
+   30,
+   45,
+   56,
+   49,
+   41,
+   39
+  ]
+ },
+ "manual_frame_review": {
+  "presnap_frames": 8,
+  "yard_number_legible": 5,
+  "all_players_in_frame": 6
+ }
+}
