@@ -291,7 +291,9 @@ class GameSim:
         df["total"] = df[f"{h}_pts"] + df[f"{a}_pts"]
         df[f"{a}_margin"] = df[f"{a}_pts"] - df[f"{h}_pts"]
         df[f"{h}_margin"] = -df[f"{a}_margin"]
-        df[f"{a}_margin_1h"] = df.pop("away_pts_1h") - df.pop("home_pts_1h")
+        h1, a1 = df.pop("home_pts_1h"), df.pop("away_pts_1h")
+        df["total_1h"] = h1 + a1
+        df[f"{a}_margin_1h"] = a1 - h1
         df[f"{h}_margin_1h"] = -df[f"{a}_margin_1h"]
         for tm in (self.t["home"], self.t["away"]):
             for p in {r.name for r in tm.rushers} | {r.name for r in tm.receivers} | {tm.qb}:
